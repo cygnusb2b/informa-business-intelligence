@@ -59,8 +59,7 @@ const run = async () => {
 
   const sites = await loadSites();
 
-  sites.forEach((site, index) => {
-    if (index !== 0) return null;
+  sites.forEach((site) => {
     const folder = path.resolve('../../sites', site.service);
     log(`Creating ${folder}...`);
     if (fs.existsSync(folder)) {
