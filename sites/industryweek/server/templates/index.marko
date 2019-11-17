@@ -37,10 +37,9 @@ $ const getAdSlots = ({ aliases }) => ({
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <website-global-left-rail-block
+              <lazarus-shared-global-left-rail-block
                 aliases=aliases
                 adunit={ name: "mr-section-page", pos: "300_1_lft" }
-                query-fragment=queryFragment
               />
             </@left-col>
             <@right-col>
@@ -53,15 +52,15 @@ $ const getAdSlots = ({ aliases }) => ({
                     <default-theme-hero-flow nodes=nodes>
                       <@header>Top Stories</@header>
                       <@hero|{ node }|>
-                        <website-content-card-node node=node>
+                        <lazarus-shared-content-card-node node=node>
                           <@image width=630 />
                           <@title modifiers=["large"] />
-                        </website-content-card-node>
+                        </lazarus-shared-content-card-node>
                       </@hero>
                       <@list|{ nodes: listNodes }|>
                         <default-theme-card-deck-flow cols=3 nodes=listNodes>
                           <@slot|{ node }|>
-                            <website-content-card-node node=node />
+                            <lazarus-shared-content-card-node node=node />
                           </@slot>
                         </default-theme-card-deck-flow>
                       </@list>
@@ -76,7 +75,7 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="website-scheduled-content"
                     params={ sectionAlias: "operations", limit: 3, requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>
                         <marko-web-link href="/operations">
                           Operations
@@ -90,7 +89,7 @@ $ const getAdSlots = ({ aliases }) => ({
                       <@list>
                         <@node with-teaser=false with-section=false />
                       </@list>
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
 
                 </div>
@@ -101,7 +100,7 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="website-scheduled-content"
                     params={ sectionAlias: "leadership", limit: 3, requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>
                         <marko-web-link href="/leadership">
                           Leadership
@@ -115,7 +114,7 @@ $ const getAdSlots = ({ aliases }) => ({
                       <@list>
                         <@node with-teaser=false with-section=false />
                       </@list>
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
 
                 </div>
@@ -134,7 +133,7 @@ $ const getAdSlots = ({ aliases }) => ({
 
                       <@hero|{ node, blockName }|>
                         <marko-web-element block-name=blockName name="ad-wrapper">
-                          <website-content-card-node
+                          <lazarus-shared-content-card-node
                             node=node
                             with-teaser=false
                             with-section=false
@@ -142,7 +141,7 @@ $ const getAdSlots = ({ aliases }) => ({
                           >
                             <@image width=500 />
                             <@title modifiers=["large"] />
-                          </website-content-card-node>
+                          </lazarus-shared-content-card-node>
                           <marko-web-element block-name=blockName name="ad" modifiers=["max-width-300"]>
                             <marko-web-gam-display-ad
                               id="gpt-mr-section-page-right"
@@ -152,13 +151,13 @@ $ const getAdSlots = ({ aliases }) => ({
                         </marko-web-element>
                       </@hero>
                       <@list|{ nodes: listNodes }|>
-                        <website-content-list-flow nodes=listNodes
+                        <lazarus-shared-content-list-flow nodes=listNodes
                           flush-x=true
                           flush-y=true
                           modifiers=["rows"]
                         >
                           <@node with-teaser=false with-section=false />
-                        </website-content-list-flow>
+                        </lazarus-shared-content-list-flow>
                       </@list>
                     </default-theme-hero-flow>
                   </marko-web-query>
@@ -170,7 +169,7 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="website-scheduled-content"
                     params={ sectionAlias: "talent", limit: 1, requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>
                         <marko-web-link href="/talent">
                           Talent
@@ -181,7 +180,7 @@ $ const getAdSlots = ({ aliases }) => ({
                         with-section=false
                         modifiers=["increased-padding"]
                       />
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
 
                 </div>
@@ -192,7 +191,7 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="website-scheduled-content"
                     params={ sectionAlias: "the-economy", limit: 1, requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>
                         <marko-web-link href="/the-economy">
                           The Economy
@@ -203,7 +202,7 @@ $ const getAdSlots = ({ aliases }) => ({
                         with-section=false
                         modifiers=["increased-padding"]
                       />
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
 
                 </div>
@@ -213,13 +212,13 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="all-published-content"
                     params={ limit: 1, includeContentTypes: ["MediaGallery"], requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>Featured Media</@header>
                       <@card
                         with-section=false
                         modifiers=["dark", "increased-padding"]
                       />
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
                 </div>
               </@bottom-row>
