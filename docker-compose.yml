@@ -76,7 +76,7 @@ services:
   tdworld:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/industryweek
+    working_dir: /root/sites/tdworld
     environment:
       <<: *env
       <<: *env-gemenon
