@@ -289,10 +289,10 @@ services:
       - "5723:80"
       - "47113:47113"
 
-  hydraulicspheumatics:
+  hydraulicspneumatics:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hydraulicspheumatics
+    working_dir: /root/sites/hydraulicspneumatics
     environment:
       <<: *env
       <<: *env-gemenon
