@@ -97,7 +97,7 @@ jobs:
 
     - stage: deploy
       name: Hydraulics & Pneumatics
-      script: deploy/index.js hydraulicspheumatics gemenon
+      script: deploy/index.js hydraulicspneumatics gemenon
       install: skip
 
     - stage: deploy
