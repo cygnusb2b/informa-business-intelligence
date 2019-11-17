@@ -29,3 +29,8 @@ jobs:
       name: Industry Week
       script: deploy/index.js industryweek gemenon
       install: skip
+
+    - stage: deploy
+      name: T&D World
+      script: deploy/index.js tdworld gemenon
+      install: skip
