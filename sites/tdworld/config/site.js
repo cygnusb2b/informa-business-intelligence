@@ -3,6 +3,11 @@ const navigation = require('./navigation');
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  homePageSections: [
+    { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
+    { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
+    { alias: 'electrification', name: 'Electrification' },
+  ],
   logos: {
     navbar: {
       src: 'https://base.imgix.net/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=30',
@@ -29,4 +34,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
+  newsletterSubscribeLink: 'https://eb.informabi.com/LP=1056',
 };

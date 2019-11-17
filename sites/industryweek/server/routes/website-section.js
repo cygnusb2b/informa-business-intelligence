@@ -1,7 +1,7 @@
 const { withWebsiteSection } = require('@base-cms/marko-web/middleware');
-const section = require('../templates/website-section');
-const contactUs = require('../templates/website-section/contact-us');
-const queryFragment = require('../graphql/fragments/website-section-page');
+const section = require('@endeavor-business-media/lazarus-shared/templates/website-section');
+const contactUs = require('@endeavor-business-media/lazarus-shared/templates/website-section/contact-us');
+const queryFragment = require('@endeavor-business-media/lazarus-shared/graphql/fragments/website-section-page');
 
 module.exports = (app) => {
   app.get('/:alias(contact-us)', withWebsiteSection({

@@ -1,5 +1,7 @@
 $ const { config, site } = out.global;
 
+$ const newsletterSubscribeLink = site.get("newsletterSubscribeLink");
+
 $ const type = "subscribe";
 $ const description = `${config.website("name")} has products that deliver powerful content to you in a variety of forms including print, online, email and social media. To subscribe to a product or manage your current subscription, click below and put the power of ${config.website("name")} at your fingertips.`;
 
@@ -23,11 +25,13 @@ $ const description = `${config.website("name")} has products that deliver power
           icon-modifiers=["xl"]
         />
       </@section>
-      <@section>
-        <h4>Newsletters</h4>
-        <p>Stay up-to-date on industry news and events, new product launches and more. Select from our list of targeted newsletter offerings to stay informed on the topics that matter to you and your business.</p>
-        <iframe src="https://mfg.informabi.com/LP=1551" />
-      </@section>
+      <if(newsletterSubscribeLink)>
+        <@section>
+          <h4>Newsletters</h4>
+          <p>Stay up-to-date on industry news and events, new product launches and more. Select from our list of targeted newsletter offerings to stay informed on the topics that matter to you and your business.</p>
+          <p><strong><marko-web-link href=newsletterSubscribeLink target="_blank">Subscribe / Manage Preferences</marko-web-link></strong></p>
+        </@section>
+      </if>
     </marko-web-page-wrapper>
   </@page>
 </marko-web-default-page-layout>

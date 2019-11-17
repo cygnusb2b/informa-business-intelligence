@@ -3,6 +3,11 @@ const navigation = require('./navigation');
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  homePageSections: [
+    { alias: 'operations', name: 'Operations' },
+    { alias: 'leadership', name: 'Leadership' },
+    { alias: 'technology-and-iiot', name: 'Technology and IIoT' },
+  ],
   logos: {
     navbar: {
       src: 'https://base.imgix.net/files/base/ebm/iw/static/iw_logo.png?h=30',
@@ -29,4 +34,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
+  newsletterSubscribeLink: 'https://mfg.informabi.com/LP=1551',
 };

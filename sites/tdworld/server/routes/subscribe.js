@@ -1,4 +1,4 @@
-const subscribe = require('../templates/subscribe');
+const subscribe = require('@endeavor-business-media/lazarus-shared/templates/subscribe');
 
 module.exports = (app) => {
   app.get('/subscribe', (_, res) => {
