@@ -72,3 +72,19 @@ services:
     ports:
       - "5710:80"
       - "47100:47100"
+
+  tdworld:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/industryweek
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5711
+      LIVERELOAD_PORT: 47101
+      TENANT_KEY: ebm_tdworld
+      SITE_ID: 5dcc4365a6e83994038b4567
+    ports:
+      - "5711:80"
+      - "47101:47101"
