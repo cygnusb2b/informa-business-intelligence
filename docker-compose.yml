@@ -1,0 +1,74 @@
+version: '3.7'
+
+x-node-defaults: &node
+  tty: true
+  init: true
+  image: node:10.15
+  entrypoint: ["node"]
+  working_dir: /root
+  restart: always
+  volumes:
+    - ./:/root:cached
+    - ./node_modules:/root/node_modules:delegated
+    - yarn-cache:/.yarn-cache
+
+x-env-defaults: &env
+  NEW_RELIC_ENABLED: ${NEW_RELIC_ENABLED-0}
+  NEW_RELIC_LICENSE_KEY: ${NEW_RELIC_LICENSE_KEY-(unset)}
+  NODE_ENV: development
+  # @todo the recaptcha values should be removed (?) once contact-us is moved to core.
+  RECAPTCHA_SECRET_KEY: ${RECAPTCHA_SECRET_KEY-(unset)}
+  # @todo the sendgrid values should be removed once the @base-cms/mailer service is created.
+  SENDGRID_API_KEY: ${SENDGRID_API_KEY-(unset)}
+  SENDGRID_DEV_TO: developer@endeavorb2b.com
+  YARN_CACHE_FOLDER: /.yarn-cache
+
+x-env-gemenon: &env-gemenon
+  GRAPHQL_URI: ${GRAPHQL_URI-https://gemenon.graphql.base-cms.io}
+  OEMBED_URI: ${OEMBED_URI-https://gemenon.oembed.base-cms.io}
+  RSS_URI: ${RSS_URI-https://gemenon.rss.base-cms.io}
+  SITEMAPS_URI: ${SITEMAPS_URI-https://gemenon.sitemaps.base-cms.io}
+
+x-env-development: &env-development
+  GRAPHQL_URI: ${GRAPHQL_URI-http://host.docker.internal:10002}
+  OEMBED_URI: ${OEMBED_URI-http://host.docker.internal:10013}
+  RSS_URI: ${RSS_URI-http://host.docker.internal:10011}
+  SITEMAPS_URI: ${SITEMAPS_URI-http://host.docker.internal:10009}
+
+x-site-command: &site-cmd
+  entrypoint: ["node_modules/.bin/basecms-website"]
+  command: ["dev", "index.js"]
+
+volumes:
+  yarn-cache: {}
+
+services:
+  terminal:
+    <<: *node
+    working_dir: /root
+    entrypoint: ["/bin/bash"]
+    environment:
+      <<: *env
+
+  yarn:
+    <<: *node
+    working_dir: /root
+    entrypoint: ["yarn"]
+    environment:
+      <<: *env
+
+  industryweek:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/industryweek
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5710
+      LIVERELOAD_PORT: 47100
+      TENANT_KEY: ebm_industryweek
+      SITE_ID: 5dc2e4b9a6e839f2008b4567
+    ports:
+      - "5710:80"
+      - "47100:47100"
