@@ -151,11 +151,6 @@ jobs:
       install: skip
 
     - stage: deploy
-      name: Energy Times
-      script: deploy/index.js theenergytimes gemenon
-      install: skip
-
-    - stage: deploy
       name: Trailer Body Builders
       script: deploy/index.js trailer-bodybuilders gemenon
       install: skip
