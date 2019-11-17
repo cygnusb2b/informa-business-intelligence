@@ -4,37 +4,34 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    // <NOT SET>
-    // { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
-    // { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
-    // { alias: 'electrification', name: 'Electrification' },
+    { alias: 'people', name: 'People' },
+    { alias: 'electrical-economy', name: 'Electrical Economy' },
+    { alias: 'green-market', name: 'Green Market' },
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=30',
+      src: 'https://base.imgix.net/files/base/ebm/ewweb/image/static/ewweb-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=60 2x',
+        'https://base.imgix.net/files/base/ebm/ewweb/image/static/ewweb-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=45',
+      src: 'https://base.imgix.net/files/base/ebm/ewweb/image/static/ewweb-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=90 2x',
+        'https://base.imgix.net/files/base/ebm/ewweb/image/static/ewweb-logo.png?h=90 2x',
       ],
     },
   },
-  // <NOT SET>
   socialMediaLinks: [
-    { provider: 'facebook', href: '<NOT SET>', target: '_blank' },
-    { provider: 'twitter', href: '<NOT SET>', target: '_blank' },
-    { provider: 'linkedin', href: '<NOT SET>', target: '_blank' },
-    { provider: 'youtube', href: '<NOT SET>', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/elecwholesalingmag/', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/ElecWholesaling', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2187051', target: '_blank' },
   ],
   gtm: {
-    containerId: '<NOT SET>',
+    containerId: 'GTM-PNM3CF6',
   },
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: '<NOT SET>',
+  newsletterSubscribeLink: 'https://eb.informabi.com/LP=1006',
 };

@@ -4,37 +4,34 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    // <NOT SET>
-    // { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
-    // { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
-    // { alias: 'electrification', name: 'Electrification' },
+    { alias: 'machining-cutting', name: 'Machining / Cutting' },
+    { alias: 'shop-operations', name: 'Shop Operations' },
+    { alias: 'cutting-tools', name: 'Cutting Tools' },
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=30',
+      src: 'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=60 2x',
+        'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=45',
+      src: 'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=90 2x',
+        'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=90 2x',
       ],
     },
   },
-  // <NOT SET>
   socialMediaLinks: [
-    { provider: 'facebook', href: '<NOT SET>', target: '_blank' },
-    { provider: 'twitter', href: '<NOT SET>', target: '_blank' },
-    { provider: 'linkedin', href: '<NOT SET>', target: '_blank' },
-    { provider: 'youtube', href: '<NOT SET>', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/AmericanMachinist', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/AmericanMachnst', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2880425', target: '_blank' },
   ],
   gtm: {
-    containerId: '<NOT SET>',
+    containerId: 'GTM-56CR4G5',
   },
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: '<NOT SET>',
+  newsletterSubscribeLink: 'https://mfg.informabi.com/LP=2230',
 };

@@ -4,37 +4,33 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    // <NOT SET>
-    // { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
-    // { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
-    // { alias: 'electrification', name: 'Electrification' },
+    { alias: 'ask-the-expert', name: 'Ask the Expert' },
+    { alias: 'molds-cores', name: 'Molds/Cores' },
+    { alias: 'simulation-it', name: 'Simulation/IT' },
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=30',
+      src: 'https://base.imgix.net/files/base/ebm/foundrymag/image/static/foundrymag-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=60 2x',
+        'https://base.imgix.net/files/base/ebm/foundrymag/image/static/foundrymag-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=45',
+      src: 'https://base.imgix.net/files/base/ebm/foundrymag/image/static/foundrymag-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=90 2x',
+        'https://base.imgix.net/files/base/ebm/foundrymag/image/static/foundrymag-logo.png?h=90 2x',
       ],
     },
   },
-  // <NOT SET>
   socialMediaLinks: [
-    { provider: 'facebook', href: '<NOT SET>', target: '_blank' },
-    { provider: 'twitter', href: '<NOT SET>', target: '_blank' },
-    { provider: 'linkedin', href: '<NOT SET>', target: '_blank' },
-    { provider: 'youtube', href: '<NOT SET>', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/pages/Foundry-Management-Technology/481245725222286', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/FoundryMag', target: '_blank' },
   ],
   gtm: {
-    containerId: '<NOT SET>',
+    containerId: 'GTM-59NC7KQ',
   },
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: '<NOT SET>',
+  newsletterSubscribeLink: 'https://mfg.informabi.com/LP=1894',
 };
