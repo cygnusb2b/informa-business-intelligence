@@ -289,10 +289,10 @@ services:
       - "5723:80"
       - "47113:47113"
 
-  hydraulicspheumatics:
+  hydraulicspneumatics:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hydraulicspheumatics
+    working_dir: /root/sites/hydraulicspneumatics
     environment:
       <<: *env
       <<: *env-gemenon
@@ -464,22 +464,6 @@ services:
     ports:
       - "5734:80"
       - "47124:47124"
-
-  theenergytimes:
-    <<: *node
-    <<: *site-cmd
-    working_dir: /root/sites/theenergytimes
-    environment:
-      <<: *env
-      <<: *env-gemenon
-      PORT: 80
-      EXPOSED_PORT: 5735
-      LIVERELOAD_PORT: 47125
-      TENANT_KEY: ebm_theenergytimes
-      SITE_ID: 5dcc437da6e83998038b4567
-    ports:
-      - "5735:80"
-      - "47125:47125"
 
   trailer-bodybuilders:
     <<: *node

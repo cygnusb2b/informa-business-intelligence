@@ -1,6 +1,6 @@
 const GAMConfiguration = require('@base-cms/marko-web-gam/config');
 
-const config = new GAMConfiguration('3834', { basePath: '<NOT SET>' });
+const config = new GAMConfiguration('3834', { basePath: 'contractbus.home' });
 
 config
   .setTemplate('lb-main', {

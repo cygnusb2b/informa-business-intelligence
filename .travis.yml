@@ -97,7 +97,7 @@ jobs:
 
     - stage: deploy
       name: Hydraulics & Pneumatics
-      script: deploy/index.js hydraulicspheumatics gemenon
+      script: deploy/index.js hydraulicspneumatics gemenon
       install: skip
 
     - stage: deploy
@@ -148,11 +148,6 @@ jobs:
     - stage: deploy
       name: T&D World
       script: deploy/index.js tdworld gemenon
-      install: skip
-
-    - stage: deploy
-      name: Energy Times
-      script: deploy/index.js theenergytimes gemenon
       install: skip
 
     - stage: deploy
