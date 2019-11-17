@@ -31,7 +31,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '/subscribe', label: 'Subscribe' },
+        { href: 'https://informa.dragonforms.com/loading.do?pk=NNHWEB&omedasite=PEN6086_IYnew', label: 'Magazine Subscription', target: '_blank' },
+        { href: 'https://mfg.informabi.com/LP=1551', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },

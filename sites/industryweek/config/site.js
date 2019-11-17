@@ -29,7 +29,4 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  magazines: {
-    description: '',
-  },
 };
