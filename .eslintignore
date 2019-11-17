@@ -2,3 +2,5 @@
 *.marko.js
 # Build assets
 **/dist/
+
+packages/site-setup/template/
