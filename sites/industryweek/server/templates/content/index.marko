@@ -1,10 +1,8 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import { getAsObject } from "@base-cms/object-path";
-import queryFragment from "../../graphql/fragments/content-list";
-import GAM from "../../../config/gam";
 import contentTargeting from "@endeavor-business-media/lazarus-shared/utils/gam/content-targeting";
 
-$ const { site } = out.global;
+$ const { site, GAM } = out.global;
 $ const { id, type, pageNode } = data;
 
 <marko-web-content-page-layout id=id type=type>
@@ -33,19 +31,18 @@ $ const { id, type, pageNode } = data;
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <website-global-left-rail-block
+              <lazarus-shared-global-left-rail-block
                 aliases=aliases
                 adunit={ name: "mr-section-page", pos: "300_1_lft" }
-                query-fragment=queryFragment
               />
             </@left-col>
             <@right-col>
               <@bottom-row>
-                <website-content-page-node node=content />
+                <lazarus-shared-content-page-node node=content />
                 <marko-web-load-more
                   append-to=".page-grid__bottom-row"
                   expand=500
-                  component-name="content-page-load-more-flow"
+                  component-name="lazarus-shared-content-page-load-more-flow"
                   component-input={
                     adunit: { name: "lb-content-page-list", pos: "728_2_a" }
                   }
