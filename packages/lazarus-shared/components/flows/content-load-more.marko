@@ -1,7 +1,8 @@
 import { getAsArray, getAsObject } from "@base-cms/object-path";
 import incrementPos from "../..//utils/gam/increment-pos";
 
-$ const { aliases, gam: GAM } = input;
+$ const { GAM } = out.global;
+$ const { aliases } = input;
 $ const nodes = getAsArray(input, "nodes");
 $ const adunit = getAsObject(input, "adunit");
 $ const pos = incrementPos({ pos: adunit.pos, inc: input.pageNumber - 1 });

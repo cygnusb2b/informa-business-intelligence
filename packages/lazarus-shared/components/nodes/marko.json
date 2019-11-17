@@ -33,8 +33,7 @@
   },
   "<lazarus-shared-content-page-node>": {
     "template": "./content-page.marko",
-    "@node": "object",
-    "@gam": "object"
+    "@node": "object"
   },
   "<lazarus-shared-contact-us-list-node>": {
     "template": "./contact-us-list.marko",

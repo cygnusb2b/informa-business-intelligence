@@ -27,7 +27,6 @@
       "@name": "string",
       "@pos": "string"
     },
-    "@gam": "object",
     "@nodes": "array",
     "@page-number": "number"
   },

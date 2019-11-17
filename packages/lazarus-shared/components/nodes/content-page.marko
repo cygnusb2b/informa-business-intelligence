@@ -1,8 +1,8 @@
 import { getAsObject } from "@base-cms/object-path";
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 
-$ const { site } = out.global;
-$ const { node: content, gam: GAM } = input;
+$ const { site, GAM } = out.global;
+$ const { node: content } = input;
 $ const { type } = content;
 $ const primarySection = getAsObject(content, "primarySection");
 $ const aliases = hierarchyAliases(primarySection);

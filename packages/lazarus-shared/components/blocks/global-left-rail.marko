@@ -2,8 +2,8 @@ import generateId from "@base-cms/marko-web-gam/utils/generate-id";
 import { getAsObject } from "@base-cms/object-path";
 import queryFragment from "../../graphql/fragments/content-list";
 
-
-$ const { aliases, queryFragment, gam: GAM } = input;
+$ const { GAM } = out.global;
+$ const { aliases, queryFragment } = input;
 $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 

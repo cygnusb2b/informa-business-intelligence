@@ -2,7 +2,7 @@ import { getAsArray, getAsObject } from "@base-cms/object-path";
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import incrementPos from "../../utils/gam/increment-pos";
 
-$ const { gam: GAM } = input;
+$ const { GAM } = out.global;
 $ const nodes = getAsArray(input, "nodes");
 $ const adunit = getAsObject(input, "adunit");
 $ const pos = incrementPos({ pos: adunit.pos, inc: input.pageNumber - 1 });
