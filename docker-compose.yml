@@ -65,6 +65,246 @@ services:
       <<: *env
       MONGO_DSN: mongodb://rs01.gemenon.baseplatform.io:27017,rs02.gemenon.baseplatform.io:27017,rs03.gemenon.baseplatform.io:27017/?replicaSet=platform-gemenon&connectTimeoutMS=1000&readPreference=primaryPreferred
 
+  americanmachinist:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/americanmachinist
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5710
+      LIVERELOAD_PORT: 47100
+      TENANT_KEY: ebm_americanmachinist
+      SITE_ID: 5dcb95f2a6e8393d028b4567
+    ports:
+      - "5710:80"
+      - "47100:47100"
+
+  asumag:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/asumag
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5711
+      LIVERELOAD_PORT: 47101
+      TENANT_KEY: ebm_asumag
+      SITE_ID: 5dcc2f1ba6e839cc028b4567
+    ports:
+      - "5711:80"
+      - "47101:47101"
+
+  bulktransporter:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/bulktransporter
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5712
+      LIVERELOAD_PORT: 47102
+      TENANT_KEY: ebm_bulktransporter
+      SITE_ID: 5dcc3deca6e83937038b4567
+    ports:
+      - "5712:80"
+      - "47102:47102"
+
+  contractingbusiness:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/contractingbusiness
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5713
+      LIVERELOAD_PORT: 47103
+      TENANT_KEY: ebm_contractingbusiness
+      SITE_ID: 5dcc4174a6e83948038b4567
+    ports:
+      - "5713:80"
+      - "47103:47103"
+
+  contractormag:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/contractormag
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5714
+      LIVERELOAD_PORT: 47104
+      TENANT_KEY: ebm_contractormag
+      SITE_ID: 5dcc41baa6e8394c038b4567
+    ports:
+      - "5714:80"
+      - "47104:47104"
+
+  ecmweb:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/ecmweb
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5715
+      LIVERELOAD_PORT: 47105
+      TENANT_KEY: ebm_ecmweb
+      SITE_ID: 5dcc41d4a6e83950038b4567
+    ports:
+      - "5715:80"
+      - "47105:47105"
+
+  ehstoday:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/ehstoday
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5716
+      LIVERELOAD_PORT: 47106
+      TENANT_KEY: ebm_ehstoday
+      SITE_ID: 5dcc41eca6e83954038b4567
+    ports:
+      - "5716:80"
+      - "47106:47106"
+
+  electricalmarketing:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/electricalmarketing
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5717
+      LIVERELOAD_PORT: 47107
+      TENANT_KEY: ebm_electricalmarketing
+      SITE_ID: 5dcc4204a6e83958038b4567
+    ports:
+      - "5717:80"
+      - "47107:47107"
+
+  electronicdesign:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/electronicdesign
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5718
+      LIVERELOAD_PORT: 47108
+      TENANT_KEY: ebm_electronicdesign
+      SITE_ID: 5dc9d6b7a6e83950008b4567
+    ports:
+      - "5718:80"
+      - "47108:47108"
+
+  ewweb:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/ewweb
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5719
+      LIVERELOAD_PORT: 47109
+      TENANT_KEY: ebm_ewweb
+      SITE_ID: 5dcc421ca6e8395c038b4567
+    ports:
+      - "5719:80"
+      - "47109:47109"
+
+  fleetowner:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/fleetowner
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5720
+      LIVERELOAD_PORT: 47110
+      TENANT_KEY: ebm_fleetowner
+      SITE_ID: 5dcc4231a6e83960038b4567
+    ports:
+      - "5720:80"
+      - "47110:47110"
+
+  forgingmagazine:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/forgingmagazine
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5721
+      LIVERELOAD_PORT: 47111
+      TENANT_KEY: ebm_forgingmagazine
+      SITE_ID: 5dcc424ba6e83964038b4567
+    ports:
+      - "5721:80"
+      - "47111:47111"
+
+  foundrymag:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/foundrymag
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5722
+      LIVERELOAD_PORT: 47112
+      TENANT_KEY: ebm_foundrymag
+      SITE_ID: 5dcc4260a6e83968038b4567
+    ports:
+      - "5722:80"
+      - "47112:47112"
+
+  hpac:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/hpac
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5723
+      LIVERELOAD_PORT: 47113
+      TENANT_KEY: ebm_hpac
+      SITE_ID: 5dcc4275a6e8396c038b4567
+    ports:
+      - "5723:80"
+      - "47113:47113"
+
+  hydraulicspheumatics:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/hydraulicspheumatics
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5724
+      LIVERELOAD_PORT: 47114
+      TENANT_KEY: ebm_hydraulicspheumatics
+      SITE_ID: 5dcc4298a6e83970038b4567
+    ports:
+      - "5724:80"
+      - "47114:47114"
+
   industryweek:
     <<: *node
     <<: *site-cmd
@@ -73,13 +313,141 @@ services:
       <<: *env
       <<: *env-gemenon
       PORT: 80
-      EXPOSED_PORT: 5710
-      LIVERELOAD_PORT: 47100
+      EXPOSED_PORT: 5725
+      LIVERELOAD_PORT: 47115
       TENANT_KEY: ebm_industryweek
       SITE_ID: 5dc2e4b9a6e839f2008b4567
     ports:
-      - "5710:80"
-      - "47100:47100"
+      - "5725:80"
+      - "47115:47115"
+
+  machinedesign:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/machinedesign
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5726
+      LIVERELOAD_PORT: 47116
+      TENANT_KEY: ebm_machinedesign
+      SITE_ID: 5dcc42b0a6e83974038b4567
+    ports:
+      - "5726:80"
+      - "47116:47116"
+
+  mhlnews:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/mhlnews
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5727
+      LIVERELOAD_PORT: 47117
+      TENANT_KEY: ebm_mhlnews
+      SITE_ID: 5dcc42c7a6e83978038b4567
+    ports:
+      - "5727:80"
+      - "47117:47117"
+
+  mwrf:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/mwrf
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5728
+      LIVERELOAD_PORT: 47118
+      TENANT_KEY: ebm_mwrf
+      SITE_ID: 5dcc42dca6e8397c038b4567
+    ports:
+      - "5728:80"
+      - "47118:47118"
+
+  newequipment:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/newequipment
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5729
+      LIVERELOAD_PORT: 47119
+      TENANT_KEY: ebm_newequipment
+      SITE_ID: 5dcc42f1a6e83980038b4567
+    ports:
+      - "5729:80"
+      - "47119:47119"
+
+  powerelectronics:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/powerelectronics
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5730
+      LIVERELOAD_PORT: 47120
+      TENANT_KEY: ebm_powerelectronics
+      SITE_ID: 5dcc430ea6e83984038b4567
+    ports:
+      - "5730:80"
+      - "47120:47120"
+
+  refrigeratedtransporter:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/refrigeratedtransporter
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5731
+      LIVERELOAD_PORT: 47121
+      TENANT_KEY: ebm_refrigeratedtransporter
+      SITE_ID: 5dcc4323a6e83988038b4567
+    ports:
+      - "5731:80"
+      - "47121:47121"
+
+  rermag:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/rermag
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5732
+      LIVERELOAD_PORT: 47122
+      TENANT_KEY: ebm_rermag
+      SITE_ID: 5dcc433aa6e8398c038b4567
+    ports:
+      - "5732:80"
+      - "47122:47122"
+
+  sourcetoday:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/sourcetoday
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5733
+      LIVERELOAD_PORT: 47123
+      TENANT_KEY: ebm_sourcetoday
+      SITE_ID: 5dcc434fa6e83990038b4567
+    ports:
+      - "5733:80"
+      - "47123:47123"
 
   tdworld:
     <<: *node
@@ -89,10 +457,74 @@ services:
       <<: *env
       <<: *env-gemenon
       PORT: 80
-      EXPOSED_PORT: 5711
-      LIVERELOAD_PORT: 47101
+      EXPOSED_PORT: 5734
+      LIVERELOAD_PORT: 47124
       TENANT_KEY: ebm_tdworld
       SITE_ID: 5dcc4365a6e83994038b4567
     ports:
-      - "5711:80"
-      - "47101:47101"
+      - "5734:80"
+      - "47124:47124"
+
+  theenergytimes:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/theenergytimes
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5735
+      LIVERELOAD_PORT: 47125
+      TENANT_KEY: ebm_theenergytimes
+      SITE_ID: 5dcc437da6e83998038b4567
+    ports:
+      - "5735:80"
+      - "47125:47125"
+
+  trailer-bodybuilders:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/trailer-bodybuilders
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5736
+      LIVERELOAD_PORT: 47126
+      TENANT_KEY: ebm_trailerbodybuilders
+      SITE_ID: 5dcc4392a6e8399c038b4567
+    ports:
+      - "5736:80"
+      - "47126:47126"
+
+  trucker:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/trucker
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5737
+      LIVERELOAD_PORT: 47127
+      TENANT_KEY: ebm_trucker
+      SITE_ID: 5dcc43a9a6e839a0038b4567
+    ports:
+      - "5737:80"
+      - "47127:47127"
+
+  truckfleetmro:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/truckfleetmro
+    environment:
+      <<: *env
+      <<: *env-gemenon
+      PORT: 80
+      EXPOSED_PORT: 5738
+      LIVERELOAD_PORT: 47128
+      TENANT_KEY: ebm_truckfleetmro
+      SITE_ID: 5dcc43c3a6e839a4038b4567
+    ports:
+      - "5738:80"
+      - "47128:47128"
