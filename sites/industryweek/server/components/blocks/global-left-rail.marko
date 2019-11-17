@@ -7,7 +7,7 @@ $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 
 <if(adunit.name)>
-  <marko-web-browser-component name="LazarusIncrementAdPos" props={ slotId } />
+  <lazarus-shared-increment-ad-pos slot-id=slotId />
   <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
 </if>
 

@@ -1,0 +1,6 @@
+{
+  "<lazarus-shared-increment-ad-pos>": {
+    "template": "./increment-ad-pos.marko",
+    "@slot-id": "string"
+  }
+}

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import incrementPos from '../server/utils/gam/increment-pos';
+import incrementPos from '../utils/gam/increment-pos';
 
 export default {
   inject: ['EventBus'],
