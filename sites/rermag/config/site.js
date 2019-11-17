@@ -6,7 +6,7 @@ module.exports = {
   homePageSections: [
     { alias: 'business-technology', name: 'Business & Technology' },
     { alias: 'mergers-acquisitions', name: 'Mergers & Acquisitions' },
-    { alias: 'headline-news', name: 'Headline News' },
+    { alias: 'news-analysis/headline-news', name: 'Headline News' },
   ],
   logos: {
     navbar: {
