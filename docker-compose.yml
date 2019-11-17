@@ -57,6 +57,14 @@ services:
     environment:
       <<: *env
 
+  setup:
+    <<: *node
+    working_dir: /root/packages/site-setup
+    entrypoint: ["node"]
+    environment:
+      <<: *env
+      MONGO_DSN: mongodb://rs01.gemenon.baseplatform.io:27017,rs02.gemenon.baseplatform.io:27017,rs03.gemenon.baseplatform.io:27017/?replicaSet=platform-gemenon&connectTimeoutMS=1000&readPreference=primaryPreferred
+
   industryweek:
     <<: *node
     <<: *site-cmd
