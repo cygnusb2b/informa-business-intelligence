@@ -4,37 +4,34 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    // <NOT SET>
-    // { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
-    // { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
-    // { alias: 'electrification', name: 'Electrification' },
+    { alias: 'columns', name: 'Columns' },
+    { alias: 'contracting-business-success', name: 'Contracting Business Success' },
+    { alias: 'residential-hvac', name: 'Residential HVAC' },
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=30',
+      src: 'https://base.imgix.net/files/base/ebm/contractingbusiness/image/static/contractingbusiness-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=60 2x',
+        'https://base.imgix.net/files/base/ebm/contractingbusiness/image/static/contractingbusiness-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=45',
+      src: 'https://base.imgix.net/files/base/ebm/contractingbusiness/image/static/contractingbusiness-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=90 2x',
+        'https://base.imgix.net/files/base/ebm/contractingbusiness/image/static/contractingbusiness-logo.png?h=90 2x',
       ],
     },
   },
-  // <NOT SET>
   socialMediaLinks: [
-    { provider: 'facebook', href: '<NOT SET>', target: '_blank' },
-    { provider: 'twitter', href: '<NOT SET>', target: '_blank' },
-    { provider: 'linkedin', href: '<NOT SET>', target: '_blank' },
-    { provider: 'youtube', href: '<NOT SET>', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/CBMag/?fref=ts', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/ContractingBiz', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4078340', target: '_blank' },
   ],
   gtm: {
-    containerId: '<NOT SET>',
+    containerId: 'GTM-TPH92QZ',
   },
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: '<NOT SET>',
+  newsletterSubscribeLink: 'https://eb.informabi.com/LP=942%0D',
 };

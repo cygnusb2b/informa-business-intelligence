@@ -4,37 +4,32 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    // <NOT SET>
-    // { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },
-    // { alias: 'electric-utility-operations', name: 'Electric Utility Operations' },
-    // { alias: 'electrification', name: 'Electrification' },
+    { alias: 'industry-stats', name: 'Industry Stats' },
+    { alias: 'hot-topics', name: 'Hot Topics' },
+    { alias: 'mergers-acquisitions', name: 'Mergers & Acquisitions' },
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=30',
+      src: 'https://base.imgix.net/files/base/ebm/electricalmarketing/image/static/electricalmarketing-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=60 2x',
+        'https://base.imgix.net/files/base/ebm/electricalmarketing/image/static/electricalmarketing-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=45',
+      src: 'https://base.imgix.net/files/base/ebm/electricalmarketing/image/static/electricalmarketing-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/<NOT SET>/image/static/tdworld-logo.png?h=90 2x',
+        'https://base.imgix.net/files/base/ebm/electricalmarketing/image/static/electricalmarketing-logo.png?h=90 2x',
       ],
     },
   },
-  // <NOT SET>
   socialMediaLinks: [
-    { provider: 'facebook', href: '<NOT SET>', target: '_blank' },
-    { provider: 'twitter', href: '<NOT SET>', target: '_blank' },
-    { provider: 'linkedin', href: '<NOT SET>', target: '_blank' },
-    { provider: 'youtube', href: '<NOT SET>', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/electricalmktg', target: '_blank' },
   ],
   gtm: {
-    containerId: '<NOT SET>',
+    containerId: 'GTM-MQ9CK3N',
   },
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: '<NOT SET>',
+  newsletterSubscribeLink: 'http://pages.electricalmarketing.com/em_newsletterpreference?oly_anon_id=63145555-0d9f-4706-955b-dfc6dbfb1453&oly_enc_id=%40%7Bencrypted_customer_id%7D%40',
 };
