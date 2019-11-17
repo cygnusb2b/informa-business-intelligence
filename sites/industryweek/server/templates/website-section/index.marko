@@ -1,8 +1,8 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
-import queryFragment from "../../graphql/fragments/content-list";
-import GAM from "../../../config/gam";
+import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
 import sectionTargeting from "@endeavor-business-media/lazarus-shared/utils/gam/section-targeting";
 
+$ const { GAM } = out.global;
 $ const { id, alias, name, pageNode } = data;
 
 $ const getAdSlots = ({ aliases }) => ({
@@ -61,10 +61,9 @@ $ const getAdSlots = ({ aliases }) => ({
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <website-global-left-rail-block
+              <lazarus-shared-global-left-rail-block
                 aliases=aliases
                 adunit={ name: "mr-section-page", pos: "300_1_lft" }
-                query-fragment=queryFragment
               />
             </@left-col>
             <@right-col>
@@ -74,9 +73,9 @@ $ const getAdSlots = ({ aliases }) => ({
                     name="website-optioned-content"
                     params={ sectionId: id, optionName: "Pinned", limit: 5, requiresImage: true, queryFragment }
                   >
-                    <website-content-hero-flow nodes=nodes>
+                    <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>Highlights</@header>
-                    </website-content-hero-flow>
+                    </lazarus-shared-content-hero-flow>
                   </marko-web-query>
                 </@left-col>
                 <@right-col>
@@ -98,9 +97,9 @@ $ const getAdSlots = ({ aliases }) => ({
                     <if(cardNodes.length)>
                       <for|node| of=cardNodes>
                         <lazarus-skin-page-grid-col modifiers=["half", "bottom-spacer"]>
-                          <website-content-card-node node=node>
+                          <lazarus-shared-content-card-node node=node>
                             <@image width=240 use-placeholder=true />
-                          </website-content-card-node>
+                          </lazarus-shared-content-card-node>
                         </lazarus-skin-page-grid-col>
                       </for>
                     </if>
@@ -115,7 +114,7 @@ $ const getAdSlots = ({ aliases }) => ({
 
                     <if(listNodes.length)>
                       <lazarus-skin-page-grid-col modifiers=["full"]>
-                        <website-content-list-flow
+                        <lazarus-shared-content-list-flow
                           nodes=listNodes
                           flush-x=true
                           flush-y=true
@@ -125,7 +124,7 @@ $ const getAdSlots = ({ aliases }) => ({
                           <@node>
                             <@image width=180 />
                           </@node>
-                        </website-content-list-flow>
+                        </lazarus-shared-content-list-flow>
                       </lazarus-skin-page-grid-col>
                     </if>
                   </if>
@@ -134,7 +133,7 @@ $ const getAdSlots = ({ aliases }) => ({
                 <marko-web-load-more
                   append-to=".page-grid__bottom-row"
                   expand=500
-                  component-name="content-load-more-flow"
+                  component-name="lazarus-shared-content-load-more-flow"
                   component-input={
                     aliases,
                     adunit: { name: "lb-section-page-list", pos: "728_3_a" }
