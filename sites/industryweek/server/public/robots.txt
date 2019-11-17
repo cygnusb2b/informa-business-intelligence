@@ -5,5 +5,5 @@ User-agent: *
 Disallow: /
 Disallow: /__load-more
 
-Sitemap: https://www.vehicleservicepros.com/sitemap.xml
-Sitemap: https://www.vehicleservicepros.com/sitemap-google-news.xml
+Sitemap: https://www.industryweek.com/sitemap.xml
+Sitemap: https://www.industryweek.com/sitemap-google-news.xml
