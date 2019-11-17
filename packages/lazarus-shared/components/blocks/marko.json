@@ -1,0 +1,18 @@
+{
+  "<lazarus-shared-related-content-block>": {
+    "template": "./related-content.marko",
+    "@id": "number",
+    "@type": "string",
+    "@section-id": "number",
+    "@section-name": "string"
+  },
+  "<lazarus-shared-global-left-rail-block>": {
+    "template": "./global-left-rail.marko",
+    "<adunit>": {
+      "@name": "string",
+      "@pos": "string"
+    },
+    "@gam": "object",
+    "@aliases": "array"
+  }
+}

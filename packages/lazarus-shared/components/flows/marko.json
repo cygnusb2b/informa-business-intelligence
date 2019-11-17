@@ -1,0 +1,44 @@
+{
+  "<lazarus-shared-content-hero-flow>": {
+    "template": "./content-hero.marko",
+    "<header>": {},
+    "<card>": {},
+    "<list>": {
+      "<node>": {}
+    },
+    "@nodes": "array"
+  },
+  "<lazarus-shared-content-list-flow>": {
+    "template": "./content-list.marko",
+    "<header>": {},
+    "<node>": {
+      "<image>": {},
+      "<title>": {}
+    },
+    "@nodes": "array",
+    "@inner-justified": "boolean",
+    "@flush-x": "boolean",
+    "@flush-y": "boolean",
+    "@modifiers": "array"
+  },
+  "<lazarus-shared-content-page-load-more-flow>": {
+    "template": "./content-page-load-more.marko",
+    "<adunit>": {
+      "@name": "string",
+      "@pos": "string"
+    },
+    "@gam": "object",
+    "@nodes": "array",
+    "@page-number": "number"
+  },
+  "<lazarus-shared-content-load-more-flow>": {
+    "template": "./content-load-more.marko",
+    "<adunit>": {
+      "@name": "string",
+      "@pos": "string"
+    },
+    "@nodes": "array",
+    "@aliases": "array",
+    "@page-number": "number"
+  }
+}
