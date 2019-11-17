@@ -26,11 +26,146 @@ jobs:
       install: skip
 
     - stage: deploy
-      name: Industry Week
+      name: American Machinist
+      script: deploy/index.js americanmachinist gemenon
+      install: skip
+
+    - stage: deploy
+      name: American School & University
+      script: deploy/index.js asumag gemenon
+      install: skip
+
+    - stage: deploy
+      name: Bulk Transporter
+      script: deploy/index.js bulktransporter gemenon
+      install: skip
+
+    - stage: deploy
+      name: Contracting Business
+      script: deploy/index.js contractingbusiness gemenon
+      install: skip
+
+    - stage: deploy
+      name: Contractor
+      script: deploy/index.js contractormag gemenon
+      install: skip
+
+    - stage: deploy
+      name: EC&M
+      script: deploy/index.js ecmweb gemenon
+      install: skip
+
+    - stage: deploy
+      name: EHS Today
+      script: deploy/index.js ehstoday gemenon
+      install: skip
+
+    - stage: deploy
+      name: Electrical Marketing
+      script: deploy/index.js electricalmarketing gemenon
+      install: skip
+
+    - stage: deploy
+      name: Electronic Design
+      script: deploy/index.js electronicdesign gemenon
+      install: skip
+
+    - stage: deploy
+      name: Electrical Wholesaling
+      script: deploy/index.js ewweb gemenon
+      install: skip
+
+    - stage: deploy
+      name: Fleet Owner
+      script: deploy/index.js fleetowner gemenon
+      install: skip
+
+    - stage: deploy
+      name: Forging
+      script: deploy/index.js forgingmagazine gemenon
+      install: skip
+
+    - stage: deploy
+      name: Foundry Management & Technology
+      script: deploy/index.js foundrymag gemenon
+      install: skip
+
+    - stage: deploy
+      name: HPAC Engineering
+      script: deploy/index.js hpac gemenon
+      install: skip
+
+    - stage: deploy
+      name: Hydraulics & Pneumatics
+      script: deploy/index.js hydraulicspheumatics gemenon
+      install: skip
+
+    - stage: deploy
+      name: IndustryWeek
       script: deploy/index.js industryweek gemenon
+      install: skip
+
+    - stage: deploy
+      name: Machine Design
+      script: deploy/index.js machinedesign gemenon
+      install: skip
+
+    - stage: deploy
+      name: Material Handling and Logistics
+      script: deploy/index.js mhlnews gemenon
+      install: skip
+
+    - stage: deploy
+      name: Microwaves & RF
+      script: deploy/index.js mwrf gemenon
+      install: skip
+
+    - stage: deploy
+      name: New Equipment Digest
+      script: deploy/index.js newequipment gemenon
+      install: skip
+
+    - stage: deploy
+      name: Power Electronics
+      script: deploy/index.js powerelectronics gemenon
+      install: skip
+
+    - stage: deploy
+      name: Refrigerated Transporter
+      script: deploy/index.js refrigeratedtransporter gemenon
+      install: skip
+
+    - stage: deploy
+      name: Rental Equipment Register
+      script: deploy/index.js rermag gemenon
+      install: skip
+
+    - stage: deploy
+      name: Source Today
+      script: deploy/index.js sourcetoday gemenon
       install: skip
 
     - stage: deploy
       name: T&D World
       script: deploy/index.js tdworld gemenon
+      install: skip
+
+    - stage: deploy
+      name: Energy Times
+      script: deploy/index.js theenergytimes gemenon
+      install: skip
+
+    - stage: deploy
+      name: Trailer Body Builders
+      script: deploy/index.js trailer-bodybuilders gemenon
+      install: skip
+
+    - stage: deploy
+      name: American Trucker
+      script: deploy/index.js trucker gemenon
+      install: skip
+
+    - stage: deploy
+      name: Truck Fleet MRO
+      script: deploy/index.js truckfleetmro gemenon
       install: skip
