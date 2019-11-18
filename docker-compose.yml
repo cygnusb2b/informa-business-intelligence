@@ -65,7 +65,7 @@ services:
       <<: *env
       MONGO_DSN: mongodb://rs01.gemenon.baseplatform.io:27017,rs02.gemenon.baseplatform.io:27017,rs03.gemenon.baseplatform.io:27017/?replicaSet=platform-gemenon&connectTimeoutMS=1000&readPreference=primaryPreferred
 
-  americanmachinist:
+  americanmachinist.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/americanmachinist.com
@@ -81,7 +81,7 @@ services:
       - "5710:80"
       - "47100:47100"
 
-  asumag:
+  asumag.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/asumag.com
@@ -97,7 +97,7 @@ services:
       - "5711:80"
       - "47101:47101"
 
-  bulktransporter:
+  bulktransporter.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/bulktransporter.com
@@ -113,7 +113,7 @@ services:
       - "5712:80"
       - "47102:47102"
 
-  contractingbusiness:
+  contractingbusiness.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/contractingbusiness.com
@@ -129,7 +129,7 @@ services:
       - "5713:80"
       - "47103:47103"
 
-  contractormag:
+  contractormag.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/contractormag.com
@@ -145,7 +145,7 @@ services:
       - "5714:80"
       - "47104:47104"
 
-  ecmweb:
+  ecmweb.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ecmweb.com
@@ -161,7 +161,7 @@ services:
       - "5715:80"
       - "47105:47105"
 
-  ehstoday:
+  ehstoday.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ehstoday.com
@@ -177,7 +177,7 @@ services:
       - "5716:80"
       - "47106:47106"
 
-  electricalmarketing:
+  electricalmarketing.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/electricalmarketing.com
@@ -193,7 +193,7 @@ services:
       - "5717:80"
       - "47107:47107"
 
-  electronicdesign:
+  electronicdesign.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/electronicdesign.com
@@ -209,7 +209,7 @@ services:
       - "5718:80"
       - "47108:47108"
 
-  ewweb:
+  ewweb.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ewweb.com
@@ -225,7 +225,7 @@ services:
       - "5719:80"
       - "47109:47109"
 
-  fleetowner:
+  fleetowner.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/fleetowner.com
@@ -241,7 +241,7 @@ services:
       - "5720:80"
       - "47110:47110"
 
-  forgingmagazine:
+  forgingmagazine.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/forgingmagazine.com
@@ -257,7 +257,7 @@ services:
       - "5721:80"
       - "47111:47111"
 
-  foundrymag:
+  foundrymag.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/foundrymag.com
@@ -273,7 +273,7 @@ services:
       - "5722:80"
       - "47112:47112"
 
-  hpac:
+  hpac.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/hpac.com
@@ -289,7 +289,7 @@ services:
       - "5723:80"
       - "47113:47113"
 
-  hydraulicspneumatics:
+  hydraulicspneumatics.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/hydraulicspneumatics.com
@@ -305,7 +305,7 @@ services:
       - "5724:80"
       - "47114:47114"
 
-  industryweek:
+  industryweek.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/industryweek.com
@@ -321,7 +321,7 @@ services:
       - "5725:80"
       - "47115:47115"
 
-  machinedesign:
+  machinedesign.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/machinedesign.com
@@ -337,7 +337,7 @@ services:
       - "5726:80"
       - "47116:47116"
 
-  mhlnews:
+  mhlnews.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/mhlnews.com
@@ -353,7 +353,7 @@ services:
       - "5727:80"
       - "47117:47117"
 
-  mwrf:
+  mwrf.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/mwrf.com
@@ -369,7 +369,7 @@ services:
       - "5728:80"
       - "47118:47118"
 
-  newequipment:
+  newequipment.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/newequipment.com
@@ -385,7 +385,7 @@ services:
       - "5729:80"
       - "47119:47119"
 
-  powerelectronics:
+  powerelectronics.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/powerelectronics.com
@@ -401,7 +401,7 @@ services:
       - "5730:80"
       - "47120:47120"
 
-  refrigeratedtransporter:
+  refrigeratedtransporter.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/refrigeratedtransporter.com
@@ -417,7 +417,7 @@ services:
       - "5731:80"
       - "47121:47121"
 
-  rermag:
+  rermag.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/rermag.com
@@ -433,7 +433,7 @@ services:
       - "5732:80"
       - "47122:47122"
 
-  sourcetoday:
+  sourcetoday.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/sourcetoday.com
@@ -449,7 +449,7 @@ services:
       - "5733:80"
       - "47123:47123"
 
-  tdworld:
+  tdworld.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/tdworld.com
@@ -465,7 +465,7 @@ services:
       - "5734:80"
       - "47124:47124"
 
-  trailer-bodybuilders:
+  trailer-bodybuilders.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/trailer-bodybuilders.com
@@ -481,7 +481,7 @@ services:
       - "5736:80"
       - "47126:47126"
 
-  trucker:
+  trucker.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/trucker.com
@@ -497,7 +497,7 @@ services:
       - "5737:80"
       - "47127:47127"
 
-  truckfleetmro:
+  truckfleetmro.com:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/truckfleetmro.com
