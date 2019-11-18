@@ -41,6 +41,7 @@ x-site-command: &site-cmd
 
 volumes:
   yarn-cache: {}
+  mongodb: {}
 
 services:
   terminal:
@@ -56,6 +57,29 @@ services:
     entrypoint: ["yarn"]
     environment:
       <<: *env
+
+  mongodb:
+    tty: true
+    image: mongo:3.4
+    volumes:
+      - mongodb:/data/db
+    ports:
+      - "6840:27017"
+
+  gam:
+    <<: *node
+    working_dir: /root/services/gam
+    entrypoint: ["node_modules/.bin/gulp"]
+    environment:
+      INTERNAL_PORT: 80
+      EXTERNAL_PORT: 6841
+      MONGO_DSN: ${MONGO_DSN-mongodb://mongodb:27017/}
+      NODE_ENV: development
+      YARN_CACHE_FOLDER: /.yarn-cache
+    depends_on:
+      - mongodb
+    ports:
+      - "6841:80"
 
   setup:
     <<: *node
