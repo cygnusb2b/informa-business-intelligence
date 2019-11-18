@@ -65,10 +65,10 @@ services:
       <<: *env
       MONGO_DSN: mongodb://rs01.gemenon.baseplatform.io:27017,rs02.gemenon.baseplatform.io:27017,rs03.gemenon.baseplatform.io:27017/?replicaSet=platform-gemenon&connectTimeoutMS=1000&readPreference=primaryPreferred
 
-  americanmachinist:
+  americanmachinist.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/americanmachinist
+    working_dir: /root/sites/americanmachinist.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -81,10 +81,10 @@ services:
       - "5710:80"
       - "47100:47100"
 
-  asumag:
+  asumag.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/asumag
+    working_dir: /root/sites/asumag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -97,10 +97,10 @@ services:
       - "5711:80"
       - "47101:47101"
 
-  bulktransporter:
+  bulktransporter.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/bulktransporter
+    working_dir: /root/sites/bulktransporter.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -113,10 +113,10 @@ services:
       - "5712:80"
       - "47102:47102"
 
-  contractingbusiness:
+  contractingbusiness.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/contractingbusiness
+    working_dir: /root/sites/contractingbusiness.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -129,10 +129,10 @@ services:
       - "5713:80"
       - "47103:47103"
 
-  contractormag:
+  contractormag.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/contractormag
+    working_dir: /root/sites/contractormag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -145,10 +145,10 @@ services:
       - "5714:80"
       - "47104:47104"
 
-  ecmweb:
+  ecmweb.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ecmweb
+    working_dir: /root/sites/ecmweb.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -161,10 +161,10 @@ services:
       - "5715:80"
       - "47105:47105"
 
-  ehstoday:
+  ehstoday.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ehstoday
+    working_dir: /root/sites/ehstoday.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -177,10 +177,10 @@ services:
       - "5716:80"
       - "47106:47106"
 
-  electricalmarketing:
+  electricalmarketing.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/electricalmarketing
+    working_dir: /root/sites/electricalmarketing.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -193,10 +193,10 @@ services:
       - "5717:80"
       - "47107:47107"
 
-  electronicdesign:
+  electronicdesign.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/electronicdesign
+    working_dir: /root/sites/electronicdesign.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -209,10 +209,10 @@ services:
       - "5718:80"
       - "47108:47108"
 
-  ewweb:
+  ewweb.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ewweb
+    working_dir: /root/sites/ewweb.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -225,10 +225,10 @@ services:
       - "5719:80"
       - "47109:47109"
 
-  fleetowner:
+  fleetowner.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/fleetowner
+    working_dir: /root/sites/fleetowner.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -241,10 +241,10 @@ services:
       - "5720:80"
       - "47110:47110"
 
-  forgingmagazine:
+  forgingmagazine.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/forgingmagazine
+    working_dir: /root/sites/forgingmagazine.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -257,10 +257,10 @@ services:
       - "5721:80"
       - "47111:47111"
 
-  foundrymag:
+  foundrymag.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/foundrymag
+    working_dir: /root/sites/foundrymag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -273,10 +273,10 @@ services:
       - "5722:80"
       - "47112:47112"
 
-  hpac:
+  hpac.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hpac
+    working_dir: /root/sites/hpac.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -289,10 +289,10 @@ services:
       - "5723:80"
       - "47113:47113"
 
-  hydraulicspneumatics:
+  hydraulicspneumatics.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hydraulicspneumatics
+    working_dir: /root/sites/hydraulicspneumatics.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -305,10 +305,10 @@ services:
       - "5724:80"
       - "47114:47114"
 
-  industryweek:
+  industryweek.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/industryweek
+    working_dir: /root/sites/industryweek.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -321,10 +321,10 @@ services:
       - "5725:80"
       - "47115:47115"
 
-  machinedesign:
+  machinedesign.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/machinedesign
+    working_dir: /root/sites/machinedesign.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -337,10 +337,10 @@ services:
       - "5726:80"
       - "47116:47116"
 
-  mhlnews:
+  mhlnews.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/mhlnews
+    working_dir: /root/sites/mhlnews.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -353,10 +353,10 @@ services:
       - "5727:80"
       - "47117:47117"
 
-  mwrf:
+  mwrf.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/mwrf
+    working_dir: /root/sites/mwrf.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -369,10 +369,10 @@ services:
       - "5728:80"
       - "47118:47118"
 
-  newequipment:
+  newequipment.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/newequipment
+    working_dir: /root/sites/newequipment.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -385,10 +385,10 @@ services:
       - "5729:80"
       - "47119:47119"
 
-  powerelectronics:
+  powerelectronics.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/powerelectronics
+    working_dir: /root/sites/powerelectronics.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -401,10 +401,10 @@ services:
       - "5730:80"
       - "47120:47120"
 
-  refrigeratedtransporter:
+  refrigeratedtransporter.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/refrigeratedtransporter
+    working_dir: /root/sites/refrigeratedtransporter.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -417,10 +417,10 @@ services:
       - "5731:80"
       - "47121:47121"
 
-  rermag:
+  rermag.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/rermag
+    working_dir: /root/sites/rermag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -433,10 +433,10 @@ services:
       - "5732:80"
       - "47122:47122"
 
-  sourcetoday:
+  sourcetoday.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/sourcetoday
+    working_dir: /root/sites/sourcetoday.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -449,10 +449,10 @@ services:
       - "5733:80"
       - "47123:47123"
 
-  tdworld:
+  tdworld.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/tdworld
+    working_dir: /root/sites/tdworld.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -465,10 +465,10 @@ services:
       - "5734:80"
       - "47124:47124"
 
-  trailer-bodybuilders:
+  trailer-bodybuilders.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/trailer-bodybuilders
+    working_dir: /root/sites/trailer-bodybuilders.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -481,10 +481,10 @@ services:
       - "5736:80"
       - "47126:47126"
 
-  trucker:
+  trucker.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/trucker
+    working_dir: /root/sites/trucker.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -497,10 +497,10 @@ services:
       - "5737:80"
       - "47127:47127"
 
-  truckfleetmro:
+  truckfleetmro.com:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/truckfleetmro
+    working_dir: /root/sites/truckfleetmro.com
     environment:
       <<: *env
       <<: *env-gemenon
