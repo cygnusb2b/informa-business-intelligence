@@ -22,5 +22,10 @@
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.4",
     "helmet": "^3.21.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
+    "gulp-eslint": "^5.0.0"
   }
 }
