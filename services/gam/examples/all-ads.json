@@ -1,0 +1,5043 @@
+{
+	"article_native_leftrail_1": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_native_leftrail_1",
+		"slot": "[article] Native Left Rail 1",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "native_leftrail_1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_1_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_native_leftrail_2": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_native_leftrail_2",
+		"slot": "[article] Native Left Rail 2",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "native_leftrail_2",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_2_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_native_related": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_native_related",
+		"slot": "[article] Native Related",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "native_related",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_12_1"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_native_inline": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_native_inline",
+		"slot": "[article] Native Inline",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "native_inline",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_13_1"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"_article_right_rail_rect": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "_article_right_rail_rect",
+		"slot": "[article] [article] Right rail rect",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "right_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_native_umpu": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_native_umpu",
+		"slot": "[article] Native Umpu",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "native_umpu",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_3"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_1_rht_infinite": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_1_rht_infinite",
+		"slot": "[article] Rectangle Inline 1",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "inarticle1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_2_rht_infinite": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_2_rht_infinite",
+		"slot": "[article] Rectangle Inline 2",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "inarticle2",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_2_rht"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_3_rht_infinite": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_3_rht_infinite",
+		"slot": "[article] Rectangle Inline 3",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "inarticle3",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_3_rht"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_4_rht_infinite": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_4_rht_infinite",
+		"slot": "[article] Rectangle Inline 4",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "inarticle4",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_4_rht"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_x_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_x_lft",
+		"slot": "[article] Left rail 300_x_lft",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_300_x_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_300_x_rht",
+		"slot": "[article] Rectangle Inline and Jumbotron",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_728_1_a",
+		"slot": "[article] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "program",
+				"value": "[node:program_without_space_specialchars]"
+			}, {
+				"target": "ptype",
+				"value": "[node:field_penton_article_type]"
+			}, {
+				"target": "nid",
+				"value": "[node:nid]"
+			}, {
+				"target": "pterm",
+				"value": "[node:pterm_without_space_specialchars]"
+			}, {
+				"target": "sterm",
+				"value": "[node:sterm_without_space_specialchars]"
+			}, {
+				"target": "author",
+				"value": "[node:author_without_space_specialchars]"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}, {
+				"target": "content",
+				"value": "[node:program_without_space_specialchars]"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_728_footer": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_728_footer",
+		"slot": "[article] Leaderboard 728_10_a",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_10_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_canopy": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_canopy",
+		"slot": "[article] Canopy",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "adhesion"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_ccc_header": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_ccc_header",
+		"slot": "[article] Article CCC header",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "160x65",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "custom_content_channel_sponsored_header",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "customsponsoredlogo1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_ccc_resources": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_ccc_resources",
+		"slot": "[article] Article CCC resources",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "160x65",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "custom_content_channel_sponsored_resources",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "customsponsoredlogo2"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_footnote_floor",
+		"slot": "[article] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_in_article_video_ad": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_in_article_video_ad",
+		"slot": "[article] In-Article Video Ad",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "inarticlevid",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "inarticlevideo_1_a"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_reveal": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_reveal",
+		"slot": "[article] Reveal Ad",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "reveal",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "reveal_1"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_interscroller_728_x_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_interscroller_728_x_a",
+		"slot": "[article] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_oop": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_oop",
+		"slot": "[article] Out of Page",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "0x0",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "oop_a"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_pagewrap": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_pagewrap",
+		"slot": "[article] PageWrap",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "wrap"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1500x0",
+				"ad_sizes": "1x1"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_sponsored_logo",
+		"slot": "[article] Sponsored Logo",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"article_sponsored_logo_weather": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "article_sponsored_logo_weather",
+		"slot": "[article] Sponsored Logo Weather",
+		"adunit": "[dfp_tag:site_id]\/article\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "article",
+			"position": "sponsored_logo_weather",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo_weather"
+			}, {
+				"target": "article_number",
+				"value": "1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_300_1_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_300_1_rht",
+		"slot": "[author] Rectangle Inline and Jumbotron",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_300_x_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_300_x_lft",
+		"slot": "[author] Left rail 300_x_lft",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_728_1_a",
+		"slot": "[author] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "author"
+			}, {
+				"target": "author",
+				"value": "[user:full_username_depend_of_profile_page]"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_728_footer": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_728_footer",
+		"slot": "[author] Leaderboard 728_10_a",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_10_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_footnote_floor",
+		"slot": "[author] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"author_interscroller_728_x_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "author_interscroller_728_x_a",
+		"slot": "[author] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/author",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "author",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_cash_grain_bids_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_cash_grain_bids_logo",
+		"slot": "[commodities] Cash Grain Bids Logo",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "160x65,125x125,90x90",
+		"block": 1,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "cash_grain_bids",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "cashgrainwidgetlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_300_1_lft",
+		"slot": "[commodities] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_300_1_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_300_1_rht",
+		"slot": "[commodities] Rectangle and Jumbotron",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "x"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_300_1_rht_mobile": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_300_1_rht_mobile",
+		"slot": "[commodities] Rectangle and Jumbotron mobile",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "x"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_300_2_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_300_2_lft",
+		"slot": "[commodities] Left rail 300_2_lft",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_2_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_728_1_a",
+		"slot": "[commodities] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "commodities"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_728_2_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_728_2_a",
+		"slot": "[commodities] Leaderboard 728_2_a",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_canopy": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_canopy",
+		"slot": "[commodities] Canopy",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "adhesion"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_footnote_floor",
+		"slot": "[commodities] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_interscroller_728_x_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_interscroller_728_x_a",
+		"slot": "[commodities] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_oop": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_oop",
+		"slot": "[commodities] Out of Page",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "0x0",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "oop_a"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_pagewrap": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_pagewrap",
+		"slot": "[commodities] PageWrap",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "wrap"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1500x0",
+				"ad_sizes": "1x1"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"commodities_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "commodities_sponsored_logo",
+		"slot": "[commodities] Sponsored Logo",
+		"adunit": "[dfp_tag:site_id]\/[current-page:url:path]",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "commodities",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_category_leaderboard_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_category_leaderboard_728_1_a",
+		"slot": "[forums_category] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_category",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_category_leaderboard_728_2_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_category_leaderboard_728_2_a",
+		"slot": "[forums_category] Leaderboard 728_2_a",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_category",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_category_left_rail_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_category_left_rail_300_1_lft",
+		"slot": "[forums_category] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_category",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_landing_leaderboard_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_landing_leaderboard_728_1_a",
+		"slot": "[forums_landing] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/forums",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_landing",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_landing_leaderboard_728_2_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_landing_leaderboard_728_2_a",
+		"slot": "[forums_landing] Leaderboard 728_2_a",
+		"adunit": "[dfp_tag:site_id]\/forums",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_landing",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_landing_left_rail_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_landing_left_rail_300_1_lft",
+		"slot": "[forums_landing] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/forums",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_landing",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_topic_interscroller_leaderboard_2": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_topic_interscroller_leaderboard_2",
+		"slot": "[forums_topic] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]\/[forums:topic_name]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_topic",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_topic_leaderboard_728_10_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_topic_leaderboard_728_10_a",
+		"slot": "[forums_topic] Leaderboard 728_10_a",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]\/[forums:topic_name]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_topic",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_10_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_topic_leaderboard_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_topic_leaderboard_728_1_a",
+		"slot": "[forums_topic] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]\/[forums:topic_name]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_topic",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"forums_topic_left_rail_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "forums_topic_left_rail_300_1_lft",
+		"slot": "[forums_topic] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/forums\/[forums:category_name]\/[forums:topic_name]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "forums_topic",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"gallery_300_2_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "gallery_300_2_rht",
+		"slot": "[gallery] Right Ad",
+		"adunit": "[dfp_tag:site_id]\/gallery\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "gallery",
+			"position": "right_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "gallery_300_right"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "x"
+			}, {
+				"browser_size": "992x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"gallery_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "gallery_728_1_a",
+		"slot": "[gallery] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/gallery\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "gallery",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "gallery_728_a"
+			}, {
+				"target": "ptype",
+				"value": "gallery"
+			}, {
+				"target": "program",
+				"value": "[node:program_without_space_specialchars]"
+			}, {
+				"target": "nid",
+				"value": "[node:nid]"
+			}, {
+				"target": "pterm",
+				"value": "[node:pterm_without_space_specialchars]"
+			}, {
+				"target": "sterm",
+				"value": "[node:sterm_without_space_specialchars]"
+			}, {
+				"target": "author",
+				"value": "[node:author_without_space_specialchars]"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"gallery_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "gallery_footnote_floor",
+		"slot": "[gallery] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/gallery\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "gallery",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"gallery_interstitial": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "gallery_interstitial",
+		"slot": "[gallery] Interstitial",
+		"adunit": "[dfp_tag:site_id]\/gallery\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "300x250,470x440",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "gallery",
+			"position": "interstitial",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "gallery_interstitial"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"gallery_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "gallery_sponsored_logo",
+		"slot": "[gallery] Sponsored Logo",
+		"adunit": "[dfp_tag:site_id]\/gallery\/[node:field_penton_native_advertising:\/][node:field_penton_primary_category:parents:join:\/]",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "gallery",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"homepage_cash_grain_bids_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_cash_grain_bids_logo",
+		"slot": "[homepage] Cash Grain Bids Logo",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[160, 65],
+			[125, 125],
+			[90, 90]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "cash_grain_bids",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "cashgrainwidgetlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "cashgrainwidgetlogo"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_leftrail_1": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_leftrail_1",
+		"slot": "[homepage] Native Left Rail 1",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_leftrail_1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_1_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_1_lft"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_leftrail_2": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_leftrail_2",
+		"slot": "[homepage] Native Left Rail 2",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_leftrail_2",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_2_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_2_lft"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_top_stories": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_top_stories",
+		"slot": "[homepage] Native Top Stories",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_top_stories",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_4"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_4"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_category_1": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_category_1",
+		"slot": "[homepage] Native Category 1",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_category_1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_5"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_5"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_category_2": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_category_2",
+		"slot": "[homepage] Native Category 2",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_category_2",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_6"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_6"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_category_3": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_category_3",
+		"slot": "[homepage] Native Category 3",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_category_3",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_7"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_7"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_native_umpu": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_native_umpu",
+		"slot": "[homepage] Native Umpu",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": "fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "native_umpu",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_3"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "nativekey_3"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_300_1_lft",
+		"slot": "[homepage] Left rail 300_1_lft",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [300, 250],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [300, 250],
+			"browser_size": [779, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "300_1_lft"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_300_1_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_300_1_rht",
+		"slot": "[homepage] Rectangle and Jumbotron",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[300, 250],
+			[300, 600]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "third_cat_jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "x"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [],
+			"browser_size": [0, 0]
+		}, {
+			"ad_sizes": [300, 250],
+			"browser_size": [639, 0]
+		}, {
+			"ad_sizes": [
+				[300, 250],
+				[300, 600]
+			],
+			"browser_size": [779, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "300_1_rht"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_300_1_rht_mobile": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_300_1_rht_mobile",
+		"slot": "[homepage] Rectangle and Jumbotron mobile",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [300, 250],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "right_col_jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "x"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [300, 250],
+			"browser_size": [0, 0]
+		}, {
+			"ad_sizes": [],
+			"browser_size": [639, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "300_1_rht"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_728_1_a",
+		"slot": "[homepage] Leaderboard 728_1_a",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[728, 90],
+			[970, 90],
+			[320, 50],
+			[970, 250]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "homepage"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [
+				[970, 90],
+				[970, 250],
+				[728, 90]
+			],
+			"browser_size": [1119, 0]
+		}, {
+			"ad_sizes": [728, 90],
+			"browser_size": [728, 0]
+		}, {
+			"ad_sizes": [320, 50],
+			"browser_size": [0, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "728_1_a"
+		}, {
+			"target": "combo",
+			"value": "wrap"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_728_2_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_728_2_a",
+		"slot": "[homepage] Leaderboard 728_2_a",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[728, 90],
+			[320, 50]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [728, 90],
+			"browser_size": [728, 0]
+		}, {
+			"ad_sizes": [320, 50],
+			"browser_size": [0, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "728_2_a"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"term_native_leftrail_1": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_native_leftrail_1",
+		"slot": "[taxonomy] Native Left Rail 1",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "native_leftrail_1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_1_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_native_leftrail_2": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_native_leftrail_2",
+		"slot": "[taxonomy] Native Left Rail 2",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "native_leftrail_2",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_2_lft"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_native_top_stories_1": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_native_top_stories_1",
+		"slot": "[taxonomy] Native Top Stories 1",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "native_top_stories_1",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_8"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_native_article_4": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_native_article_4",
+		"slot": "[taxonomy] Native Article 4",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "native_article_4",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_10"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_native_umpu": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_native_umpu",
+		"slot": "[taxonomy] Native Umpu",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "Fluid",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "native_umpu",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "nativekey_3"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_custom_content_channel_sponsored_header": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_custom_content_channel_sponsored_header",
+		"slot": "[taxonomy] Custom content channel sponsored header",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "160x65",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "custom_content_channel_sponsored_header",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "customsponsoredlogo1"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_custom_content_channel_sponsored_resources": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_custom_content_channel_sponsored_resources",
+		"slot": "[taxonomy] Custom content channel sponsored resources",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "160x65",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "custom_content_channel_sponsored_resources",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "customsponsoredlogo2"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"homepage_canopy": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_canopy",
+		"slot": "[homepage] Canopy",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [1, 1],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "adhesion"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "adhesion"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_footnote_floor",
+		"slot": "[homepage] Footnote_Floor",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [1, 1],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "footnote"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_oop": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_oop",
+		"slot": "[homepage] Out of Page",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [0, 0],
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "oop_a"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "oop_a"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_pagewrap": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_pagewrap",
+		"slot": "[homepage] PageWrap",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [1, 1],
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "wrap"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1500x0",
+				"ad_sizes": "1x1"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [{
+			"ad_sizes": [1, 1],
+			"browser_size": [1500, 0]
+		}],
+		"targeting": [{
+			"target": "pos",
+			"value": "wrap"
+		}, {
+			"target": "combo",
+			"value": "wrap"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_sponsored_logo",
+		"slot": "[homepage] Sponsored Logo",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[160, 65],
+			[125, 125],
+			[90, 90]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "sponsoredlogo"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_sponsored_logo_weather": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_sponsored_logo_weather",
+		"slot": "[homepage] Sponsored Logo Weather",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[160, 65],
+			[125, 125],
+			[90, 90]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "sponsored_logo_weather",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo_weather"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "sponsoredlogo_weather"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"homepage_sponsored_logo_commodities": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "homepage_sponsored_logo_commodities",
+		"slot": "[homepage] Sponsored Logo Commodities",
+		"adunit": "\/0000\/Endeavor.changed\/homepage",
+		"size": [
+			[160, 65],
+			[125, 125],
+			[90, 90]
+		],
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "homepage",
+			"position": "sponsored_logo_commodities",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "commodwidgetlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags",
+		"breakpoints": [],
+		"targeting": [{
+			"target": "pos",
+			"value": "commodwidgetlogo"
+		}, {
+			"target": "ptype",
+			"value": "homepage"
+		}, {
+			"target": "reg",
+			"value": "anonymous"
+		}]
+	},
+	"page_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "page_728_1_a",
+		"slot": "[page] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/page",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "page",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "page"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}, {
+				"target": "nid",
+				"value": "[node:nid]"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"page_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "page_footnote_floor",
+		"slot": "[page] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/page",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "page",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"search_300_x_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "search_300_x_lft",
+		"slot": "[search] Left rail 300_x_lft",
+		"adunit": "[dfp_tag:site_id]\/search",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "search",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"search_728_10_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "search_728_10_a",
+		"slot": "[search] Leaderboard 728_10_a",
+		"adunit": "[dfp_tag:site_id]\/search",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "search",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_10_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"search_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "search_728_1_a",
+		"slot": "[search] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/search",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "search",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "search"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"search_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "search_footnote_floor",
+		"slot": "[search] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/search",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "search",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote,floor"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"search_interscroller_728_x_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "search_interscroller_728_x_a",
+		"slot": "[search] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/search",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "search",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_300_1_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_300_1_rht",
+		"slot": "[taxonomy] Rectangle Inline and Jumbotron",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "right_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_300_x_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_300_x_lft",
+		"slot": "[taxonomy] Left rail 300_x_lft",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_728_1_a",
+		"slot": "[taxonomy] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:field_penton_native_advertising:\/][term:name_lowercase_without_spaces_specialchars]",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "[term:vocabulary:machine-name]"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}, {
+				"target": "pterm",
+				"value": "[term:category_name_without_space_specialchars]"
+			}, {
+				"target": "program",
+				"value": "[term:program_name_without_space_specialchars]"
+			}, {
+				"target": "sterm",
+				"value": "[term:category_name_without_space_specialchars]"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_728_footer": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_728_footer",
+		"slot": "[taxonomy] Leaderboard 728_10_a",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_10_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_canopy": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_canopy",
+		"slot": "[taxonomy] Canopy",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "adhesion"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_footnote_floor",
+		"slot": "[taxonomy] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_interscroller_728_x_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_interscroller_728_x_a",
+		"slot": "[taxonomy] Interscroller\/Leaderboard 2",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "infinitescroll",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_oop": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_oop",
+		"slot": "[taxonomy] Out of Page",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "0x0",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "oop_a"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_pagewrap": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_pagewrap",
+		"slot": "[taxonomy] PageWrap",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "wrap"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1500x0",
+				"ad_sizes": "1x1"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"term_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "term_sponsored_logo",
+		"slot": "[taxonomy] Sponsored Logo",
+		"adunit": "[dfp_tag:site_id]\/[term:vocabulary:machine-name]\/[term:name_lowercase_without_spaces_specialchars]",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "taxonomy",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"user_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "user_300_1_lft",
+		"slot": "[user] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/user",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "user",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"user_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "user_728_1_a",
+		"slot": "[user] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/user",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "user",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "user"
+			}, {
+				"target": "user",
+				"value": "[user:full_username_depend_of_profile_page]"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"user_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "user_footnote_floor",
+		"slot": "[user] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/user",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "user",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_300_1_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_300_1_lft",
+		"slot": "[weather] Left rail 300_1_lft",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_lft"
+			}, {
+				"target": "ptype",
+				"value": "weather"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_300_1_rht": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_300_1_rht",
+		"slot": "[weather] Rectangle and Jumbotron",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "300x250,300x600",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "x"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "779x0",
+				"ad_sizes": "300x250,300x600"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_300_1_rht_mobile": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_300_1_rht_mobile",
+		"slot": "[weather] Rectangle and Jumbotron mobile",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "jumbotron",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_1_rht"
+			}],
+			"breakpoints": [{
+				"browser_size": "0x0",
+				"ad_sizes": "300x250"
+			}, {
+				"browser_size": "639x0",
+				"ad_sizes": "x"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_300_2_lft": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_300_2_lft",
+		"slot": "[weather] Left rail 300_2_lft",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "300x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "left_rail_rect",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "300_2_lft"
+			}],
+			"breakpoints": [{
+				"browser_size": "779x0",
+				"ad_sizes": "300x250"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_728_1_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_728_1_a",
+		"slot": "[weather] Leaderboard 728_1_a",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "728x90,970x90,320x50,970x250",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "top_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_1_a"
+			}, {
+				"target": "ptype",
+				"value": "weather"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1119x0",
+				"ad_sizes": "970x90,970x250,728x90"
+			}, {
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_728_2_a": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_728_2_a",
+		"slot": "[weather] Leaderboard 728_2_a",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "728x90,320x50",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "bottom_banner",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "728_2_a"
+			}],
+			"breakpoints": [{
+				"browser_size": "728x0",
+				"ad_sizes": "728x90"
+			}, {
+				"browser_size": "0x0",
+				"ad_sizes": "320x50"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_canopy": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_canopy",
+		"slot": "[weather] Canopy",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "adhesion"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_footnote_floor": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_footnote_floor",
+		"slot": "[weather] Footnote_Floor",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "footnote"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_oop": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_oop",
+		"slot": "[weather] Out of Page",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "0x0",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "oop_a"
+			}, {
+				"target": "gdpr_banner",
+				"value": "off"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_pagewrap": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_pagewrap",
+		"slot": "[weather] PageWrap",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "1x1",
+		"block": 0,
+		"settings": {
+			"out_of_page": 1,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "hidden",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "wrap"
+			}, {
+				"target": "combo",
+				"value": "wrap"
+			}],
+			"breakpoints": [{
+				"browser_size": "1500x0",
+				"ad_sizes": "1x1"
+			}]
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_sponsored_logo": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_sponsored_logo",
+		"slot": "[weather] Sponsored Logo",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "sponsored_logo",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	},
+	"weather_sponsored_logo_weather": {
+		"disabled": false,
+		"api_version": 1,
+		"machinename": "weather_sponsored_logo_weather",
+		"slot": "[weather] Sponsored Logo Weather",
+		"adunit": "[dfp_tag:site_id]\/weather",
+		"size": "160x65,125x125,90x90",
+		"block": 0,
+		"settings": {
+			"out_of_page": 0,
+			"slug": "",
+			"short_tag": 0,
+			"location": "weather",
+			"position": "sponsored_logo_weather",
+			"adsense_ad_types": "",
+			"adsense_channel_ids": "",
+			"adsense_colors": {
+				"background": "",
+				"border": "",
+				"link": "",
+				"text": "",
+				"url": ""
+			},
+			"targeting": [{
+				"target": "pos",
+				"value": "sponsoredlogo_weather"
+			}],
+			"breakpoints": []
+		},
+		"export_module": "penton_dfp",
+		"type": "Default",
+		"export_type": 2,
+		"in_code_only": true,
+		"table": "dfp_tags"
+	}
+}
