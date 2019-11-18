@@ -18,7 +18,23 @@ module.exports = {
   menu: [
     {
       items: [
-        // <NOT SET>
+        { href: '/national-electrical-code', label: 'National Electrical Code' },
+        { href: '/design', label: 'Design' },
+        { href: '/construction', label: 'Construction' },
+        { href: '/maintenance-repair-operations', label: 'Maintenance / Repair / Operations' },
+        { href: '/safety', label: 'Safety' },
+        { href: '/lighting-control', label: 'Lighting & Control' },
+        { href: '/power-quality-reliability', label: 'Power Quality & Reliability' },
+        { href: '/construction/intelligent-buildings', label: 'Intelligent Buildings' },
+        { href: '/maintenance-repair-operations/energy-management', label: 'Energy Management' },
+        { href: '/training', label: 'Training' },
+        { href: '/renewables', label: 'Renewables' },
+        { href: '/product-sourcing-supply', label: 'Product Sourcing & Supply' },
+        { href: '/electrical-testing', label: 'Electrical Testing' },
+        { href: '/safety/accidents-investigations', label: 'Accidents & Investigations' },
+        { href: '/top-40-electrical-design-firms-landing-page', label: 'Top 40 Electrical Design Firms' },
+        { href: '/top-50-electrical-contractors', label: 'Top 50 Electrical Contractors' },
+        { href: '/blog/industry-viewpoint', label: 'Industry Viewpoint' },
       ],
     },
     {
@@ -26,8 +42,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
