@@ -1,6 +1,7 @@
 const navigation = require('./navigation');
 
 module.exports = {
+  favicon: 'IW',
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
