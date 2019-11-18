@@ -68,7 +68,7 @@ services:
   americanmachinist:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/americanmachinist
+    working_dir: /root/sites/americanmachinist.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -84,7 +84,7 @@ services:
   asumag:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/asumag
+    working_dir: /root/sites/asumag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -100,7 +100,7 @@ services:
   bulktransporter:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/bulktransporter
+    working_dir: /root/sites/bulktransporter.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -116,7 +116,7 @@ services:
   contractingbusiness:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/contractingbusiness
+    working_dir: /root/sites/contractingbusiness.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -132,7 +132,7 @@ services:
   contractormag:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/contractormag
+    working_dir: /root/sites/contractormag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -148,7 +148,7 @@ services:
   ecmweb:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ecmweb
+    working_dir: /root/sites/ecmweb.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -164,7 +164,7 @@ services:
   ehstoday:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ehstoday
+    working_dir: /root/sites/ehstoday.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -180,7 +180,7 @@ services:
   electricalmarketing:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/electricalmarketing
+    working_dir: /root/sites/electricalmarketing.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -196,7 +196,7 @@ services:
   electronicdesign:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/electronicdesign
+    working_dir: /root/sites/electronicdesign.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -212,7 +212,7 @@ services:
   ewweb:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/ewweb
+    working_dir: /root/sites/ewweb.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -228,7 +228,7 @@ services:
   fleetowner:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/fleetowner
+    working_dir: /root/sites/fleetowner.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -244,7 +244,7 @@ services:
   forgingmagazine:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/forgingmagazine
+    working_dir: /root/sites/forgingmagazine.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -260,7 +260,7 @@ services:
   foundrymag:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/foundrymag
+    working_dir: /root/sites/foundrymag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -276,7 +276,7 @@ services:
   hpac:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hpac
+    working_dir: /root/sites/hpac.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -292,7 +292,7 @@ services:
   hydraulicspneumatics:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/hydraulicspneumatics
+    working_dir: /root/sites/hydraulicspneumatics.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -308,7 +308,7 @@ services:
   industryweek:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/industryweek
+    working_dir: /root/sites/industryweek.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -324,7 +324,7 @@ services:
   machinedesign:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/machinedesign
+    working_dir: /root/sites/machinedesign.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -340,7 +340,7 @@ services:
   mhlnews:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/mhlnews
+    working_dir: /root/sites/mhlnews.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -356,7 +356,7 @@ services:
   mwrf:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/mwrf
+    working_dir: /root/sites/mwrf.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -372,7 +372,7 @@ services:
   newequipment:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/newequipment
+    working_dir: /root/sites/newequipment.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -388,7 +388,7 @@ services:
   powerelectronics:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/powerelectronics
+    working_dir: /root/sites/powerelectronics.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -404,7 +404,7 @@ services:
   refrigeratedtransporter:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/refrigeratedtransporter
+    working_dir: /root/sites/refrigeratedtransporter.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -420,7 +420,7 @@ services:
   rermag:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/rermag
+    working_dir: /root/sites/rermag.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -436,7 +436,7 @@ services:
   sourcetoday:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/sourcetoday
+    working_dir: /root/sites/sourcetoday.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -452,7 +452,7 @@ services:
   tdworld:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/tdworld
+    working_dir: /root/sites/tdworld.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -468,7 +468,7 @@ services:
   trailer-bodybuilders:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/trailer-bodybuilders
+    working_dir: /root/sites/trailer-bodybuilders.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -484,7 +484,7 @@ services:
   trucker:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/trucker
+    working_dir: /root/sites/trucker.com
     environment:
       <<: *env
       <<: *env-gemenon
@@ -500,7 +500,7 @@ services:
   truckfleetmro:
     <<: *node
     <<: *site-cmd
-    working_dir: /root/sites/truckfleetmro
+    working_dir: /root/sites/truckfleetmro.com
     environment:
       <<: *env
       <<: *env-gemenon
