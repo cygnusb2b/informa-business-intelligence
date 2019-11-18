@@ -5,4 +5,7 @@ const { MONGO_DSN } = require('./env');
 const { NODE_ENV } = process.env;
 const appname = `${pkg.name} v${pkg.version} (env: ${NODE_ENV})`;
 
-module.exports = createMongoClient(MONGO_DSN, { appname });
+module.exports = createMongoClient(MONGO_DSN, {
+  appname,
+  useUnifiedTopology: true,
+});
