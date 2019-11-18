@@ -18,7 +18,13 @@ module.exports = {
   menu: [
     {
       items: [
-        // <NOT SET>
+        { href: '/machining-cutting', label: 'Machining/Cutting' },
+        { href: '/cutting-tools', label: 'Cutting Tools' },
+        { href: '/automation-and-robotics', label: 'Automation/Robotics' },
+        { href: '/enterprise-data', label: 'Enterprise Data' },
+        { href: '/cmm-and-qc', label: 'CMM and QC' },
+        { href: '/shop-operations', label: 'Shop Operations' },
+        { href: '/cad-and-cam', label: 'CAD/CAM' },
       ],
     },
     {
@@ -26,8 +32,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },

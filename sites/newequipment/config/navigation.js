@@ -18,7 +18,12 @@ module.exports = {
   menu: [
     {
       items: [
-        // <NOT SET>
+        { href: '/industry-trends', label: 'Industry Trends' },
+        { href: '/technology-innovations', label: 'Technology Innovations' },
+        { href: '/plant-operations', label: 'Plant Operations' },
+        { href: '/research-and-development', label: 'Research & Development' },
+        { href: 'http://directory.newequipment.com', label: 'Find Products' },
+        { href: 'http://directory.newequipment.com/top/companies', label: 'Browse Suppliers' },
       ],
     },
     {
@@ -26,8 +31,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },

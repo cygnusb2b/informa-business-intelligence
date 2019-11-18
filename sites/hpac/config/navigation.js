@@ -18,7 +18,11 @@ module.exports = {
   menu: [
     {
       items: [
-        // <NOT SET>
+        { href: '/heating', label: 'Heating' },
+        { href: 'http://beta.hpac.com/iaq-ventilation', label: 'Ventilation' },
+        { href: 'http://beta.hpac.com/air-conditioning', label: 'Air Conditioning/Cooling' },
+        { href: 'http://beta.hpac.com/building-controls', label: 'Building Automation' },
+        { href: 'http://beta.hpac.com/piping-pumping', label: 'Piping/Pumping' },
       ],
     },
     {
@@ -26,8 +30,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },

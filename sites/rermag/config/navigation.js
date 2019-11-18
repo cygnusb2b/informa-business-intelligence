@@ -18,7 +18,14 @@ module.exports = {
   menu: [
     {
       items: [
-        // <NOT SET>
+        { href: '/mergers-acquisitions', label: 'Mergers & Acquisitions' },
+        { href: '/news-analysis', label: 'News & Analysis' },
+        { href: '/business-technology', label: 'Business & Technology' },
+        { href: '/aeriallifting', label: 'Aerial/Lifting' },
+        { href: '/compaction-concrete', label: 'Compaction & Concrete' },
+        { href: '/power-generation', label: 'Power Generation' },
+        { href: '/earthmoving', label: 'Earthmoving' },
+        { href: '/tools', label: 'Tools' },
       ],
     },
     {
@@ -26,8 +33,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
