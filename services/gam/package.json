@@ -1,0 +1,26 @@
+{
+  "name": "@endeavor-business-media/gam-service",
+  "version": "1.0.0-alpha.2",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/packages/gam-service",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js --ext .vue --max-warnings 5 --ignore-path ../../.eslintignore ./",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "@base-cms/db": "^1.0.0-rc.1",
+    "@base-cms/env": "^1.0.0-rc.1",
+    "@base-cms/object-path": "^1.0.0-rc.1",
+    "@base-cms/utils": "^1.0.0-rc.1",
+    "@godaddy/terminus": "^4.1.2",
+    "apollo-server-express": "^2.5.0",
+    "deep-assign": "^3.0.0",
+    "express": "^4.17.0",
+    "graphql": "^14.3.0",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.4",
+    "helmet": "^3.21.0"
+  }
+}
