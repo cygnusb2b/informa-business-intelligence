@@ -1,8 +1,8 @@
 {
-  "name": "@endeavor-business-media/rermag",
+  "name": "@endeavor-business-media/rermag.com",
   "version": "1.0.0-alpha.2",
   "author": "Jacob Bare <jacob@limit0.io>",
-  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/rermag",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/rermag.com",
   "license": "MIT",
   "private": true,
   "scripts": {

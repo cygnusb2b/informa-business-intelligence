@@ -1,8 +1,8 @@
 {
-  "name": "@endeavor-business-media/tdworld",
+  "name": "@endeavor-business-media/tdworld.com",
   "version": "1.0.0-alpha.1",
   "author": "Jacob Bare <jacob@limit0.io>",
-  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/tdworld",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/tdworld.com",
   "license": "MIT",
   "private": true,
   "scripts": {

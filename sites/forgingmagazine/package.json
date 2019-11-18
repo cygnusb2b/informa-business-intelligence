@@ -1,8 +1,8 @@
 {
-  "name": "@endeavor-business-media/forgingmagazine",
+  "name": "@endeavor-business-media/forgingmagazine.com",
   "version": "1.0.0-alpha.2",
   "author": "Jacob Bare <jacob@limit0.io>",
-  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/forgingmagazine",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/forgingmagazine.com",
   "license": "MIT",
   "private": true,
   "scripts": {
