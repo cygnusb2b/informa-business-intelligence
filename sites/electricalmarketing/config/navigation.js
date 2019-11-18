@@ -18,7 +18,7 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: 'https://www.electricalmarketing.com/industry-stats/electrical-marketing-data-central', label: 'Data Central' },
+        { href: '/industry-stats/electrical-marketing-data-central', label: 'Data Central' },
         { href: '/mergers-acquisitions', label: 'Mergers & Acquisitions' },
         { href: '/electrical-economy', label: 'Electrical Economy' },
         { href: '/hot-topics/people', label: 'People' },

@@ -25,7 +25,7 @@ module.exports = {
         { href: '/standards', label: 'Standards' },
         { href: '/construction', label: 'Construction' },
         { href: '/ppe', label: 'PPE' },
-        { href: 'https://www.ehstoday.com/safety-technology', label: 'Safety Technology' },
+        { href: '/safety-technology', label: 'Safety Technology' },
         { href: '/training-and-engagement', label: 'Training' },
         { href: '/emergency-management', label: 'Emergency Management' },
         { href: '/industrial-hygiene', label: 'Industrial Hygiene' },

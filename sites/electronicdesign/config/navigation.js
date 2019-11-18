@@ -18,14 +18,14 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: 'http://beta.electronicdesign.com/markets/automotive', label: 'Automotive' },
-        { href: 'http://beta.electronicdesign.com/industrial-automation', label: 'Industrial Automation' },
+        { href: '/markets/automotive', label: 'Automotive' },
+        { href: '/industrial-automation', label: 'Industrial Automation' },
         { href: '/technologies/analog', label: 'Analog' },
         { href: 'https://www.electronicdesign.com/power-management', label: 'Power Management' },
         { href: '/technologies/embedded-revolution', label: 'Embedded Revolution' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/resources', label: 'Resources' },
-        { href: 'http://beta.electronicdesign.com/community-home/electronic-design-blogs', label: 'Experts' },
+        { href: '/community-home/electronic-design-blogs', label: 'Experts' },
       ],
     },
     {

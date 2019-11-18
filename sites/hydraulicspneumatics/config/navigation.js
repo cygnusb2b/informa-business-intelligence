@@ -18,12 +18,12 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: 'http://beta.hydraulicspneumatics.com/fluid-power-basics', label: 'Fluid Power Basics' },
-        { href: 'http://beta.hydraulicspneumatics.com/technologies/hydraulic-valves', label: 'Hydraulic Valves' },
-        { href: 'http://beta.hydraulicspneumatics.com/technologies/hydraulic-pumps-motors', label: 'Hydraulic Pumps & Motors' },
-        { href: 'http://beta.hydraulicspneumatics.com/technologies/cylinders-actuators', label: 'Cylinders and Actuators' },
-        { href: 'http://beta.hydraulicspneumatics.com/directories', label: 'Directories' },
-        { href: 'http://beta.hydraulicspneumatics.com/learning-resources', label: 'Resources' },
+        { href: '/fluid-power-basics', label: 'Fluid Power Basics' },
+        { href: '/technologies/hydraulic-valves', label: 'Hydraulic Valves' },
+        { href: '/technologies/hydraulic-pumps-motors', label: 'Hydraulic Pumps & Motors' },
+        { href: '/technologies/cylinders-actuators', label: 'Cylinders and Actuators' },
+        { href: '/directories', label: 'Directories' },
+        { href: '/learning-resources', label: 'Resources' },
         { href: '/community/hydraulics-pneumatics-experts', label: 'Experts' },
       ],
     },

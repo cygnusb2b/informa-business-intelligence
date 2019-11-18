@@ -19,10 +19,10 @@ module.exports = {
     {
       items: [
         { href: '/heating', label: 'Heating' },
-        { href: 'http://beta.hpac.com/iaq-ventilation', label: 'Ventilation' },
-        { href: 'http://beta.hpac.com/air-conditioning', label: 'Air Conditioning/Cooling' },
-        { href: 'http://beta.hpac.com/building-controls', label: 'Building Automation' },
-        { href: 'http://beta.hpac.com/piping-pumping', label: 'Piping/Pumping' },
+        { href: '/iaq-ventilation', label: 'Ventilation' },
+        { href: '/air-conditioning', label: 'Air Conditioning/Cooling' },
+        { href: '/building-controls', label: 'Building Automation' },
+        { href: '/piping-pumping', label: 'Piping/Pumping' },
       ],
     },
     {
