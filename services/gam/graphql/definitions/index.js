@@ -7,7 +7,7 @@ scalar ObjectID
 
 type Query {
   ping: String!
-  adunits(input: AdunitsQueryInput!): Adunit
+  adunits(input: AdunitsQueryInput!): [Adunit]!
 }
 
 type Mutation {
@@ -17,6 +17,7 @@ type Mutation {
 type Adunit {
   id: ObjectID!
   name: String!
+  sizes: [String!]!
 }
 
 input AdunitsQueryInput {

@@ -8,11 +8,12 @@ module.exports = async ({ req }) => {
   if (!tenantKey || !siteId) throw new Error('A tenant key and site ID are required.');
 
   const basedb = createBaseDB({ tenant: tenantKey, client: mongodb });
+  const adunits = await mongodb.collection('informa_gam', 'adunits');
 
   return {
     tenantKey,
     siteId,
-    mongodb,
+    adunits,
     basedb,
   };
 };
