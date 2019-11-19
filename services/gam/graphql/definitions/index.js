@@ -87,7 +87,7 @@ enum Position {
 # NOTE: Enums cannot start with a number string.
 # As such, position targets starting with a number have been prefixed with
 # an underscore.
-# 36 PosTargets
+# 35 PosTargets
 # db.getCollection('adunits').aggregate([
 #   { $unwind: '$settings.targeting' },
 #   { $match: { 'settings.targeting.target': 'pos' } },
@@ -109,7 +109,6 @@ enum PosTarget {
   customsponsoredlogo1
   customsponsoredlogo2
   footnote
-  footnote_floor # was footnote,floor
   gallery_300_right
   gallery_728_a
   gallery_interstitial
