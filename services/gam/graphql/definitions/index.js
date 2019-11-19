@@ -13,6 +13,7 @@ type Mutation {
   ping: String!
 }
 
+# 13 Locations
 enum Locations {
   article
   author
@@ -29,6 +30,7 @@ enum Locations {
   weather
 }
 
+# 33 Positions
 enum Positions {
   bottom_banner
   cash_grain_bids
@@ -68,6 +70,7 @@ enum Positions {
 # NOTE: Enums cannot start with a number string.
 # As such, position targets starting with a number have been prefixed with
 # an underscore.
+# 36 PosTargets
 enum PosTargets {
   _300_1_lft
   _300_1_rht
