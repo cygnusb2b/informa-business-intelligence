@@ -7,14 +7,27 @@ scalar ObjectID
 
 type Query {
   ping: String!
+  adunits(input: AdunitsQueryInput!): Adunit
 }
 
 type Mutation {
   ping: String!
 }
 
+type Adunit {
+  id: ObjectID!
+  name: String!
+}
+
+input AdunitsQueryInput {
+  location: Location!
+  position: Position!
+  target: PosTarget # optional pos target. will filter # returned.
+}
+
 # 13 Locations
-enum Locations {
+# db.getCollection('adunits').distinct('settings.location').sort();
+enum Location {
   article
   author
   commodities
@@ -31,7 +44,8 @@ enum Locations {
 }
 
 # 33 Positions
-enum Positions {
+# db.getCollection('adunits').distinct('settings.position').sort();
+enum Position {
   bottom_banner
   cash_grain_bids
   custom_content_channel_sponsored_header
@@ -71,7 +85,12 @@ enum Positions {
 # As such, position targets starting with a number have been prefixed with
 # an underscore.
 # 36 PosTargets
-enum PosTargets {
+# db.getCollection('adunits').aggregate([
+#   { $unwind: '$settings.targeting' },
+#   { $match: { 'settings.targeting.target': 'pos' } },
+#   { $group: { _id: null, pos: { $addToSet: '$settings.targeting.value' } } },
+# ]).toArray()[0].pos.sort();
+enum PosTarget {
   _300_1_lft
   _300_1_rht
   _300_2_lft
@@ -87,7 +106,7 @@ enum PosTargets {
   customsponsoredlogo1
   customsponsoredlogo2
   footnote
-  footnote,floor
+  footnote_floor # was footnote,floor
   gallery_300_right
   gallery_728_a
   gallery_interstitial
