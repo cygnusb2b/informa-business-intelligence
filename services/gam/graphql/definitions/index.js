@@ -16,8 +16,10 @@ type Mutation {
 
 type Adunit {
   id: ObjectID!
+  key: String!
   name: String!
   sizes: [String!]!
+  oop: Boolean!
 }
 
 input AdunitsQueryInput {

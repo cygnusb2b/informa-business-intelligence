@@ -1,4 +1,5 @@
 const deepAssign = require('deep-assign');
+const projection = require('../utils/adunit-projection');
 const { DateType, ObjectIDType } = require('../types');
 
 const { isArray } = Array;
@@ -16,12 +17,14 @@ module.exports = deepAssign(
      */
     Adunit: {
       id: ({ _id }) => _id,
-      name: ({ machinename }) => machinename,
+      key: ({ machinename }) => machinename,
+      name: ({ slot }) => slot.replace(/\[.*?\]\s/g, ''),
       sizes: ({ size }) => {
         if (!size) return [];
         if (isArray(size)) return size.filter(s => isArray(s)).map(s => s.join('x').trim().toLowerCase());
         return size.split(',').filter(v => v).map(v => v.trim().toLowerCase());
       },
+      oop: ({ settings }) => Boolean(settings.out_of_page),
     },
 
     /**
@@ -43,9 +46,7 @@ module.exports = deepAssign(
           'settings.position': position,
           ...(target && { 'settings.targeting.target': 'pos', 'settings.targeting.value': target }),
         };
-        return adunits.find(query, {
-          projection: { machinename: 1, size: 1 },
-        }).toArray();
+        return adunits.find(query, { projection }).toArray();
       },
     },
 
