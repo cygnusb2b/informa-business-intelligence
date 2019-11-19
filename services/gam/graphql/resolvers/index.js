@@ -1,4 +1,5 @@
 const deepAssign = require('deep-assign');
+const GraphQLJSON = require('graphql-type-json');
 const projection = require('../utils/adunit-projection');
 const { DateType, ObjectIDType } = require('../types');
 
@@ -11,6 +12,7 @@ module.exports = deepAssign(
      */
     Date: DateType,
     ObjectID: ObjectIDType,
+    JSON: GraphQLJSON,
 
     /**
      * Adunit Type
