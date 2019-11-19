@@ -5,5 +5,5 @@ module.exports = ({ pos, inc } = {}) => {
   const matches = pattern.exec(pos);
   if (!matches || !matches[3]) return pos;
   const n = inc + parseInt(matches[3], 10);
-  return pos.replace(pattern, `$1_${n}_$4`);
+  return pos.replace(pattern, `$1_${n <= 10 ? n : 10}_$4`);
 };
