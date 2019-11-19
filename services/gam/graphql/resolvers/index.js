@@ -8,6 +8,15 @@ const { isArray } = Array;
 
 const isFluid = size => size === 'fluid';
 
+const formatSize = (size) => {
+  if (!size) return null;
+  const s = `${size}`.trim().toLowerCase();
+  if (!s) return null;
+  if (isFluid(s)) return s;
+  if (/^\d+x\d+$/.test(s)) return s;
+  return null;
+};
+
 module.exports = deepAssign(
   {
     /**
@@ -26,8 +35,8 @@ module.exports = deepAssign(
       name: ({ slot }) => slot.replace(/\[.*?\]\s/g, ''),
       size: ({ size }) => {
         if (!size) return [];
-        if (isArray(size)) return size.filter(s => isArray(s)).map(s => s.join('x').trim().toLowerCase());
-        return size.split(',').filter(v => v).map(v => v.trim().toLowerCase());
+        const sizes = (isArray(size) ? size.join('x') : size).split(',');
+        return sizes.map(formatSize).filter(s => s);
       },
       oop: ({ settings }) => Boolean(settings.out_of_page),
 
