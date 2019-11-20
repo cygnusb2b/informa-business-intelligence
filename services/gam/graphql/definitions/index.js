@@ -19,15 +19,18 @@ type Adunit {
   id: ObjectID!
   key: String!
   name: String!
+  fluid: Boolean!
   size: [AdunitSize!]!
+  sizeMapping: [AdunitSizeMapping!]!
   oop: Boolean!
   targeting: JSON!
 }
 
 type AdunitSize {
-  fluid: Boolean!
-  width: Int
-  height: Int
+  width: Int!
+  height: Int!
+}
+
 }
 input AdunitsQueryInput {
   location: Location!

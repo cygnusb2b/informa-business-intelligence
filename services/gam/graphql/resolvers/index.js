@@ -6,13 +6,10 @@ const { DateType, ObjectIDType } = require('../types');
 
 const { isArray } = Array;
 
-const isFluid = size => size === 'fluid';
-
 const formatSize = (size) => {
   if (!size) return null;
   const s = `${size}`.trim().toLowerCase();
   if (!s) return null;
-  if (isFluid(s)) return s;
   if (/^\d+x\d+$/.test(s)) return s;
   return null;
 };
@@ -33,8 +30,10 @@ module.exports = deepAssign(
       id: ({ _id }) => _id,
       key: ({ machinename }) => machinename,
       name: ({ slot }) => slot.replace(/\[.*?\]\s/g, ''),
+      fluid: ({ size }) => size && `${size}`.toLowerCase() === 'fluid',
       size: ({ size }) => {
         if (!size) return [];
+        if (size && `${size}`.toLowerCase() === 'fluid') return [];
         const sizes = (isArray(size) ? size.join('x') : size).split(',');
         return sizes.map(formatSize).filter(s => s);
       },
@@ -49,14 +48,11 @@ module.exports = deepAssign(
     },
 
     AdunitSize: {
-      fluid: isFluid,
       width: (size) => {
-        if (isFluid(size)) return null;
         const [width] = size.split('x');
         return width;
       },
       height: (size) => {
-        if (isFluid(size)) return null;
         const [, height] = size.split('x');
         return height;
       },
