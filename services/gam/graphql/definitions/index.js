@@ -8,8 +8,9 @@ scalar JSON
 
 type Query {
   ping: String!
-  adunits(input: AdunitsQueryInput!): [Adunit]!
+  adunits(input: AdunitsQueryInput!): [Adunit!]!
   adunitTokens: [String!]!
+  allAdunits(input: AllAdunitsQueryInput = {}): [Adunit!]!
 }
 
 type Mutation {
@@ -26,6 +27,8 @@ type Adunit {
   oop: Boolean!
   targeting: JSON!
   path: String!
+  location: Location!
+  position: Position!
 }
 
 type AdunitSize {
@@ -41,6 +44,16 @@ type AdunitSizeMapping {
 input AdunitsQueryInput {
   location: Location!
   position: Position!
+}
+
+input AllAdunitsQueryInput {
+  pathType: AdunitPathType = all
+}
+
+enum AdunitPathType {
+  all
+  static
+  dynamic
 }
 
 # 13 Locations

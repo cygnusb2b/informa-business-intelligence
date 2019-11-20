@@ -6,6 +6,10 @@ const { DateType, ObjectIDType } = require('../types');
 
 const { isArray } = Array;
 
+const SITE_ID_TOKEN = '[dfp_tag:site_id]';
+const TOKEN_PATTERN_ALL = /\[.*?:.+?\]/g;
+const TOKEN_PATTERN = /\[.*?:.+?\]/;
+
 const formatSize = (size) => {
   if (!size) return null;
   const s = `${size}`.trim().toLowerCase();
@@ -13,6 +17,8 @@ const formatSize = (size) => {
   if (/^\d+x\d+$/.test(s)) return s;
   return null;
 };
+
+const removeSiteId = path => path.replace(SITE_ID_TOKEN, '').replace(/^\/+/, '');
 
 module.exports = deepAssign(
   {
@@ -51,7 +57,9 @@ module.exports = deepAssign(
         return breakpoints.filter(bp => bp && typeof bp === 'object');
       },
 
-      path: ({ adunit }) => adunit,
+      path: ({ adunit }) => removeSiteId(adunit),
+      location: ({ settings }) => settings.location,
+      position: ({ settings }) => settings.position,
     },
 
     AdunitSize: {
@@ -95,11 +103,25 @@ module.exports = deepAssign(
       /**
        *
        */
+      allAdunits: async (_, { input }, { adunits }) => {
+        const { pathType } = input;
+        const units = await adunits.find({}, { projection }).toArray();
+        return units.filter((unit) => {
+          if (pathType === 'all') return true;
+          const cleaned = removeSiteId(unit.adunit);
+          const isDynamic = TOKEN_PATTERN.test(cleaned);
+          if (pathType === 'dynamic') return isDynamic;
+          return !isDynamic;
+        });
+      },
+
+      /**
+       *
+       */
       adunitTokens: async (_, args, { adunits }) => {
         const units = await adunits.find({}, { projection: { adunit: 1 } }).toArray();
-        const pattern = /\[.*?:.+?\]/g;
         return [...units.reduce((set, { adunit }) => {
-          adunit.match(pattern).forEach(token => set.add(token));
+          adunit.match(TOKEN_PATTERN_ALL).forEach(token => set.add(token));
           return set;
         }, new Set())];
       },
