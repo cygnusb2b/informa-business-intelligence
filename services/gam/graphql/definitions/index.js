@@ -68,17 +68,17 @@ enum AdunitPathType {
 # 13 Locations
 # db.getCollection('adunits').distinct('settings.location').sort();
 enum Location {
-  article # has dynamic path
+  article # has path tokens, has targeting tokens
   author
-  commodities # has dynamic path
-  forums_category # has dynamic path
+  commodities # has path tokens
+  forums_category # has path tokens
   forums_landing
-  forums_topic # has dynamic path
-  gallery # has dynamic path
+  forums_topic # has path tokens
+  gallery # has path tokens, has targeting tokens
   homepage
-  page
+  page # has targeting tokens
   search
-  taxonomy # has dynamic path
+  taxonomy # has path tokens
   user
   weather
 }
