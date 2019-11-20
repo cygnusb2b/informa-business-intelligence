@@ -45,6 +45,11 @@ module.exports = deepAssign(
       targeting: ({ settings }) => getAsArray(settings, 'targeting')
         .filter(v => v && typeof v === 'object' && v.target && v.value)
         .reduce((o, { target, value }) => ({ ...o, [target]: value.trim() }), {}),
+
+      sizeMapping: ({ settings }) => {
+        const breakpoints = getAsArray(settings, 'breakpoints');
+        return breakpoints.filter(bp => bp && typeof bp === 'object');
+      },
     },
 
     AdunitSize: {
@@ -56,6 +61,11 @@ module.exports = deepAssign(
         const [, height] = size.split('x');
         return height;
       },
+    },
+
+    AdunitSizeMapping: {
+      viewport: ({ browser_size: size }) => size,
+      size: ({ ad_sizes: sizes }) => sizes.split(','),
     },
 
     /**

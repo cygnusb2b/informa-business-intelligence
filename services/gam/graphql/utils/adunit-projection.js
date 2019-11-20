@@ -4,4 +4,5 @@ module.exports = {
   slot: 1,
   'settings.out_of_page': 1,
   'settings.targeting': 1,
+  'settings.breakpoints': 1,
 };

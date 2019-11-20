@@ -31,11 +31,14 @@ type AdunitSize {
   height: Int!
 }
 
+type AdunitSizeMapping {
+  viewport: AdunitSize!
+  size: [AdunitSize!]!
 }
+
 input AdunitsQueryInput {
   location: Location!
   position: Position!
-  target: PosTarget # optional pos target. will filter # returned.
 }
 
 # 13 Locations
