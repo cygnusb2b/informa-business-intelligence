@@ -1,4 +1,5 @@
 module.exports = {
+  adunit: 1,
   machinename: 1,
   size: 1,
   slot: 1,

@@ -50,6 +50,8 @@ module.exports = deepAssign(
         const breakpoints = getAsArray(settings, 'breakpoints');
         return breakpoints.filter(bp => bp && typeof bp === 'object');
       },
+
+      path: ({ adunit }) => adunit,
     },
 
     AdunitSize: {
@@ -88,6 +90,18 @@ module.exports = deepAssign(
           ...(target && { 'settings.targeting.target': 'pos', 'settings.targeting.value': target }),
         };
         return adunits.find(query, { projection }).toArray();
+      },
+
+      /**
+       *
+       */
+      adunitTokens: async (_, args, { adunits }) => {
+        const units = await adunits.find({}, { projection: { adunit: 1 } }).toArray();
+        const pattern = /\[.*?:.+?\]/g;
+        return [...units.reduce((set, { adunit }) => {
+          adunit.match(pattern).forEach(token => set.add(token));
+          return set;
+        }, new Set())];
       },
     },
 

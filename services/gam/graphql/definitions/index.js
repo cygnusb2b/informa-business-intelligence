@@ -9,6 +9,7 @@ scalar JSON
 type Query {
   ping: String!
   adunits(input: AdunitsQueryInput!): [Adunit]!
+  adunitTokens: [String!]!
 }
 
 type Mutation {
@@ -24,6 +25,7 @@ type Adunit {
   sizeMapping: [AdunitSizeMapping!]!
   oop: Boolean!
   targeting: JSON!
+  path: String!
 }
 
 type AdunitSize {
