@@ -1,0 +1,423 @@
+{
+	"dfp_tags": {
+		"everywhere": [],
+		"author": {
+			"jumbotron": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_300_1_rht",
+				"slot": "[author] Rectangle Inline and Jumbotron",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "jumbotron",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_rht"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_rht"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"left_rail_rect": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_300_x_lft",
+				"slot": "[author] Left rail 300_x_lft",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [300, 250],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "left_rail_rect",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_lft"
+					}],
+					"breakpoints": [{
+						"browser_size": "779x0",
+						"ad_sizes": "300x250"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_lft"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"top_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_728_1_a",
+				"slot": "[author] Leaderboard 728_1_a",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [
+					[728, 90],
+					[970, 90],
+					[320, 50],
+					[970, 250]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "top_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_1_a"
+					}, {
+						"target": "ptype",
+						"value": "author"
+					}, {
+						"target": "author",
+						"value": "[user:full_username_depend_of_profile_page]"
+					}, {
+						"target": "combo",
+						"value": "wrap"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "970x90,970x250,728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [
+						[970, 90],
+						[970, 250],
+						[728, 90]
+					],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_1_a"
+				}, {
+					"target": "combo",
+					"value": "wrap"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"bottom_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_728_footer",
+				"slot": "[author] Leaderboard 728_10_a",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "bottom_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_10_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_10_a"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"hidden": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_footnote_floor",
+				"slot": "[author] Footnote_Floor",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "footnote"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "footnote"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"infinitescroll": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "author_interscroller_728_x_a",
+				"slot": "[author] Interscroller\/Leaderboard 2",
+				"adunit": "\/3834\/iw.home\/author",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "author",
+					"position": "infinitescroll",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_2_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_2_a"
+				}, {
+					"target": "ptype",
+					"value": "author"
+				}, {
+					"target": "author",
+					"value": "jill_jusko"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}]
+		}
+	},
+	"current_type": "author",
+	"default_adunit": "\/3834\/iw.home",
+	"brand_adunit": "",
+	"async_rendering": 1,
+	"single_request": 0,
+	"collapse_empty_divs": "1",
+	"viewport": 1,
+	"lifetime_banner": "2000",
+	"do_byline": 0,
+	"enable_sticky": 1,
+	"enable_cb_refresh": "0",
+	"cb_refresh_interval": "15",
+	"is_blocked_ip": false,
+	"uip": "209.220.55.180"
+}
