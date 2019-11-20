@@ -9,7 +9,7 @@ scalar JSON
 type Query {
   ping: String!
   adunits(input: AdunitsQueryInput!): [Adunit!]!
-  adunitTokens: [String!]!
+  adunitTokens: [AdunitToken!]!
   allAdunits(input: AllAdunitsQueryInput = {}): [Adunit!]!
 }
 
@@ -27,8 +27,15 @@ type Adunit {
   oop: Boolean!
   targeting: JSON!
   path: String!
+  tokens: [String!]!
   location: Location!
   position: Position!
+}
+
+type AdunitToken {
+  id: String!
+  token: String!
+  locations: [Location!]!
 }
 
 type AdunitSize {
@@ -48,6 +55,8 @@ input AdunitsQueryInput {
 
 input AllAdunitsQueryInput {
   pathType: AdunitPathType = all
+  locations: [Location!] = []
+  positions: [Position!] = []
 }
 
 enum AdunitPathType {
@@ -59,17 +68,17 @@ enum AdunitPathType {
 # 13 Locations
 # db.getCollection('adunits').distinct('settings.location').sort();
 enum Location {
-  article
+  article # has dynamic path
   author
-  commodities
-  forums_category
+  commodities # has dynamic path
+  forums_category # has dynamic path
   forums_landing
-  forums_topic
-  gallery
+  forums_topic # has dynamic path
+  gallery # has dynamic path
   homepage
   page
   search
-  taxonomy
+  taxonomy # has dynamic path
   user
   weather
 }

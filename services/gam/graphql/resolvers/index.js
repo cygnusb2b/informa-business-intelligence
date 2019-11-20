@@ -7,8 +7,6 @@ const { DateType, ObjectIDType } = require('../types');
 const { isArray } = Array;
 
 const SITE_ID_TOKEN = '[dfp_tag:site_id]';
-const TOKEN_PATTERN_ALL = /\[.*?:.+?\]/g;
-const TOKEN_PATTERN = /\[.*?:.+?\]/;
 
 const formatSize = (size) => {
   if (!size) return null;
@@ -78,6 +76,11 @@ module.exports = deepAssign(
       size: ({ ad_sizes: sizes }) => sizes.split(','),
     },
 
+    AdunitToken: {
+      id: ({ _id }) => _id,
+      token: ({ _id }) => _id,
+    },
+
     /**
      * Root queries.
      */
@@ -104,26 +107,26 @@ module.exports = deepAssign(
        *
        */
       allAdunits: async (_, { input }, { adunits }) => {
-        const { pathType } = input;
-        const units = await adunits.find({}, { projection }).toArray();
-        return units.filter((unit) => {
-          if (pathType === 'all') return true;
-          const cleaned = removeSiteId(unit.adunit);
-          const isDynamic = TOKEN_PATTERN.test(cleaned);
-          if (pathType === 'dynamic') return isDynamic;
-          return !isDynamic;
-        });
+        const { pathType, positions, locations } = input;
+        const query = {
+          ...(pathType === 'static' && { 'tokens.0': { $exists: false } }),
+          ...(pathType === 'dynamic' && { 'tokens.0': { $exists: true } }),
+          ...(positions.length && { 'settings.position': { $in: positions } }),
+          ...(locations.length && { 'settings.location': { $in: locations } }),
+        };
+        return adunits.find(query, { projection }).toArray();
       },
 
       /**
        *
        */
       adunitTokens: async (_, args, { adunits }) => {
-        const units = await adunits.find({}, { projection: { adunit: 1 } }).toArray();
-        return [...units.reduce((set, { adunit }) => {
-          adunit.match(TOKEN_PATTERN_ALL).forEach(token => set.add(token));
-          return set;
-        }, new Set())];
+        const docs = await adunits.aggregate([
+          { $match: { 'tokens.0': { $exists: true } } },
+          { $unwind: '$tokens' },
+          { $group: { _id: '$tokens', locations: { $addToSet: '$settings.location' } } },
+        ]).toArray();
+        return docs;
       },
     },
 
