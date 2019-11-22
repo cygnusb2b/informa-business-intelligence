@@ -1,4 +1,4 @@
-const { createBaseDB } = require('@base-cms/db');
+const { createBaseDB, BaseDB } = require('@base-cms/db');
 const mongodb = require('../../mongodb');
 const createLoaders = require('../../dataloaders');
 
@@ -18,10 +18,20 @@ module.exports = async ({ req }) => {
   const adunits = await mongodb.collection('informa_gam', 'adunits');
   const loaders = createLoaders({ basedb });
 
-  const [section, content] = await Promise.all([
+  // eslint-disable-next-line prefer-const
+  let [section, content] = await Promise.all([
     loadDoc(req.get('x-section-id'), loaders.websiteSection),
     loadDoc(req.get('x-content-id'), loaders.content),
   ]);
+
+  // Automatically load the section context from the content.
+  if (content && !section) {
+    const sectionRef = BaseDB.get(content, 'mutations.Website.primarySection');
+    const primarySectionId = BaseDB.extractRefId(sectionRef);
+    if (primarySectionId) {
+      section = await loadDoc(primarySectionId, loaders.websiteSection);
+    }
+  }
 
   return {
     tenantKey,
