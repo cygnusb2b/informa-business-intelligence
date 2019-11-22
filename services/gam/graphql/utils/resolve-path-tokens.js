@@ -1,4 +1,5 @@
 const { UserInputError } = require('apollo-server-express');
+const { BaseDB } = require('@base-cms/db');
 const { get } = require('@base-cms/object-path');
 const loadSectionHierarchy = require('./load-section-hierarchy');
 const cleanPathValue = require('./clean-path-value');
@@ -43,7 +44,34 @@ const resolvers = {
    */
   '[term:name_lowercase_without_spaces_specialchars]': async ({ section, loaders }) => {
     if (!section) throw contextError('section');
+    // Return nothing when section is home.
+    if (section.alias === 'home') return '';
     const loader = loaders('websiteSection');
+    const hierarchy = await loadSectionHierarchy(section, loader);
+    return hierarchy.map(s => cleanPathValue(s.name)).join('/');
+  },
+
+  /**
+   * @todo This field is not being saved in the legacy data. Must be added.
+   * For now, return nothing.
+   */
+  '[node:field_penton_native_advertising:/]': () => '',
+
+  /**
+   * The content primary category parents merged with forward-slashes
+   * Used on `gallery` and `article` locations
+   */
+  '[node:field_penton_primary_category:parents:join:/]': async ({ content, loaders }) => {
+    if (!content) throw contextError('content');
+    const ref = BaseDB.get(content, 'mutations.Website.primarySection');
+    const primarySectionId = BaseDB.extractRefId(ref);
+    // Return nothing when no primary section ID is found.
+    if (!primarySectionId) return '';
+    const loader = loaders('websiteSection');
+    const section = await loader.load(primarySectionId);
+
+    // Return nothing when no section is found, or the section is home.
+    if (!section || section.alias === 'home') return '';
     const hierarchy = await loadSectionHierarchy(section, loader);
     return hierarchy.map(s => cleanPathValue(s.name)).join('/');
   },
