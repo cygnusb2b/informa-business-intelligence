@@ -75,6 +75,27 @@ const resolvers = {
     const hierarchy = await loadSectionHierarchy(section, loader);
     return hierarchy.map(s => cleanPathValue(s.name)).join('/');
   },
+
+  /**
+   * The current page path.
+   * Found on `commodities` locations
+   */
+  '[current-page:url:path]': ({ requestPath }) => {
+    if (!requestPath) throw contextError('request path');
+    return requestPath.split('/').map(part => cleanPathValue(part)).join('/');
+  },
+
+  /**
+   * A forum category name?
+   * Used on `forums_topic` and `forums_category` locations
+   */
+  '[forums:category_name]': () => { throw new Error('the forums:category_name token is not yet implemented.'); },
+
+  /**
+   * A forum topic name?
+   * Used on `forums_topic` locations
+   */
+  '[forums:topic_name]': () => { throw new Error('the forums:topic_name token is not yet implemented.'); },
 };
 
 module.exports = async (path, ctx) => {
