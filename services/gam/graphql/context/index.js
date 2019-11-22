@@ -1,5 +1,6 @@
 const { createBaseDB } = require('@base-cms/db');
 const mongodb = require('../../mongodb');
+const createLoaders = require('../../dataloaders');
 
 module.exports = async ({ req }) => {
   const { query } = req;
@@ -15,5 +16,6 @@ module.exports = async ({ req }) => {
     siteId,
     adunits,
     basedb,
+    loaders: createLoaders({ basedb }),
   };
 };
