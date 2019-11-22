@@ -102,14 +102,32 @@ module.exports = deepAssign(
       ping: () => 'pong',
 
       /**
+       * No additional context required:
+       * - author
+       * - commodoties
+       * - homepage
+       * - search
+       * - user
+       * - weather
        *
+       * Context required:
+       * - article: x-content-id
+       * - commodities: x-request-path
+       * - gallery: x-content-id
+       * - page: x-content-id
+       * - taxonomy: x-section-id
+       *
+       * Not supported/implemented:
+       * - forums_category
+       * - forums_topic
+       * - forums_landing
        */
       adunits: async (_, { input }, { adunits }) => {
         const { location, position } = input;
         if (notImplemented.includes(location)) throw inputError(`The '${location}' location is currently not supported.`);
         const query = {
           'settings.location': location,
-          'settings.position': position,
+          ...(position && { 'settings.position': position }),
         };
         return adunits.find(query, { projection }).toArray();
       },

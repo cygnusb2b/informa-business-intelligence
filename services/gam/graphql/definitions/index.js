@@ -50,7 +50,7 @@ type AdunitSizeMapping {
 
 input AdunitsQueryInput {
   location: Location!
-  position: Position!
+  position: Position
 }
 
 input AllAdunitsQueryInput {
