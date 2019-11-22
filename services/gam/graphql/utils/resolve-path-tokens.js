@@ -52,10 +52,15 @@ const resolvers = {
   },
 
   /**
-   * @todo This field is not being saved in the legacy data. Must be added.
-   * For now, return nothing.
+   * A flag representing whether the content is sponsored.
+   * If true, `sponsored/` is added to the path.
+   * Used on `gallery` and `article` locations
    */
-  '[node:field_penton_native_advertising:/]': () => '',
+  '[node:field_penton_native_advertising:/]': ({ content }) => {
+    const v = get(content, 'legacy.raw.field_penton_native_advertising.und.0.value');
+    if (v === '1') return 'sponsored/';
+    return '';
+  },
 
   /**
    * The content primary category parents merged with forward-slashes
