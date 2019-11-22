@@ -10,12 +10,17 @@ module.exports = async ({ req }) => {
 
   const basedb = createBaseDB({ tenant: tenantKey, client: mongodb });
   const adunits = await mongodb.collection('informa_gam', 'adunits');
+  const loaders = createLoaders({ basedb });
 
   return {
     tenantKey,
     siteId,
     adunits,
     basedb,
-    loaders: createLoaders({ basedb }),
+    loaders: (model) => {
+      const loader = loaders[model];
+      if (!loader) throw new Error(`No dataloader found for '${model}'`);
+      return loader;
+    },
   };
 };
