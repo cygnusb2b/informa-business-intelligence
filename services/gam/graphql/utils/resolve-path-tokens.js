@@ -1,4 +1,5 @@
 const { UserInputError } = require('apollo-server-express');
+const { get } = require('@base-cms/object-path');
 const loadSectionHierarchy = require('./load-section-hierarchy');
 const cleanPathValue = require('./clean-path-value');
 
@@ -12,10 +13,18 @@ const resolvers = {
   '[dfp_tag:site_id]': () => '',
 
   /**
-   * The Drupal vocab name. In our case, can be hardcoded to `categories`
+   * The Drupal vocab name.
+   * Generally this can be hardcoded to `categories`, with the expcetion
+   * of the "Program" vocab, which should use `program` instead.
    * Used on `taxonomy` and `article` locations
    */
-  '[term:vocabulary:machine-name]': () => 'categories',
+  '[term:vocabulary:machine-name]': ({ section }) => {
+    const def = 'categories';
+    const legacyId = get(section, 'legacy.id');
+    if (!legacyId) return def;
+    if (/^3_/.test(legacyId)) return 'program';
+    return def;
+  },
 
   /**
    * @todo This field is not being saved in the legacy data. Must be added.
@@ -36,9 +45,7 @@ const resolvers = {
     if (!section) throw contextError('section');
     const loader = loaders('websiteSection');
     const hierarchy = await loadSectionHierarchy(section, loader);
-    const names = hierarchy.map(s => cleanPathValue(s.name));
-    console.log(names);
-    return names.join('/');
+    return hierarchy.map(s => cleanPathValue(s.name)).join('/');
   },
 };
 
