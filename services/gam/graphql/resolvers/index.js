@@ -1,12 +1,14 @@
 const deepAssign = require('deep-assign');
 const { getAsArray } = require('@base-cms/object-path');
+const { UserInputError } = require('apollo-server-express');
 const GraphQLJSON = require('graphql-type-json');
+const resolvePathTokens = require('../utils/resolve-path-tokens');
 const projection = require('../utils/adunit-projection');
 const { DateType, ObjectIDType } = require('../types');
 
 const { isArray } = Array;
 
-const SITE_ID_TOKEN = '[dfp_tag:site_id]';
+const inputError = message => new UserInputError(message);
 
 const formatSize = (size) => {
   if (!size) return null;
@@ -16,7 +18,11 @@ const formatSize = (size) => {
   return null;
 };
 
-const removeSiteId = path => path.replace(SITE_ID_TOKEN, '').replace(/^\/+/, '');
+const notImplemented = [
+  'forums_category',
+  'forums_landing',
+  'forums_topic',
+];
 
 module.exports = deepAssign(
   {
@@ -55,7 +61,12 @@ module.exports = deepAssign(
         return breakpoints.filter(bp => bp && typeof bp === 'object');
       },
 
-      path: ({ adunit }) => removeSiteId(adunit),
+      path: async ({ adunit }, _, ctx) => {
+        const replacements = await resolvePathTokens(adunit, ctx);
+        return replacements
+          .reduce((str, { pattern, replacement }) => str.replace(pattern, replacement), adunit);
+      },
+
       location: ({ settings }) => settings.location,
       position: ({ settings }) => settings.position,
     },
@@ -94,11 +105,11 @@ module.exports = deepAssign(
        *
        */
       adunits: async (_, { input }, { adunits }) => {
-        const { location, position, target } = input;
+        const { location, position } = input;
+        if (notImplemented.includes(location)) throw inputError(`The '${location}' location is currently not supported.`);
         const query = {
           'settings.location': location,
           'settings.position': position,
-          ...(target && { 'settings.targeting.target': 'pos', 'settings.targeting.value': target }),
         };
         return adunits.find(query, { projection }).toArray();
       },
