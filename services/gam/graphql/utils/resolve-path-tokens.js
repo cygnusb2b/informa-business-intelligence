@@ -123,6 +123,17 @@ const resolvers = {
     }).map(t => cleanPathValue(t.name)).filter(v => v !== primaryTerm);
     return terms.join(',');
   },
+
+  /**
+   * Found on `article` and `gallery` locations.
+   * Targeting token only.
+   */
+  '[node:author_without_space_specialchars]': async ({ content, loaders }) => {
+    const authorId = get(content, 'authors.0');
+    if (!authorId) return '';
+    const author = await loaders('content').load(authorId);
+    if (!author || !author.name) return '';
+    return cleanPathValue(author.name);
   },
 
   /**
