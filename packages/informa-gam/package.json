@@ -1,0 +1,27 @@
+{
+  "name": "@endeavor-business-media/informa-gam",
+  "version": "1.0.0-alpha.1",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/packages/informa-gam",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js --ext .vue --max-warnings 5 --ignore-path ../../.eslintignore ./",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "@base-cms/env": "^1.0.0-rc.1",
+    "@base-cms/marko-core": "^1.0.0-rc.8",
+    "@base-cms/marko-web": "^1.0.0-rc.8",
+    "@base-cms/marko-web-gam": "^1.0.0-rc.8",
+    "@base-cms/object-path": "^1.0.0-rc.1",
+    "@base-cms/utils": "^1.0.0-rc.1",
+    "@base-cms/web-cli": "^1.0.0-rc.8",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
+    "graphql": "^14.5.4",
+    "graphql-tag": "^2.10.1",
+    "node-fetch": "^2.6.0"
+  }
+}
