@@ -62,7 +62,8 @@ module.exports = deepAssign(
       },
 
       path: async ({ adunit }, _, ctx) => {
-        const replacements = await resolvePathTokens(adunit, ctx);
+        const tokens = adunit.match(/\[.*?:.+?\]/g);
+        const replacements = await resolvePathTokens(tokens, ctx);
         return replacements
           .reduce((str, { pattern, replacement }) => str.replace(pattern, replacement), adunit);
       },
