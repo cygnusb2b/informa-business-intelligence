@@ -52,9 +52,21 @@ module.exports = deepAssign(
       /**
        * @todo replace [token:key] values and make safe for GAM (strip special chars).
        */
-      targeting: ({ settings }) => getAsArray(settings, 'targeting')
-        .filter(v => v && typeof v === 'object' && v.target && v.value)
-        .reduce((o, { target, value }) => ({ ...o, [target]: value.trim() }), {}),
+      targeting: async ({ settings }, _, ctx) => {
+        const targeting = getAsArray(settings, 'targeting').filter(v => v && typeof v === 'object' && v.target && v.value);
+        const tokens = [...new Set(targeting.map(({ value }) => value).filter(value => /\[.*?:.+?\]/.test(value)))];
+        const replacements = await resolvePathTokens(tokens, ctx);
+        const replacementMap = replacements.reduce((map, { pattern, replacement }) => {
+          map.set(pattern, replacement);
+          return map;
+        }, new Map());
+
+        return targeting.map(({ target, value }) => {
+          const replacementValue = replacementMap.get(value);
+          return { target, value: replacementValue != null ? replacementValue : value };
+        }).filter(({ value }) => value)
+          .reduce((o, { target, value }) => ({ ...o, [target]: value }), {});
+      },
 
       sizeMapping: ({ settings }) => {
         const breakpoints = getAsArray(settings, 'breakpoints');
