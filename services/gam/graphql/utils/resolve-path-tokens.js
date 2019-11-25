@@ -189,6 +189,12 @@ const resolvers = {
   },
 
   /**
+   * Found on `user` and `author` locations.
+   * Targeting token only.
+   */
+  '[user:full_username_depend_of_profile_page]': () => '',
+
+  /**
    * A forum category name?
    * Used on `forums_topic` and `forums_category` locations
    */
