@@ -152,9 +152,10 @@ module.exports = deepAssign(
        */
       locationAdunits: async (_, { input }, { adunits }) => {
         const { location } = input;
+        const prefix = location === 'taxonomy' ? 'term' : location;
         if (notImplemented.includes(location)) throw inputError(`The '${location}' location is currently not supported.`);
         const [globalUnit, units] = await Promise.all([
-          adunits.findOne({ machinename: `${location}_728_1_a` }, { projection }),
+          adunits.findOne({ machinename: `${prefix}_728_1_a` }, { projection }),
           adunits.find({ 'settings.location': location }, { projection }).toArray(),
         ]);
         return {
