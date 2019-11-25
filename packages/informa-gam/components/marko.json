@@ -1,0 +1,13 @@
+{
+  "<informa-gam-adunit>": {
+    "template": "./adunit.marko",
+    "@location": {
+      "type": "string",
+      "required": true
+    },
+    "@position": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

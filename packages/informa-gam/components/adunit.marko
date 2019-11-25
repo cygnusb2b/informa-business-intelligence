@@ -1,0 +1,22 @@
+import { getAsArray } from "@base-cms/object-path";
+
+$ const { gam } = out.global;
+$ const { location, position } = input;
+
+<if(location)>
+  <marko-web-resolve|{ resolved }| promise=gam.adunit(location)>
+    $ const adunits = resolved.get(position);
+    <if(adunits)>
+      <for|adunit| of=adunits>
+        $ console.log('adunit for', position);
+        $ const size = adunit.size.map(({ width, height }) => [width, height]);
+        $ const sizeMapping = getAsArray(adunit.sizeMapping).map(({ viewport: vp, size }) => {
+          return { viewport: [vp.width, vp.height], size: size.map(({ width, height }) => [width, height]) };
+        });
+        $ console.log('size', size);
+        $ console.log('sizeMapping', sizeMapping, sizeMapping[0].size);
+      </for>
+    </if>
+    <!-- @todo warn if not found. -->
+  </marko-web-resolve>
+</if>
