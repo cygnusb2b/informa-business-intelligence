@@ -77,10 +77,20 @@ module.exports = deepAssign(
       key: ({ machinename }) => machinename,
       name: ({ slot }) => slot.replace(/\[.*?\]\s/g, ''),
       fluid: ({ size }) => size && `${size}`.toLowerCase() === 'fluid',
-      size: ({ size }) => {
+      size: ({ size, _id }) => {
         if (!size) return [];
         if (size && `${size}`.toLowerCase() === 'fluid') return [];
-        const sizes = (isArray(size) ? size.join('x') : size).split(',');
+        let stringSize = size;
+        if (isArray(size)) {
+          if (isArray(size[0])) {
+            // Can be an array of multiple sizes, e.g. [[728, 90], [970, 90]]
+            stringSize = size.map(s => s.join('x')).join(',');
+          } else {
+            // Or an array of a single size, e.g. [300, 250]
+            stringSize = size.join('x');
+          }
+        }
+        const sizes = stringSize.split(',');
         return sizes.map(formatSize).filter(s => s);
       },
       oop: ({ settings }) => Boolean(settings.out_of_page),
