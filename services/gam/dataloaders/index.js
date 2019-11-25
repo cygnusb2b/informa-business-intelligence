@@ -6,4 +6,5 @@ module.exports = ({ basedb }) => ({
   content: content({ basedb }),
   taxonomy: taxonomy({ basedb }),
   websiteSection: websiteSection({ basedb }),
+  legacyTaxonomy: taxonomy({ basedb, field: 'legacy.id' }),
 });
