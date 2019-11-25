@@ -67,6 +67,32 @@ const resolvers = {
   },
 
   /**
+   * Used on `taxonomy` locations.
+   * Targeting token only.
+   */
+  '[term:category_name_without_space_specialchars]': async ({ section }) => {
+    const legacyId = get(section, 'legacy.id');
+    // When legacy ID is _not_ set, return the name as-is.
+    if (!legacyId) return cleanPathValue(section.name);
+    // When legacy ID is set, only return when the source vocab was "categories" (vocab id 2).
+    if (legacyId && /^2_/.test(legacyId)) return cleanPathValue(section.name);
+    return '';
+  },
+
+  /**
+   * Used on `taxonomy` locations.
+   * Targeting token only.
+   */
+  '[term:program_name_without_space_specialchars]': async ({ section }) => {
+    const legacyId = get(section, 'legacy.id');
+    // When legacy ID is _not_ set, return nothing.
+    if (!legacyId) return '';
+    // When legacy ID is set, only return when the source vocab was "program" (vocab id 3).
+    if (legacyId && /^3_/.test(legacyId)) return cleanPathValue(section.name);
+    return '';
+  },
+
+  /**
    * Found on `gallery`, `page` and `article` locations.
    * Targeting token only.
    */
