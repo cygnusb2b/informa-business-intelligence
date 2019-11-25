@@ -13,6 +13,7 @@ x-node-defaults: &node
     - yarn-cache:/.yarn-cache
 
 x-env-defaults: &env
+  GAM_SERVICE_URI: ${GAM_SERVICE_URI-http://gam}
   NEW_RELIC_ENABLED: ${NEW_RELIC_ENABLED-0}
   NEW_RELIC_LICENSE_KEY: ${NEW_RELIC_LICENSE_KEY-(unset)}
   NODE_ENV: development
@@ -93,6 +94,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/americanmachinist.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -109,6 +112,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/asumag.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -125,6 +130,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/bulktransporter.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -141,6 +148,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/contractingbusiness.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -157,6 +166,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/contractormag.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -173,6 +184,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ecmweb.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -189,6 +202,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ehstoday.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -205,6 +220,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/electricalmarketing.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -221,6 +238,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/electronicdesign.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -237,6 +256,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/ewweb.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -253,6 +274,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/fleetowner.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -269,6 +292,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/forgingmagazine.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -285,6 +310,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/foundrymag.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -301,6 +328,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/hpac.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -317,6 +346,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/hydraulicspneumatics.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -333,6 +364,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/industryweek.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -349,6 +382,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/machinedesign.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -365,6 +400,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/mhlnews.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -381,6 +418,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/mwrf.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -397,6 +436,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/newequipment.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -413,6 +454,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/powerelectronics.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -429,6 +472,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/refrigeratedtransporter.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -445,6 +490,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/rermag.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -461,6 +508,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/sourcetoday.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -477,6 +526,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/tdworld.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -493,6 +544,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/trailer-bodybuilders.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -509,6 +562,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/trucker.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
@@ -525,6 +580,8 @@ services:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/truckfleetmro.com
+    depends_on:
+      - gam
     environment:
       <<: *env
       <<: *env-gemenon
