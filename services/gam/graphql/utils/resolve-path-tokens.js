@@ -8,6 +8,18 @@ const PROGRAM_VOCAB_ID = 3;
 
 const contextError = type => new UserInputError(`A ${type} context is required to generate the ad unit path`);
 
+const loadPrimaryTerm = async ({ content, loaders }) => {
+  if (!content) throw contextError('content');
+  const ref = BaseDB.get(content, 'mutations.Website.primarySection');
+  const primarySectionId = BaseDB.extractRefId(ref);
+
+  if (!primarySectionId) return '';
+  const loader = loaders('websiteSection');
+  const section = await loader.load(primarySectionId);
+  if (!section || section.alias === 'home') return '';
+  return cleanPathValue(section.name);
+};
+
 const resolvers = {
   /**
    * The DFP/GAM instance ID + site root path.
@@ -69,25 +81,48 @@ const resolvers = {
    * Targeting token only.
    */
   '[node:field_penton_article_type]': ({ content }) => {
-    const legacyType = get(content, 'legacy.type');
-    if (legacyType) return legacyType.toLowerCase();
-    return content.type.toLowerCase();
+    const { type } = content;
+    const map = {
+      Article: 'Article',
+      MediaGallery: 'Gallery',
+      Video: 'Video',
+      Podcast: 'Audio',
+      Webinar: 'Webinar',
+      Whitepaper: 'White Paper',
+      Promotion: 'Link',
+      TextAd: 'Link',
+    };
+    return map[type] || 'Article';
   },
 
   /**
    * Found on `article` and `gallery` locations.
    * Targeting token only.
    */
-  '[node:pterm_without_space_specialchars]': async ({ content, loaders }) => {
-    if (!content) throw contextError('content');
-    const ref = BaseDB.get(content, 'mutations.Website.primarySection');
-    const primarySectionId = BaseDB.extractRefId(ref);
+  '[node:pterm_without_space_specialchars]': loadPrimaryTerm,
 
-    if (!primarySectionId) return '';
-    const loader = loaders('websiteSection');
-    const section = await loader.load(primarySectionId);
-    if (!section || section.alias === 'home') return '';
-    return cleanPathValue(section.name);
+  /**
+   * Found on `article` and `gallery` locations
+   * Targeting token only.
+   */
+  '[node:sterm_without_space_specialchars]': async ({ content, loaders }) => {
+    const taxonomyIds = BaseDB.extractRefIds(content.taxonomy);
+    if (!taxonomyIds.length) return '';
+    const [primaryTerm, taxonomies] = await Promise.all([
+      loadPrimaryTerm({ content, loaders }),
+      loaders('taxonomy').loadMany(taxonomyIds),
+    ]);
+    const terms = taxonomies.filter((t) => {
+      // Do not allow non-categories.
+      if (t.type !== 'Category') return false;
+      const legacyId = get(t, 'legacy.id');
+      // If new category (e.g. does _not_ have a legacy ID), allow.
+      if (!legacyId) return true;
+      // Only allow "normal" category vocab terms.
+      return /^2_/.test(legacyId);
+    }).map(t => cleanPathValue(t.name)).filter(v => v !== primaryTerm);
+    return terms.join(',');
+  },
   },
 
   /**
