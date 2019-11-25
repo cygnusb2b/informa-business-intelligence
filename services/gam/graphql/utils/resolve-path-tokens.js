@@ -4,6 +4,8 @@ const { get } = require('@base-cms/object-path');
 const loadSectionHierarchy = require('./load-section-hierarchy');
 const cleanPathValue = require('./clean-path-value');
 
+const PROGRAM_VOCAB_ID = 3;
+
 const contextError = type => new UserInputError(`A ${type} context is required to generate the ad unit path`);
 
 const resolvers = {
@@ -17,7 +19,8 @@ const resolvers = {
    * The Drupal vocab name.
    * Generally this can be hardcoded to `categories`, with the expcetion
    * of the "Program" vocab, which should use `program` instead.
-   * Used on `taxonomy` and `article` locations
+   * Used on `taxonomy` and `article` locations.
+   * Both a path and a targeting token.
    */
   '[term:vocabulary:machine-name]': ({ section }) => {
     const def = 'categories';
@@ -49,6 +52,55 @@ const resolvers = {
     const loader = loaders('websiteSection');
     const hierarchy = await loadSectionHierarchy(section, loader);
     return hierarchy.map(s => cleanPathValue(s.name)).join('/');
+  },
+
+  /**
+   * Found on `gallery`, `page` and `article` locations.
+   * Targeting token only.
+   */
+  '[node:nid]': ({ content }) => {
+    const legacyId = get(content, 'legacy.id');
+    if (legacyId) return legacyId;
+    return `${content._id}`;
+  },
+
+  /**
+   * Found on `article` locations.
+   * Targeting token only.
+   */
+  '[node:field_penton_article_type]': ({ content }) => {
+    const legacyType = get(content, 'legacy.type');
+    if (legacyType) return legacyType.toLowerCase();
+    return content.type.toLowerCase();
+  },
+
+  /**
+   * Found on `article` and `gallery` locations.
+   * Targeting token only.
+   */
+  '[node:pterm_without_space_specialchars]': async ({ content, loaders }) => {
+    if (!content) throw contextError('content');
+    const ref = BaseDB.get(content, 'mutations.Website.primarySection');
+    const primarySectionId = BaseDB.extractRefId(ref);
+
+    if (!primarySectionId) return '';
+    const loader = loaders('websiteSection');
+    const section = await loader.load(primarySectionId);
+    if (!section || section.alias === 'home') return '';
+    return cleanPathValue(section.name);
+  },
+
+  /**
+   * Found on `article` and `gallery` locations.
+   * Targeting token only.
+   */
+  '[node:program_without_space_specialchars]': async ({ content, loaders }) => {
+    const v = get(content, 'legacy.raw.field_penton_program.und.0.tid');
+    if (!v) return '';
+    const legacyId = `${PROGRAM_VOCAB_ID}_${v}`;
+    const taxonomy = await loaders('legacyTaxonomy').load(legacyId);
+    if (!taxonomy) return '';
+    return cleanPathValue(taxonomy.name);
   },
 
   /**
@@ -103,12 +155,9 @@ const resolvers = {
   '[forums:topic_name]': () => { throw new Error('the forums:topic_name token is not yet implemented.'); },
 };
 
-module.exports = async (path, ctx) => {
-  const tokens = path.match(/\[.*?:.+?\]/g);
-  return Promise.all(tokens.map(async (token) => {
-    const resolver = resolvers[token];
-    if (!resolver) throw new Error(`No path token resolver was found for ${token}`);
-    const replacement = await resolver(ctx);
-    return { pattern: token, replacement };
-  }));
-};
+module.exports = async (tokens, ctx) => Promise.all(tokens.map(async (token) => {
+  const resolver = resolvers[token];
+  if (!resolver) throw new Error(`No path token resolver was found for ${token}`);
+  const replacement = await resolver(ctx);
+  return { pattern: token, replacement };
+}));
