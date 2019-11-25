@@ -8,7 +8,7 @@ scalar JSON
 
 type Query {
   ping: String!
-  adunits(input: AdunitsQueryInput!): [Adunit!]!
+  locationAdunits(input: LocationAdunitsQueryInput!): LocationAdunits!
   adunitTokens: [AdunitToken!]!
   allAdunits(input: AllAdunitsQueryInput = {}): [Adunit!]!
 }
@@ -32,6 +32,11 @@ type Adunit {
   position: Position!
 }
 
+type LocationAdunits {
+  targeting: JSON
+  adunits: [Adunit!]!
+}
+
 type AdunitToken {
   id: String!
   token: String!
@@ -48,9 +53,8 @@ type AdunitSizeMapping {
   size: [AdunitSize!]!
 }
 
-input AdunitsQueryInput {
+input LocationAdunitsQueryInput {
   location: Location!
-  position: Position
 }
 
 input AllAdunitsQueryInput {

@@ -8,6 +8,30 @@ const { DateType, ObjectIDType } = require('../types');
 
 const { isArray } = Array;
 
+const ADUNIT_SPECIFIC_KEYS = ['pos', 'combo', 'article_number'];
+
+
+const buildTargeting = async ({ settings, global = false, ctx }) => {
+  const targeting = getAsArray(settings, 'targeting').filter((v) => {
+    if (!v || !typeof v === 'object') return false;
+    if (!v.target || !v.value) return false;
+    if (global) return !ADUNIT_SPECIFIC_KEYS.includes(v.target);
+    return ADUNIT_SPECIFIC_KEYS.includes(v.target);
+  });
+  const tokens = [...new Set(targeting.map(({ value }) => value).filter(value => /\[.*?:.+?\]/.test(value)))];
+  const replacements = await resolvePathTokens(tokens, ctx);
+  const replacementMap = replacements.reduce((map, { pattern, replacement }) => {
+    map.set(pattern, replacement);
+    return map;
+  }, new Map());
+
+  return targeting.map(({ target, value }) => {
+    const replacementValue = replacementMap.get(value);
+    return { target, value: replacementValue != null ? replacementValue : value };
+  }).filter(({ value }) => value)
+    .reduce((o, { target, value }) => ({ ...o, [target]: value }), {});
+};
+
 const inputError = message => new UserInputError(message);
 
 const formatSize = (size) => {
@@ -33,6 +57,14 @@ module.exports = deepAssign(
     ObjectID: ObjectIDType,
     JSON: GraphQLJSON,
 
+    LocationAdunits: {
+      targeting: ({ globalUnit }, _, ctx) => buildTargeting({
+        settings: globalUnit.settings,
+        global: true,
+        ctx,
+      }),
+    },
+
     /**
      * Adunit Type
      */
@@ -49,24 +81,7 @@ module.exports = deepAssign(
       },
       oop: ({ settings }) => Boolean(settings.out_of_page),
 
-      /**
-       * @todo replace [token:key] values and make safe for GAM (strip special chars).
-       */
-      targeting: async ({ settings }, _, ctx) => {
-        const targeting = getAsArray(settings, 'targeting').filter(v => v && typeof v === 'object' && v.target && v.value);
-        const tokens = [...new Set(targeting.map(({ value }) => value).filter(value => /\[.*?:.+?\]/.test(value)))];
-        const replacements = await resolvePathTokens(tokens, ctx);
-        const replacementMap = replacements.reduce((map, { pattern, replacement }) => {
-          map.set(pattern, replacement);
-          return map;
-        }, new Map());
-
-        return targeting.map(({ target, value }) => {
-          const replacementValue = replacementMap.get(value);
-          return { target, value: replacementValue != null ? replacementValue : value };
-        }).filter(({ value }) => value)
-          .reduce((o, { target, value }) => ({ ...o, [target]: value }), {});
-      },
+      targeting: ({ settings }, _, ctx) => buildTargeting({ settings, global: false, ctx }),
 
       sizeMapping: ({ settings }) => {
         const breakpoints = getAsArray(settings, 'breakpoints');
@@ -135,14 +150,17 @@ module.exports = deepAssign(
        * - forums_topic
        * - forums_landing
        */
-      adunits: async (_, { input }, { adunits }) => {
-        const { location, position } = input;
+      locationAdunits: async (_, { input }, { adunits }) => {
+        const { location } = input;
         if (notImplemented.includes(location)) throw inputError(`The '${location}' location is currently not supported.`);
-        const query = {
-          'settings.location': location,
-          ...(position && { 'settings.position': position }),
+        const [globalUnit, units] = await Promise.all([
+          adunits.findOne({ machinename: `${location}_728_1_a` }, { projection }),
+          adunits.find({ 'settings.location': location }, { projection }).toArray(),
+        ]);
+        return {
+          globalUnit,
+          adunits: units,
         };
-        return adunits.find(query, { projection }).toArray();
       },
 
       /**
