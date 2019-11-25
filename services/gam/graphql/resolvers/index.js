@@ -2,7 +2,7 @@ const deepAssign = require('deep-assign');
 const { getAsArray } = require('@base-cms/object-path');
 const { UserInputError } = require('apollo-server-express');
 const GraphQLJSON = require('graphql-type-json');
-const resolvePathTokens = require('../utils/resolve-path-tokens');
+const resolveTokens = require('../utils/resolve-tokens');
 const projection = require('../utils/adunit-projection');
 const { DateType, ObjectIDType } = require('../types');
 
@@ -19,7 +19,7 @@ const buildTargeting = async ({ settings, global = false, ctx }) => {
     return ADUNIT_SPECIFIC_KEYS.includes(v.target);
   });
   const tokens = [...new Set(targeting.map(({ value }) => value).filter(value => /\[.*?:.+?\]/.test(value)))];
-  const replacements = await resolvePathTokens(tokens, ctx);
+  const replacements = await resolveTokens(tokens, ctx);
   const replacementMap = replacements.reduce((map, { pattern, replacement }) => {
     map.set(pattern, replacement);
     return map;
@@ -57,6 +57,10 @@ module.exports = deepAssign(
     ObjectID: ObjectIDType,
     JSON: GraphQLJSON,
 
+    /**
+     * Location Adunit type
+     * Contains global ad unit targeting values.
+     */
     LocationAdunits: {
       targeting: ({ globalUnit }, _, ctx) => buildTargeting({
         settings: globalUnit.settings,
@@ -90,7 +94,7 @@ module.exports = deepAssign(
 
       path: async ({ adunit }, _, ctx) => {
         const tokens = adunit.match(/\[.*?:.+?\]/g);
-        const replacements = await resolvePathTokens(tokens, ctx);
+        const replacements = await resolveTokens(tokens, ctx);
         return replacements
           .reduce((str, { pattern, replacement }) => str.replace(pattern, replacement), adunit);
       },
