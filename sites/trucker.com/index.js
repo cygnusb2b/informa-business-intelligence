@@ -20,7 +20,7 @@ module.exports = startServer({
   fragments,
   onStart: (app) => {
     app.set('trust proxy', 'loopback, linklocal, uniquelocal');
-    app.use(gam({ accountId: '3834', basePath: 'iw.home' }));
+    app.use(gam({ accountId: '3834', basePath: 'trucker.home' }));
   },
   onAsyncBlockError: e => newrelic.noticeError(e),
 }).then(() => log('Website started!')).catch(e => setImmediate(() => { throw e; }));
