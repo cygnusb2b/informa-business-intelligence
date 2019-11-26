@@ -1,5 +1,6 @@
 import { getAsArray } from "@base-cms/object-path";
 import { warn } from "@base-cms/utils";
+import adunitAttrs from "./create-adunit-attrs";
 
 $ const { gam } = out.global;
 $ const { location, position, context } = input;
@@ -10,6 +11,7 @@ $ const { location, position, context } = input;
     <if(adunits)>
       <for|adunit| of=adunits>
         $ const targeting = { ...adunit.targeting, ...input.targeting };
+        $ const attrs = adunitAttrs({ location, position, context, adunit });
         <marko-web-gam-define-display-ad
           path=adunit.path
           size=adunit.size
@@ -20,12 +22,7 @@ $ const { location, position, context } = input;
           apply-style=input.applyStyle
           class=input.class
           with-wrapper=input.withWrapper
-          attrs={
-            'data-informa-gam-location': location,
-            'data-informa-gam-position': position,
-            'data-informa-gam-context': JSON.stringify(context || {}),
-            'data-informa-gam-key': adunit.key,
-          }
+          attrs=attrs
         />
       </for>
     </if>
