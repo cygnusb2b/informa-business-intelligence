@@ -1,7 +1,7 @@
 const newrelic = require('newrelic');
 const { startServer } = require('@base-cms/marko-web');
+const gam = require('@endeavor-business-media/informa-gam/middleware');
 const document = require('@endeavor-business-media/lazarus-shared/components/document');
-const GAM = require('./config/gam');
 const routes = require('./server/routes');
 const siteConfig = require('./config/site');
 const coreConfig = require('./config/core');
@@ -20,7 +20,7 @@ module.exports = startServer({
   fragments,
   onStart: (app) => {
     app.set('trust proxy', 'loopback, linklocal, uniquelocal');
-    app.locals.GAM = GAM; // eslint-disable-line no-param-reassign
+    app.use(gam({ accountId: '3834', basePath: 'iw.home' }));
   },
   onAsyncBlockError: e => newrelic.noticeError(e),
 }).then(() => log('Website started!')).catch(e => setImmediate(() => { throw e; }));
