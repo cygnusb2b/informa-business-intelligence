@@ -77,7 +77,7 @@ module.exports = deepAssign(
       key: ({ machinename }) => machinename,
       name: ({ slot }) => slot.replace(/\[.*?\]\s/g, ''),
       fluid: ({ size }) => size && `${size}`.toLowerCase() === 'fluid',
-      size: ({ size, _id }) => {
+      size: ({ size }) => {
         if (!size) return [];
         if (size && `${size}`.toLowerCase() === 'fluid') return [];
         let stringSize = size;
