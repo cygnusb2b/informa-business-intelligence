@@ -53,7 +53,7 @@ module.exports = ({ accountId, basePath } = {}) => (req, res, next) => {
     link: createHttpLink({ fetch, uri: GAM_SERVICE_URI, headers: { 'x-tenant-key': TENANT_KEY } }),
     cache: new InMemoryCache(),
   });
-  const adunit = (location, context) => {
+  const adunit = ({ location, context }) => {
     const key = createCacheKey(location, context);
     if (!cache.has(key)) {
       const input = { location };
