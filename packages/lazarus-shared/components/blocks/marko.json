@@ -9,10 +9,8 @@
   "<lazarus-shared-global-left-rail-block>": {
     "template": "./global-left-rail.marko",
     "<adunit>": {
-      "@name": "string",
-      "@pos": "string"
-    },
-    "@gam": "object",
-    "@aliases": "array"
+      "@location": "string",
+      "@position": "string"
+    }
   }
 }
