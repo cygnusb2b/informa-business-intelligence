@@ -9,6 +9,7 @@
       "type": "string",
       "required": true
     },
+    "@id": "string",
     "@modifiers": "array",
     "@apply-style": "boolean",
     "@class": "string",

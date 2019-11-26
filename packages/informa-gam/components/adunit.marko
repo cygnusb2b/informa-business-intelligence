@@ -18,6 +18,7 @@ $ const { location, position } = input;
           size=size
           size-mapping=sizeMapping
           targeting=adunit.targeting
+          id=input.id
           modifiers=input.modifiers
           apply-style=input.applyStyle
           class=input.class
@@ -25,6 +26,9 @@ $ const { location, position } = input;
         />
       </for>
     </if>
-    <!-- @todo warn if not found. -->
+    <else>
+      <!-- @todo warn if not found. -->
+      $ console.log('NOT FOUND!!');
+    </else>
   </marko-web-resolve>
 </if>
