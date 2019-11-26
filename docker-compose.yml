@@ -75,6 +75,8 @@ services:
       EXTERNAL_PORT: 6841
       MONGO_DSN: ${MONGO_DSN-mongodb://mongodb:27017/}
       NODE_ENV: development
+      NEW_RELIC_ENABLED: ${NEW_RELIC_ENABLED-0}
+      NEW_RELIC_LICENSE_KEY: ${NEW_RELIC_LICENSE_KEY-(unset)}
       YARN_CACHE_FOLDER: /.yarn-cache
     depends_on:
       - mongodb

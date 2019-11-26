@@ -23,7 +23,8 @@
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.4",
     "graphql-type-json": "^0.3.0",
-    "helmet": "^3.21.0"
+    "helmet": "^3.21.0",
+    "newrelic": "^5.11.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
