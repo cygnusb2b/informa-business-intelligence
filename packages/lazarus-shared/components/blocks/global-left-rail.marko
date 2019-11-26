@@ -5,7 +5,7 @@ import queryFragment from "../../graphql/fragments/content-list";
 $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 
-<if(adunit.position)>
+<if(adunit.location && adunit.position)>
   <lazarus-shared-increment-ad-pos slot-id=slotId />
   <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
 </if>
@@ -23,7 +23,7 @@ $ const slotId = generateId();
   </lazarus-shared-content-list-flow>
 </marko-web-query>
 
-<if(adunit.position)>
+<if(adunit.location && adunit.position)>
   <informa-gam-adunit
     ...adunit
     location=adunit.location
