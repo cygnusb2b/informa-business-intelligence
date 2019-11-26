@@ -1,0 +1,48 @@
+import { getAsArray } from "@base-cms/object-path";
+import { warn } from "@base-cms/utils";
+import adunitAttrs from "../utils/create-adunit-attrs";
+
+$ const { gam } = out.global;
+
+$ const inject = getAsArray(input, "inject").filter(o => o && o.at);
+$ const promises = Promise.all(inject.map(async (unitInput) => {
+  const {
+    at,
+    location,
+    context,
+    position,
+  } = unitInput;
+  const map = await gam.adunits({ location, context });
+  const adunits = map.get(position);
+  if (!adunits.length) return null;
+
+  // Only allow one adunit to be rendered.
+  const adunit = adunits[0];
+  return {
+    at,
+    path: adunit.path,
+    size: adunit.size,
+    sizeMapping: adunit.sizeMapping,
+    targeting: ({ ...adunit.targeting, ...unitInput.targeting }),
+    id: unitInput.id,
+    modifiers: unitInput.modifiers,
+    applyStyle: unitInput.apply,
+    class: unitInput.class,
+    withWrapper: unitInput.withWrapper,
+    attrs: adunitAttrs({ location, position, context, adunit }),
+  };
+}));
+
+<marko-web-resolve|{ resolved }| promise=promises>
+  $ const toInject = resolved.filter(v => v);
+  <if(toInject.length)>
+    <marko-web-gam-inject-ads
+      inject=toInject
+      selector=input.selector
+      child-selector=input.childSelector
+    />
+  </if>
+  <else>
+    $ warn(`Unable to inject ads: no adunits found.`);
+  </else>
+</marko-web-resolve>

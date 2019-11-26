@@ -1,46 +1,36 @@
-import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
-import sectionTargeting from "@endeavor-business-media/lazarus-shared/utils/gam/section-targeting";
 
-$ const { GAM } = out.global;
 $ const { id, alias, name, pageNode } = data;
-
-$ const getAdSlots = ({ aliases }) => ({
-  "gpt-lb-section-page-main": GAM.getAdUnit({ name: "lb-section-page-main", aliases, targeting: { pos: "728_1_a" } }),
-  "gpt-lb-section-page-list": GAM.getAdUnit({ name: "lb-section-page-list", aliases, targeting: { pos: "728_2_a" } }),
-  "gpt-mr-section-page-right": GAM.getAdUnit({ name: "mr-section-page", aliases, targeting: { pos: "300_1_rht" } }),
-});
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
     <marko-web-gtm-website-section-context|{ context }| alias=alias>
       <marko-web-gtm-push data=context />
     </marko-web-gtm-website-section-context>
-    <marko-web-resolve-page|{ data: section }| node=pageNode>
-      <marko-web-gam-targeting key-values=sectionTargeting(section) />
-      <marko-web-gam-slots slots=getAdSlots({ aliases: hierarchyAliases(section) }) />
-    </marko-web-resolve-page>
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
-      $ const aliases = hierarchyAliases(section);
-      $ const adSlots = getAdSlots({ aliases });
-
-      <marko-web-gam-display-ad
-        id="gpt-lb-section-page-main"
-        slots=adSlots
+      <informa-gam-adunit
+        location="taxonomy"
+        position="top_banner"
         modifiers=["top-of-page"]
-      />
+      >
+        <@context section-id=section.id />
+      </informa-gam-adunit>
+
       <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
         <@section>
           <default-theme-website-section-breadcrumbs display-self=false section=section />
           <marko-web-website-section-name class="page-wrapper__title" tag="h1" obj=section />
 
-          <marko-web-gam-define-display-ad
-            ...GAM.getAdUnit({ name: "sponsored-logo-section-page", aliases })
+          <informa-gam-adunit
+            location="taxonomy"
+            position="sponsored_logo"
             modifiers=["sponsored-logo"]
             with-wrapper=true
-          />
+          >
+            <@context section-id=section.id />
+          </informa-gam-adunit>
 
           <marko-web-website-section-description class="page-wrapper__deck" obj=section />
         </@section>
@@ -61,10 +51,11 @@ $ const getAdSlots = ({ aliases }) => ({
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <lazarus-shared-global-left-rail-block
-                aliases=aliases
-                adunit={ name: "mr-section-page", pos: "300_1_lft" }
-              />
+              <lazarus-shared-global-left-rail-block>
+                <@adunit location="taxonomy" position="left_rail_rect">
+                  <@context section-id=section.id />
+                </@adunit>
+              </lazarus-shared-global-left-rail-block>
             </@left-col>
             <@right-col>
               <@top-row>
@@ -79,11 +70,13 @@ $ const getAdSlots = ({ aliases }) => ({
                   </marko-web-query>
                 </@left-col>
                 <@right-col>
-                  <marko-web-gam-display-ad
-                    id="gpt-mr-section-page-right"
-                    slots=adSlots
+                  <informa-gam-adunit
+                    location="taxonomy"
+                    position="right_rail_rect"
                     modifiers=["max-width-300", "sticky-top"]
-                  />
+                  >
+                    <@context section-id=section.id />
+                  </informa-gam-adunit>
                 </@right-col>
               </@top-row>
               <@bottom-row>
@@ -105,11 +98,13 @@ $ const getAdSlots = ({ aliases }) => ({
                     </if>
 
                     <lazarus-skin-page-grid-col modifiers=["full", "flex", "bottom-spacer"]>
-                      <marko-web-gam-display-ad
-                        id="gpt-lb-section-page-list"
-                        slots=adSlots
+                      <informa-gam-adunit
+                        location="taxonomy"
+                        position="infinitescroll"
                         modifiers=["max-width-728", "margin-auto-x"]
-                      />
+                      >
+                        <@context section-id=section.id />
+                      </informa-gam-adunit>
                     </lazarus-skin-page-grid-col>
 
                     <if(listNodes.length)>
@@ -135,8 +130,11 @@ $ const getAdSlots = ({ aliases }) => ({
                   expand=500
                   component-name="lazarus-shared-content-load-more-flow"
                   component-input={
-                    aliases,
-                    adunit: { name: "lb-section-page-list", pos: "728_3_a" }
+                    adunit: {
+                      location: "taxonomy",
+                      position: "infinitescroll",
+                      context: { sectionId: section.id },
+                    },
                   }
                   fragment-name="content-list"
                   query-name="website-scheduled-content"

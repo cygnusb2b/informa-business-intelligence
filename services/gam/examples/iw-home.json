@@ -1,0 +1,1038 @@
+{
+	"dfp_tags": {
+		"everywhere": [],
+		"taxonomy": {
+			"native_leftrail_1": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_leftrail_1",
+				"slot": "[taxonomy] Native Left Rail 1",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_leftrail_1",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_1_lft"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_1_lft"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_leftrail_2": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_leftrail_2",
+				"slot": "[taxonomy] Native Left Rail 2",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_leftrail_2",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_2_lft"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_2_lft"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_top_stories_1": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_top_stories_1",
+				"slot": "[taxonomy] Native Top Stories 1",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_top_stories_1",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_8"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_8"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_article_4": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_article_4",
+				"slot": "[taxonomy] Native Article 4",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_article_4",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_10"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_10"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_umpu": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_umpu",
+				"slot": "[taxonomy] Native Umpu",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_umpu",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_3"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_3"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"custom_content_channel_sponsored_header": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_custom_content_channel_sponsored_header",
+				"slot": "[taxonomy] Custom content channel sponsored header",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [160, 65],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "custom_content_channel_sponsored_header",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "customsponsoredlogo1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "customsponsoredlogo1"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"custom_content_channel_sponsored_resources": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_custom_content_channel_sponsored_resources",
+				"slot": "[taxonomy] Custom content channel sponsored resources",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [160, 65],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "custom_content_channel_sponsored_resources",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "customsponsoredlogo2"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "customsponsoredlogo2"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"right_rail_rect": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_300_1_rht",
+				"slot": "[taxonomy] Rectangle Inline and Jumbotron",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "right_rail_rect",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_rht"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_rht"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"left_rail_rect": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_300_x_lft",
+				"slot": "[taxonomy] Left rail 300_x_lft",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [300, 250],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "left_rail_rect",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_lft"
+					}],
+					"breakpoints": [{
+						"browser_size": "779x0",
+						"ad_sizes": "300x250"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_lft"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"top_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_728_1_a",
+				"slot": "[taxonomy] Leaderboard 728_1_a",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [
+					[728, 90],
+					[970, 90],
+					[320, 50],
+					[970, 250]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "top_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_1_a"
+					}, {
+						"target": "ptype",
+						"value": "[term:vocabulary:machine-name]"
+					}, {
+						"target": "combo",
+						"value": "wrap"
+					}, {
+						"target": "pterm",
+						"value": "[term:category_name_without_space_specialchars]"
+					}, {
+						"target": "program",
+						"value": "[term:program_name_without_space_specialchars]"
+					}, {
+						"target": "sterm",
+						"value": "[term:category_name_without_space_specialchars]"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "970x90,970x250,728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [
+						[970, 90],
+						[970, 250],
+						[728, 90]
+					],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_1_a"
+				}, {
+					"target": "combo",
+					"value": "wrap"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"bottom_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_728_footer",
+				"slot": "[taxonomy] Leaderboard 728_10_a",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "bottom_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_10_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_10_a"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"hidden": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_canopy",
+				"slot": "[taxonomy] Canopy",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "adhesion"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "adhesion"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_footnote_floor",
+				"slot": "[taxonomy] Footnote_Floor",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "footnote"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "footnote"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_oop",
+				"slot": "[taxonomy] Out of Page",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [0, 0],
+				"block": 0,
+				"settings": {
+					"out_of_page": 1,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "oop_a"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "oop_a"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_pagewrap",
+				"slot": "[taxonomy] PageWrap",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 1,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "wrap"
+					}, {
+						"target": "combo",
+						"value": "wrap"
+					}],
+					"breakpoints": [{
+						"browser_size": "1500x0",
+						"ad_sizes": "1x1"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [1, 1],
+					"browser_size": [1500, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "wrap"
+				}, {
+					"target": "combo",
+					"value": "wrap"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"infinitescroll": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_interscroller_728_x_a",
+				"slot": "[taxonomy] Interscroller\/Leaderboard 2",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "infinitescroll",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_2_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_2_a"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"sponsored_logo": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_sponsored_logo",
+				"slot": "[taxonomy] Sponsored Logo",
+				"adunit": "\/3834\/iw.home\/categories\/operations",
+				"size": [
+					[160, 65],
+					[125, 125],
+					[90, 90]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "sponsored_logo",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "sponsoredlogo"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "sponsoredlogo"
+				}, {
+					"target": "ptype",
+					"value": "categories"
+				}, {
+					"target": "pterm",
+					"value": "operations"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}]
+		}
+	},
+	"current_type": "taxonomy",
+	"default_adunit": "\/3834\/iw.home",
+	"brand_adunit": "",
+	"async_rendering": 1,
+	"single_request": 0,
+	"collapse_empty_divs": "1",
+	"viewport": 1,
+	"lifetime_banner": "2000",
+	"do_byline": 0,
+	"enable_sticky": 1,
+	"enable_cb_refresh": "0",
+	"cb_refresh_interval": "15",
+	"is_blocked_ip": false,
+	"uip": "69.191.211.217"
+}

@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/ElectronicDesgn', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4210549/profile', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'elecdes.home' },
   gtm: {
     containerId: 'GTM-KTXH6VJ',
   },

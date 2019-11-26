@@ -1,0 +1,1827 @@
+{
+	"dfp_tags": {
+		"everywhere": [],
+		"article": {
+			"native_leftrail_1": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_native_leftrail_1",
+				"slot": "[article] Native Left Rail 1",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "native_leftrail_1",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_1_lft"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_1_lft"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_leftrail_2": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_native_leftrail_2",
+				"slot": "[article] Native Left Rail 2",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "native_leftrail_2",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_2_lft"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_2_lft"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_related": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_native_related",
+				"slot": "[article] Native Related",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "native_related",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_12_1"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_12_1"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_inline": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_native_inline",
+				"slot": "[article] Native Inline",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "native_inline",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_13_1"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_13_1"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"right_rail_rect": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "_article_right_rail_rect",
+				"slot": "[article] [article] Right rail rect",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "right_rail_rect",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_rht"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_rht"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"native_umpu": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_native_umpu",
+				"slot": "[article] Native Umpu",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "native_umpu",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_3"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_3"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"inarticle1": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_1_rht_infinite",
+				"slot": "[article] Rectangle Inline 1",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "inarticle1",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_rht"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_rht"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"inarticle2": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_2_rht_infinite",
+				"slot": "[article] Rectangle Inline 2",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "inarticle2",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_2_rht"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_2_rht"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"inarticle3": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_3_rht_infinite",
+				"slot": "[article] Rectangle Inline 3",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "inarticle3",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_3_rht"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_3_rht"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"inarticle4": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_4_rht_infinite",
+				"slot": "[article] Rectangle Inline 4",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "inarticle4",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_4_rht"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_4_rht"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"left_rail_rect": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_x_lft",
+				"slot": "[article] Left rail 300_x_lft",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [300, 250],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "left_rail_rect",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_lft"
+					}],
+					"breakpoints": [{
+						"browser_size": "779x0",
+						"ad_sizes": "300x250"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_lft"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"jumbotron": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_300_x_rht",
+				"slot": "[article] Rectangle Inline and Jumbotron",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[300, 250],
+					[300, 600]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "jumbotron",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "300_1_rht"
+					}],
+					"breakpoints": [{
+						"browser_size": "0x0",
+						"ad_sizes": "300x250"
+					}, {
+						"browser_size": "779x0",
+						"ad_sizes": "300x250,300x600"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [300, 250],
+					"browser_size": [0, 0]
+				}, {
+					"ad_sizes": [
+						[300, 250],
+						[300, 600]
+					],
+					"browser_size": [779, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "300_1_rht"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"top_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_728_1_a",
+				"slot": "[article] Leaderboard 728_1_a",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[728, 90],
+					[970, 90],
+					[320, 50],
+					[970, 250]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "top_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_1_a"
+					}, {
+						"target": "program",
+						"value": "[node:program_without_space_specialchars]"
+					}, {
+						"target": "ptype",
+						"value": "[node:field_penton_article_type]"
+					}, {
+						"target": "nid",
+						"value": "[node:nid]"
+					}, {
+						"target": "pterm",
+						"value": "[node:pterm_without_space_specialchars]"
+					}, {
+						"target": "sterm",
+						"value": "[node:sterm_without_space_specialchars]"
+					}, {
+						"target": "author",
+						"value": "[node:author_without_space_specialchars]"
+					}, {
+						"target": "combo",
+						"value": "wrap"
+					}, {
+						"target": "content",
+						"value": "[node:program_without_space_specialchars]"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "970x90,970x250,728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [
+						[970, 90],
+						[970, 250],
+						[728, 90]
+					],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_1_a"
+				}, {
+					"target": "combo",
+					"value": "wrap"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"bottom_banner": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_728_footer",
+				"slot": "[article] Leaderboard 728_10_a",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "bottom_banner",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_10_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_10_a"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"hidden": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_canopy",
+				"slot": "[article] Canopy",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "adhesion"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "adhesion"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_footnote_floor",
+				"slot": "[article] Footnote_Floor",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "footnote"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "footnote"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_oop",
+				"slot": "[article] Out of Page",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [0, 0],
+				"block": 0,
+				"settings": {
+					"out_of_page": 1,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "oop_a"
+					}, {
+						"target": "gdpr_banner",
+						"value": "off"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "oop_a"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}, {
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_pagewrap",
+				"slot": "[article] PageWrap",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 1,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "hidden",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "wrap"
+					}, {
+						"target": "combo",
+						"value": "wrap"
+					}],
+					"breakpoints": [{
+						"browser_size": "1500x0",
+						"ad_sizes": "1x1"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [1, 1],
+					"browser_size": [1500, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "wrap"
+				}, {
+					"target": "combo",
+					"value": "wrap"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"custom_content_channel_sponsored_header": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_ccc_header",
+				"slot": "[article] Article CCC header",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [160, 65],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "custom_content_channel_sponsored_header",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "customsponsoredlogo1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "customsponsoredlogo1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"custom_content_channel_sponsored_resources": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_ccc_resources",
+				"slot": "[article] Article CCC resources",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [160, 65],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "custom_content_channel_sponsored_resources",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "customsponsoredlogo2"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "customsponsoredlogo2"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"inarticlevid": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_in_article_video_ad",
+				"slot": "[article] In-Article Video Ad",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "inarticlevid",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "inarticlevideo_1_a"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "inarticlevideo_1_a"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"reveal": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_reveal",
+				"slot": "[article] Reveal Ad",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [1, 1],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "reveal",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "reveal_1"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "reveal_1"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"infinitescroll": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_interscroller_728_x_a",
+				"slot": "[article] Interscroller\/Leaderboard 2",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[728, 90],
+					[320, 50]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "infinitescroll",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "728_2_a"
+					}],
+					"breakpoints": [{
+						"browser_size": "1119x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "728x0",
+						"ad_sizes": "728x90"
+					}, {
+						"browser_size": "0x0",
+						"ad_sizes": "320x50"
+					}]
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [{
+					"ad_sizes": [728, 90],
+					"browser_size": [1119, 0]
+				}, {
+					"ad_sizes": [728, 90],
+					"browser_size": [728, 0]
+				}, {
+					"ad_sizes": [320, 50],
+					"browser_size": [0, 0]
+				}],
+				"targeting": [{
+					"target": "pos",
+					"value": "728_2_a"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"sponsored_logo": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_sponsored_logo",
+				"slot": "[article] Sponsored Logo",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[160, 65],
+					[125, 125],
+					[90, 90]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "sponsored_logo",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "sponsoredlogo"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "sponsoredlogo"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}],
+			"sponsored_logo_weather": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "article_sponsored_logo_weather",
+				"slot": "[article] Sponsored Logo Weather",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": [
+					[160, 65],
+					[125, 125],
+					[90, 90]
+				],
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "article",
+					"position": "sponsored_logo_weather",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "sponsoredlogo_weather"
+					}, {
+						"target": "article_number",
+						"value": "1"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "sponsoredlogo_weather"
+				}, {
+					"target": "article_number",
+					"value": "1"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}]
+		},
+		"taxonomy": {
+			"native_article_4": [{
+				"disabled": false,
+				"api_version": 1,
+				"machinename": "term_native_article_4",
+				"slot": "[taxonomy] Native Article 4",
+				"adunit": "\/3834\/iw.home\/article\/leadership",
+				"size": "fluid",
+				"block": 0,
+				"settings": {
+					"out_of_page": 0,
+					"slug": "",
+					"short_tag": 0,
+					"location": "taxonomy",
+					"position": "native_article_4",
+					"adsense_ad_types": "",
+					"adsense_channel_ids": "",
+					"adsense_colors": {
+						"background": "",
+						"border": "",
+						"link": "",
+						"text": "",
+						"url": ""
+					},
+					"targeting": [{
+						"target": "pos",
+						"value": "nativekey_10"
+					}],
+					"breakpoints": []
+				},
+				"export_module": "penton_dfp",
+				"type": "Default",
+				"export_type": 2,
+				"in_code_only": true,
+				"table": "dfp_tags",
+				"breakpoints": [],
+				"targeting": [{
+					"target": "pos",
+					"value": "nativekey_10"
+				}, {
+					"target": "ptype",
+					"value": "Article"
+				}, {
+					"target": "nid",
+					"value": "446756"
+				}, {
+					"target": "pterm",
+					"value": "leadership"
+				}, {
+					"target": "sterm",
+					"value": "operations"
+				}, {
+					"target": "author",
+					"value": "_bloomberg"
+				}, {
+					"target": "reg",
+					"value": "anonymous"
+				}]
+			}]
+		}
+	},
+	"current_type": "article",
+	"default_adunit": "\/3834\/iw.home",
+	"brand_adunit": "",
+	"async_rendering": 1,
+	"single_request": 0,
+	"collapse_empty_divs": "1",
+	"viewport": 1,
+	"lifetime_banner": "2000",
+	"do_byline": 0,
+	"enable_sticky": 1,
+	"enable_cb_refresh": "0",
+	"cb_refresh_interval": "15",
+	"is_blocked_ip": false,
+	"uip": "209.220.55.180"
+}

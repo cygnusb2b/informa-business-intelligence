@@ -24,6 +24,7 @@ module.exports = {
   },
   socialMediaLinks: [
   ],
+  gam: { accountId: '3834', basePath: 'truckfleetmro.home' },
   gtm: {
     containerId: 'GTM-TS75GCS',
   },

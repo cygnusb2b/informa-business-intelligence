@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/HPpenton', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/40236/profile', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'hnp.home' },
   gtm: {
     containerId: 'GTM-NNFQ6CV',
   },

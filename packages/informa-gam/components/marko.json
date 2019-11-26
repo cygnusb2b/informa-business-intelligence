@@ -1,0 +1,55 @@
+{
+  "<informa-gam-adunit>": {
+    "template": "./adunit.marko",
+    "<context>": {
+      "@section-id": "number",
+      "@content-id": "number",
+      "@request-path": "string"
+    },
+    "@location": {
+      "type": "string",
+      "required": true
+    },
+    "@position": {
+      "type": "string",
+      "required": true
+    },
+    "@pos-increment": "number",
+    "@targeting": "object",
+    "@id": "string",
+    "@modifiers": "array",
+    "@apply-style": "boolean",
+    "@class": "string",
+    "@with-wrapper": "boolean"
+  },
+  "<informa-gam-inject-adunits>": {
+    "template": "./inject-adunits.marko",
+    "@inject <inject>[]": {
+      "<context>": {
+        "@section-id": "number",
+        "@content-id": "number",
+        "@request-path": "string"
+      },
+      "@at": {
+        "type": "number",
+        "required": true
+      },
+      "@location": {
+        "type": "string",
+        "required": true
+      },
+      "@position": {
+        "type": "string",
+        "required": true
+      },
+      "@targeting": "object",
+      "@id": "string",
+      "@modifiers": "array",
+      "@apply-style": "boolean",
+      "@class": "string",
+      "@with-wrapper": "boolean"
+    },
+    "@selector": "string",
+    "@child-selector": "string"
+  }
+}

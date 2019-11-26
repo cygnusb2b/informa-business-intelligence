@@ -1,35 +1,20 @@
-import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import queryFragment from "../graphql/fragments/content-list";
 
 $ const { GAM, site } = out.global;
 $ const { id, alias, name, pageNode } = data;
-
-$ const getAdSlots = ({ aliases }) => ({
-  "gpt-lb-section-page-main": GAM.getAdUnit({ name: "lb-section-page-main", aliases, targeting: { pos: "728_1_a" } }),
-  "gpt-lb-section-page-list": GAM.getAdUnit({ name: "lb-section-page-list", aliases, targeting: { pos: "728_2_a" } }),
-  "gpt-mr-section-page-left": GAM.getAdUnit({ name: "mr-section-page", aliases, targeting: { pos: "300_1_lft" } }),
-  "gpt-mr-section-page-right": GAM.getAdUnit({ name: "mr-section-page", aliases, targeting: { pos: "300_1_rht" } }),
-});
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
     <marko-web-gtm-website-section-context|{ context }| alias=alias>
       <marko-web-gtm-push data=context />
     </marko-web-gtm-website-section-context>
-    <marko-web-resolve-page|{ data: section }| node=pageNode>
-      $ const aliases = hierarchyAliases(section);
-      <marko-web-gam-targeting key-values={ ptype: "homepage" } />
-      <marko-web-gam-slots slots=getAdSlots({ aliases }) />
-    </marko-web-resolve-page>
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
-      $ const aliases = hierarchyAliases(section);
-      $ const adSlots = getAdSlots({ aliases });
 
-      <marko-web-gam-display-ad
-        id="gpt-lb-section-page-main"
-        slots=adSlots
+      <informa-gam-adunit
+        location="homepage"
+        position="top_banner"
         modifiers=["top-of-page"]
       />
 
@@ -37,10 +22,9 @@ $ const getAdSlots = ({ aliases }) => ({
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <lazarus-shared-global-left-rail-block
-                aliases=aliases
-                adunit={ name: "mr-section-page", pos: "300_1_lft" }
-              />
+              <lazarus-shared-global-left-rail-block>
+                <@adunit location="homepage" position="left_rail_rect" />
+              </lazarus-shared-global-left-rail-block>
             </@left-col>
             <@right-col>
               <@top-row>
@@ -149,10 +133,7 @@ $ const getAdSlots = ({ aliases }) => ({
                               <@title modifiers=["large"] />
                             </lazarus-shared-content-card-node>
                             <marko-web-element block-name=blockName name="ad" modifiers=["max-width-300"]>
-                              <marko-web-gam-display-ad
-                                id="gpt-mr-section-page-right"
-                                slots=adSlots
-                              />
+                              <informa-gam-adunit location="homepage" position="third_cat_jumbotron" />
                             </marko-web-element>
                           </marko-web-element>
                         </@hero>

@@ -26,6 +26,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/NewEquipment', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/newequipment', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'newequipment.home' },
   gtm: {
     containerId: 'GTM-NGMR8Z5',
   },

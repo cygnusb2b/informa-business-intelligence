@@ -2,12 +2,10 @@ import generateId from "@base-cms/marko-web-gam/utils/generate-id";
 import { getAsObject } from "@base-cms/object-path";
 import queryFragment from "../../graphql/fragments/content-list";
 
-$ const { GAM } = out.global;
-$ const { aliases } = input;
 $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 
-<if(adunit.name)>
+<if(adunit.location && adunit.position)>
   <lazarus-shared-increment-ad-pos slot-id=slotId />
   <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
 </if>
@@ -25,9 +23,12 @@ $ const slotId = generateId();
   </lazarus-shared-content-list-flow>
 </marko-web-query>
 
-<if(adunit.name)>
-  <marko-web-gam-define-display-ad
-    ...GAM.getAdUnit({ name: adunit.name, aliases, targeting: { pos: adunit.pos } })
+<if(adunit.location && adunit.position)>
+  <informa-gam-adunit
+    ...adunit
+    location=adunit.location
+    position=adunit.position
+    context=adunit.context
     id=slotId
     modifiers=["max-width-300"]
   />
