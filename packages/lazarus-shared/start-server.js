@@ -1,3 +1,4 @@
+const newrelic = require('newrelic');
 const { startServer } = require('@base-cms/marko-web');
 const { get } = require('@base-cms/object-path');
 const gam = require('@endeavor-business-media/informa-gam/middleware');
@@ -21,5 +22,6 @@ module.exports = (options = {}) => {
       if (gamConfig) app.use(gam(gamConfig));
       app.use(cleanResponse());
     },
+    onAsyncBlockError: e => newrelic.noticeError(e),
   });
 };

@@ -23,7 +23,6 @@
     "@endeavor-business-media/informa-gam": "^1.0.0-alpha.1",
     "@endeavor-business-media/lazarus-shared": "^1.0.0-alpha.1",
     "graphql": "^14.5.4",
-    "graphql-tag": "^2.10.1",
-    "newrelic": "^5.11.0"
+    "graphql-tag": "^2.10.1"
   }
 }

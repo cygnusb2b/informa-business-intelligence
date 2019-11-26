@@ -1,4 +1,3 @@
-const newrelic = require('newrelic');
 const startServer = require('@endeavor-business-media/lazarus-shared/start-server');
 
 const routes = require('./server/routes');
@@ -12,5 +11,4 @@ module.exports = startServer({
   coreConfig,
   siteConfig,
   routes,
-  onAsyncBlockError: e => newrelic.noticeError(e),
 }).then(() => log('Website started!')).catch(e => setImmediate(() => { throw e; }));
