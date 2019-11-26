@@ -1,6 +1,11 @@
 {
   "<informa-gam-adunit>": {
     "template": "./adunit.marko",
+    "<context>": {
+      "@section-id": "number",
+      "@content-id": "number",
+      "@request-path": "string"
+    },
     "@location": {
       "type": "string",
       "required": true

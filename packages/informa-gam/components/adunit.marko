@@ -1,10 +1,10 @@
 import { getAsArray } from "@base-cms/object-path";
 
 $ const { gam } = out.global;
-$ const { location, position } = input;
+$ const { location, position, context } = input;
 
 <if(location)>
-  <marko-web-resolve|{ resolved }| promise=gam.adunit(location)>
+  <marko-web-resolve|{ resolved }| promise=gam.adunit(location, context)>
     $ const adunits = resolved.get(position);
     <if(adunits)>
       <for|adunit| of=adunits>
