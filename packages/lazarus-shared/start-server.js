@@ -1,4 +1,5 @@
 const { startServer } = require('@base-cms/marko-web');
+const { get } = require('@base-cms/object-path');
 const gam = require('@endeavor-business-media/informa-gam/middleware');
 const cleanResponse = require('@base-cms/marko-core/middleware/clean-marko-response');
 
@@ -7,7 +8,8 @@ const components = require('./components');
 const fragments = require('./fragments');
 
 module.exports = (options = {}) => {
-  const { gamConfig, onStart } = options;
+  const { onStart } = options;
+  const gamConfig = get(options, 'siteConfig.gam');
   return startServer({
     ...options,
     document: options.document || document,
