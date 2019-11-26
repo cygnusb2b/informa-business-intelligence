@@ -12,12 +12,13 @@ $ const { location, position, context } = input;
         $ const sizeMapping = getAsArray(adunit.sizeMapping).map(({ viewport: vp, size }) => {
           return { viewport: [vp.width, vp.height], size: size.map(({ width, height }) => [width, height]) };
         });
+        $ const targeting = { ...adunit.targeting, ...input.targeting };
         $!{`<!-- <informa-gam-adunit location="${location}" position="${position}" /> -->`}
         <marko-web-gam-define-display-ad
           path=adunit.path
           size=size
           size-mapping=sizeMapping
-          targeting=adunit.targeting
+          targeting=targeting
           id=input.id
           modifiers=input.modifiers
           apply-style=input.applyStyle
