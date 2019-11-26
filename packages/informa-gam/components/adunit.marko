@@ -13,7 +13,6 @@ $ const { location, position, context } = input;
           return { viewport: [vp.width, vp.height], size: size.map(({ width, height }) => [width, height]) };
         });
         $ const targeting = { ...adunit.targeting, ...input.targeting };
-        $!{`<!-- <informa-gam-adunit location="${location}" position="${position}" /> -->`}
         <marko-web-gam-define-display-ad
           path=adunit.path
           size=size
@@ -24,6 +23,11 @@ $ const { location, position, context } = input;
           apply-style=input.applyStyle
           class=input.class
           with-wrapper=input.withWrapper
+          attrs={
+            'data-informa-gam-location': location,
+            'data-informa-gam-position': position,
+            'data-informa-gam-context': JSON.stringify(context || {}),
+          }
         />
       </for>
     </if>
