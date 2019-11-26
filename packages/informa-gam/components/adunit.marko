@@ -1,4 +1,5 @@
 import { getAsArray } from "@base-cms/object-path";
+import { warn } from "@base-cms/utils";
 
 $ const { gam } = out.global;
 $ const { location, position, context } = input;
@@ -29,8 +30,7 @@ $ const { location, position, context } = input;
       </for>
     </if>
     <else>
-      <!-- @todo warn if not found. -->
-      $ console.log('NOT FOUND!!');
+      $ warn(`Unable to render ad: no adunits found for location '${location}' and position '${position}'`);
     </else>
   </marko-web-resolve>
 </if>
