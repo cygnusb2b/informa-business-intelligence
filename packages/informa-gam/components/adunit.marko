@@ -8,15 +8,11 @@ $ const { location, position, context } = input;
     $ const adunits = resolved.get(position);
     <if(adunits)>
       <for|adunit| of=adunits>
-        $ const size = adunit.size.map(({ width, height }) => [width, height]);
-        $ const sizeMapping = getAsArray(adunit.sizeMapping).map(({ viewport: vp, size }) => {
-          return { viewport: [vp.width, vp.height], size: size.map(({ width, height }) => [width, height]) };
-        });
         $ const targeting = { ...adunit.targeting, ...input.targeting };
         <marko-web-gam-define-display-ad
           path=adunit.path
-          size=size
-          size-mapping=sizeMapping
+          size=adunit.size
+          size-mapping=adunit.sizeMapping
           targeting=targeting
           id=input.id
           modifiers=input.modifiers
@@ -27,6 +23,7 @@ $ const { location, position, context } = input;
             'data-informa-gam-location': location,
             'data-informa-gam-position': position,
             'data-informa-gam-context': JSON.stringify(context || {}),
+            'data-informa-gam-key': adunit.key,
           }
         />
       </for>
