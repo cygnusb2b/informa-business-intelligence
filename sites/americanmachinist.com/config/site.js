@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/AmericanMachnst', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2880425', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'amermach.home' },
   gtm: {
     containerId: 'GTM-56CR4G5',
   },

@@ -28,6 +28,7 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2003884', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/channel/UCTO3PUFzLZbmdcva2Lq_bAQ', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'mhl.home' },
   gtm: {
     containerId: 'GTM-TDLXZDD',
   },

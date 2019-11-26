@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/MicrowavesRF', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/3848060/profile', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'mwrf.home' },
   gtm: {
     containerId: 'GTM-57VWSC8',
   },

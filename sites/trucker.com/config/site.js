@@ -26,6 +26,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/American-Trucker-Magazine-37172697238/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/truckerAMT', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'trucker.home' },
   gtm: {
     containerId: 'GTM-56CR4G5',
   },

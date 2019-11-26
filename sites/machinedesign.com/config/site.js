@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/MachineDesign', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/78772/profile', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'machdesign.home' },
   gtm: {
     containerId: 'GTM-NTF52QT',
   },

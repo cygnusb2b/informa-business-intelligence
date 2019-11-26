@@ -25,6 +25,7 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'twitter', href: 'https://twitter.com/electricalmktg', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'elecmktg.home' },
   gtm: {
     containerId: 'GTM-MQ9CK3N',
   },

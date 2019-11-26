@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/HPACEng', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/7486557', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'hpac.home' },
   gtm: {
     containerId: 'GTM-P3L4HKV',
   },

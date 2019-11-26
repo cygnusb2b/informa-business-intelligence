@@ -26,6 +26,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/trailerbodybuilders/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/trailerbb', target: '_blank' },
   ],
+  gam: { accountId: '3834', basePath: 'trailerbody.home' },
   gtm: {
     containerId: 'GTM-NM9N92D',
   },
