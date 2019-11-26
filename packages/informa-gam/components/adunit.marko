@@ -1,9 +1,15 @@
 import { getAsArray } from "@base-cms/object-path";
 import { warn } from "@base-cms/utils";
-import adunitAttrs from "./create-adunit-attrs";
+import adunitAttrs from "../utils/create-adunit-attrs";
+import incrementPos from "../utils/increment-pos";
 
 $ const { gam } = out.global;
-$ const { location, position, context } = input;
+$ const {
+  location,
+  position,
+  context,
+  posIncrement,
+} = input;
 
 <if(location)>
   <marko-web-resolve|{ resolved }| promise=gam.adunits({ location, context })>
@@ -12,6 +18,8 @@ $ const { location, position, context } = input;
       <for|adunit| of=adunits>
         $ const targeting = { ...adunit.targeting, ...input.targeting };
         $ const attrs = adunitAttrs({ location, position, context, adunit });
+        $ const { pos } = targeting;
+        $ if (posIncrement && pos) targeting.pos = incrementPos({ pos, inc: posIncrement });
         <marko-web-gam-define-display-ad
           path=adunit.path
           size=adunit.size
