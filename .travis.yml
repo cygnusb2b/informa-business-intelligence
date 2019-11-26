@@ -26,6 +26,11 @@ jobs:
       install: skip
 
     - stage: deploy
+      name: GAM Service
+      script: deploy/service.js gam gemenon
+      install: skip
+
+    - stage: deploy
       name: American Machinist
       script: deploy/index.js americanmachinist.com gemenon
       install: skip

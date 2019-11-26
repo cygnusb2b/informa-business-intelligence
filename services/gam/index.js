@@ -20,7 +20,7 @@ const run = async () => {
   createTerminus(server, {
     timeout: 1000,
     signals: ['SIGTERM', 'SIGINT', 'SIGHUP', 'SIGQUIT'],
-    healthChecks: { '/_health': () => services.health() },
+    healthChecks: { '/_health': () => services.ping() },
     onSignal: () => {
       log('> Cleaning up...');
       return services.stop().catch(e => log('> CLEANUP ERRORS:', e));
