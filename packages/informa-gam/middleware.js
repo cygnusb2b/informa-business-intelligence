@@ -70,14 +70,14 @@ module.exports = ({ accountId, basePath } = {}) => (req, res, next) => {
     link: createHttpLink({ fetch, uri: GAM_SERVICE_URI, headers: { 'x-tenant-key': TENANT_KEY } }),
     cache: new InMemoryCache(),
   });
-  const adunit = ({ location, context }) => {
+  const adunits = ({ location, context }) => {
     const key = createCacheKey(location, context);
     if (!cache.has(key)) {
       const input = { location };
       const headers = contextHeaders(context);
       const promise = apollo.query({ query, variables: { input }, context: { headers } })
         .then(({ data }) => data.locationAdunits)
-        .then(({ targeting: globalTargeting, adunits }) => adunits.reduce((map, unit) => {
+        .then(({ targeting: globalTargeting, adunits: units }) => units.reduce((map, unit) => {
           const { position } = unit;
           if (!map.has(position)) map.set(position, []);
           map.get(position).push(buildAdunit({ unit, config, globalTargeting }));
@@ -92,7 +92,7 @@ module.exports = ({ accountId, basePath } = {}) => (req, res, next) => {
     cache,
     config,
     apollo,
-    adunit,
+    adunits,
   };
   next();
 };

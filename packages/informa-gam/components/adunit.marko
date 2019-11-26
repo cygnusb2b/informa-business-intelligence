@@ -5,7 +5,7 @@ $ const { gam } = out.global;
 $ const { location, position, context } = input;
 
 <if(location)>
-  <marko-web-resolve|{ resolved }| promise=gam.adunit({ location, context })>
+  <marko-web-resolve|{ resolved }| promise=gam.adunits({ location, context })>
     $ const adunits = resolved.get(position);
     <if(adunits)>
       <for|adunit| of=adunits>
