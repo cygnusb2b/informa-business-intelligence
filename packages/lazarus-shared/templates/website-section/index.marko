@@ -1,8 +1,5 @@
-import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
-import sectionTargeting from "@endeavor-business-media/lazarus-shared/utils/gam/section-targeting";
 
-$ const { GAM } = out.global;
 $ const { id, alias, name, pageNode } = data;
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
@@ -13,8 +10,6 @@ $ const { id, alias, name, pageNode } = data;
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
-      $ const aliases = hierarchyAliases(section);
-
       <informa-gam-adunit
         location="taxonomy"
         position="top_banner"
@@ -135,8 +130,11 @@ $ const { id, alias, name, pageNode } = data;
                   expand=500
                   component-name="lazarus-shared-content-load-more-flow"
                   component-input={
-                    aliases,
-                    adunit: { name: "lb-section-page-list", pos: "728_3_a" }
+                    adunit: {
+                      location: "taxonomy",
+                      position: "infinitescroll",
+                      context: { sectionId: section.id },
+                    },
                   }
                   fragment-name="content-list"
                   query-name="website-scheduled-content"

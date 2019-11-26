@@ -23,21 +23,17 @@
   },
   "<lazarus-shared-content-page-load-more-flow>": {
     "template": "./content-page-load-more.marko",
-    "<adunit>": {
-      "@name": "string",
-      "@pos": "string"
-    },
     "@nodes": "array",
     "@page-number": "number"
   },
   "<lazarus-shared-content-load-more-flow>": {
     "template": "./content-load-more.marko",
     "<adunit>": {
-      "@name": "string",
-      "@pos": "string"
+      "@location": "string",
+      "@position": "string",
+      "<context>": {}
     },
     "@nodes": "array",
-    "@aliases": "array",
     "@page-number": "number"
   }
 }
