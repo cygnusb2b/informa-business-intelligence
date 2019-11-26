@@ -8,6 +8,10 @@
     "@position": {
       "type": "string",
       "required": true
-    }
+    },
+    "@modifiers": "array",
+    "@apply-style": "boolean",
+    "@class": "string",
+    "@with-wrapper": "boolean"
   }
 }
