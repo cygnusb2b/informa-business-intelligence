@@ -1,6 +1,6 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import { getAsObject } from "@base-cms/object-path";
-import contentTargeting from "@endeavor-business-media/lazarus-shared/utils/gam/content-targeting";
+import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
 $ const { site, GAM } = out.global;
 $ const { id, type, pageNode } = data;
@@ -10,11 +10,6 @@ $ const { id, type, pageNode } = data;
     <marko-web-gtm-content-context|{ context }| id=id>
       <marko-web-gtm-push data=context />
     </marko-web-gtm-content-context>
-    <marko-web-resolve-page|{ data: content }| node=pageNode>
-      $ const targeting = contentTargeting(content);
-
-      <marko-web-gam-targeting key-values=targeting />
-    </marko-web-resolve-page>
   </@head>
   <@page>
 
@@ -22,19 +17,23 @@ $ const { id, type, pageNode } = data;
       $ const section = resolved.getAsObject("primarySection");
       $ const aliases = hierarchyAliases(section);
 
-      <marko-web-gam-define-display-ad
-        ...GAM.getAdUnit({ name: "lb-content-page-main", aliases, targeting: { pos: "728_1_a" } })
+      <informa-gam-adunit
+        location=adLocation(type)
+        position="top_banner"
         modifiers=["top-of-page"]
-      />
+      >
+        <@context content-id=content.id />
+      </informa-gam-adunit>
 
       <marko-web-page-wrapper modifiers=["top-border", "content-page-header"]>
         <@section>
           <lazarus-skin-page-grid>
             <@left-col>
-              <lazarus-shared-global-left-rail-block
-                aliases=aliases
-                adunit={ name: "mr-section-page", pos: "300_1_lft" }
-              />
+              <lazarus-shared-global-left-rail-block>
+                <@adunit location=adLocation(type) position="left_rail_rect">
+                  <@context content-id=content.id />
+                </@adunit>
+              </lazarus-shared-global-left-rail-block>
             </@left-col>
             <@right-col>
               <@bottom-row>
