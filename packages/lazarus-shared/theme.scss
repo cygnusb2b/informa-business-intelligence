@@ -34,6 +34,16 @@ $theme-site-header-breakpoints: (
 
 $theme-sponsored-content-color: #ee591d !default;
 
+@mixin sponsored-content-tag() {
+  $line-height: 1.35;
+  @include theme-line-height-crop($line-height);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: $line-height;
+  color: $theme-sponsored-content-color;
+  text-transform: uppercase;
+}
+
 @mixin gutter-padding-x() {
   padding-right: $grid-gutter-width / 2;
   padding-left: $grid-gutter-width / 2;
@@ -63,13 +73,7 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 
   &__sponsored-content {
-    $line-height: 1.35;
-    @include theme-line-height-crop($line-height);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: $line-height;
-    color: $theme-sponsored-content-color;
-    text-transform: uppercase;
+    @include sponsored-content-tag();
   }
 
   &--card {
@@ -78,6 +82,13 @@ $theme-sponsored-content-color: #ee591d !default;
         margin-top: .25rem;
       }
     }
+  }
+}
+
+.content-page-card {
+  &__sponsored-content {
+    @include sponsored-content-tag();
+    margin-bottom: .75rem;
   }
 }
 
