@@ -32,6 +32,7 @@ const resolvers = {
    * Generally this can be hardcoded to `categories`, with the expcetion
    * of the "Program" vocab, which should use `program` instead.
    * Used on `taxonomy` and `article` locations.
+   *
    * Both a path and a targeting token.
    */
   '[term:vocabulary:machine-name]': ({ section }) => {
@@ -45,6 +46,8 @@ const resolvers = {
   /**
    * @todo This field is not being saved in the legacy data. Must be added.
    * For now, return nothing.
+   *
+   * Path token.
    */
   '[term:field_penton_native_advertising:/]': () => '',
 
@@ -52,6 +55,8 @@ const resolvers = {
     * The term (with its parents) merged with forward-slashes
     * Similar to primary category parents join.
     * Used on `taxonomy` and `article` locations
+    *
+    * Path token.
     *
     * @param {object} ctx
     * @param {object} ctx.section The website section context.
@@ -186,6 +191,10 @@ const resolvers = {
    * A flag representing whether the content is sponsored.
    * If true, `sponsored/` is added to the path.
    * Used on `gallery` and `article` locations
+   *
+   * Path token.
+   *
+   * If content is in a program, do not use this.
    * @todo Enable the sponsored label once the data is fixed.
    */
   '[node:field_penton_native_advertising:/]': ({ content }) => {
@@ -198,7 +207,13 @@ const resolvers = {
 
   /**
    * The content primary category parents merged with forward-slashes
-   * Used on `gallery` and `article` locations
+   * Used on `gallery` and `article` locations.
+   *
+   * Path token.
+   *
+   * If the content item is also in a program, override the "normal" path with the program name.
+   * See L1123 of `penton_custom_dfp.module.php`.
+   *
    * @todo When a program is found, use it instead of the primary section.
    */
   '[node:field_penton_primary_category:parents:join:/]': async ({ content, loaders }) => {
@@ -219,6 +234,8 @@ const resolvers = {
   /**
    * The current page path.
    * Found on `commodities` locations
+   *
+   * Path token.
    */
   '[current-page:url:path]': ({ requestPath }) => {
     if (!requestPath) throw contextError('request path');
@@ -234,12 +251,16 @@ const resolvers = {
   /**
    * A forum category name?
    * Used on `forums_topic` and `forums_category` locations
+   *
+   * Path token.
    */
   '[forums:category_name]': () => { throw new Error('the forums:category_name token is not yet implemented.'); },
 
   /**
    * A forum topic name?
    * Used on `forums_topic` locations
+   *
+   * Path token.
    */
   '[forums:topic_name]': () => { throw new Error('the forums:topic_name token is not yet implemented.'); },
 };
