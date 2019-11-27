@@ -2,6 +2,7 @@ import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/conten
 
 $ const { site } = out.global;
 $ const { id, type, pageNode } = data;
+$ const infiniteScrollEnabled = type === 'webinar' ? false : true;
 
 <marko-web-content-page-layout id=id type=type>
   <@head>
@@ -35,15 +36,17 @@ $ const { id, type, pageNode } = data;
             <@right-col>
               <@bottom-row>
                 <lazarus-shared-content-page-node node=content />
-                <marko-web-load-more
-                  append-to=".page-grid__bottom-row"
-                  expand=500
-                  component-name="lazarus-shared-content-page-load-more-flow"
-                  fragment-name="content-page"
-                  query-name="website-scheduled-content"
-                  query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
-                  page-input={ for: "content", id, type }
-                />
+                <if(infiniteScrollEnabled)>
+                  <marko-web-load-more
+                    append-to=".page-grid__bottom-row"
+                    expand=500
+                    component-name="lazarus-shared-content-page-load-more-flow"
+                    fragment-name="content-page"
+                    query-name="website-scheduled-content"
+                    query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
+                    page-input={ for: "content", id, type }
+                  />
+                </if>
               </@bottom-row>
             </@right-col>
           </lazarus-skin-page-grid>
