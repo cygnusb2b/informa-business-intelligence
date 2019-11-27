@@ -10,6 +10,7 @@ fragment WebsiteContentListFragment on Content {
   siteContext {
     path
   }
+  labels
   published
   primarySection {
     id
