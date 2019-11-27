@@ -1,6 +1,6 @@
 const newrelic = require('newrelic');
 const { startServer } = require('@base-cms/marko-web');
-const { get } = require('@base-cms/object-path');
+const { get, set } = require('@base-cms/object-path');
 const gam = require('@endeavor-business-media/informa-gam/middleware');
 const cleanResponse = require('@base-cms/marko-core/middleware/clean-marko-response');
 
@@ -19,7 +19,14 @@ module.exports = (options = {}) => {
     onStart: async (app) => {
       if (typeof onStart === 'function') await onStart(app);
       app.set('trust proxy', 'loopback, linklocal, uniquelocal');
+      // Setup GAM middleware (if configure).
       if (gamConfig) app.use(gam(gamConfig));
+      // Force set all date formats.
+      app.use((req, res, next) => {
+        set(app.locals, 'markoCoreDate.format', 'MMM D, YYYY');
+        next();
+      });
+      // Clean all response bodies.
       app.use(cleanResponse());
     },
     onAsyncBlockError: e => newrelic.noticeError(e),

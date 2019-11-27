@@ -10,6 +10,7 @@
     "@with-teaser": "boolean",
     "@with-section": "boolean",
     "@with-dates": "boolean",
+    "@with-sponsored": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",
@@ -26,6 +27,7 @@
     "@with-teaser": "boolean",
     "@with-section": "boolean",
     "@with-dates": "boolean",
+    "@with-sponsored": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",
@@ -38,5 +40,13 @@
   "<lazarus-shared-contact-us-list-node>": {
     "template": "./contact-us-list.marko",
     "@node": "object"
+  },
+  "<lazarus-shared-content-page-card>": {
+    "template": "./content-page-card.marko",
+    "@content": "object",
+    "@tag": "string",
+    "@class": "string",
+    "@modifiers": "array",
+    "@attrs": "object"
   }
 }

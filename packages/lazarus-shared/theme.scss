@@ -32,6 +32,18 @@ $theme-site-header-breakpoints: (
 @import "../../node_modules/@base-cms/marko-web-reveal-ad/scss/reveal-ad";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
+$theme-sponsored-content-color: #ee591d !default;
+
+@mixin sponsored-content-tag() {
+  $line-height: 1.35;
+  @include theme-line-height-crop($line-height);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: $line-height;
+  color: $theme-sponsored-content-color;
+  text-transform: uppercase;
+}
+
 @mixin gutter-padding-x() {
   padding-right: $grid-gutter-width / 2;
   padding-left: $grid-gutter-width / 2;
@@ -55,14 +67,38 @@ $theme-site-header-breakpoints: (
 }
 
 .node {
+  $self: &;
   &__title {
     @include theme-line-height-crop($theme-item-title-line-height);
+  }
+
+  &__sponsored-content {
+    @include sponsored-content-tag();
+  }
+
+  &--card {
+    #{ $self } {
+      &__sponsored-content {
+        margin-top: .25rem;
+      }
+    }
+  }
+}
+
+.content-page-card {
+  &__sponsored-content {
+    @include sponsored-content-tag();
+    margin-bottom: .75rem;
   }
 }
 
 .node-list {
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
+
+  &--related-content {
+    padding-top: map-get($spacers, block);
+  }
 }
 
 .page-grid {
@@ -101,5 +137,24 @@ $theme-site-header-breakpoints: (
 
   &--child-website-section-nav {
     @include gutter-padding-y();
+  }
+}
+
+// Informa/Penton Eloqua Forms
+.eloqua-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-container-eloqua {
+  padding-bottom: $theme-content-paragraph-margin-bottom;
+}
+
+.page-contents {
+  &__content-body {
+    p + .embed-container-eloqua {
+      margin-top: -$theme-content-paragraph-margin-bottom;
+    }
   }
 }

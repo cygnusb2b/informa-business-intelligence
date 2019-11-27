@@ -7,6 +7,7 @@ fragment ContentPageFragment on Content {
   teaser(input: { useFallback: false, maxLength: null })
   body
   published
+  labels
   company {
     id
     name
