@@ -37,3 +37,13 @@ $theme-site-header-breakpoints: (
     @include theme-line-height-crop($theme-item-title-line-height);
   }
 }
+
+.page-wrapper {
+  &--no-top-spacer {
+    padding-top: 0;
+  }
+
+  &--no-bottom-spacer {
+    padding-bottom: 0;
+  }
+}
