@@ -117,7 +117,7 @@ const resolvers = {
     *
     * Path token.
     *
-    * Ovrride with the program name, if present.
+    * Override with the program name, if present.
     *
     * @param {object} ctx
     * @param {object} ctx.section The website section context.
