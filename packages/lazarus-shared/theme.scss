@@ -103,3 +103,18 @@ $theme-site-header-breakpoints: (
     @include gutter-padding-y();
   }
 }
+
+// Informa/Penton Eloqua Forms
+.eloqua-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.page-contents {
+  &__content-body {
+    p + .embed-container-eloqua {
+      margin-top: -$theme-content-paragraph-margin-bottom;
+    }
+  }
+}
