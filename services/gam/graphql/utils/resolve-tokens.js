@@ -82,6 +82,8 @@ const resolvers = {
   /**
    * Used on `taxonomy` locations.
    * Targeting token only.
+   * @todo For go-foward content, check if the section alias starts with `program`
+   * - if it does, return the section name, else return empty.
    */
   '[term:program_name_without_space_specialchars]': async ({ section }) => {
     const legacyId = get(section, 'legacy.id');
@@ -165,6 +167,11 @@ const resolvers = {
   /**
    * Found on `article` and `gallery` locations.
    * Targeting token only.
+   *
+   * @todo For go-forwaed content, check primary section:
+   * - if alias starts with `program` then use name
+   * - if alias is not a program:
+   *  - check all scheduled sections and use first found program section
    */
   '[node:program_without_space_specialchars]': async ({ content, loaders }) => {
     const v = get(content, 'legacy.raw.field_penton_program.und.0.tid');
@@ -191,6 +198,7 @@ const resolvers = {
   /**
    * The content primary category parents merged with forward-slashes
    * Used on `gallery` and `article` locations
+   * @todo When a program is found, use it instead of the primary section.
    */
   '[node:field_penton_primary_category:parents:join:/]': async ({ content, loaders }) => {
     if (!content) throw contextError('content');
