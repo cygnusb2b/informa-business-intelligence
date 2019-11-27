@@ -6,7 +6,8 @@
     "<list>": {
       "<node>": {}
     },
-    "@nodes": "array"
+    "@nodes": "array",
+    "@modifiers": "array"
   },
   "<lazarus-shared-content-list-flow>": {
     "template": "./content-list.marko",

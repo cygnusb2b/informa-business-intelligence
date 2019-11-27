@@ -32,18 +32,74 @@ $theme-site-header-breakpoints: (
 @import "../../node_modules/@base-cms/marko-web-reveal-ad/scss/reveal-ad";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
+@mixin gutter-padding-x() {
+  padding-right: $grid-gutter-width / 2;
+  padding-left: $grid-gutter-width / 2;
+}
+
+@mixin gutter-padding-x-modifier() {
+  &--gutter-padding-x {
+    @include gutter-padding-x();
+  }
+}
+
+@mixin gutter-padding-y() {
+  padding-top: $grid-gutter-width / 2;
+  padding-bottom: $grid-gutter-width / 2;
+}
+
+@mixin gutter-padding-y-modifier() {
+  &--gutter-padding-y {
+    @include gutter-padding-y();
+  }
+}
+
 .node {
   &__title {
     @include theme-line-height-crop($theme-item-title-line-height);
   }
 }
 
-.page-wrapper {
-  &--no-top-spacer {
-    padding-top: 0;
+.node-list {
+  @include gutter-padding-x-modifier();
+  @include gutter-padding-y-modifier();
+}
+
+.page-grid {
+  &__left-col {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+    @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
+      @media (max-width: $width) {
+        top: calc(#{calculate-navbar-height-for($breakpoint)});
+        height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
+      }
+    }
   }
 
-  &--no-bottom-spacer {
-    padding-bottom: 0;
+  &__right-col {
+    padding-top: $grid-gutter-width;
+  }
+
+  &__col {
+    &--content-page {
+      padding-top: $grid-gutter-width;
+    }
+  }
+}
+
+.page-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include gutter-padding-x-modifier();
+  @include gutter-padding-y-modifier();
+
+  &--website-section-header {
+    @include gutter-padding-y();
+  }
+
+  &--child-website-section-nav {
+    @include gutter-padding-y();
   }
 }
