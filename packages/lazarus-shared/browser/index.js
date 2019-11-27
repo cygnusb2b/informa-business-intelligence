@@ -4,6 +4,7 @@ import GAM from '@base-cms/marko-web-gam/browser';
 import RevealAd from '@base-cms/marko-web-reveal-ad/browser';
 
 import IncrementAdPos from './increment-ad-pos.vue';
+import LoadEloquaIframes from './load-eloqua-iframes.vue';
 
 export default (Browser) => {
   DefaultTheme(Browser);
@@ -15,4 +16,5 @@ export default (Browser) => {
   Browser.register('LazarusSharedIncrementAdPos', IncrementAdPos, {
     provide: { EventBus },
   });
+  Browser.register('LazarusSharedLoadEloquaIframes', LoadEloquaIframes);
 };
