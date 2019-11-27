@@ -1,6 +1,6 @@
 const { UserInputError } = require('apollo-server-express');
 const { BaseDB } = require('@base-cms/db');
-const { get } = require('@base-cms/object-path');
+const { get, getAsArray } = require('@base-cms/object-path');
 const loadSectionHierarchy = require('./load-section-hierarchy');
 const cleanPathValue = require('./clean-path-value');
 
@@ -181,8 +181,10 @@ const resolvers = {
    * Used on `gallery` and `article` locations
    */
   '[node:field_penton_native_advertising:/]': ({ content }) => {
+    const sponsored = 'sponsored/';
     const v = get(content, 'legacy.raw.field_penton_native_advertising.und.0.value');
-    if (v === '1') return 'sponsored/';
+    if (v === '1') return sponsored;
+    if (getAsArray(content, 'labels').includes('Sponsored')) return sponsored;
     return '';
   },
 
