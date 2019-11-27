@@ -27,6 +27,7 @@
     "@with-teaser": "boolean",
     "@with-section": "boolean",
     "@with-dates": "boolean",
+    "@with-sponsored": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",

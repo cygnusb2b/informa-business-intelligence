@@ -57,6 +57,7 @@ $theme-sponsored-content-color: #ee591d !default;
 }
 
 .node {
+  $self: &;
   &__title {
     @include theme-line-height-crop($theme-item-title-line-height);
   }
@@ -69,6 +70,14 @@ $theme-sponsored-content-color: #ee591d !default;
     line-height: $line-height;
     color: $theme-sponsored-content-color;
     text-transform: uppercase;
+  }
+
+  &--card {
+    #{ $self } {
+      &__sponsored-content {
+        margin-top: .25rem;
+      }
+    }
   }
 }
 
