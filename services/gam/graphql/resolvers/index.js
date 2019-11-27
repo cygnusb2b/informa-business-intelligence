@@ -58,18 +58,6 @@ module.exports = deepAssign(
     JSON: GraphQLJSON,
 
     /**
-     * Location Adunit type
-     * Contains global ad unit targeting values.
-     */
-    LocationAdunits: {
-      targeting: ({ globalUnit }, _, ctx) => buildTargeting({
-        settings: globalUnit.settings,
-        global: true,
-        ctx,
-      }),
-    },
-
-    /**
      * Adunit Type
      */
     Adunit: {
@@ -102,11 +90,13 @@ module.exports = deepAssign(
         return breakpoints.filter(bp => bp && typeof bp === 'object');
       },
 
-      path: async ({ adunit }, _, ctx) => {
+      path: async ({ adunit, hasProgram }, _, ctx) => {
         const tokens = adunit.match(/\[.*?:.+?\]/g);
         const replacements = await resolveTokens(tokens, ctx);
-        return replacements
+        const replaced = replacements
           .reduce((str, { pattern, replacement }) => str.replace(pattern, replacement), adunit);
+        if (!hasProgram) return replaced;
+        return replaced.replace('/article/', '/program/');
       },
 
       location: ({ settings }) => settings.location,
@@ -164,7 +154,8 @@ module.exports = deepAssign(
        * - forums_topic
        * - forums_landing
        */
-      locationAdunits: async (_, { input }, { adunits }) => {
+      locationAdunits: async (_, { input }, ctx) => {
+        const { adunits } = ctx;
         const { location } = input;
         const prefix = location === 'taxonomy' ? 'term' : location;
         if (notImplemented.includes(location)) throw inputError(`The '${location}' location is currently not supported.`);
@@ -172,9 +163,14 @@ module.exports = deepAssign(
           adunits.findOne({ machinename: `${prefix}_728_1_a` }, { projection }),
           adunits.find({ 'settings.location': location }, { projection }).toArray(),
         ]);
+        const globalTargeting = await buildTargeting({
+          settings: globalUnit.settings,
+          global: true,
+          ctx,
+        });
         return {
-          globalUnit,
-          adunits: units,
+          targeting: globalTargeting,
+          adunits: units.map(u => ({ ...u, hasProgram: Boolean(globalTargeting.program) })),
         };
       },
 

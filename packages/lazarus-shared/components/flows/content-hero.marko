@@ -1,6 +1,10 @@
 import { getAsObject } from "@base-cms/object-path";
 
-<default-theme-hero-flow header=input.header nodes=input.nodes>
+<default-theme-hero-flow
+  header=input.header
+  nodes=input.nodes
+  modifiers=input.modifiers
+>
   <@hero|{ node }|>
     <lazarus-shared-content-card-node node=node ...input.card>
       <@image width=630 ...getAsObject(input, "card.image") />

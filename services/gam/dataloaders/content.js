@@ -6,6 +6,7 @@ const projection = {
   type: 1,
   taxonomy: 1,
   authors: 1,
+  labels: 1,
   'mutations.Website.primarySection': 1,
   'legacy.raw.field_penton_native_advertising.und': 1,
   'legacy.raw.field_penton_program.und': 1,
