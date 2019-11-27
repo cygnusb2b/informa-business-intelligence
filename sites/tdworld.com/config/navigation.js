@@ -40,8 +40,8 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers' },
+        { href: '/resources/webinars', label: 'Webinars' },
+        { href: '/resources/white-papers', label: 'White Papers' },
         { href: 'https://informa.dragonforms.com/PEN6138_TWland&PK=NN71RA', label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://eb.informabi.com/LP=1056', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
