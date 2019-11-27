@@ -63,6 +63,10 @@ $theme-site-header-breakpoints: (
 .node-list {
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
+
+  &--related-content {
+    padding-top: map-get($spacers, block);
+  }
 }
 
 .page-grid {
@@ -109,6 +113,10 @@ $theme-site-header-breakpoints: (
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.embed-container-eloqua {
+  padding-bottom: $theme-content-paragraph-margin-bottom;
 }
 
 .page-contents {
