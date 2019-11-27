@@ -8,7 +8,7 @@
     "template": "./increment-ad-pos.marko",
     "@slot-id": "string"
   },
-  "<lazrus-load-eloqua-iframes>": {
+  "<lazarus-load-eloqua-iframes>": {
     "template": "./load-eloqua-iframes",
     "@body-id": "string"
   },
