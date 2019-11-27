@@ -17,8 +17,6 @@ export default {
       const src = element.getAttribute('data-src');
       const hasProcessed = element.getAttribute('data-has-processed');
       if (!hasProcessed && src) {
-        // element.classList.add('lazyload');
-        // element.
         const iframe = document.createElement('iframe');
         iframe.setAttribute('data-src', src);
         iframe.setAttribute('class', 'lazyload eloqua-iframe');
