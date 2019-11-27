@@ -1,6 +1,6 @@
 const { UserInputError } = require('apollo-server-express');
 const { BaseDB } = require('@base-cms/db');
-const { get, getAsArray } = require('@base-cms/object-path');
+const { get } = require('@base-cms/object-path');
 const loadSectionHierarchy = require('./load-section-hierarchy');
 const cleanPathValue = require('./clean-path-value');
 
@@ -186,12 +186,13 @@ const resolvers = {
    * A flag representing whether the content is sponsored.
    * If true, `sponsored/` is added to the path.
    * Used on `gallery` and `article` locations
+   * @todo Enable the sponsored label once the data is fixed.
    */
   '[node:field_penton_native_advertising:/]': ({ content }) => {
     const sponsored = 'sponsored/';
     const v = get(content, 'legacy.raw.field_penton_native_advertising.und.0.value');
     if (v === '1') return sponsored;
-    if (getAsArray(content, 'labels').includes('Sponsored')) return sponsored;
+    // if (getAsArray(content, 'labels').includes('Sponsored')) return sponsored;
     return '';
   },
 
