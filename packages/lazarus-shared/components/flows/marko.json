@@ -4,7 +4,9 @@
     "<header>": {},
     "<card>": {},
     "<list>": {
-      "<node>": {}
+      "<node>": {},
+      "<adunit>": {},
+      "@ad-index": "number"
     },
     "@nodes": "array",
     "@modifiers": "array"
@@ -14,9 +16,11 @@
     "<header>": {},
     "<node>": {
       "<image>": {},
-      "<title>": {}
+      "<title>": {},
+      "<adunit>": {}
     },
     "@nodes": "array",
+    "@ad-index": "number",
     "@inner-justified": "boolean",
     "@flush-x": "boolean",
     "@flush-y": "boolean",

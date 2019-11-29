@@ -2,6 +2,8 @@ import { getAsArray, getAsObject } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 
 $ const nodes = getAsArray(input, "nodes");
+$ const adunit = getAsObject(input, "adunit");
+$ const adIndex = defaultValue(input.adIndex, 0);
 
 <marko-web-node-list
   inner-justified=defaultValue(input.innerJustified, true)
@@ -16,6 +18,27 @@ $ const nodes = getAsArray(input, "nodes");
         node=node
         ...input.node
       />
+    </@slot>
+    <@slot|{ node }| position="at" index=adIndex>
+      <if(adunit.position && adunit.location)>
+        <informa-gam-adunit
+          ...adunit
+          collapse=false
+          position=adunit.position
+          location=adunit.location
+        >
+          <lazarus-shared-content-list-node
+            node=node
+            ...input.node
+          />
+        </informa-gam-adunit>
+      </if>
+      <else>
+        <lazarus-shared-content-list-node
+          node=node
+          ...input.node
+        />
+      </else>
     </@slot>
   </@nodes>
 </marko-web-node-list>
