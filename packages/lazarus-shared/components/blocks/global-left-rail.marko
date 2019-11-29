@@ -6,7 +6,7 @@ $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
 
-<if(adunit.location && adunit.position)>
+<if(adunit.location)>
   <lazarus-shared-increment-ad-pos slot-id=slotId />
   <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
 </if>
@@ -15,7 +15,7 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
 <marko-web-query|{ nodes }|
   name="all-published-content"
   params={
-    limit: 2,
+    limit: 1,
     includeContentTypes,
     queryFragment,
   }>
@@ -31,11 +31,40 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
   </lazarus-shared-content-list-flow>
 </marko-web-query>
 
-<if(adunit.location && adunit.position)>
+<if(adunit.location)>
   <informa-gam-adunit
     ...adunit
     location=adunit.location
-    position=adunit.position
+    position="native_leftrail_1"
+    context=adunit.context
+    modifiers=["max-width-300", "gutter-padding-x"]
+  />
+</if>
+
+<marko-web-query|{ nodes }|
+  name="all-published-content"
+  params={
+    limit: 1,
+    skip: 1,
+    includeContentTypes,
+    queryFragment,
+  }>
+  <lazarus-shared-content-list-flow
+    nodes=nodes
+    inner-justified=false
+    flush-x=true
+    flush-y=true
+    modifiers=["gutter-padding-x"]
+  >
+    <@node display-image=false with-teaser=false />
+  </lazarus-shared-content-list-flow>
+</marko-web-query>
+
+<if(adunit.location)>
+  <informa-gam-adunit
+    ...adunit
+    location=adunit.location
+    position="left_rail_rect"
     context=adunit.context
     id=slotId
     modifiers=["max-width-300"]
@@ -45,8 +74,37 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
 <marko-web-query|{ nodes }|
   name="all-published-content"
   params={
-    limit: 3,
+    limit: 1,
     skip: 2,
+    includeContentTypes,
+    queryFragment,
+  }>
+  <lazarus-shared-content-list-flow
+    nodes=nodes
+    inner-justified=false
+    flush-x=true
+    flush-y=true
+    modifiers=["gutter-padding-x"]
+  >
+    <@node display-image=false with-teaser=false />
+  </lazarus-shared-content-list-flow>
+</marko-web-query>
+
+<if(adunit.location)>
+  <informa-gam-adunit
+    ...adunit
+    location=adunit.location
+    position="native_leftrail_2"
+    context=adunit.context
+    modifiers=["max-width-300", "gutter-padding-x"]
+  />
+</if>
+
+<marko-web-query|{ nodes }|
+  name="all-published-content"
+  params={
+    limit: 2,
+    skip: 3,
     includeContentTypes,
     queryFragment,
   }>

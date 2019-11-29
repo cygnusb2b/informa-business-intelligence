@@ -10,7 +10,6 @@
     "template": "./global-left-rail.marko",
     "<adunit>": {
       "@location": "string",
-      "@position": "string",
       "<context>": {}
     }
   }
