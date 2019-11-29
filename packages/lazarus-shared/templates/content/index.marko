@@ -2,7 +2,7 @@ import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/conten
 
 $ const { site } = out.global;
 $ const { id, type, pageNode } = data;
-$ const infiniteScrollEnabled = type === 'webinar' ? false : true;
+$ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false : true;
 
 <marko-web-content-page-layout id=id type=type>
   <@head>
@@ -28,7 +28,7 @@ $ const infiniteScrollEnabled = type === 'webinar' ? false : true;
           <lazarus-skin-page-grid>
             <@left-col>
               <lazarus-shared-global-left-rail-block>
-                <@adunit location=adLocation(type) position="left_rail_rect">
+                <@adunit location=adLocation(type)>
                   <@context content-id=content.id />
                 </@adunit>
               </lazarus-shared-global-left-rail-block>
