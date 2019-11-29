@@ -43,6 +43,16 @@ $ const { id, alias, name, pageNode } = data;
                       </@hero>
                       <@list|{ nodes: listNodes }|>
                         <default-theme-card-deck-flow cols=3 nodes=listNodes>
+                          <@slot|{ node }| position="at" index=1>
+                            <informa-gam-adunit
+                              location="homepage"
+                              position="native_top_stories"
+                              collapse=false
+                              modifiers=["no-shadow", "text-left", "full-height"]
+                            >
+                              <lazarus-shared-content-card-node node=node />
+                            </informa-gam-adunit>
+                          </@slot>
                           <@slot|{ node }|>
                             <lazarus-shared-content-card-node node=node />
                           </@slot>
