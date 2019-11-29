@@ -76,6 +76,12 @@ $theme-sponsored-content-color: #ee591d !default;
     }
   }
 
+  &--left-rail-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
   &--text-left {
     text-align: left;
   }
