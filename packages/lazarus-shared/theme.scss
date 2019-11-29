@@ -69,6 +69,12 @@ $theme-sponsored-content-color: #ee591d !default;
 .ad-container {
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
+
+  &--no-shadow {
+    iframe {
+      box-shadow: none;
+    }
+  }
 }
 
 .node {
