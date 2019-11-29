@@ -789,10 +789,10 @@
     moment "^2.24.0"
     moment-timezone "^0.5.26"
 
-"@base-cms/marko-web-gam@^1.0.0-rc.10":
-  version "1.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.0.0-rc.10.tgz#905ce66864940539909da8e004afcd4a38eb4620"
-  integrity sha512-rxjVeL7i0gl4jF0ffdOmbJYOMoOcUbHJ9f+ITOdy0JTRGKomICdk1T4RXc1qo7KXS8MECXFhMetMyUExd5qXVQ==
+"@base-cms/marko-web-gam@^1.0.0-rc.13":
+  version "1.0.0-rc.13"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.0.0-rc.13.tgz#b9e38ba70b995ac4866035bc3ea5dadc6c6a3c58"
+  integrity sha512-rknOLau7mWm/blR88wLiK3fbiLWM4iyCJPZhqcxIH2qP2PlzI79SJ9P5hSO8rsGrVPMP0BPbu9VoR8X5kdjteg==
   dependencies:
     "@base-cms/object-path" "^1.0.0-rc.1"
     "@base-cms/utils" "^1.0.0-rc.1"
@@ -822,10 +822,10 @@
     "@base-cms/object-path" "^1.0.0-rc.1"
     "@base-cms/utils" "^1.0.0-rc.1"
 
-"@base-cms/marko-web-theme-default@^1.0.0-rc.8":
-  version "1.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.0.0-rc.8.tgz#c9462d64873cf3a1db99826e20a6e7b108101aad"
-  integrity sha512-BVrg6OhHTGuL3JagxUbdFFOUswzvBeXHPCu1zHzf7laq2MbORUMMJpFn0deIH2mVOqUdHFg/+XDvQl0D3QUsLA==
+"@base-cms/marko-web-theme-default@^1.0.0-rc.13":
+  version "1.0.0-rc.13"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.0.0-rc.13.tgz#3535ed6eb7067b5f77a0c9d066314feba1eeaead"
+  integrity sha512-XytqkCHtI6hU1tHtzTtSVfiiTFLnlCXBQl4kTMiTGxn41NapK7m8vzJPRCyhU8Ly1A1P0RF7Yxn1rF1g8qRlMw==
   dependencies:
     "@base-cms/marko-web-icons" "^1.0.0-rc.1"
     "@base-cms/object-path" "^1.0.0-rc.1"
