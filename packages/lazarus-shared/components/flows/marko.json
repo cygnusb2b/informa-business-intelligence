@@ -16,9 +16,9 @@
     "<header>": {},
     "<node>": {
       "<image>": {},
-      "<title>": {},
-      "<adunit>": {}
+      "<title>": {}
     },
+    "<adunit>": {},
     "@nodes": "array",
     "@ad-index": "number",
     "@inner-justified": "boolean",
