@@ -20,18 +20,24 @@ $ const {
         $ const attrs = adunitAttrs({ location, position, context, adunit });
         $ const { pos } = targeting;
         $ if (posIncrement && pos) targeting.pos = incrementPos({ pos, inc: posIncrement });
+        $ const size = adunit.fluid ? ["fluid"] : adunit.size;
         <marko-web-gam-define-display-ad
           path=adunit.path
-          size=adunit.size
+          size=size
           size-mapping=adunit.sizeMapping
           targeting=targeting
+          collapse=input.collapse
           id=input.id
           modifiers=input.modifiers
           apply-style=input.applyStyle
           class=input.class
           with-wrapper=input.withWrapper
           attrs=attrs
-        />
+        >
+          <if(input.renderBody)>
+            <${input.renderBody} />
+          </if>
+        </marko-web-gam-define-display-ad>
       </for>
     </if>
     <else>

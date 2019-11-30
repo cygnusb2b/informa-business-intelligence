@@ -6,7 +6,7 @@ $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
 
-<if(adunit.location && adunit.position)>
+<if(adunit.location)>
   <lazarus-shared-increment-ad-pos slot-id=slotId />
   <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
 </if>
@@ -25,20 +25,27 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
     flush-x=true
     flush-y=true
     modifiers=["gutter-padding-x"]
+    ad-index=1
   >
     <@header>Recent</@header>
     <@node display-image=false with-teaser=false />
+    <@adunit
+      ...adunit
+      location=adunit.location
+      position="native_leftrail_1"
+      modifiers=["max-width-300", "no-shadow", "text-left"]
+    />
   </lazarus-shared-content-list-flow>
 </marko-web-query>
 
-<if(adunit.location && adunit.position)>
+<if(adunit.location)>
   <informa-gam-adunit
     ...adunit
     location=adunit.location
-    position=adunit.position
+    position="left_rail_rect"
     context=adunit.context
     id=slotId
-    modifiers=["max-width-300"]
+    modifiers=["max-width-300", "left-rail-sticky"]
   />
 </if>
 
@@ -56,8 +63,15 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video"];
     flush-x=true
     flush-y=true
     modifiers=["gutter-padding-x"]
+    ad-index=1
   >
     <@node display-image=false with-teaser=false />
+    <@adunit
+      ...adunit
+      location=adunit.location
+      position="native_leftrail_2"
+      modifiers=["max-width-300", "no-shadow", "text-left"]
+    />
   </lazarus-shared-content-list-flow>
 </marko-web-query>
 

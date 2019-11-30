@@ -23,7 +23,7 @@ $ const { id, alias, name, pageNode } = data;
           <lazarus-skin-page-grid>
             <@left-col>
               <lazarus-shared-global-left-rail-block>
-                <@adunit location="homepage" position="left_rail_rect" />
+                <@adunit location="homepage" />
               </lazarus-shared-global-left-rail-block>
             </@left-col>
             <@right-col>
@@ -43,6 +43,16 @@ $ const { id, alias, name, pageNode } = data;
                       </@hero>
                       <@list|{ nodes: listNodes }|>
                         <default-theme-card-deck-flow cols=3 nodes=listNodes>
+                          <@slot|{ node }| position="at" index=1>
+                            <informa-gam-adunit
+                              location="homepage"
+                              position="native_top_stories"
+                              collapse=false
+                              modifiers=["no-shadow", "text-left", "full-height"]
+                            >
+                              <lazarus-shared-content-card-node node=node />
+                            </informa-gam-adunit>
+                          </@slot>
                           <@slot|{ node }|>
                             <lazarus-shared-content-card-node node=node />
                           </@slot>
@@ -50,6 +60,13 @@ $ const { id, alias, name, pageNode } = data;
                       </@list>
                     </default-theme-hero-flow>
                   </marko-web-query>
+
+                  <informa-gam-adunit
+                    location="homepage"
+                    position="right_col_jumbotron"
+                    class="mb-block"
+                    modifiers=["max-width-300", "margin-auto-x"]
+                  />
                 </div>
               </@top-row>
               <@bottom-row>
@@ -74,6 +91,7 @@ $ const { id, alias, name, pageNode } = data;
                         />
                         <@list>
                           <@node with-teaser=false with-section=false />
+                          <@adunit location="homepage" position="native_category_1" modifiers=["no-shadow", "text-left"] />
                         </@list>
                       </lazarus-shared-content-hero-flow>
                     </marko-web-query>
@@ -101,6 +119,7 @@ $ const { id, alias, name, pageNode } = data;
                         />
                         <@list>
                           <@node with-teaser=false with-section=false />
+                          <@adunit location="homepage" position="native_category_2" modifiers=["no-shadow", "text-left"] />
                         </@list>
                       </lazarus-shared-content-hero-flow>
                     </marko-web-query>
@@ -144,6 +163,7 @@ $ const { id, alias, name, pageNode } = data;
                             modifiers=["rows"]
                           >
                             <@node with-teaser=false with-section=false />
+                            <@adunit location="homepage" position="native_category_3" modifiers=["no-shadow", "text-left"] />
                           </lazarus-shared-content-list-flow>
                         </@list>
                       </default-theme-hero-flow>

@@ -23,7 +23,7 @@ module.exports = (options = {}) => {
       if (gamConfig) app.use(gam(gamConfig));
       // Force set all date formats.
       app.use((req, res, next) => {
-        set(app.locals, 'markoCoreDate.format', 'MMM D, YYYY');
+        set(app.locals, 'markoCoreDate.format', 'MMM DD, YYYY');
         next();
       });
       // Clean all response bodies.

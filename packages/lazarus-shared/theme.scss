@@ -66,6 +66,31 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 }
 
+.ad-container {
+  @include gutter-padding-x-modifier();
+  @include gutter-padding-y-modifier();
+
+  &--no-shadow {
+    iframe {
+      box-shadow: none;
+    }
+  }
+
+  &--left-rail-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  &--text-left {
+    text-align: left;
+  }
+
+  &--full-height {
+    height: 100%;
+  }
+}
+
 .node {
   $self: &;
   &__title {
