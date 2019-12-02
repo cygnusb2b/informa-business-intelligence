@@ -11,8 +11,8 @@ const { isArray } = Array;
 const ADUNIT_SPECIFIC_KEYS = ['pos', 'combo', 'article_number'];
 
 
-const buildTargeting = async ({ settings, global = false, ctx }) => {
-  const targeting = getAsArray(settings, 'targeting').filter((v) => {
+const buildTargeting = async ({ values, global = false, ctx }) => {
+  const targeting = values.filter((v) => {
     if (!v || !typeof v === 'object') return false;
     if (!v.target || !v.value) return false;
     if (global) return !ADUNIT_SPECIFIC_KEYS.includes(v.target);
@@ -83,7 +83,12 @@ module.exports = deepAssign(
       },
       oop: ({ settings }) => Boolean(settings.out_of_page),
 
-      targeting: ({ settings }, _, ctx) => buildTargeting({ settings, global: false, ctx }),
+      targeting: async (adunit, _, ctx) => {
+        const rootTargeting = getAsArray(adunit, 'targeting');
+        const targeting = getAsArray(adunit, 'settings.targeting');
+        const values = rootTargeting.length ? rootTargeting : targeting;
+        return buildTargeting({ values, global: false, ctx });
+      },
 
       sizeMapping: (adunit) => {
         const rootBreakpoints = getAsArray(adunit, 'breakpoints');
@@ -182,7 +187,7 @@ module.exports = deepAssign(
           adunits.find({ 'settings.location': location }, { projection }).toArray(),
         ]);
         const globalTargeting = await buildTargeting({
-          settings: globalUnit.settings,
+          values: getAsArray(globalUnit, 'settings.targeting'),
           global: true,
           ctx,
         });
