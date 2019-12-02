@@ -9,4 +9,7 @@ module.exports = {
   'settings.position': 1,
   'settings.targeting': 1,
   'settings.breakpoints': 1,
+  // Some adunits have this data at the root.
+  targeting: 1,
+  breakpoints: 1,
 };

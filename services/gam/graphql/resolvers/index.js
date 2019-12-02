@@ -85,9 +85,11 @@ module.exports = deepAssign(
 
       targeting: ({ settings }, _, ctx) => buildTargeting({ settings, global: false, ctx }),
 
-      sizeMapping: ({ settings }) => {
-        const breakpoints = getAsArray(settings, 'breakpoints');
-        return breakpoints.filter(bp => bp && typeof bp === 'object');
+      sizeMapping: (adunit) => {
+        const rootBreakpoints = getAsArray(adunit, 'breakpoints');
+        const breakpoints = getAsArray(adunit, 'settings.breakpoints');
+        const bps = rootBreakpoints.length ? rootBreakpoints : breakpoints;
+        return bps.filter(bp => bp && typeof bp === 'object');
       },
 
       path: async ({ adunit, hasProgram }, _, ctx) => {
@@ -115,8 +117,24 @@ module.exports = deepAssign(
     },
 
     AdunitSizeMapping: {
-      viewport: ({ browser_size: size }) => size,
-      size: ({ ad_sizes: sizes }) => sizes.split(','),
+      viewport: ({ browser_size: size }) => {
+        if (isArray(size)) return `${size[0]}x${size[1]}`;
+        return size;
+      },
+      size: ({ ad_sizes: sizes }) => {
+        if (!sizes) return [];
+        let stringSize = sizes;
+        if (isArray(sizes)) {
+          if (isArray(sizes[0])) {
+            // Can be an array of multiple sizes, e.g. [[728, 90], [970, 90]]
+            stringSize = sizes.map(s => s.join('x')).join(',');
+          } else {
+            // Or an array of a single size, e.g. [300, 250]
+            stringSize = sizes.join('x');
+          }
+        }
+        return stringSize.split(',').filter(v => v);
+      },
     },
 
     AdunitToken: {
