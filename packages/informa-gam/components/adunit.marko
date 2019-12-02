@@ -3,7 +3,8 @@ import { warn } from "@base-cms/utils";
 import adunitAttrs from "../utils/create-adunit-attrs";
 import incrementPos from "../utils/increment-pos";
 
-$ const { gam } = out.global;
+$ const { gam, req } = out.global;
+$ const { testAd } = req.query;
 $ const {
   location,
   position,
@@ -16,7 +17,7 @@ $ const {
     $ const adunits = resolved.get(position);
     <if(adunits)>
       <for|adunit| of=adunits>
-        $ const targeting = { ...adunit.targeting, ...input.targeting };
+        $ const targeting = { ...adunit.targeting, ...input.targeting, ...(testAd && { testAd }) };
         $ const attrs = adunitAttrs({ location, position, context, adunit });
         $ const { pos } = targeting;
         $ if (posIncrement && pos) targeting.pos = incrementPos({ pos, inc: posIncrement });
