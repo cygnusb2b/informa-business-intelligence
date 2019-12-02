@@ -2,7 +2,8 @@ import { getAsArray } from "@base-cms/object-path";
 import { warn } from "@base-cms/utils";
 import adunitAttrs from "../utils/create-adunit-attrs";
 
-$ const { gam } = out.global;
+$ const { gam, req } = out.global;
+$ const { testAd } = req.query;
 
 $ const inject = getAsArray(input, "inject").filter(o => o && o.at);
 $ const promises = Promise.all(inject.map(async (unitInput) => {
@@ -23,7 +24,7 @@ $ const promises = Promise.all(inject.map(async (unitInput) => {
     path: adunit.path,
     size: adunit.size,
     sizeMapping: adunit.sizeMapping,
-    targeting: ({ ...adunit.targeting, ...unitInput.targeting }),
+    targeting: ({ ...adunit.targeting, ...unitInput.targeting, ...(testAd && { testAd }) }),
     id: unitInput.id,
     modifiers: unitInput.modifiers,
     applyStyle: unitInput.apply,
