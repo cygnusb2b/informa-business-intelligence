@@ -67,6 +67,11 @@ $ const { id, alias, name, pageNode } = data;
                   >
                     <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>Highlights</@header>
+                      <@list>
+                        <@adunit location="taxonomy" position="native_top_stories_1" modifiers=["no-shadow", "text-left"]>
+                          <@context section-id=section.id />
+                        </@adunit>
+                      </@list>
                     </lazarus-shared-content-hero-flow>
                   </marko-web-query>
                 </@left-col>

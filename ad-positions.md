@@ -19,7 +19,7 @@
 - [x] native_leftrail_1 (server) (global rail)
 - [x] left_rail_rect (server) (global rail)
 - [x] native_leftrail_2 (server) (global rail)
-- [ ] native_top_stories_1 (server)
+- [x] native_top_stories_1 (server)
 - [ ] right_col_jumbotron (server)
 - [x] right_rail_rect (server)
 - [ ] native_umpu (server)
