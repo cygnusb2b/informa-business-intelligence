@@ -86,6 +86,16 @@ $ const { id, alias, name, pageNode } = data;
                 </@right-col>
               </@top-row>
               <@bottom-row>
+                <!-- @todo Find a site that implements this position -->
+                <informa-gam-adunit
+                  location="taxonomy"
+                  position="native_article_4"
+                  class="mb-block"
+                  modifiers=["no-shadow", "text-left"]
+                >
+                  <@context section-id=section.id />
+                </informa-gam-adunit>
+
                 <marko-web-query|{ nodes }|
                   name="website-scheduled-content"
                   params={ sectionId: id, limit: 10, skip: 5, queryFragment }

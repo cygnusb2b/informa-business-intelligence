@@ -20,10 +20,12 @@
 - [x] left_rail_rect (server) (global rail)
 - [x] native_leftrail_2 (server) (global rail)
 - [x] native_top_stories_1 (server)
-- [ ] right_col_jumbotron (server)
+- [x] right_col_jumbotron (server)
+  - Not implemented on new sites.
+  - The old site has the dfp-position div, but does not define the ad in the JSON config.
 - [x] right_rail_rect (server)
 - [ ] native_umpu (server)
-- [ ] native_article_4 (server)
+- [x] native_article_4 (server)
 - [x] infinitescroll (client)
 - [ ] bottom_banner (server)
 - [ ] hidden (server)
