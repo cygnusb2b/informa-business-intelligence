@@ -27,7 +27,9 @@
 - [ ] native_umpu (server)
 - [x] native_article_4 (server)
 - [x] infinitescroll (client)
-- [ ] bottom_banner (server)
+- [x] bottom_banner (server)
+  - Not implementing
+  - This position doesn't make sense with infinite scroll
 - [ ] hidden (server)
 
 # Content Page
