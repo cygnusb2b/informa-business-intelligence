@@ -1,8 +1,8 @@
 # Home Page
 - [x] top_banner (server)
-- [x] native_leftrail_1 (server)
-- [x] left_rail_rect (server)
-- [x] native_leftrail_2 (server)
+- [x] native_leftrail_1 (server) (global rail)
+- [x] left_rail_rect (server) (global rail)
+- [x] native_leftrail_2 (server) (global rail)
 - [x] native_top_stories (server)
 - [x] right_col_jumbotron (server)
 - [ ] native_umpu (server)
@@ -16,9 +16,9 @@
 # Website Section Page
 - [ ] top_banner (server)
 - [ ] sponsored_logo (server)
-- [ ] native_leftrail_1 (server)
-- [ ] left_rail_rect (server)
-- [ ] native_leftrail_2 (server)
+- [ ] native_leftrail_1 (server) (global rail)
+- [ ] left_rail_rect (server) (global rail)
+- [ ] native_leftrail_2 (server) (global rail)
 - [ ] native_top_stories_1 (server)
 - [ ] right_col_jumbotron (server)
 - [ ] right_rail_rect (server)
@@ -30,9 +30,9 @@
 
 # Content Page
 - [ ] top_banner (server)
-- [ ] native_leftrail_1 (server)
-- [ ] left_rail_rect (server)
-- [ ] native_leftrail_2 (server)
+- [ ] native_leftrail_1 (server) (global rail)
+- [ ] left_rail_rect (server) (global rail)
+- [ ] native_leftrail_2 (server) (global rail)
 - [ ] inarticle1 (server)
 - [ ] native_inline (client)
 - [ ] inarticlevid (client)
