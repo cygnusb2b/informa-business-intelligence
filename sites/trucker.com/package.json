@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/trucker.com",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/trucker.com",
   "license": "MIT",
@@ -20,8 +20,8 @@
     "@base-cms/object-path": "^1.0.0-rc.1",
     "@base-cms/utils": "^1.0.0-rc.1",
     "@base-cms/web-cli": "^1.0.0-rc.16",
-    "@endeavor-business-media/informa-gam": "^1.0.0-alpha.6",
-    "@endeavor-business-media/lazarus-shared": "^1.0.0-alpha.6",
+    "@endeavor-business-media/informa-gam": "^1.0.0-alpha.7",
+    "@endeavor-business-media/lazarus-shared": "^1.0.0-alpha.7",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }
