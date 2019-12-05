@@ -38,7 +38,7 @@
 - [x] left_rail_rect (server) (global rail)
 - [x] native_leftrail_2 (server) (global rail)
 - [x] inarticle1 (server)
-- [ ] native_inline (client)
+- [x] native_inline (client)
 - [ ] inarticlevid (client)
 - [x] reveal (client)
   - Have not been able to find an example of this.
