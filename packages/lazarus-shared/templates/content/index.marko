@@ -54,4 +54,12 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
       </marko-web-page-wrapper>
     </marko-web-resolve-page>
   </@page>
+  <@below-container>
+    <informa-gam-adunit
+      location="article"
+      position="hidden"
+    >
+      <@context content-id=id />
+    </informa-gam-adunit>
+  </@below-container>
 </marko-web-content-page-layout>
