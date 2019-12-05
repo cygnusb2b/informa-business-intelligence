@@ -55,5 +55,10 @@
     },
     "@selector": "string",
     "@child-selector": "string"
+  },
+  "<informa-gam-direct-inject-adunit>": {
+    "template": "./direct-inject-adunit.marko",
+    "<adunit>": {},
+    "@selector": "string"
   }
 }
