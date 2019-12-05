@@ -25,6 +25,8 @@ $ const promises = Promise.all(inject.map(async (unitInput) => {
     size: adunit.size,
     sizeMapping: adunit.sizeMapping,
     targeting: ({ ...adunit.targeting, ...unitInput.targeting, ...(testAd && { testAd }) }),
+    collapse: unitInput.collapse,
+    collapseBeforeAdFetch: unitInput.collapseBeforeAdFetch,
     id: unitInput.id,
     modifiers: unitInput.modifiers,
     applyStyle: unitInput.apply,

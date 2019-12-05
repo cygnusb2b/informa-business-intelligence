@@ -45,6 +45,8 @@
         "required": true
       },
       "@targeting": "object",
+      "@collapse": "boolean",
+      "@collapse-before-ad-fetch": "boolean",
       "@id": "string",
       "@modifiers": "array",
       "@apply-style": "boolean",
