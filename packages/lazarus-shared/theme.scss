@@ -89,6 +89,10 @@ $theme-sponsored-content-color: #ee591d !default;
   &--full-height {
     height: 100%;
   }
+
+  &--body-inline {
+    margin-bottom: $theme-content-paragraph-margin-bottom;
+  }
 }
 
 .node {

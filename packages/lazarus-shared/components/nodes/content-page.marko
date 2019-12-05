@@ -26,7 +26,7 @@ $ const primarySection = getAsObject(content, "primarySection");
 
     <!-- inject native ad after second paragraph -->
     <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-child(2)`>
-      <@adunit location=adLocation(type) position="native_inline">
+      <@adunit location=adLocation(type) position="native_inline" modifiers=["body-inline"]>
         <@context content-id=content.id />
       </@adunit>
     </informa-gam-direct-inject-adunit>
