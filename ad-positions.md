@@ -11,7 +11,7 @@
 - [x] third_cat_jumbotron (server)
 - [x] native_category_3 (server)
 - [x] bottom_banner (server)
-- [ ] hidden (server)
+- [x] hidden (server)
 
 # Website Section Page
 - [x] top_banner (server)
@@ -30,7 +30,7 @@
 - [x] bottom_banner (server)
   - Not implementing
   - This position doesn't make sense with infinite scroll
-- [ ] hidden (server)
+- [x] hidden (server)
 
 # Content Page
 - [x] top_banner (server)
@@ -51,4 +51,18 @@
 - [x] bottom_banner (server)
   - Not implementing
   - This position doesn't make sense with infinite scroll
-- [ ] hidden (server)
+- [x] hidden (server)
+
+# Hidden Ads
+- [x] {location}_pagewrap
+  - pos: wrap
+- [x] {location}_canopy
+  - pos: adhesion
+  - No test available
+  - Is this used?
+- [x] {location}_footnote_floor
+  - pos: footnote
+- [x] {location}_oop
+  - pos: oop_a
+  - No test available
+  - Is this used?
