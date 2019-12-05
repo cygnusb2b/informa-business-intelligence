@@ -67,3 +67,31 @@
   - pos: oop_a
   - No test available
   - Is this used?
+
+# Welcome Ad
+Runs in the `<head>` of the document (except for the actual ad display).
+
+The entire, main page is wrapped in `<div id="body-wrapper" style="opacity: 0;">` (set from the server).
+
+Code flow:
+1. Determine if GDPR has been accepted
+  - if accepted: `googletag.pubads().setRequestNonPersonalizedAds(1);`
+  - if not accepted (or cookies disabled): `googletag.pubads().setRequestNonPersonalizedAds(0);`
+2. Define welcome ad slot using the current location (e.g. `/3834/elecdes.home/article/power_management` or `/3834/elecdes.home/article/homepage`)
+  - `googletag.defineSlot(adu, [1, 1], "div-interstitial");`
+  - `setTargeting("pos", "interstitial_a");`
+  - `setTargeting("gdpr_banner", gdpr_cookie);`
+3. Apply the global key/value targeting from the "master" ad unit (top leaderboard)
+  - Ignore `pos` and  `combo` keys
+4. Set a 2 second timeout to check for adblock
+  - if ad block is enabled:
+    - Scroll to top (`window.scrollTo(0, 0)`)
+    - Remove the `opacity` style attribute from `#body-wrapper`
+5. Add a `slotRenderEnded` event listener
+  - if the event is empty:
+    - Scroll to top (`window.scrollTo(0, 0)`)
+    - Remove the `opacity` style attribute from `#body-wrapper`
+  - if the event is not empty:
+    - do nothing
+6. Immediate after the opening **`<body>`** element, display the welcome ad slot
+  - `googletag.display("div-interstitial");`
