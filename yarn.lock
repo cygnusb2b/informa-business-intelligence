@@ -789,10 +789,10 @@
     moment "^2.24.0"
     moment-timezone "^0.5.26"
 
-"@base-cms/marko-web-gam@^1.0.0-rc.14":
-  version "1.0.0-rc.14"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.0.0-rc.14.tgz#a17602c5ae56b1c56d25eae6c3ef0aca23f9050d"
-  integrity sha512-+DjlPWgVwQ2eewVY5WpL7IFQJ8uYL+8jOJz+tvaT1/MmB6JQT6gxmIBFns62J8hMiwAnmZB7l9PbDYQltqNubQ==
+"@base-cms/marko-web-gam@^1.0.0-rc.17":
+  version "1.0.0-rc.17"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.0.0-rc.17.tgz#60075045d0cb23564874a1e3696e17cedcdc08ac"
+  integrity sha512-vyP7tRic+9GJoApi1lklJERnSmKvdbxlfBzQhk+RpgJj8tnSZ1ehTyJAYYr45d7O8ICD7dhyBfl9aEUnJVsyDQ==
   dependencies:
     "@base-cms/object-path" "^1.0.0-rc.1"
     "@base-cms/utils" "^1.0.0-rc.1"
