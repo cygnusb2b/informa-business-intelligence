@@ -20,9 +20,18 @@ $ const primarySection = getAsObject(content, "primarySection");
     </informa-gam-adunit>
 
     $ const bodyId = `content-body-${content.id}`;
-    <marko-web-content-body block-name=blockName obj=content attrs={ id: bodyId } />
+    <!-- Note: the `itemprop` attr must be set for Teads to properly select the body -->
+    <marko-web-content-body block-name=blockName obj=content attrs={ id: bodyId, itemprop: "articleBody" } />
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
+
+    <!-- Teads ads does its own injection. -->
+    <informa-gam-adunit
+      location=adLocation(type)
+      position="inarticlevid"
+    >
+      <@context content-id=content.id />
+    </informa-gam-adunit>
 
     <!-- inject native ad after second paragraph -->
     <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-of-type(2)`>
@@ -31,7 +40,6 @@ $ const primarySection = getAsObject(content, "primarySection");
       </@adunit>
     </informa-gam-direct-inject-adunit>
 
-    <!-- @todo inject teads -->
     <informa-gam-inject-adunits selector=`#${bodyId}`>
       <!-- @todo find a content item that is using the reveal position -->
       <@inject

@@ -39,7 +39,8 @@
 - [x] native_leftrail_2 (server) (global rail)
 - [x] inarticle1 (server)
 - [x] native_inline (client)
-- [ ] inarticlevid (client)
+- [x] inarticlevid (client)
+  - Loads a Teads ad with it's own injection rules (all `<p>` elements of `[itemprop=articleBody]` and inserts after 3)
 - [x] reveal (client)
   - Have not been able to find an example of this.
 - [x] inarticle2 (client)
