@@ -23,6 +23,9 @@ $ const {
       <@node modifiers=["related-content"] with-teaser=false>
         <@image width=120 />
       </@node>
+      <@adunit location="article" position="native_related" modifiers=["no-shadow", "text-left"]>
+        <@context content-id=id />
+      </@adunit>
     </lazarus-shared-content-list-flow>
   </if>
   <else-if(!['contact', 'company'].includes(type))>

@@ -27,6 +27,7 @@ $ const { id, alias, name, pageNode } = data;
             location="taxonomy"
             position="sponsored_logo"
             modifiers=["sponsored-logo"]
+            collapse-before-ad-fetch=true
             with-wrapper=true
           >
             <@context section-id=section.id />
@@ -66,6 +67,11 @@ $ const { id, alias, name, pageNode } = data;
                   >
                     <lazarus-shared-content-hero-flow nodes=nodes>
                       <@header>Highlights</@header>
+                      <@list>
+                        <@adunit location="taxonomy" position="native_top_stories_1" modifiers=["no-shadow", "text-left"]>
+                          <@context section-id=section.id />
+                        </@adunit>
+                      </@list>
                     </lazarus-shared-content-hero-flow>
                   </marko-web-query>
                 </@left-col>
@@ -80,6 +86,16 @@ $ const { id, alias, name, pageNode } = data;
                 </@right-col>
               </@top-row>
               <@bottom-row>
+                <!-- @todo Find a site that implements this position -->
+                <informa-gam-adunit
+                  location="taxonomy"
+                  position="native_article_4"
+                  class="mb-block"
+                  modifiers=["no-shadow", "text-left"]
+                >
+                  <@context section-id=section.id />
+                </informa-gam-adunit>
+
                 <marko-web-query|{ nodes }|
                   name="website-scheduled-content"
                   params={ sectionId: id, limit: 10, skip: 5, queryFragment }
@@ -148,4 +164,12 @@ $ const { id, alias, name, pageNode } = data;
       </marko-web-page-wrapper>
     </marko-web-resolve-page>
   </@page>
+  <@below-container>
+    <informa-gam-adunit
+      location="taxonomy"
+      position="hidden"
+    >
+      <@context section-id=id />
+    </informa-gam-adunit>
+  </@below-container>
 </marko-web-website-section-page-layout>

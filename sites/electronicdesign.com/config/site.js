@@ -5,7 +5,7 @@ module.exports = {
   navigation,
   homePageSections: [
     { alias: 'industrial-automation', name: 'Industrial Automation' },
-    { alias: 'automotive', name: 'Automotive' },
+    { alias: 'markets/automotive', name: 'Automotive' },
     { alias: 'power-management', name: 'Power Management' },
   ],
   logos: {

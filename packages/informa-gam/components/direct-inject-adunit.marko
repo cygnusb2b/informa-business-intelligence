@@ -1,18 +1,19 @@
-import { getAsArray } from "@base-cms/object-path";
+import { getAsArray, getAsObject } from "@base-cms/object-path";
 import { warn } from "@base-cms/utils";
+import DefineDisplayAd from "@base-cms/marko-web-gam/components/define-display-ad";
 import adunitAttrs from "../utils/create-adunit-attrs";
 
 $ const { gam, req } = out.global;
 $ const { testAd } = req.query;
 
-$ const inject = getAsArray(input, "inject").filter(o => o && o.at);
-$ const promises = Promise.all(inject.map(async (unitInput) => {
+$ const loadAdunit = async () => {
+  const unitInput = getAsObject(input, "adunit");
   const {
-    at,
     location,
     context,
     position,
-  } = unitInput;
+  } = unitInput
+
   const map = await gam.adunits({ location, context });
   const adunits = map.get(position);
   if (!adunits.length) return null;
@@ -20,7 +21,6 @@ $ const promises = Promise.all(inject.map(async (unitInput) => {
   // Only allow one adunit to be rendered.
   const adunit = adunits[0];
   return {
-    at,
     path: adunit.path,
     size: adunit.size,
     sizeMapping: adunit.sizeMapping,
@@ -34,18 +34,17 @@ $ const promises = Promise.all(inject.map(async (unitInput) => {
     withWrapper: unitInput.withWrapper,
     attrs: adunitAttrs({ location, position, context, adunit }),
   };
-}));
+};
 
-<marko-web-resolve|{ resolved }| promise=promises>
-  $ const toInject = resolved.filter(v => v);
-  <if(toInject.length)>
-    <marko-web-gam-inject-ads
-      inject=toInject
-      selector=input.selector
-      child-selector=input.childSelector
+<marko-web-resolve|{ resolved }| promise=loadAdunit()>
+  <if(resolved)>
+    $ const contents = DefineDisplayAd.renderToString(resolved).replace(/<\/(.+?)>/g, '<\\/$1>');
+    <marko-web-browser-component
+      name="InformaGAMDirectInjectAdunit"
+      props={ selector: input.selector, contents }
     />
   </if>
   <else>
-    $ warn(`Unable to inject ads: no adunits found.`);
+    $ warn(`Unable to directly inject ads: no adunits found.`);
   </else>
 </marko-web-resolve>
