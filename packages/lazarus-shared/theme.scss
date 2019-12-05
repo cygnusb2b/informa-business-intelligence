@@ -78,7 +78,7 @@ $theme-sponsored-content-color: #ee591d !default;
 
   &--left-rail-sticky {
     position: sticky;
-    top: 0;
+    top: -$grid-gutter-width;
     z-index: 1;
   }
 
