@@ -24,7 +24,14 @@ $ const primarySection = getAsObject(content, "primarySection");
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
 
-    <!-- @todo inject teads and native ad blocks -->
+    <!-- inject native ad after second paragraph -->
+    <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-child(2)`>
+      <@adunit location=adLocation(type) position="native_inline">
+        <@context content-id=content.id />
+      </@adunit>
+    </informa-gam-direct-inject-adunit>
+
+    <!-- @todo inject teads -->
     <informa-gam-inject-adunits selector=`#${bodyId}`>
       <!-- @todo find a content item that is using the reveal position -->
       <@inject
