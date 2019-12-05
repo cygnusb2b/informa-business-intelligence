@@ -10,7 +10,12 @@ $ const { site } = out.global;
     <marko-web-gtm-init container-id=site.get("gtm.containerId") />
     <${input.head} />
     <marko-web-gtm-start />
-    <marko-web-gam-enable />
+    <marko-web-gam-enable
+      options={ enableSingleRequest: false }
+      include-path=false
+      include-host=false
+      include-env=false
+    />
   </@head>
   <@above-container>
     <marko-web-reveal-ad-listener />
