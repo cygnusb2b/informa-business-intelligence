@@ -40,13 +40,15 @@
 - [x] inarticle1 (server)
 - [ ] native_inline (client)
 - [ ] inarticlevid (client)
-- [ ] reveal (client)
+- [x] reveal (client)
+  - Have not been able to find an example of this.
 - [x] inarticle2 (client)
 - [x] inarticle3 (client)
 - [x] inarticle4 (client)
-- [ ] native_related (server)
+- [x] native_related (server)
+  - Have not been able to find an example of this.
 - [x] infinitescroll (client)
-- [ ] bottom_banner (server)
+- [x] bottom_banner (server)
   - Not implementing
   - This position doesn't make sense with infinite scroll
 - [ ] hidden (server)

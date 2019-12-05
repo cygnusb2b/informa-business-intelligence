@@ -26,6 +26,14 @@ $ const primarySection = getAsObject(content, "primarySection");
 
     <!-- @todo inject teads and native ad blocks -->
     <informa-gam-inject-adunits selector=`#${bodyId}`>
+      <!-- @todo find a content item that is using the reveal position -->
+      <@inject
+        at=1200
+        location=adLocation(type)
+        position="reveal"
+      >
+        <@context content-id=content.id />
+      </@inject>
       <@inject
         at=2500
         location=adLocation(type)
