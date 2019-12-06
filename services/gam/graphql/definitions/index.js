@@ -115,6 +115,7 @@ enum Position {
   native_top_stories
   native_top_stories_1
   native_umpu
+  prestitial # this wasn't originally included in the penton data.
   reveal
   right_col_jumbotron
   right_rail_rect

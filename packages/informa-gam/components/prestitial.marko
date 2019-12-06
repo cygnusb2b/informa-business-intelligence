@@ -1,0 +1,64 @@
+import { getAsObject } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+import { warn } from "@base-cms/utils";
+
+$ const { req, gam, site } = out.global;
+$ const { testAd } = req.query;
+$ const page = getAsObject(input, "page");
+$ const slotId = defaultValue(input.slotId, "div-interstitial");
+
+$ const canLoad = ["content", "website-section"].includes(page.for);
+$ const createParams = () => {
+  // Homepage
+  if (req.path === "/") return { location: "homepage" };
+  // Content
+  if (page.for === "content") return { location: "article", context: { contentId: page.id } };
+  // Website Section
+  if (page.for === "website-section") return { location: "taxonomy", context: { sectionId: page.id } };
+  return {};
+};
+
+<if(canLoad)>
+  $ const params = createParams();
+  <if(input.init)>
+    <marko-web-resolve|{ resolved }| promise=gam.adunits({ location: params.location, context: params.context })>
+      <if(resolved)>
+        $ const adunits = resolved.get('prestitial');
+        <if(adunits && adunits.length)>
+          $ const adunit = adunits[0];
+          $ const targeting = { ...adunit.targeting, ...input.targeting, ...(testAd && { testAd }) };
+          $ const slots = {
+            [slotId]: {
+              path: adunit.path,
+              size: adunit.fluid ? ["fluid"] : adunit.size,
+              sizeMapping: adunit.sizeMapping,
+              targeting,
+            },
+          };
+          <marko-web-gam-slots slots=slots />
+          <prestitial-script />
+        </if>
+        <else>
+          $ warn(`Unable to load prestitial: no adunit found.`);
+        </else>
+      </if>
+    </marko-web-resolve>
+  </if>
+  <if(input.display)>
+    $ const logoSrc = site.get("logos.prestitial.src", site.get("logos.footer.src"));
+    <div
+      data-interstitial-prop="bg-url"
+      data-interstitial-value="https://base.imgix.net/files/base/ebm/global/static/welcome_1200.png"
+      style="display: none;"
+    />
+    <!-- The id is being kept to prevent the create template from erroring. -->
+    <!-- @todo Update the creative template to not use this. -->
+    <div
+      id="wl_flogop_div"
+      data-interstitial-prop="logo-url"
+      data-interstitial-value=logoSrc
+      style="display: none;"
+    />
+    <marko-web-gam-display-ad id=slotId modifiers=["no-shadow"] style="height: 0;" />
+  </if>
+</if>
