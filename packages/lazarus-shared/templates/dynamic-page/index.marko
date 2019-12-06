@@ -7,17 +7,18 @@ $ const { id, alias, pageNode } = data;
     </marko-web-gtm-dynamic-page-context>
   </@head>
   <@page>
+    <!-- @todo Fix page banner -->
+    <!-- <informa-gam-adunit
+      location="page"
+      position="top_banner"
+      modifiers=["top-of-page"]
+    /> -->
     <marko-web-resolve-page|{ data: page }| node=pageNode>
-      <marko-web-page-wrapper>
+      <marko-web-page-wrapper modifiers=["top-border"]>
         <@section>
           <div class="row">
-            <div class="col">
-              <default-theme-breadcrumbs-with-home>
-                <@item>${page.name}</@item>
-              </default-theme-breadcrumbs-with-home>
-              <div class="page-wrapper__title">
-                ${page.name}
-              </div>
+            <div class="col mt-block">
+              <h1 class="page-wrapper__title">${page.name}</h1>
             </div>
           </div>
         </@section>
