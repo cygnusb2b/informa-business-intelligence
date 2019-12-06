@@ -826,6 +826,14 @@
     "@base-cms/utils" "^1.0.0"
     scrollmagic "^2.0.7"
 
+"@base-cms/marko-web-gcse@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gcse/-/marko-web-gcse-1.0.0.tgz#d4196191426acfe0bcb9327363731db15774250c"
+  integrity sha512-1XvFVUKSL8ohlmPyHDSg/eRFRQU3+knwOYx7JiXwwo9AtJwUm3PZ0QwNP5SVIv2poiNAzNW48B6JrFafNvPTZw==
+  dependencies:
+    "@base-cms/object-path" "^1.0.0"
+    "@base-cms/utils" "^1.0.0"
+
 "@base-cms/marko-web-gtm@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gtm/-/marko-web-gtm-1.0.0.tgz#1982a33fe9b391d790d44e389ab1e5619f186038"
