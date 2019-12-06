@@ -60,5 +60,17 @@
     "template": "./direct-inject-adunit.marko",
     "<adunit>": {},
     "@selector": "string"
+  },
+  "<informa-gam-prestitial>": {
+    "template": "./prestitial.marko",
+    "<page>": {
+      "@for": "string",
+      "@id": "number",
+      "@type": "string"
+    },
+    "@slot-id": "string",
+    "@targeting": "object",
+    "@init": "boolean",
+    "@display": "boolean"
   }
 }

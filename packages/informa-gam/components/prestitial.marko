@@ -1,0 +1,48 @@
+import { getAsObject } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+import { warn } from "@base-cms/utils";
+
+$ const { req, gam } = out.global;
+$ const { testAd } = req.query;
+$ const page = getAsObject(input, "page");
+$ const slotId = defaultValue(input.slotId, "div-interstitial");
+
+$ console.log("inter start", slotId);
+
+$ const canLoad = ["content", "website-section"].includes(page.for);
+$ const createParams = () => {
+  // Homepage
+  if (req.path === "/") return { location: "homepage" };
+  // Content
+  if (page.for === "content") return { location: "article", context: { contentId: page.id } };
+  // Website Section
+  if (page.for === "website-section") return { location: "taxonomy", context: { sectionId: page.id } };
+  return {};
+};
+
+<if(canLoad)>
+  $ const params = createParams();
+  <if(input.init)>
+    <marko-web-resolve|{ resolved }| promise=gam.adunits({ location: params.location, context: params.context })>
+      <if(resolved)>
+        $ const adunits = resolved.get('prestitial');
+        <if(adunits && adunits.length)>
+          $ const adunit = adunits[0];
+          $ const targeting = { ...adunit.targeting, ...input.targeting, ...(testAd && { testAd }) };
+          $ const slots = {
+            [slotId]: {
+              path: adunit.path,
+              size: adunit.fluid ? ["fluid"] : adunit.size,
+              sizeMapping: adunit.sizeMapping,
+              targeting,
+            },
+          };
+          <marko-web-gam-slots slots=slots />
+        </if>
+        <else>
+          $ warn(`Unable to load prestitial: no adunit found.`);
+        </else>
+      </if>
+    </marko-web-resolve>
+  </if>
+</if>

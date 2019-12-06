@@ -1,4 +1,8 @@
+import { getAsObject } from "@base-cms/object-path";
+
 $ const { site } = out.global;
+
+$ const page = getAsObject(input, "container.page");
 
 <marko-web-document ...input>
   <@head>
@@ -8,6 +12,7 @@ $ const { site } = out.global;
     <link rel="manifest" href="/site.webmanifest">
     <marko-web-gam-init />
     <marko-web-gtm-init container-id=site.get("gtm.containerId") />
+    <informa-gam-prestitial init=true page=page />
     <${input.head} />
     <marko-web-gtm-start />
     <marko-web-gam-enable
