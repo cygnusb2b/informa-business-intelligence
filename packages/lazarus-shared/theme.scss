@@ -71,6 +71,12 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 }
 
+.full-flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .ad-container {
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();

@@ -24,7 +24,7 @@ $ const wrapperStyle = canLoadPrestitial(page) ? "opacity: 0;" : null;
       include-env=false
     />
   </@head>
-  <@body-wrapper enabled=true attrs={ id: "body-wrapper", style: wrapperStyle } />
+  <@body-wrapper enabled=true attrs={ id: "body-wrapper", class: "full-flex-column", style: wrapperStyle } />
   <@above-wrapper>
     <informa-gam-prestitial display=true page=page />
   </@above-wrapper>
