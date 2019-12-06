@@ -34,8 +34,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: '#', label: 'Magazine Subscription', target: '_blank' },
-        { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
+        // { href: '#', label: 'Magazine Subscription', target: '_blank' },
+        // { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: 'https://buildings.informa.com/american-school-and-university/', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
