@@ -1,1 +1,1 @@
-module.exports = contentType => (contentType === 'media-gallery' ? 'gallery' : 'article');
+module.exports = () => 'article';
