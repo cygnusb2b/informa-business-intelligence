@@ -40,7 +40,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/whitepapers', label: 'White Papers' },
+        { href: '/whitepapers-0', label: 'White Papers' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/e-books-library', label: 'e-books Library' },
         { href: '/ecm-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
