@@ -16,7 +16,7 @@ $ const loadAdunit = async () => {
 
   const map = await gam.adunits({ location, context });
   const adunits = map.get(position);
-  if (!adunits.length) return null;
+  if (!adunits || !adunits.length) return null;
 
   // Only allow one adunit to be rendered.
   const adunit = adunits[0];
