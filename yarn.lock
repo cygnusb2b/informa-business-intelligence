@@ -850,14 +850,6 @@
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.0.0.tgz#ff0270d64c679a5f7fcc8c33af91a59435aaec56"
   integrity sha512-KJ8bioDhhyTzZDmm+NQnjfO3xVRSXc6Q70PP2+KrT2JyrQuaforvfZxSDLASRb7txX0w+t3I624HUqoi6XvWoQ==
 
-"@base-cms/marko-web-reveal-ad@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-reveal-ad/-/marko-web-reveal-ad-1.0.0.tgz#2422c81450134749eb1e3469018cc9728eac901f"
-  integrity sha512-jEeYg743onWwJJYC9NngybIuQ2HWQLpg9l/cFISkOIk6JMoTyJL+ZBOWesh20ks4vJ1kOmg991gReknNd8THPA==
-  dependencies:
-    "@base-cms/object-path" "^1.0.0"
-    "@base-cms/utils" "^1.0.0"
-
 "@base-cms/marko-web-theme-default@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.0.0.tgz#8a7dbc492c957f4a09d5aeef7dd17cf8d58f8a20"

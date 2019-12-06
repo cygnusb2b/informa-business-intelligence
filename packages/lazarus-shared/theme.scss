@@ -34,7 +34,6 @@ $theme-site-header-breakpoints: (
 $theme-site-header-z-index: 15000;
 
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
-@import "../../node_modules/@base-cms/marko-web-reveal-ad/scss/reveal-ad";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
 $theme-sponsored-content-color: #ee591d !default;
