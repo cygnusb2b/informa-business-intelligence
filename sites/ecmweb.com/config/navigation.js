@@ -41,7 +41,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers' },
+        { href: '/whitepapers', label: 'White Papers' },
         { href: '#', label: 'Magazine Subscription', target: '_blank' },
         { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
