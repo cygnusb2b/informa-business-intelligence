@@ -34,7 +34,7 @@ module.exports = {
         { href: '/white-papers', label: 'White Papers' },
         // { href: '#', label: 'Magazine Subscription', target: '_blank' },
         // { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
-        { href: '/contact-us', label: 'Contact Us' },
+        { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'http://ebmarketing.penton.com/brands/contracting-business/', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
