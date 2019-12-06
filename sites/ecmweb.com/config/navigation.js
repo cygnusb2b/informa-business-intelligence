@@ -42,6 +42,9 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/whitepapers', label: 'White Papers' },
+        { href: '/e-books-library', label: 'e-books Library' },
+        { href: '/ecm-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
+        { href: '/ecm-digital-editions', label: 'Digital Editions Archive' },
         { href: '#', label: 'Magazine Subscription', target: '_blank' },
         { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
