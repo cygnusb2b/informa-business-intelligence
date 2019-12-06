@@ -28,6 +28,11 @@ $theme-site-header-breakpoints: (
   small-text-secondary: 1105px
 );
 
+// @todo Verify this. Reduced the z-index to prevent overlaying the welcome ad.
+// Currently, the ad template is z-indexing at 20000, so setting this lower.
+// The default value was 50000
+$theme-site-header-z-index: 15000;
+
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-reveal-ad/scss/reveal-ad";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
