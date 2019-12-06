@@ -8,7 +8,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['base-cms-websites/informa-gam-service'],
+  app_name: ['endeavor-business-media/informa-gam-service'],
   /**
    * Your New Relic license key.
    */
