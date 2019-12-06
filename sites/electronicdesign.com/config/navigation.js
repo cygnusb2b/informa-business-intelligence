@@ -21,7 +21,7 @@ module.exports = {
         { href: '/markets/automotive', label: 'Automotive' },
         { href: '/industrial-automation', label: 'Industrial Automation' },
         { href: '/technologies/analog', label: 'Analog' },
-        { href: 'https://www.electronicdesign.com/power-management', label: 'Power Management' },
+        { href: '/power-management', label: 'Power Management' },
         { href: '/technologies/embedded-revolution', label: 'Embedded Revolution' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/resources', label: 'Resources' },
