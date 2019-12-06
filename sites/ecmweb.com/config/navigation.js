@@ -10,7 +10,7 @@ module.exports = {
     items: [
       { href: '/page/about-us', label: 'About Us' },
       { href: '/contact-us', label: 'Contact Us' },
-      { href: '/advertise', label: 'Advertise' },
+      { href: 'https://buildings.informa.com/ecm', label: 'Advertise', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
     ],
@@ -48,7 +48,7 @@ module.exports = {
         { href: '#', label: 'Magazine Subscription', target: '_blank' },
         { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
-        { href: '/advertise', label: 'Advertise' },
+        { href: 'https://buildings.informa.com/ecm', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
