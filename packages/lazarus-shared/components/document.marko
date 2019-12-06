@@ -22,8 +22,11 @@ $ const page = getAsObject(input, "container.page");
       include-env=false
     />
   </@head>
-  <@above-container>
+  <@body-wrapper enabled=true attrs={ id: "body-wrapper", style: "opacity: 0;" } />
+  <@above-wrapper>
     <informa-gam-prestitial display=true page=page />
+  </@above-wrapper>
+  <@above-container>
     <marko-web-reveal-ad-listener />
     <marko-web-gtm-track-load-more />
     <default-theme-site-header />
