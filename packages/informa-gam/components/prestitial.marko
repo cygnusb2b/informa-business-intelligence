@@ -1,5 +1,6 @@
 import { getAsObject } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
+import canLoadFor from "../utils/can-load-prestitial";
 import { warn } from "@base-cms/utils";
 
 $ const { req, gam, site } = out.global;
@@ -7,7 +8,6 @@ $ const { testAd } = req.query;
 $ const page = getAsObject(input, "page");
 $ const slotId = defaultValue(input.slotId, "div-interstitial");
 
-$ const canLoad = ["content", "website-section"].includes(page.for);
 $ const createParams = () => {
   // Homepage
   if (req.path === "/") return { location: "homepage" };
@@ -18,7 +18,7 @@ $ const createParams = () => {
   return {};
 };
 
-<if(canLoad)>
+<if(canLoadFor(page))>
   $ const params = createParams();
   <if(input.init)>
     <marko-web-resolve|{ resolved }| promise=gam.adunits({ location: params.location, context: params.context })>

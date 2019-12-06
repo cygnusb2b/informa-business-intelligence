@@ -6,7 +6,7 @@ module.exports = {
   homePageSections: [
     { alias: 'green', name: 'Green' },
     { alias: 'planning-design', name: 'Planning & Design' },
-    { alias: 'business-finance', name: 'Business & Finance' },
+    { alias: 'facilities-management/business-finance', name: 'Business & Finance' },
   ],
   logos: {
     navbar: {

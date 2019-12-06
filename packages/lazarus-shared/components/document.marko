@@ -1,8 +1,10 @@
 import { getAsObject } from "@base-cms/object-path";
+import canLoadPrestitial from "@endeavor-business-media/informa-gam/utils/can-load-prestitial"
 
 $ const { site } = out.global;
 
 $ const page = getAsObject(input, "container.page");
+$ const wrapperStyle = canLoadPrestitial(page) ? "opacity: 0;" : null;
 
 <marko-web-document ...input>
   <@head>
@@ -22,7 +24,7 @@ $ const page = getAsObject(input, "container.page");
       include-env=false
     />
   </@head>
-  <@body-wrapper enabled=true attrs={ id: "body-wrapper", style: "opacity: 0;" } />
+  <@body-wrapper enabled=true attrs={ id: "body-wrapper", style: wrapperStyle } />
   <@above-wrapper>
     <informa-gam-prestitial display=true page=page />
   </@above-wrapper>

@@ -5,7 +5,7 @@ module.exports = {
   navigation,
   homePageSections: [
     { alias: 'plumbing', name: 'Plumbing' },
-    { alias: 'best-practices', name: 'Best Practices' },
+    { alias: 'technology', name: 'Technology' },
     { alias: 'codes', name: 'Codes' },
   ],
   logos: {
