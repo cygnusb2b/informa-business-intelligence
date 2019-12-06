@@ -44,7 +44,7 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: 'https://informa.dragonforms.com/PEN6138_TWland&PK=NN71RA', label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://eb.informabi.com/LP=1056', label: 'eNewlsetter Subscription', target: '_blank' },
-        { href: '/contact-us', label: 'Contact Us' },
+        { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://power.informa.com/', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
