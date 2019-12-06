@@ -1,8 +1,11 @@
-$ const { config } = out.global;
+import { warn } from "@base-cms/utils";
+
+$ const { config, site } = out.global;
 
 $ const type = "search";
 $ const title = "Search";
 $ const description = `Search ${config.website("name")}`;
+$ const apiKey = site.get("gcse.id");
 
 <marko-web-default-page-layout type=type title=title description=description>
   <@head>
@@ -15,6 +18,18 @@ $ const description = `Search ${config.website("name")}`;
       <@section>
         <h1 class="page-wrapper__title">${title}</h1>
         <div class="page-wrapper__deck">${description}</div>
+      </@section>
+      <@section>
+        <div class="row">
+          <div class="col">
+            <if(apiKey)>
+              <marko-web-gcse-simple-search-box api-key=apiKey />
+            </if>
+            <else>
+              $ warn("Unable to loade GCSE search: no `gcse.id` value was configured.");
+            </else>
+          </div>
+        </div>
       </@section>
     </marko-web-page-wrapper>
   </@page>
