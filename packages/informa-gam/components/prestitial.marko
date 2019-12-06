@@ -7,8 +7,6 @@ $ const { testAd } = req.query;
 $ const page = getAsObject(input, "page");
 $ const slotId = defaultValue(input.slotId, "div-interstitial");
 
-$ console.log("inter start", slotId);
-
 $ const canLoad = ["content", "website-section"].includes(page.for);
 $ const createParams = () => {
   // Homepage
@@ -44,5 +42,8 @@ $ const createParams = () => {
         </else>
       </if>
     </marko-web-resolve>
+  </if>
+  <if(input.display)>
+    <marko-web-gam-display-ad id=slotId />
   </if>
 </if>
