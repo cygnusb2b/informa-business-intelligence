@@ -1,14 +1,14 @@
 module.exports = {
   tertiary: {
     items: [
-      { href: '/login', label: 'Log In' },
-      { href: '/register', label: 'Register' },
-      { href: '/search', label: 'Search', icon: 'search' },
+      // { href: '/login', label: 'Log In' },
+      // { href: '/register', label: 'Register' },
+      { href: '/search', label: 'Search' },
     ],
   },
   footer: {
     items: [
-      { href: '/about-us', label: 'About Us' },
+      { href: '/page/about-us', label: 'About Us' },
       { href: '/contact-us', label: 'Contact Us' },
       { href: '/advertise', label: 'Advertise' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
