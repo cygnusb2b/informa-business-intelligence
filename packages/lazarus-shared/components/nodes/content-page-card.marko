@@ -14,9 +14,11 @@ $ const hasImage = Boolean(primaryImage.src);
 $ const src = buildImgixUrl(primaryImage.src, { w: 768, h: 432 });
 $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
 
+$ const hasEmbedCode = Boolean(content.embedCode);
+
+$ const displayPrimaryImage = !hasEmbedCode && hasImage;
 $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? false : true;
 
-<!-- @todo determine where to place video embeds -->
 <!-- @todo add lower-right image caption -->
 <marko-web-block
   name=blockName
@@ -26,7 +28,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
   attrs=input.attrs
 >
   <marko-web-node-element name="header" block-name=blockName>
-    <if(hasImage)>
+    <if(displayPrimaryImage)>
       <marko-web-node-element name="header-image-wrapper" block-name=blockName>
         <marko-web-node-element name="image-inner-wrapper" block-name=blockName>
           <marko-web-img
@@ -77,4 +79,8 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
       </if>
     </marko-web-node-element>
   </marko-web-node-element>
+
+  <if(hasEmbedCode)>
+    <marko-web-content-embed-code block-name=blockName obj=content />
+  </if>
 </marko-web-block>
