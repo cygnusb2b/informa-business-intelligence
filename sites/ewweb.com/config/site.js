@@ -4,7 +4,7 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   homePageSections: [
-    { alias: 'people', name: 'People' },
+    { alias: 'news/people', name: 'People' },
     { alias: 'electrical-economy', name: 'Electrical Economy' },
     { alias: 'green-market', name: 'Green Market' },
   ],
