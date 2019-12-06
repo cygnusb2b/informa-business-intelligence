@@ -10,9 +10,9 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@base-cms/db": "^1.0.0-rc.1",
-    "@base-cms/object-path": "^1.0.0-rc.1",
-    "@base-cms/utils": "^1.0.0-rc.1",
+    "@base-cms/db": "^1.0.0",
+    "@base-cms/object-path": "^1.0.0",
+    "@base-cms/utils": "^1.0.0",
     "fs-extra": "^8.1.0"
   }
 }
