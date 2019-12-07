@@ -34,7 +34,7 @@ module.exports = {
         { href: '/contractor-digital-editions', label: 'CONTRACTOR Digital Editions' },
         { href: '/white-papers', label: 'White Papers' },
         { href: '/webinars', label: 'Webinars' },
-        { href: '/contractor-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
+        { href: '/page/contractor-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
         { href: '/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/contractor/', label: 'Advertise', target: '_blank' },
         // { href: '#', label: 'Newsletters', target: '_blank' },
