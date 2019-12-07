@@ -3,9 +3,16 @@
     <div class="gallery-slideshow__image">
       <img :src="activeImage.src">
     </div>
+    <button v-if="hasPreviousImage" @click="decrement">
+      &lt; Previous
+    </button>
+    <button v-if="hasNextImage" @click="increment">
+      Next &gt;
+    </button>
     <h3 class="gallery-slideshow__title">
       {{ activeImage.displayName }}
     </h3>
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <div class="gallery-slideshow__body" v-html="activeImage.body" />
   </div>
 </template>
@@ -31,12 +38,11 @@ export default {
     activeImage() {
       const { images, index, lastImageIndex } = this;
       if (!images || !Array.isArray(images)) return {};
-      if (index > lastImageIndex) return images[lastImageIndex];
-      return images[index];
+      return index > lastImageIndex ? images[lastImageIndex] : images[index];
     },
 
     hasNextImage() {
-      return this.index < this.imageCount;
+      return this.index < this.lastImageIndex;
     },
 
     hasPreviousImage() {
@@ -58,6 +64,16 @@ export default {
 
   created() {
     this.index = this.activeSlideNumber - 1;
+  },
+
+  methods: {
+    increment() {
+      this.index += 1;
+    },
+
+    decrement() {
+      this.index -= 1;
+    },
   },
 };
 </script>
