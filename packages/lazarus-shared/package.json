@@ -30,5 +30,8 @@
     "newrelic": "^5.11.0",
     "node-fetch": "^2.6.0",
     "vue-recaptcha": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3"
   }
 }
