@@ -1,7 +1,10 @@
 <template>
   <div class="gallery-slideshow">
     <div class="gallery-slideshow__image">
-      <img :src="activeImage.src">
+      <img :src="activeImage.src" :alt="activeImage.alt">
+      <div v-if="activeImage.credit" class="gallery-slideshow__credit">
+        {{ activeImage.credit }}
+      </div>
     </div>
     <button v-if="hasPreviousImage" @click="decrement">
       &lt; Previous
@@ -9,6 +12,9 @@
     <button v-if="hasNextImage" @click="increment">
       Next &gt;
     </button>
+    <div class="gallery-slideshow__slide-position">
+      Slide {{ index + 1 }} of {{ imageCount }}
+    </div>
     <h3 class="gallery-slideshow__title">
       {{ activeImage.displayName }}
     </h3>

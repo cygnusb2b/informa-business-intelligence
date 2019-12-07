@@ -16,6 +16,7 @@ fragment ContentSlideshowPageFragment on Content {
       node {
         id
         src
+        alt
         displayName
         body
         credit
