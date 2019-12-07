@@ -30,7 +30,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://electricalmarketing.com/industry-stats/electrical-price-index', label: 'Electrical Price Index', target: '_blank' },
+        { href: 'https://electricalmarketing.com/industry-stats/electrical-price-index', label: 'Electrical Price Index', target: '_blank' },
         { href: '/electrical-wholesaling-digital-editions', label: 'Electrical Wholesaling Digital Editions' },
         { href: 'https://www.electricalmarketing.com/current-issue', label: 'Electrical Marketing Digital Edition', target: '_blank' },
         { href: 'https://penton.sub-forms.com/PEN6149_JEland', label: 'Electrical Market Subscription', target: '_blank' },
