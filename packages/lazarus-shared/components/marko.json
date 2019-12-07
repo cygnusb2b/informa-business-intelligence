@@ -24,5 +24,10 @@
     "<below-container>": {},
     "<foot>": {},
     "@foo": "string"
+  },
+  "<lazarus-shared-gallery-slideshow>": {
+    "template": "./gallery-slideshow.marko",
+    "@active-slide-number": "number",
+    "@images": "array"
   }
 }

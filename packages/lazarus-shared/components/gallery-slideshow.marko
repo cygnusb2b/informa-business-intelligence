@@ -1,0 +1,25 @@
+import { getAsArray } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+
+$ const images = getAsArray(input, "images");
+$ const activeSlideNumber = defaultValue(input.activeSlideNumber, 1);
+
+$ const getActiveImage = () => {
+  if (!activeSlideNumber || activeSlideNumber < 1) return images[0];
+  if (activeSlideNumber > images.length) return images[0];
+  return images[activeSlideNumber - 1];
+};
+
+$ const props = {
+  images,
+  activeSlideNumber,
+};
+
+$ const activeImage = getActiveImage();
+
+<if(activeImage)>
+  <marko-web-browser-component name="LazarusSharedGallerySlideshow" props=props>
+    <h2>${activeImage.displayName}</h2>
+    <p>$!{activeImage.body}</p>
+  </marko-web-browser-component>
+</if>
