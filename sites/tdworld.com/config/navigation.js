@@ -46,7 +46,7 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/td-world-magazine-0', label: 'Magazine Archive' },
         { href: 'http://directory.tdworld.com/Main/DirectoryHome.aspx', label: 'Online Buyers\' Guide' },
-        { href: '/utility-business/td-world-excutive-insights-board', label: 'Executive Insights Board' },
+        { href: '/page/utility-business/td-world-excutive-insights-board', label: 'Executive Insights Board' },
         { href: '/td-world-media-partners', label: 'Media Partners' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://power.informa.com/', label: 'Advertise', target: '_blank' },
