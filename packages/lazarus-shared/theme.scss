@@ -191,7 +191,8 @@ $theme-sponsored-content-color: #ee591d !default;
     @include gutter-padding-y();
   }
 
-  &--media-gallery-slideshow {
+  &--media-gallery-slideshow-header,
+  &--media-gallery-slideshow-contents {
     #{ $self } {
       &__section {
         padding-top: $grid-gutter-width;
@@ -199,7 +200,12 @@ $theme-sponsored-content-color: #ee591d !default;
         padding-bottom: $grid-gutter-width;
         padding-left: $grid-gutter-width / 2;
       }
+    }
+  }
 
+  &--media-gallery-slideshow-header {
+    border-bottom: 2px solid $body-bg;
+    #{ $self } {
       &__content-name {
         max-width: 640px;
         font-family: $theme-item-title-font-family;
