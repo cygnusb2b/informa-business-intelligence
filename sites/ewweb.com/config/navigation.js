@@ -35,7 +35,7 @@ module.exports = {
         { href: 'http://www.electricalmarketing.com/current-issue/electrical-marketing-digital-edition-july-28-2017', label: 'Electrical Marketing Digital Edition', target: '_blank' },
         { href: 'https://penton.sub-forms.com/PEN6149_JEland', label: 'Electrical Market Subscription', target: '_blank' },
         { href: '/industry-perspectives', label: 'Industry Perspectives' },
-        { href: '/electrical-wholesaling-authors-and-contributors', label: 'Industry Experts andn Advisors' },
+        { href: '/page/electrical-wholesaling-authors-and-contributors', label: 'Industry Experts and Advisors' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/electrical-wholesaling/', label: 'Advertise', target: '_blank' },
