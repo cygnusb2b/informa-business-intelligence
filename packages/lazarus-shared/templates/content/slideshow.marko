@@ -2,12 +2,22 @@ import { get } from "@base-cms/object-path";
 
 $ const { id, type, pageNode } = data;
 
+$ const { req } = out.global;
+$ const activeSlide = req.query.slide ? parseInt(req.query.slide, 10) : null;
+
 $ const getGalleryImages = (resolved) => {
   const primaryImage = resolved.getAsObject("primaryImage");
   const images = resolved.getEdgeNodesFor("images");
   const primaryImageId = get(primaryImage.id);
   if (!primaryImageId) return images;
   return images.filter(image => image.id !== primaryImageId);
+};
+
+$ const getActiveImage = (images) => {
+  if (!images.length) return null;
+  if (!activeSlide || activeSlide < 1) return images[0];
+  if (activeSlide > images.length) return images[0];
+  return images[activeSlide - 1];
 };
 
 <marko-web-content-page-layout id=id type=type>
@@ -37,10 +47,13 @@ $ const getGalleryImages = (resolved) => {
       <marko-web-page-wrapper modifiers=["media-gallery-slideshow-contents"]>
         <@section|{ blockName }|>
           $ const images = getGalleryImages(resolved);
+          $ const activeImage = getActiveImage(images);
           <div class="row">
             <div class="col-lg-8">
-              <h2>${images[0].displayName}</h2>
-              <p>$!{images[0].body}</p>
+              <if(activeImage)>
+                <h2>${activeImage.displayName}</h2>
+                <p>$!{activeImage.body}</p>
+              </if>
             </div>
             <div class="col-lg-4 page-rail">
               <informa-gam-adunit
