@@ -18,8 +18,6 @@ $ const getGalleryImages = (resolved) => {
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
-      $ const images = getGalleryImages(resolved);
-      <!-- $ console.log(images); -->
       <informa-gam-adunit
         location="gallery"
         position="top_banner"
@@ -38,6 +36,22 @@ $ const getGalleryImages = (resolved) => {
 
       <marko-web-page-wrapper modifiers=["media-gallery-slideshow-contents"]>
         <@section|{ blockName }|>
+          $ const images = getGalleryImages(resolved);
+          <div class="row">
+            <div class="col-lg-8">
+              <h2>${images[0].displayName}</h2>
+              <p>$!{images[0].body}</p>
+            </div>
+            <div class="col-lg-4 page-rail">
+              <informa-gam-adunit
+                location="gallery"
+                position="right_rail_rect"
+                modifiers=["max-width-300", "margin-auto-x"]
+              >
+                <@context content-id=content.id />
+              </informa-gam-adunit>
+            </div>
+          </div>
         </@section>
       </marko-web-page-wrapper>
     </marko-web-resolve-page>
