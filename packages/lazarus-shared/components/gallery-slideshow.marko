@@ -2,11 +2,18 @@ import { getAsArray } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 
 $ const images = getAsArray(input, "images");
-$ const activeSlideNumber = defaultValue(input.activeSlideNumber, 1);
+
+$ const getActiveSlideNumber = () => {
+  const num = parseInt(defaultValue(input.activeSlideNumber, 1), 10);
+  if (!num) return 1;
+  if (num < 1) return 1;
+  return num;
+}
+$ const activeSlideNumber = getActiveSlideNumber();
+
 
 $ const getActiveImage = () => {
-  if (!activeSlideNumber || activeSlideNumber < 1) return images[0];
-  if (activeSlideNumber > images.length) return images[0];
+  if (activeSlideNumber > images.length) return images[images.length - 1];
   return images[activeSlideNumber - 1];
 };
 
