@@ -9,7 +9,7 @@ module.exports = {
   footer: {
     items: [
       { href: '/page/about-us', label: 'About Us' },
-      { href: '/contact-us', label: 'Contact Us' },
+      { href: '/page/contact-us', label: 'Contact Us' },
       { href: 'https://buildings.informa.com/rental-equipment-register/', label: 'Advertise', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
