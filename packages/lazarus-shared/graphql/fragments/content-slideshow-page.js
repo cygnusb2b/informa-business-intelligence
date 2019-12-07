@@ -18,6 +18,7 @@ fragment ContentSlideshowPageFragment on Content {
         src
         displayName
         body
+        credit
       }
     }
   }
