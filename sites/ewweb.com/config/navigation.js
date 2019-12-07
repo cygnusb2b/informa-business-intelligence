@@ -32,7 +32,7 @@ module.exports = {
       items: [
         { href: 'http://electricalmarketing.com/industry-stats/electrical-price-index', label: 'Electrical Price Index', target: '_blank' },
         { href: '/electrical-wholesaling-digital-editions', label: 'Electrical Wholesaling Digital Editions' },
-        { href: '/current-issue', label: 'Electrical Marketing Digital Edition', target: '_blank' },
+        { href: 'https://www.electricalmarketing.com/current-issue', label: 'Electrical Marketing Digital Edition', target: '_blank' },
         { href: 'https://penton.sub-forms.com/PEN6149_JEland', label: 'Electrical Market Subscription', target: '_blank' },
         { href: '/industry-perspectives', label: 'Industry Perspectives' },
         { href: '/page/electrical-wholesaling-authors-and-contributors', label: 'Industry Experts and Advisors' },
