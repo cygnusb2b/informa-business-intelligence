@@ -46,7 +46,6 @@ module.exports = {
         { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6056_GBland', label: 'Subscribe', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
-        { href: 'http://engage.informa.com/cp/cookie-policy/', label: 'Cookie Policy', target: '_blank' },
         { href: 'http://www.penton.com/privacy-policy#ThirdPartyAdvertisingTech', label: 'Ad Choices', target: '_blank' },
       ],
     },
