@@ -1,4 +1,14 @@
+import { get } from "@base-cms/object-path";
+
 $ const { id, type, pageNode } = data;
+
+$ const getGalleryImages = (resolved) => {
+  const primaryImage = resolved.getAsObject("primaryImage");
+  const images = resolved.getEdgeNodesFor("images");
+  const primaryImageId = get(primaryImage.id);
+  if (!primaryImageId) return images;
+  return images.filter(image => image.id !== primaryImageId);
+};
 
 <marko-web-content-page-layout id=id type=type>
   <@head>
@@ -7,7 +17,9 @@ $ const { id, type, pageNode } = data;
     </marko-web-gtm-content-context>
   </@head>
   <@page>
-    <marko-web-resolve-page|{ data: content }| node=pageNode>
+    <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
+      $ const images = getGalleryImages(resolved);
+      <!-- $ console.log(images); -->
       <informa-gam-adunit
         location="gallery"
         position="top_banner"
@@ -16,8 +28,12 @@ $ const { id, type, pageNode } = data;
         <@context content-id=content.id />
       </informa-gam-adunit>
 
-      <marko-web-page-wrapper modifiers=["top-border"]>
-
+      <marko-web-page-wrapper modifiers=["top-border", "media-gallery-slideshow"]>
+        <@section|{ blockName }|>
+          <marko-web-content-name block-name=blockName tag="h1" obj=content link=true />
+          <default-theme-content-attribution obj=content />
+          <marko-web-content-published block-name=blockName obj=content />
+        </@section>
       </marko-web-page-wrapper>
     </marko-web-resolve-page>
   </@page>
