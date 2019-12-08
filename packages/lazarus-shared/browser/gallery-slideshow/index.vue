@@ -1,30 +1,20 @@
 <template>
   <div class="gallery-slideshow">
-    <div class="gallery-slideshow__image">
-      <img :src="activeImage.src" :alt="activeImage.alt">
-      <div v-if="activeImage.credit" class="gallery-slideshow__credit">
-        {{ activeImage.credit }}
-      </div>
-    </div>
-    <button v-if="hasPreviousImage" @click="decrement">
-      &lt; Previous
-    </button>
-    <button v-if="hasNextImage" @click="increment">
-      Next &gt;
-    </button>
-    <div class="gallery-slideshow__slide-position">
-      Slide {{ index + 1 }} of {{ imageCount }}
-    </div>
-    <h3 class="gallery-slideshow__title">
-      {{ activeImage.displayName }}
-    </h3>
-    <!-- eslint-disable-next-line vue/no-v-html -->
-    <div class="gallery-slideshow__body" v-html="activeImage.body" />
+    <slide
+      :image="activeImage"
+      :slide-number="imageNumber"
+      :slide-count="imageCount"
+      @next="increment"
+      @previous="decrement"
+    />
   </div>
 </template>
 
 <script>
+import Slide from './slide.vue';
+
 export default {
+  components: { Slide },
   props: {
     images: {
       type: Array,
@@ -45,14 +35,6 @@ export default {
       const { images, index, lastImageIndex } = this;
       if (!images || !Array.isArray(images)) return {};
       return index > lastImageIndex ? images[lastImageIndex] : images[index];
-    },
-
-    hasNextImage() {
-      return this.index < this.lastImageIndex;
-    },
-
-    hasPreviousImage() {
-      return this.index > 0;
     },
 
     imageCount() {
