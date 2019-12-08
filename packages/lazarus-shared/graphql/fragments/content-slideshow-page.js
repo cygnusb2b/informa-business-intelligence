@@ -15,7 +15,7 @@ fragment ContentSlideshowPageFragment on Content {
     edges {
       node {
         id
-        src
+        src(input: { options: { w: 780 } })
         alt
         displayName
         body

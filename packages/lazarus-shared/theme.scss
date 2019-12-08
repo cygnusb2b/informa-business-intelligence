@@ -175,6 +175,72 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 }
 
+.gallery-slideshow {
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__image-inner-wrapper {
+    @include theme-embed-responsive(16, 9);
+  }
+  &__image {
+    @include theme-embed-responsive-item();
+  }
+
+  &__credit {
+    // @todo use variables from regular image credit
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .25rem .75rem;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(64, 71, 93, .5);
+  }
+
+  &__next,
+  &__previous {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: #000;
+    cursor: pointer;
+    background-color: rgba(192, 192, 192, .4);
+
+    &::before {
+      position: absolute;
+      top: -4px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__previous {
+    left: 0;
+    &::before {
+      right: 24px;
+      content: "\2039";
+    }
+  }
+
+  &__next {
+    right: 0;
+    &::before {
+      left: 30px;
+      content: "\203A";
+    }
+  }
+
+  &__slide-count {
+    margin-bottom: 15px;
+  }
+}
+
 .page-wrapper {
   $self: &;
   padding-top: 0;

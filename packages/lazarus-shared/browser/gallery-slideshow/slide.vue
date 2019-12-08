@@ -1,17 +1,16 @@
 <template>
   <div :class="element('slide')">
     <div :class="element('image-wrapper')">
-      <img :src="image.src" :alt="image.alt" :class="element('image')">
+      <div :class="element('image-inner-wrapper')">
+        <img :src="image.src" :alt="image.alt" :class="element('image')">
+      </div>
       <div v-if="image.credit" :class="element('credit')">
         {{ image.credit }}
       </div>
+      <a v-if="hasPrevious" :class="element('previous')" @click.prevent="$emit('previous')" />
+      <a v-if="hasNext" :class="element('next')" @click.prevent="$emit('next')" />
     </div>
-    <button v-if="hasPrevious" @click="$emit('previous')">
-      &lt; Previous
-    </button>
-    <button v-if="hasNext" @click="$emit('next')">
-      Next &gt;
-    </button>
+
     <div :class="element('slide-count')">
       Slide {{ slideNumber }} of {{ slideCount }}
     </div>
