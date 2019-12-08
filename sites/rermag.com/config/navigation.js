@@ -32,7 +32,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/webinar', label: 'Webinars' },
-        // { href: '#', label: 'Newsletters', target: '_blank' },
+        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=RERnewpref', label: 'Newsletters', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://buildings.informa.com/rental-equipment-register/', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs' },
