@@ -1,8 +1,8 @@
 <template>
-  <div class="gallery-slideshow__slide">
-    <div class="gallery-slideshow__image">
-      <img :src="image.src" :alt="image.alt">
-      <div v-if="image.credit" class="gallery-slideshow__credit">
+  <div :class="element('slide')">
+    <div :class="element('image-wrapper')">
+      <img :src="image.src" :alt="image.alt" :class="element('image')">
+      <div v-if="image.credit" :class="element('credit')">
         {{ image.credit }}
       </div>
     </div>
@@ -12,14 +12,14 @@
     <button v-if="hasNext" @click="$emit('next')">
       Next &gt;
     </button>
-    <div class="gallery-slideshow__slide-position">
+    <div :class="element('slide-count')">
       Slide {{ slideNumber }} of {{ slideCount }}
     </div>
-    <h3 class="gallery-slideshow__title">
+    <h3 :class="element('title')">
       {{ image.displayName }}
     </h3>
     <!-- eslint-disable-next-line vue/no-v-html -->
-    <div class="gallery-slideshow__body" v-html="image.body" />
+    <div :class="element('body')" v-html="image.body" />
   </div>
 </template>
 
@@ -46,6 +46,12 @@ export default {
     },
     hasPrevious() {
       return this.slideNumber > 1;
+    },
+  },
+
+  methods: {
+    element(name) {
+      return `gallery-slideshow__${name}`;
     },
   },
 };
