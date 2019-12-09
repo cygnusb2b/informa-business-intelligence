@@ -28,8 +28,8 @@ $theme-site-header-breakpoints: (
   small-text-secondary: 1105px
 );
 
-$theme-newsletter-block-bg-color: $theme-lazarus-card-bg-color-dark !default;
-$theme-newsletter-block-button-bg-color: $primary !default;
+$theme-newsletter-block-bg-color: $theme-site-navbar-menu-bg-color !default;
+$theme-newsletter-block-button-bg-color: #c83e31 !default;
 
 // @todo Verify this. Reduced the z-index to prevent overlaying the welcome ad.
 // Currently, the ad template is z-indexing at 20000, so setting this lower.
@@ -459,7 +459,7 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 
   &__submit-button {
-    height: 45px;
+    height: 44px;
     padding: 2px 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -469,7 +469,7 @@ $theme-sponsored-content-color: #ee591d !default;
     font-weight: 700;
     color: $white;
     text-transform: uppercase;
-    letter-spacing: .1px;
+    letter-spacing: 1px;
     background-color: $theme-newsletter-block-button-bg-color;
     border: none;
   }
