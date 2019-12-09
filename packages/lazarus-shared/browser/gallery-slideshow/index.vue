@@ -14,6 +14,8 @@
 import Slide from './slide.vue';
 
 export default {
+  inject: ['EventBus'],
+
   components: { Slide },
   props: {
     images: {
@@ -57,10 +59,12 @@ export default {
   methods: {
     increment() {
       this.index += 1;
+      this.EventBus.$emit('gallery-slideshow-slide-change', { imageNumber: this.imageNumber });
     },
 
     decrement() {
       this.index -= 1;
+      this.EventBus.$emit('gallery-slideshow-slide-change', { imageNumber: this.imageNumber });
     },
   },
 };

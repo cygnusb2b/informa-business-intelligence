@@ -21,5 +21,7 @@ export default (Browser) => {
     provide: { EventBus },
   });
   Browser.register('LazarusSharedLoadEloquaIframes', LoadEloquaIframes);
-  Browser.register('LazarusSharedGallerySlideshow', GallerySlideshow);
+  Browser.register('LazarusSharedGallerySlideshow', GallerySlideshow, {
+    provide: { EventBus },
+  });
 };

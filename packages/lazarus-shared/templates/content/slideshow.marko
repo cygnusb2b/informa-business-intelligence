@@ -20,8 +20,12 @@ $ const getGalleryImages = (resolved) => {
     </marko-web-gtm-content-context>
   </@head>
   <@page>
+    <marko-web-gam-refresh-ad on="gallery-slideshow-slide-change" slot-id="gpt-slideshow-top-banner" />
+    <marko-web-gam-refresh-ad on="gallery-slideshow-slide-change" slot-id="gpt-slideshow-right-rail-banner" />
+
     <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
       <informa-gam-adunit
+        id="gpt-slideshow-top-banner"
         location="gallery"
         position="top_banner"
         modifiers=["top-of-page"]
@@ -48,6 +52,7 @@ $ const getGalleryImages = (resolved) => {
             </div>
             <div class="col-lg-4 page-rail">
               <informa-gam-adunit
+                id="gpt-slideshow-right-rail-banner"
                 location="gallery"
                 position="right_rail_rect"
                 modifiers=["max-width-300", "margin-auto-x"]
