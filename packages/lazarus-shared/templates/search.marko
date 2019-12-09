@@ -19,6 +19,8 @@ $ const apiKey = site.get("gcse.id");
         <h1 class="page-wrapper__title">${title}</h1>
         <div class="page-wrapper__deck">${description}</div>
       </@section>
+    </marko-web-page-wrapper>
+    <marko-web-page-wrapper>
       <@section>
         <div class="row">
           <div class="col">
@@ -26,7 +28,7 @@ $ const apiKey = site.get("gcse.id");
               <marko-web-gcse-simple-search-box api-key=apiKey />
             </if>
             <else>
-              $ warn("Unable to loade GCSE search: no `gcse.id` value was configured.");
+              $ warn("Unable to load GCSE search: no `gcse.id` value was configured.");
             </else>
           </div>
         </div>
