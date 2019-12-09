@@ -227,18 +227,6 @@ $theme-sponsored-content-color: #ee591d !default;
         height: $arrow-size;
       }
     }
-
-    // &::before {
-    //   position: absolute;
-    //   top: $arrow-size;
-    //   display: inline-block;
-    //   width: $arrow-size;
-    //   height: $arrow-size;
-    //   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    //   font-size: $arrow-font-size;
-    //   font-weight: 700;
-    //   line-height: $arrow-font-size;
-    // }
   }
 
   &__previous {
@@ -248,10 +236,6 @@ $theme-sponsored-content-color: #ee591d !default;
     .marko-web-icon {
       right: 15px;
     }
-    // &::before {
-    //   right: $arrow-size * 2;
-    //   content: "\2039";
-    // }
   }
 
   &__next {
@@ -260,14 +244,22 @@ $theme-sponsored-content-color: #ee591d !default;
     .marko-web-icon {
       left: 15px;
     }
-    // &::before {
-    //   left: $arrow-size * 2;
-    //   content: "\203A";
-    // }
   }
 
   &__slide-count {
     margin-bottom: 15px;
+  }
+
+  &__title {
+    font-family: $theme-item-title-font-family;
+    font-size: 32px;
+    font-weight: $theme-item-title-font-weight;
+    line-height: 1.4;
+    color: $theme-item-title-color;
+  }
+
+  &__body {
+    @include theme-content-body();
   }
 }
 
