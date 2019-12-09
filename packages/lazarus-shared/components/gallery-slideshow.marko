@@ -31,6 +31,7 @@ $ const hasNext = activeSlideNumber < images.length;
 $ const hasPrevious = activeSlideNumber > 1;
 
 <if(activeImage)>
+  <marko-web-gtm-track-bus-event on="gallery-slideshow-slide-change" event-name="page_load" />
   <marko-web-browser-component name="LazarusSharedGallerySlideshow" props=props>
     <div class="gallery-slideshow">
       <div class=element("slide")>
