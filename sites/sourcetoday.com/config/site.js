@@ -29,6 +29,9 @@ module.exports = {
   gtm: {
     containerId: 'GTM-5VDJHFN',
   },
+  gcse: {
+    id: '003355913687346718228:jqydhtzusms',
+  },
   wufoo: {
     userName: 'cygnuscorporate',
   },
