@@ -10,7 +10,7 @@ module.exports = {
     items: [
       { href: '/page/about-us', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
-      { href: '/advertise', label: 'Advertise' },
+      { href: 'https://designmanufacturing.informa.com/industryweek/', label: 'Advertise' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
     ],
@@ -34,7 +34,7 @@ module.exports = {
         { href: 'https://informa.dragonforms.com/loading.do?pk=NNHWEB&omedasite=PEN6086_IYnew', label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://mfg.informabi.com/LP=1551', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: '/advertise', label: 'Advertise' },
+        { href: 'https://designmanufacturing.informa.com/industryweek/', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
