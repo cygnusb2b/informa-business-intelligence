@@ -12,5 +12,8 @@
       "@location": "string",
       "<context>": {}
     }
+  },
+  "<lazarus-shared-newsletter-signup-block>": {
+    "template": "./omeda-newsletter-signup.marko"
   }
 }

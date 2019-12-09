@@ -1,0 +1,35 @@
+$ const blockName = "newsletter-signup-block";
+
+$ const { config, site } = out.global;
+$ const omedaSite = site.get("dragonForms.newsletterSignup");
+
+<if(omedaSite)>
+  <marko-web-block name=blockName>
+    <marko-web-element block-name=blockName name="title">
+      Sign up for ${config.website("name")} eNewsletters
+    </marko-web-element>
+
+    <marko-web-element
+      block-name=blockName
+      name="form"
+      tag="form"
+      attrs={ action: "https://endeavor.dragonforms.com/loading.do", method: "GET" }
+    >
+      <marko-web-element
+        block-name=blockName
+        name="field-wrapper"
+      >
+        <input type="hidden" name="omedasite" value=omedaSite>
+        <input type="email" placeholder="Email address" required="true" name="em" class=`${blockName}__email-field`>
+        <marko-web-element
+          tag="button"
+          block-name=blockName
+          name="submit-button"
+          attrs={ type: "submit" }
+        >
+          Sign Up
+        </marko-web-element>
+      </marko-web-element>
+    </marko-web-element>
+  </marko-web-block>
+</if>
