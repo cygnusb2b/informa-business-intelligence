@@ -4,6 +4,7 @@
       :image="activeImage"
       :slide-number="imageNumber"
       :slide-count="imageCount"
+      :path="path"
       @next="increment"
       @previous="decrement"
     />
@@ -25,6 +26,10 @@ export default {
     activeSlideNumber: {
       type: Number,
       default: 1,
+    },
+    path: {
+      type: String,
+      required: true,
     },
   },
 

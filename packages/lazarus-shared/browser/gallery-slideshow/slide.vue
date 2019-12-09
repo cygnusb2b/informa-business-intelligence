@@ -7,10 +7,20 @@
       <div v-if="image.credit" :class="element('credit')">
         {{ image.credit }}
       </div>
-      <a v-if="hasPrevious" :class="element('previous')" @click.prevent="$emit('previous')">
+      <a
+        v-if="hasPrevious"
+        :class="element('previous')"
+        :href="previousPath"
+        @click.prevent="$emit('previous')"
+      >
         <chevron-left />
       </a>
-      <a v-if="hasNext" :class="element('next')" @click.prevent="$emit('next')">
+      <a
+        v-if="hasNext"
+        :class="element('next')"
+        :href="nextPath"
+        @click.prevent="$emit('next')"
+      >
         <chevron-right />
       </a>
     </div>
@@ -46,14 +56,26 @@ export default {
       type: Number,
       default: 0,
     },
+    path: {
+      type: String,
+      required: true,
+    },
   },
 
   computed: {
     hasNext() {
       return this.slideNumber < this.slideCount;
     },
+    nextPath() {
+      if (!this.hasNext) return null;
+      return `${this.path}?slide=${this.slideNumber + 1}`;
+    },
     hasPrevious() {
       return this.slideNumber > 1;
+    },
+    previousPath() {
+      if (!this.hasPrevious) return null;
+      return `${this.path}?slide=${this.slideNumber - 1}`;
     },
   },
 
