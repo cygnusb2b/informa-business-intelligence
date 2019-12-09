@@ -15,7 +15,7 @@ const redirects = [
   { from: '/contact', to: '/page/contact-us' },
   { from: '/contact-us', to: '/page/contact-us' },
   { from: '/contact', to: '/page/contact-us' },
-  { from: '/newsletters/signup', to: '/subscribe/email' },
+  { from: '/newsletters/signup', to: '/subscribe' },
 ];
 
 /**
@@ -37,7 +37,7 @@ const run = async () => {
     const bulkOps = redirects.map(({ from, to }) => ({
       updateOne: {
         filter: { from, siteId: site.id },
-        update: { $setOnInsert: { from, to, siteId: site.id } },
+        update: { $set: { from, to, siteId: site.id } },
         upsert: true,
       },
     }));
