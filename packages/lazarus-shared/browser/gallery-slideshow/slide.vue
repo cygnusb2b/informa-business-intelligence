@@ -11,7 +11,7 @@
         v-if="hasPrevious"
         :class="element('previous')"
         :href="previousPath"
-        @click.prevent="$emit('previous')"
+        @click.prevent="emitChange('previous')"
       >
         <chevron-left />
       </a>
@@ -19,7 +19,7 @@
         v-if="hasNext"
         :class="element('next')"
         :href="nextPath"
-        @click.prevent="$emit('next')"
+        @click.prevent="emitChange('next')"
       >
         <chevron-right />
       </a>
@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import Vue from '@base-cms/marko-web/browser/vue';
+
 import ChevronLeft from '@base-cms/marko-web-icons/browser/chevron-left.vue';
 import ChevronRight from '@base-cms/marko-web-icons/browser/chevron-right.vue';
 
@@ -63,6 +65,9 @@ export default {
   },
 
   computed: {
+    currentPath() {
+      return `${this.path}?slide=${this.slideNumber}`;
+    },
     hasNext() {
       return this.slideNumber < this.slideCount;
     },
@@ -82,6 +87,11 @@ export default {
   methods: {
     element(name) {
       return `gallery-slideshow__${name}`;
+    },
+
+    emitChange(type) {
+      this.$emit(type);
+      Vue.nextTick(() => window.history.replaceState({}, '', this.currentPath));
     },
   },
 };
