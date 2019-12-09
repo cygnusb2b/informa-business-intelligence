@@ -1,4 +1,4 @@
-import { getAsObject } from "@base-cms/object-path";
+import { getAsObject, get } from "@base-cms/object-path";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
 $ const { site, GAM } = out.global;
@@ -25,6 +25,14 @@ $ const primarySection = getAsObject(content, "primarySection");
     $ const bodyId = `content-body-${content.id}`;
     <!-- Note: the `itemprop` attr must be set for Teads to properly select the body -->
     <marko-web-content-body block-name=blockName obj=content attrs={ id: bodyId, itemprop: "articleBody" } />
+
+    <!-- Load media gallery slideshow button -->
+    <if(type === "media-gallery")>
+      <a href=`${get(content, "siteContext.path")}/slideshow` class="btn btn-primary btn-lg mt-block">
+        <marko-web-icon name="device-camera" modifiers=["light", "xl"] class="mr-2" />
+        Start Slideshow
+      </a>
+    </if>
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
 
