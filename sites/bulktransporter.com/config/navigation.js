@@ -10,7 +10,7 @@ module.exports = {
     items: [
       { href: '/page/about-us', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
-      { href: '/advertise', label: 'Advertise' },
+      { href: 'https://cv.informa.com/bulk-transporter/', label: 'Advertise' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
     ],
@@ -35,7 +35,7 @@ module.exports = {
         // { href: '#', label: 'Magazine Subscription', target: '_blank' },
         // { href: '#', label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: '/advertise', label: 'Advertise' },
+        { href: 'https://cv.informa.com/bulk-transporter/', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
