@@ -6,9 +6,6 @@ $ const { node: content } = input;
 $ const { type } = content;
 $ const primarySection = getAsObject(content, "primarySection");
 
-<!-- @todo MediaGallery landing pages load the `article` ads -->
-<!-- The actual _slideshow_ page is what loads the `gallery` ads -->
-<!-- The slideshow page must be accounted for a displayed differently than the landing page -->
 <lazarus-skin-page-grid-col modifiers=["content-page"]>
   <lazarus-shared-content-page-card content=content />
 
@@ -28,10 +25,7 @@ $ const primarySection = getAsObject(content, "primarySection");
 
     <!-- Load media gallery slideshow button -->
     <if(type === "media-gallery")>
-      <a href=`${get(content, "siteContext.path")}/slideshow` class="btn btn-primary btn-lg mt-block">
-        <marko-web-icon name="device-camera" modifiers=["light", "xl"] class="mr-2" />
-        Start Slideshow
-      </a>
+      <slideshow-button block-name=blockName path=get(content, "siteContext.path") />
     </if>
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
