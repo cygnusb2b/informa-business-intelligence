@@ -1,6 +1,7 @@
 import { getAsArray } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 
+$ const { req } = out.global;
 $ const images = getAsArray(input, "images");
 
 $ const getActiveSlideNumber = () => {
@@ -22,11 +23,46 @@ $ const props = {
   activeSlideNumber,
 };
 
+$ const element = (name) => `gallery-slideshow__${name}`;
+
 $ const activeImage = getActiveImage();
+$ const hasNext = activeSlideNumber < images.length;
+$ const hasPrevious = activeSlideNumber > 1;
 
 <if(activeImage)>
   <marko-web-browser-component name="LazarusSharedGallerySlideshow" props=props>
-    <h2>${activeImage.displayName}</h2>
-    <p>$!{activeImage.body}</p>
+    <div class="gallery-slideshow">
+      <div class=element("slide")>
+        <div class=element("image-wrapper")>
+          <div class=element("image-inner-wrapper")>
+            <img src=activeImage.src alt=activeImage.alt class=element("image")>
+          </div>
+          <if(activeImage.credit)>
+            <div class=element("credit")>
+              ${activeImage.credit}
+            </div>
+          </if>
+          <if(hasPrevious)>
+            <a class=element("previous") href=`${req.path}?slide=${activeSlideNumber - 1}`>
+              <marko-web-icon name="chevron-right" />
+            </a>
+          </if>
+          <if(hasNext)>
+            <a class=element("next") href=`${req.path}?slide=${activeSlideNumber + 1}`>
+              <marko-web-icon name="chevron-left" />
+            </a>
+          </if>
+        </div>
+        <div class=element("slide-count")>
+          ${activeSlideNumber} of ${images.length}
+        </div>
+        <h3 class=element("title")>
+          ${activeImage.displayName}
+        </h3>
+        <div class=element("body")>
+          $!{activeImage.body}
+        </div>
+      </div>
+    </div>
   </marko-web-browser-component>
 </if>
