@@ -141,6 +141,13 @@ $theme-sponsored-content-color: #ee591d !default;
       @include theme-embed-responsive-item();
     }
   }
+
+  &__header-body {
+    &--media-gallery {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
 }
 
 .media-gallery-slideshow {
