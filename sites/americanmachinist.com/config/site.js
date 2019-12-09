@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=30',
+      src: 'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=60 2x',
+        'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=45',
+      src: 'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=90 2x',
+        'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=90 2x',
       ],
     },
   },

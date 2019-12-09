@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=30',
+      src: 'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=60 2x',
+        'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=45',
+      src: 'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=90 2x',
+        'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=90 2x',
       ],
     },
   },

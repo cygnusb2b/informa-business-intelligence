@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=30',
+      src: 'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=60 2x',
+        'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=45',
+      src: 'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=90 2x',
+        'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=90 2x',
       ],
     },
   },
