@@ -7,8 +7,12 @@
       <div v-if="image.credit" :class="element('credit')">
         {{ image.credit }}
       </div>
-      <a v-if="hasPrevious" :class="element('previous')" @click.prevent="$emit('previous')" />
-      <a v-if="hasNext" :class="element('next')" @click.prevent="$emit('next')" />
+      <a v-if="hasPrevious" :class="element('previous')" @click.prevent="$emit('previous')">
+        <chevron-left />
+      </a>
+      <a v-if="hasNext" :class="element('next')" @click.prevent="$emit('next')">
+        <chevron-right />
+      </a>
     </div>
 
     <div :class="element('slide-count')">
@@ -23,7 +27,12 @@
 </template>
 
 <script>
+import ChevronLeft from '@base-cms/marko-web-icons/browser/chevron-left.vue';
+import ChevronRight from '@base-cms/marko-web-icons/browser/chevron-right.vue';
+
 export default {
+  components: { ChevronLeft, ChevronRight },
+
   props: {
     image: {
       type: Object,
