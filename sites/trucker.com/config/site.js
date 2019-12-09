@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=30',
+      src: 'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=60 2x',
+        'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=45',
+      src: 'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/trucker/image/static/trucker-logo.png?h=90 2x',
+        'https://img.trucker.com/files/base/ebm/trucker/image/static/trucker-logo.png?h=90 2x',
       ],
     },
   },
@@ -29,6 +29,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'trucker.home' },
   gtm: {
     containerId: 'GTM-56CR4G5',
+  },
+  gcse: {
+    id: '003355913687346718228:xeytcg4mwld',
   },
   wufoo: {
     userName: 'cygnuscorporate',

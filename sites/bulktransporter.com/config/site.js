@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=30',
+      src: 'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=60 2x',
+        'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=45',
+      src: 'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=90 2x',
+        'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=90 2x',
       ],
     },
   },
@@ -29,6 +29,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'bulktrans.home' },
   gtm: {
     containerId: 'GTM-5KBQKZR',
+  },
+  gcse: {
+    id: '003355913687346718228:mpbcpfhstju',
   },
   wufoo: {
     userName: 'cygnuscorporate',

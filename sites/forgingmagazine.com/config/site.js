@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=30',
+      src: 'https://img.forgingmagazine.com/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=60 2x',
+        'https://img.forgingmagazine.com/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=45',
+      src: 'https://img.forgingmagazine.com/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=90 2x',
+        'https://img.forgingmagazine.com/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=90 2x',
       ],
     },
   },
@@ -29,6 +29,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'forging.home' },
   gtm: {
     containerId: 'GTM-MCQ2JVM',
+  },
+  gcse: {
+    id: '003355913687346718228:cwb3pzkqv4r',
   },
   wufoo: {
     userName: 'cygnuscorporate',

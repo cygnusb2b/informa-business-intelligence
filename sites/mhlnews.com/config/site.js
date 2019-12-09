@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=30',
+      src: 'https://img.mhlnews.com/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=60 2x',
+        'https://img.mhlnews.com/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=45',
+      src: 'https://img.mhlnews.com/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=90 2x',
+        'https://img.mhlnews.com/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=90 2x',
       ],
     },
   },
@@ -31,6 +31,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'mhl.home' },
   gtm: {
     containerId: 'GTM-TDLXZDD',
+  },
+  gcse: {
+    id: '003355913687346718228:wtbiwvneht2',
   },
   wufoo: {
     userName: 'cygnuscorporate',

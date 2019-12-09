@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=30',
+      src: 'https://img.machinedesign.com/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=60 2x',
+        'https://img.machinedesign.com/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=45',
+      src: 'https://img.machinedesign.com/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=90 2x',
+        'https://img.machinedesign.com/files/base/ebm/machinedesign/image/static/machinedesign-logo.png?h=90 2x',
       ],
     },
   },
@@ -30,6 +30,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'machdesign.home' },
   gtm: {
     containerId: 'GTM-NTF52QT',
+  },
+  gcse: {
+    id: '003355913687346718228:oeqbfex8jkx',
   },
   wufoo: {
     userName: 'cygnuscorporate',

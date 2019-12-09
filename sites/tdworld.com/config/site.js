@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=30',
+      src: 'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=60 2x',
+        'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=45',
+      src: 'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=90 2x',
+        'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=90 2x',
       ],
     },
   },

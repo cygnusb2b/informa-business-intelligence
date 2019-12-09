@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=30',
+      src: 'https://img.refrigeratedtransporter.com/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=60 2x',
+        'https://img.refrigeratedtransporter.com/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=45',
+      src: 'https://img.refrigeratedtransporter.com/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=90 2x',
+        'https://img.refrigeratedtransporter.com/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=90 2x',
       ],
     },
   },
@@ -29,6 +29,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'reftrans.home' },
   gtm: {
     containerId: 'GTM-PXKDQV7',
+  },
+  gcse: {
+    id: '003355913687346718228:coz81wzqiux',
   },
   wufoo: {
     userName: 'cygnuscorporate',

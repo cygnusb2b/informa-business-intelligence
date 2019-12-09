@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=30',
+      src: 'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=60 2x',
+        'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=45',
+      src: 'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=90 2x',
+        'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=90 2x',
       ],
     },
   },
@@ -30,6 +30,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'fleet.home' },
   gtm: {
     containerId: 'GTM-N69H89Q',
+  },
+  gcse: {
+    id: '003355913687346718228:japjnxmbcvw',
   },
   wufoo: {
     userName: 'cygnuscorporate',

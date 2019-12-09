@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=30',
+      src: 'https://img.truckfleetmro.com/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=60 2x',
+        'https://img.truckfleetmro.com/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=45',
+      src: 'https://img.truckfleetmro.com/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=90 2x',
+        'https://img.truckfleetmro.com/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=90 2x',
       ],
     },
   },
@@ -27,6 +27,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'truckfleetmro.home' },
   gtm: {
     containerId: 'GTM-TS75GCS',
+  },
+  gcse: {
+    id: '003355913687346718228:flqi0tftofi',
   },
   wufoo: {
     userName: 'cygnuscorporate',

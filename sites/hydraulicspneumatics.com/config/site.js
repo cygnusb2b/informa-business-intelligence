@@ -10,15 +10,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://base.imgix.net/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=30',
+      src: 'https://img.hydraulicspneumatics.com/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=30',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=60 2x',
+        'https://img.hydraulicspneumatics.com/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://base.imgix.net/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=45',
+      src: 'https://img.hydraulicspneumatics.com/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=45',
       srcset: [
-        'https://base.imgix.net/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=90 2x',
+        'https://img.hydraulicspneumatics.com/files/base/ebm/hydraulicspneumatics/image/static/hydraulicspneumatics-logo.png?h=90 2x',
       ],
     },
   },
@@ -30,6 +30,9 @@ module.exports = {
   gam: { accountId: '3834', basePath: 'hnp.home' },
   gtm: {
     containerId: 'GTM-NNFQ6CV',
+  },
+  gcse: {
+    id: '003355913687346718228:soieatw5ooh',
   },
   wufoo: {
     userName: 'cygnuscorporate',
