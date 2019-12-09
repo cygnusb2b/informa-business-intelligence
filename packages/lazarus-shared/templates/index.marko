@@ -28,7 +28,7 @@ $ const { id, alias, name, pageNode } = data;
             </@left-col>
             <@right-col>
               <@top-row>
-                <div class="col">
+                <div class="col-12">
                   <marko-web-query|{ nodes }|
                     name="website-optioned-content"
                     params={ sectionId: id, optionName: "Pinned", limit: 4, requiresImage: true, queryFragment }
@@ -70,6 +70,10 @@ $ const { id, alias, name, pageNode } = data;
                 </div>
               </@top-row>
               <@bottom-row>
+                <div class="col-12 mb-block p-0">
+                  <lazarus-shared-newsletter-signup-block />
+                </div>
+
                 $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
                 <if(sectionA)>
                   <div class="col-md-6 mb-block">
