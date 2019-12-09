@@ -834,10 +834,10 @@
     "@base-cms/object-path" "^1.0.0"
     "@base-cms/utils" "^1.0.0"
 
-"@base-cms/marko-web-gtm@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gtm/-/marko-web-gtm-1.0.1.tgz#29c0b602b28354d8e961113f06faa95ca86c17cf"
-  integrity sha512-1wsp/j8O+Tp4fZAjQgcyWS31F84bmpooG8Yz5zsGKDq0iJ0RfSPMEu5c4w4pYa/y36Sz9KjoBRwVEhR6tAOb1w==
+"@base-cms/marko-web-gtm@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gtm/-/marko-web-gtm-1.0.3.tgz#5137f6cb75cd7ceb341de7c26ed3acf8980c675f"
+  integrity sha512-s/QXTvdKYRz3xqQXAgc4qEdN6cjb2AA5f+BhqCj6L21uddxl+1lqVKfKFZIQyXf24sjD6aYbTEtIAMPKDjA7kA==
   dependencies:
     "@base-cms/inflector" "^1.0.0"
     "@base-cms/object-path" "^1.0.0"
