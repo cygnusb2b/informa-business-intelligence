@@ -8,6 +8,9 @@ fragment ContentPageFragment on Content {
   body
   published
   labels
+  siteContext {
+    path
+  }
   company {
     id
     name

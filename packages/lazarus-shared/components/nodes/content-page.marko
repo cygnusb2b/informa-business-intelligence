@@ -1,4 +1,4 @@
-import { getAsObject } from "@base-cms/object-path";
+import { getAsObject, get } from "@base-cms/object-path";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
 $ const { site, GAM } = out.global;
@@ -6,9 +6,6 @@ $ const { node: content } = input;
 $ const { type } = content;
 $ const primarySection = getAsObject(content, "primarySection");
 
-<!-- @todo MediaGallery landing pages load the `article` ads -->
-<!-- The actual _slideshow_ page is what loads the `gallery` ads -->
-<!-- The slideshow page must be accounted for a displayed differently than the landing page -->
 <lazarus-skin-page-grid-col modifiers=["content-page"]>
   <lazarus-shared-content-page-card content=content />
 
@@ -25,6 +22,11 @@ $ const primarySection = getAsObject(content, "primarySection");
     $ const bodyId = `content-body-${content.id}`;
     <!-- Note: the `itemprop` attr must be set for Teads to properly select the body -->
     <marko-web-content-body block-name=blockName obj=content attrs={ id: bodyId, itemprop: "articleBody" } />
+
+    <!-- Load media gallery slideshow button -->
+    <if(type === "media-gallery")>
+      <slideshow-button block-name=blockName path=get(content, "siteContext.path") />
+    </if>
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
 

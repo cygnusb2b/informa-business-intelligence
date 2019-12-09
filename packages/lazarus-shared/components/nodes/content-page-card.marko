@@ -1,4 +1,4 @@
-import { getAsObject, getAsArray } from "@base-cms/object-path";
+import { getAsObject, getAsArray, get } from "@base-cms/object-path";
 import { buildImgixUrl } from "@base-cms/image";
 
 $ const blockName = "content-page-card";
@@ -16,7 +16,7 @@ $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
 
 $ const hasEmbedCode = Boolean(content.embedCode);
 
-$ const displayPrimaryImage = !hasEmbedCode && hasImage;
+$ const displayPrimaryImage = !hasEmbedCode && hasImage && type !== "media-gallery";
 $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? false : true;
 
 <!-- @todo add lower-right image caption -->
@@ -42,7 +42,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
         </marko-web-node-element>
       </marko-web-node-element>
     </if>
-    <marko-web-node-element name="header-body" block-name=blockName>
+    <marko-web-node-element name="header-body" modifiers=[type] block-name=blockName>
       <if(isSponsored)>
         <div class=`${blockName}__sponsored-content`>Sponsored Content</div>
       </if>
@@ -79,6 +79,21 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
       </if>
     </marko-web-node-element>
   </marko-web-node-element>
+
+  <if(type === "media-gallery")>
+    <div class="media-gallery-slideshow">
+      <a href=`${get(content, "siteContext.path")}/slideshow` class="media-gallery-slideshow__link">
+        <marko-web-img
+          src=src
+          srcset=srcset
+          alt=primaryImage.alt
+          class="media-gallery-slideshow__image"
+          lazyload=true
+        />
+      </a>
+      <slideshow-button block-name="media-gallery-slideshow" path=get(content, "siteContext.path") />
+    </div>
+  </if>
 
   <if(hasEmbedCode)>
     <marko-web-content-embed-code block-name=blockName obj=content />

@@ -7,6 +7,8 @@ import InformaGAM from '@endeavor-business-media/informa-gam/browser';
 import IncrementAdPos from './increment-ad-pos.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
 
+const GallerySlideshow = () => import(/* webpackChunkName: "lazarus-shared-gallery-slideshow" */ './gallery-slideshow/index.vue');
+
 export default (Browser) => {
   DefaultTheme(Browser);
   GTM(Browser);
@@ -19,4 +21,7 @@ export default (Browser) => {
     provide: { EventBus },
   });
   Browser.register('LazarusSharedLoadEloquaIframes', LoadEloquaIframes);
+  Browser.register('LazarusSharedGallerySlideshow', GallerySlideshow, {
+    provide: { EventBus },
+  });
 };
