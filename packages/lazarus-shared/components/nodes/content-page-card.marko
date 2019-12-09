@@ -11,7 +11,7 @@ $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
 $ const { type } = content;
 
 $ const hasImage = Boolean(primaryImage.src);
-$ const src = buildImgixUrl(primaryImage.src, { w: 768, h: 432 });
+$ const src = buildImgixUrl(primaryImage.src, { w: 768, h: 432, fit: "crop" });
 $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
 
 $ const hasEmbedCode = Boolean(content.embedCode);

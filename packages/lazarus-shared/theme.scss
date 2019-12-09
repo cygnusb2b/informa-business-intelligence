@@ -157,13 +157,11 @@ $theme-sponsored-content-color: #ee591d !default;
   margin-bottom: map-get($spacers, block);
 
   &__image {
-    width: 100%;
-    height: auto;
+    @include theme-embed-responsive-item();
   }
 
   &__link {
-    width: 100%;
-    height: auto;
+    @include theme-embed-responsive($theme-primary-media-video-aspect-ratio-x, $theme-primary-media-video-aspect-ratio-y);
   }
 
   &__button {
@@ -218,11 +216,13 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 
   &__image-inner-wrapper {
-    @include theme-embed-responsive(16, 9);
+    width: 100%;
+    height: auto;
   }
 
   &__image {
-    @include theme-embed-responsive-item();
+    width: 100%;
+    height: auto;
   }
 
   &__credit {
@@ -255,6 +255,7 @@ $theme-sponsored-content-color: #ee591d !default;
     cursor: pointer;
     background-color: #ccc;
     border-radius: $button-size;
+    opacity: .95;
 
     @include media-breakpoint-down($theme-responsive-text-breakpoint) {
       width: $button-size-sm;
