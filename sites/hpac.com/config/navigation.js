@@ -35,7 +35,7 @@ module.exports = {
         { href: '/hpac-engineering-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/hpac', label: 'Advertise', target: '_blank' },
-        // { href: '#', label: 'Newsletters', target: '_blank' },
+        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=HPACnewpref', label: 'Newsletters', target: '_blank' },
         { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6057_HRland', label: 'Subscribe', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },

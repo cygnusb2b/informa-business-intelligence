@@ -35,5 +35,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'http://pages.electricalmarketing.com/em_newsletterpreference?oly_anon_id=63145555-0d9f-4706-955b-dfc6dbfb1453&oly_enc_id=%40%7Bencrypted_customer_id%7D%40',
+  newsletterSubscribeLink: 'https://endeavor.dragonforms.com/loading.do?omedasite=EMNewPref',
 };

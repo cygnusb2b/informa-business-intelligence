@@ -37,7 +37,7 @@ module.exports = {
         { href: '/market-segments/utility', label: 'Utility Market' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'http://ebmarketing.penton.com/brands/electrical-marketing/', label: 'Advertise', target: '_blank' },
-        // { href: '#', label: 'Newsletters', target: '_blank' },
+        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EMNewPref', label: 'Newsletters', target: '_blank' },
         { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6149_JEland', label: 'Subscribe', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },

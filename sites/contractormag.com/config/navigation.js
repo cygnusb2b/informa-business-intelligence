@@ -37,7 +37,7 @@ module.exports = {
         { href: '/page/contractor-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
         { href: '/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/contractor/', label: 'Advertise', target: '_blank' },
-        // { href: '#', label: 'Newsletters', target: '_blank' },
+        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=CONTRnewpref', label: 'Newsletters', target: '_blank' },
         { href: '/learning-resources', label: 'Learning Resources' },
         { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6058_TOland', label: 'Subscribe' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

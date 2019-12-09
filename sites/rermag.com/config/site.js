@@ -36,5 +36,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://eb.informabi.com/LP=1263',
+  newsletterSubscribeLink: 'https://endeavor.dragonforms.com/loading.do?omedasite=RERnewpref',
 };
