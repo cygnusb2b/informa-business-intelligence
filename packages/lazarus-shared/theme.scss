@@ -36,6 +36,8 @@ $theme-newsletter-block-button-bg-color: #c83e31 !default;
 // The default value was 50000
 $theme-site-header-z-index: 15000;
 
+// @todo move to core skin?
+$block-spacer: 32px !default;
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
