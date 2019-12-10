@@ -1,5 +1,6 @@
 const IdentityX = require('@base-cms/marko-web-identity-x');
 const IdentityXConfig = require('@base-cms/marko-web-identity-x/config');
+const authenticate = require('../templates/user/authenticate');
 const login = require('../templates/user/login');
 
 module.exports = (app) => {
@@ -7,6 +8,7 @@ module.exports = (app) => {
   if (appId) {
     IdentityX(app, new IdentityXConfig(appId));
 
+    app.get('/user/authenticate', (_, res) => { res.marko(authenticate); });
     app.get('/user/login', (_, res) => { res.marko(login); });
   }
 };
