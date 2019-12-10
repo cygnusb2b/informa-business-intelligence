@@ -177,11 +177,18 @@ $theme-sponsored-content-color: #ee591d !default;
 }
 
 .node-list {
+  $self: &;
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
 
   &--related-content {
     padding-top: map-get($spacers, block);
+
+    #{ $self } {
+      &__nodes {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -401,6 +408,7 @@ $theme-sponsored-content-color: #ee591d !default;
 
 .embed-container-eloqua {
   padding-bottom: $theme-content-paragraph-margin-bottom;
+  clear: both;
 }
 
 .page-contents {
