@@ -36,13 +36,6 @@ $theme-newsletter-block-button-bg-color: #c83e31 !default;
 // The default value was 50000
 $theme-site-header-z-index: 15000;
 
-// @todo move to core skin?
-$block-spacer: 32px !default;
-
-// @todo move to core skin?
-$theme-page-body-font-size-sm:          17px !default;
-$theme-page-body-line-height-sm:        get-line-height($theme-page-body-font-size-sm, 30px) !default;
-
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
@@ -205,20 +198,7 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 
   &__right-col {
-    max-width: 880px; // @todo move to core skin?
     padding-top: $grid-gutter-width;
-  }
-
-  &__col {
-    &--content-page {
-      padding-top: $grid-gutter-width;
-    }
-
-    // @todo move to core skin?
-    &--no-gutters {
-      padding-right: 0;
-      padding-left: 0;
-    }
   }
 }
 
@@ -425,7 +405,6 @@ $theme-sponsored-content-color: #ee591d !default;
 
 .page-contents {
   &__content-body {
-    word-break: break-word; // @todo move to core theme?
     p + .embed-container-eloqua {
       margin-top: -$theme-content-paragraph-margin-bottom;
     }
