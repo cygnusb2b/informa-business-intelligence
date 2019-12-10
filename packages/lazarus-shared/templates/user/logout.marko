@@ -1,0 +1,22 @@
+$ const { config } = out.global;
+
+$ const type = "logout";
+
+<marko-web-default-page-layout type=type title="Logout">
+  <@head>
+    <marko-web-gtm-default-context|{ context }| type=type>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-default-context>
+  </@head>
+  <@page>
+    <marko-web-page-wrapper modifiers=["top-border"]>
+      <@section>
+        <div class="row">
+          <div class="col">
+            <marko-web-identity-x-form-logout />
+          </div>
+        </div>
+      </@section>
+    </marko-web-page-wrapper>
+  </@page>
+</marko-web-default-page-layout>
