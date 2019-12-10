@@ -7,7 +7,7 @@ $ const { config, site } = out.global;
 $ const dragonForms = site.get("dragonForms") || new DragonFormsConfig({ url: "https://placeholder.dragonforms.com" });
 
 $ const action = dragonForms.getFormAction();
-$ const { omedasite, options } = dragonForms.getForm("newsletterSignup");
+$ const { omedasite, query } = dragonForms.getForm("newsletterSignup");
 
 <if(action && omedasite)>
   <marko-web-block name=blockName>
@@ -26,8 +26,8 @@ $ const { omedasite, options } = dragonForms.getForm("newsletterSignup");
         name="field-wrapper"
       >
         <input type="hidden" name="omedasite" value=omedasite>
-        <if(options)>
-          <for|name, value| in=options>
+        <if(query)>
+          <for|name, value| in=query>
             <input type="hidden" name=name value=value>
           </for>
         </if>

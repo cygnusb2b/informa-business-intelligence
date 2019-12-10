@@ -7,17 +7,17 @@ class DragonFormsConfig {
     this.forms = {};
   }
 
-  addForm(key, { omedasite, options } = {}) {
+  addForm(key, { omedasite, query } = {}) {
     if (!omedasite) throw new Error('The `omedasite` value is required.');
-    this.forms[key] = { omedasite, options };
+    this.forms[key] = { omedasite, query };
     return this;
   }
 
   getFormUrl(key) {
-    const { omedasite, options } = this.getForm(key);
+    const { omedasite, query } = this.getForm(key);
     if (!omedasite) return null;
     const params = new URLSearchParams({
-      ...options,
+      ...query,
       omedasite,
     });
     return `${this.getFormAction()}?${params}`;
