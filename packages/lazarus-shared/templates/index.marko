@@ -70,9 +70,9 @@ $ const { id, alias, name, pageNode } = data;
                 </div>
               </@top-row>
               <@bottom-row>
-                <div class="col-12 mb-block p-0">
+                <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
                   <lazarus-shared-newsletter-signup-block />
-                </div>
+                </lazarus-skin-page-grid-col>
 
                 $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
                 <if(sectionA)>
