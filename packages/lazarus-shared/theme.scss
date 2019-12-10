@@ -205,6 +205,11 @@ $theme-sponsored-content-color: #ee591d !default;
     &--content-page {
       padding-top: $grid-gutter-width;
     }
+
+    &--no-gutters {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }
 
