@@ -28,6 +28,9 @@ $theme-site-header-breakpoints: (
   small-text-secondary: 1105px
 );
 
+$theme-newsletter-block-bg-color: $theme-site-navbar-menu-bg-color !default;
+$theme-newsletter-block-button-bg-color: #c83e31 !default;
+
 // @todo Verify this. Reduced the z-index to prevent overlaying the welcome ad.
 // Currently, the ad template is z-indexing at 20000, so setting this lower.
 // The default value was 50000
@@ -201,6 +204,11 @@ $theme-sponsored-content-color: #ee591d !default;
   &__col {
     &--content-page {
       padding-top: $grid-gutter-width;
+    }
+
+    &--no-gutters {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
@@ -415,5 +423,60 @@ $theme-sponsored-content-color: #ee591d !default;
 
   &__button {
     margin-top: map-get($spacers, block);
+  }
+}
+
+.newsletter-signup-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: $grid-gutter-width * 2;
+  background-color: $theme-newsletter-block-bg-color;
+
+  &__title {
+    @include theme-line-height-crop(1.5);
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+  }
+
+  &__form {
+    width: 100%;
+  }
+
+  &__field-wrapper {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  &__email-field {
+    width: 70%;
+    height: 45px;
+    padding: 2px 20px;
+    font-family: $theme-font-family-serif;
+    border: 0;
+  }
+
+  &__submit-button {
+    height: 44px;
+    padding: 2px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $theme-newsletter-block-button-bg-color;
+    border: none;
   }
 }

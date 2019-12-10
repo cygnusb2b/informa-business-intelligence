@@ -2,6 +2,13 @@ import { getAsArray } from "@base-cms/object-path";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
 $ const nodes = getAsArray(input, "nodes");
+$ const { pageNumber } = input;
+
+<if(pageNumber === 1)>
+  <lazarus-skin-page-grid-col modifiers=["full", "no-gutters"]>
+    <lazarus-shared-newsletter-signup-block />
+  </lazarus-skin-page-grid-col>
+</if>
 
 <if(nodes.length)>
   $ const content = nodes[0];
@@ -9,7 +16,7 @@ $ const nodes = getAsArray(input, "nodes");
     <informa-gam-adunit
       location=adLocation(content.type)
       position="infinitescroll"
-      pos-increment=(input.pageNumber - 1)
+      pos-increment=(pageNumber - 1)
       modifiers=["max-width-728", "margin-auto-x"]
     >
       <@context content-id=content.id />

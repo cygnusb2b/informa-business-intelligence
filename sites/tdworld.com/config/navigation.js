@@ -1,3 +1,5 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
@@ -50,8 +52,8 @@ module.exports = {
         { href: '/td-world-media-partners', label: 'Media Partners' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://power.informa.com/', label: 'Advertise', target: '_blank' },
-        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=TWnewpref', label: 'Newsletters', target: '_blank' },
-        { href: 'https://informa.dragonforms.com/PEN6138_TWland&PK=NN71RA', label: 'Subscribe', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
         { href: 'http://www.penton.com/privacy-policy#ThirdPartyAdvertisingTech', label: 'Ad Choices', target: '_blank' },
