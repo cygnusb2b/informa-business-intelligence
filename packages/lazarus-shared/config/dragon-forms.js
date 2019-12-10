@@ -1,29 +1,34 @@
-const { URL } = require('url');
+const { URL, URLSearchParams } = require('url');
 
 class DragonFormsConfig {
   constructor({ url }) {
     if (!url) throw new Error('The DragonForms URL is required.');
     this.url = (new URL(url)).origin;
-    this.omedasites = {};
+    this.forms = {};
   }
 
-  addOmedaSite({ key, omedasite }) {
-    this.omedasites[key] = omedasite;
+  addForm(key, { omedasite, options } = {}) {
+    if (!omedasite) throw new Error('The `omedasite` value is required.');
+    this.forms[key] = { omedasite, options };
     return this;
   }
 
-  getFormUrl({ key }) {
-    const omedasite = this.getOmedaSite({ key });
+  getFormUrl(key) {
+    const { omedasite, options } = this.getForm(key);
     if (!omedasite) return null;
-    return `${this.getFormAction()}?omedasite=${omedasite}`;
+    const params = new URLSearchParams({
+      ...options,
+      omedasite,
+    });
+    return `${this.getFormAction()}?${params}`;
   }
 
   getFormAction() {
     return `${this.url}/loading.do`;
   }
 
-  getOmedaSite({ key }) {
-    return this.omedasites[key];
+  getForm(key) {
+    return this.forms[key] || {};
   }
 }
 

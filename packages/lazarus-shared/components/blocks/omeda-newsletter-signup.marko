@@ -1,16 +1,13 @@
 import { get } from "@base-cms/object-path";
+import DragonFormsConfig from "../../config/dragon-forms";
 
 $ const blockName = "newsletter-signup-block";
 
 $ const { config, site } = out.global;
-$ const dragonForms = site.get("dragonForms");
+$ const dragonForms = site.get("dragonForms") || new DragonFormsConfig({ url: "https://placeholder.dragonforms.com" });
 
-$ let action;
-$ let omedasite;
-$ if (dragonForms) {
-  action = typeof dragonForms.getFormAction === "function" ? dragonForms.getFormAction() : null;
-  omedasite = typeof dragonForms.getOmedaSite === "function" ? dragonForms.getOmedaSite({ key: "newsletterSignup" }) : null;
-}
+$ const action = dragonForms.getFormAction();
+$ const { omedasite, options } = dragonForms.getForm("newsletterSignup");
 
 <if(action && omedasite)>
   <marko-web-block name=blockName>
@@ -29,6 +26,11 @@ $ if (dragonForms) {
         name="field-wrapper"
       >
         <input type="hidden" name="omedasite" value=omedasite>
+        <if(options)>
+          <for|name, value| in=options>
+            <input type="hidden" name=name value=value>
+          </for>
+        </if>
         <input type="email" placeholder="Email address" required="true" name="em" class=`${blockName}__email-field`>
         <marko-web-element
           tag="button"
