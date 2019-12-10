@@ -1,3 +1,5 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
@@ -41,8 +43,8 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/american-school-and-university/', label: 'Advertise', target: '_blank' },
-        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=ASUnewpref', label: 'Newsletters', target: '_blank' },
-        { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6133_ASland', label: 'Subscribe', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
         { href: 'http://www.penton.com/privacy-policy#ThirdPartyAdvertisingTech', label: 'Ad Choices', target: '_blank' },

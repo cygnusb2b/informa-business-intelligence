@@ -1,3 +1,5 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
@@ -32,11 +34,11 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/webinar', label: 'Webinars' },
-        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=RERnewpref', label: 'Newsletters', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://buildings.informa.com/rental-equipment-register/', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs' },
-        { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6139_RQnew&pk=RQnew', label: 'Subscribe', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'http://directory.rermag.com/Main/DirectoryHome.aspx', label: 'Buyers Guide', target: '_blank' },
         { href: '/associations', label: 'Associations' },
         { href: 'https://www.argifocus.com/client/RentalEquipmentRegister/LM1/lm/rsdefault.asp', label: 'Free Product Info', target: '_blank' },

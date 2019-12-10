@@ -1,3 +1,5 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
@@ -31,8 +33,8 @@ module.exports = {
       items: [
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
-        { href: 'https://informa.dragonforms.com/loading.do?pk=NNHWEB&omedasite=PEN6086_IYnew', label: 'Magazine Subscription', target: '_blank' },
-        // { href: 'https://mfg.informabi.com/LP=1551', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/industryweek/', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
