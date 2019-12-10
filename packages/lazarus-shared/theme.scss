@@ -185,8 +185,8 @@ $theme-sponsored-content-color: #ee591d !default;
     padding-top: map-get($spacers, block);
 
     #{ $self } {
-      &__node {
-        min-width: 45%;
+      &__nodes {
+        width: 100%;
       }
     }
   }
