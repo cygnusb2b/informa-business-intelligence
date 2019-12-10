@@ -38,6 +38,11 @@ $theme-site-header-z-index: 15000;
 
 // @todo move to core skin?
 $block-spacer: 32px !default;
+
+// @todo move to core skin?
+$theme-page-body-font-size-sm:          17px !default;
+$theme-page-body-line-height-sm:        get-line-height($theme-page-body-font-size-sm, 30px) !default;
+
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
@@ -418,6 +423,7 @@ $theme-sponsored-content-color: #ee591d !default;
 
 .page-contents {
   &__content-body {
+    word-break: break-word; // @todo move to core theme?
     p + .embed-container-eloqua {
       margin-top: -$theme-content-paragraph-margin-bottom;
     }
