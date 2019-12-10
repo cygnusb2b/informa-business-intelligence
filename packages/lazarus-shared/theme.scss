@@ -205,6 +205,7 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 
   &__right-col {
+    max-width: 880px; // @todo move to core skin?
     padding-top: $grid-gutter-width;
   }
 
@@ -213,6 +214,7 @@ $theme-sponsored-content-color: #ee591d !default;
       padding-top: $grid-gutter-width;
     }
 
+    // @todo move to core skin?
     &--no-gutters {
       padding-right: 0;
       padding-left: 0;
