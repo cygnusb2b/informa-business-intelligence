@@ -37,10 +37,6 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
               <@bottom-row>
                 <lazarus-shared-content-page-node node=content />
 
-                <div class="col-12 mt-block p-0">
-                  <lazarus-shared-newsletter-signup-block />
-                </div>
-
                 <if(infiniteScrollEnabled)>
                   <marko-web-load-more
                     append-to=".page-grid__bottom-row"
