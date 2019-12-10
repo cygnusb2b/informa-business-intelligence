@@ -1,8 +1,10 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
   homePageSections: [
     { alias: '/technologies/cylinders-actuators', name: 'Cylinders & Actuators' },
     { alias: 'technologies/hydraulic-valves', name: 'Hydraulic Valves' },
@@ -37,5 +39,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://design.informabi.com/LP=3633',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };

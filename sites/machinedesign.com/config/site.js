@@ -1,8 +1,10 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
   homePageSections: [
     { alias: 'mechanical-motion-systems', name: 'Mechanical & Motion Systems' },
     { alias: '3d-printing-cad', name: '3D Printing & CAD' },
@@ -37,5 +39,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://design.informabi.com/LP=3227',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };

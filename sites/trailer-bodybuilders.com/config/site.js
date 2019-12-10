@@ -1,8 +1,10 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
   homePageSections: [
     { alias: 'trailers', name: 'Trailers' },
     { alias: 'truck-bodies', name: 'Truck Bodies' },
@@ -36,5 +38,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://s434533438.t.eloqua.com/e/f2',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };
