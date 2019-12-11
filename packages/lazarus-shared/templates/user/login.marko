@@ -10,18 +10,28 @@ $ const description = `Login to ${config.website("name")}`;
     </marko-web-gtm-default-context>
   </@head>
   <@page>
-    <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
+    <informa-gam-adunit
+      location="homepage"
+      position="top_banner"
+      modifiers=["top-of-page"]
+    />
+    <marko-web-page-wrapper modifiers=["top-border"]>
       <@section>
-        <h1 class="page-wrapper__title">${description}</h1>
-      </@section>
-    </marko-web-page-wrapper>
-    <marko-web-page-wrapper>
-      <@section>
-        <div class="row">
-          <div class="col">
-            <marko-web-identity-x-form-login />
-          </div>
-        </div>
+        <lazarus-skin-page-grid>
+          <@left-col>
+            <lazarus-shared-global-left-rail-block />
+          </@left-col>
+          <@right-col>
+            <@bottom-row>
+              <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
+                <h1 class="page-wrapper__title">${description}</h1>
+              </lazarus-skin-page-grid-col>
+              <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
+                <marko-web-identity-x-form-login />
+              </lazarus-skin-page-grid-col>
+            </@bottom-row>
+          </@right-col>
+        </lazarus-skin-page-grid>
       </@section>
     </marko-web-page-wrapper>
   </@page>
