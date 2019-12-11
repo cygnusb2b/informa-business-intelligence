@@ -5,6 +5,9 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    appId: '5df0e93805aa563dd443fc39',
+  },
   homePageSections: [
     { alias: 'transportation-distribution', name: 'Transportation & Distribution' },
     { alias: 'global-supply-chain', name: 'Global Supply Chain' },

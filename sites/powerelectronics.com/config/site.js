@@ -5,6 +5,9 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    appId: '5df0e98905aa56bf2c43fc3c',
+  },
   homePageSections: [
     { alias: 'power-management', name: 'Power Management' },
     { alias: 'alternative-energy', name: 'Alternative Energy' },

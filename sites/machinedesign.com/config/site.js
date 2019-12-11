@@ -5,6 +5,9 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    appId: '5df0e90605aa5648c343fc38',
+  },
   homePageSections: [
     { alias: 'mechanical-motion-systems', name: 'Mechanical & Motion Systems' },
     { alias: '3d-printing-cad', name: '3D Printing & CAD' },

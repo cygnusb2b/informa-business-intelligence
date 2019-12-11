@@ -5,6 +5,9 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    appId: '5df0082605aa5695a243fc04',
+  },
   homePageSections: [
     { alias: 'business-technology', name: 'Business & Technology' },
     { alias: 'mergers-acquisitions', name: 'Mergers & Acquisitions' },
