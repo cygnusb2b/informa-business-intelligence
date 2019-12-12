@@ -3,8 +3,6 @@ const dragonForms = require('./dragon-forms');
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },

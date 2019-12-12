@@ -5,6 +5,10 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0e83705aa56c6f243fc30',
+  },
   homePageSections: [
     { alias: 'equipment', name: 'Equipment' },
     { alias: 'technology', name: 'Technology' },

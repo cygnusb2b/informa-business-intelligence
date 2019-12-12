@@ -5,6 +5,10 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0e8dc05aa5681de43fc36',
+  },
   homePageSections: [
     { alias: '/technologies/cylinders-actuators', name: 'Cylinders & Actuators' },
     { alias: 'technologies/hydraulic-valves', name: 'Hydraulic Valves' },

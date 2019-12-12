@@ -42,6 +42,9 @@ fragment ContentPageFragment on Content {
     surveyType
     surveyId
   }
+  userRegistration {
+    isRequired
+  }
   ... on ContentVideo {
     embedCode
   }

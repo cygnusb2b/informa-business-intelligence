@@ -5,6 +5,10 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0e8b205aa567ebb43fc35',
+  },
   homePageSections: [
     { alias: 'ask-the-expert', name: 'Ask the Expert' },
     { alias: 'molds-cores', name: 'Molds/Cores' },

@@ -1,6 +1,6 @@
 const startServer = require('@endeavor-business-media/lazarus-shared/start-server');
 
-const routes = require('./server/routes');
+const routes = require('@endeavor-business-media/lazarus-shared/routes');
 const siteConfig = require('./config/site');
 const coreConfig = require('./config/core');
 
