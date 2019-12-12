@@ -153,6 +153,34 @@ $theme-sponsored-content-color: #ee591d !default;
   }
 }
 
+.content-page-gate {
+  padding: 20px;
+  margin-bottom: map-get($spacers, block);
+  background: transparent linear-gradient(to bottom, #fcfcfc, #f6f6f6) repeat scroll 0% 0%;
+  border-bottom: 2px solid #ddd;
+  &__title {
+    margin-bottom: 15px;
+    font-family: Raleway, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: $primary;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    margin-bottom: 15px;
+    font-family: $theme-font-family-serif;
+    font-size: 16px;
+    color: #222;
+    > p {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .media-gallery-slideshow {
   position: relative;
   display: block;
