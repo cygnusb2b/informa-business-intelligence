@@ -31,6 +31,8 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/design-learning-center', label: 'Design & Learning Center' },
+        { href: 'http://sourceesb.com/', label: 'Find Parts', target: '_blank' },
         { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6062_egnew&PK=ED9WEB', label: 'Subscribe', target: '_blank' },
         { href: '/magazine-digital-archive', label: 'Digital Archive' },
         // { href: '#', label: 'Newsletter', target: '_blank' },
