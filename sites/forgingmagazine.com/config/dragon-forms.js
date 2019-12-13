@@ -4,6 +4,6 @@ const config = new DragonFormsConfig({ url: 'https://endeavor.dragonforms.com' }
 
 config
   .addForm('newsletterSignup', { omedasite: 'FRGnewpref' })
-  .addForm('magazineSignup', { omedasite: 'FRG_new' });
+  .addForm('magazineSignup', { omedasite: 'FRG_new', query: { pk: 'NNHWEB' } });
 
 module.exports = config;
