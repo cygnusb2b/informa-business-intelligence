@@ -36,7 +36,6 @@ module.exports = {
         { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
-        { href: '/webinars', label: 'Webinars' },
         { href: '/learning-resources/webinar', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: 'hydraulicswallchart', label: 'Wall Charts' },
