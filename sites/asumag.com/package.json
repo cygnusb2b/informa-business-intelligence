@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/asumag.com",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/asumag.com",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "@base-cms/utils": "^1.0.0",
     "@base-cms/web-cli": "^1.0.2",
     "@endeavor-business-media/informa-gam": "^1.1.0",
-    "@endeavor-business-media/lazarus-shared": "^1.2.0",
+    "@endeavor-business-media/lazarus-shared": "^1.3.0",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }
