@@ -7,6 +7,11 @@ $ const requiresRegistration = get(content, "userRegistration.isRequired");
 <lazarus-skin-page-grid-col modifiers=["content-page"]>
   <lazarus-shared-content-page-card content=content />
 
+  <marko-web-social-sharing
+    path=content.siteContext.path
+    providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
+  />
+
   <marko-web-identity-x-access|context| enabled=requiresRegistration>
     <if(!context.canAccess)>
       <lazarus-shared-content-body-element node=content is-preview=true />
