@@ -31,10 +31,9 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers' },
-        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        // { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
+        // { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://cv.informa.com/fleet-owner/', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
