@@ -30,12 +30,15 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/drones-and-autonomous-vehicles', label: 'Drones & Autonomous Vehicles' },
+        { href: '/trump-supply-chain', label: 'Trump & the Supply Chain' },
+        { href: '/new-products', label: 'Latest Product & Services' },
         { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/mhl/', label: 'Advertise' },
+        { href: 'https://designmanufacturing.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
