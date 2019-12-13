@@ -3,8 +3,7 @@
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
 User-agent: *
-Disallow: /
 Disallow: /__load-more
 
-Sitemap: https://www.hydraulicspheumatics.com/sitemap.xml
-Sitemap: https://www.hydraulicspheumatics.com/sitemap-google-news.xml
+Sitemap: https://www.hydraulicspneumatics.com/sitemap.xml
+Sitemap: https://www.hydraulicspneumatics.com/sitemap-google-news.xml
