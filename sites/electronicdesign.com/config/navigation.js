@@ -25,7 +25,7 @@ module.exports = {
         { href: '/technologies/embedded-revolution', label: 'Embedded Revolution' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/resources', label: 'Resources' },
-        { href: '/community-home/electronic-design-blogs', label: 'Experts' },
+        { href: '/blogs', label: 'Experts' },
       ],
     },
     {

@@ -29,7 +29,6 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://www.mfgtechshow.com/', label: 'M&T Show' },
         { href: 'http://directory.newequipment.com/', label: 'Manufacturing Products' },
         { href: '/resources/industryweek-best-plants-awards', label: 'IndustryWeek Best Plants Awards' },
         { href: '/resources/industryweek-50-best-us-manufacturers', label: 'IW US 50 Best' },

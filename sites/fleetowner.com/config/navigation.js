@@ -33,7 +33,7 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/truck-stats', label: 'Truck Statistics' },
-        { href: '/what-s-my-truck-worth', label: 'Truck Values' },
+        { href: '/page/what-s-my-truck-worth', label: 'Truck Values' },
         { href: '/fleet-owner-magazine', label: 'Fleet Owner Magazine' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },

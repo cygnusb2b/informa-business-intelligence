@@ -39,7 +39,7 @@ module.exports = {
         { href: '/awards', label: 'Awards' },
         { href: 'http://contractingbusiness.hotims.com/r5/search.asp?action=search&return_by_category=y', label: 'Free Advertiser Info', target: '_blank' },
         { href: '/downloads', label: 'Monthly Downloads' },
-        { href: '/contracting-business-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
+        { href: '/page/contracting-business-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/contracting-business/', label: 'Advertise', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
