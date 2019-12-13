@@ -1,0 +1,34 @@
+$ const { config } = out.global;
+
+$ const type = "logout";
+
+<marko-web-default-page-layout type=type title="Logout">
+  <@head>
+    <marko-web-gtm-default-context|{ context }| type=type>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-default-context>
+  </@head>
+  <@page>
+    <informa-gam-adunit
+      location="homepage"
+      position="top_banner"
+      modifiers=["top-of-page"]
+    />
+    <marko-web-page-wrapper modifiers=["top-border"]>
+      <@section>
+        <lazarus-skin-page-grid>
+          <@left-col>
+            <lazarus-shared-global-left-rail-block />
+          </@left-col>
+          <@right-col>
+            <@bottom-row>
+              <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
+                <marko-web-identity-x-form-logout />
+              </lazarus-skin-page-grid-col>
+            </@bottom-row>
+          </@right-col>
+        </lazarus-skin-page-grid>
+      </@section>
+    </marko-web-page-wrapper>
+  </@page>
+</marko-web-default-page-layout>

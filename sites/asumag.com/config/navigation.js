@@ -1,8 +1,8 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },
@@ -32,7 +32,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/awards', label: 'Awards & Competitions' },
+        { href: '/page/awards', label: 'Awards & Competitions' },
         { href: '/magazine-issues/american-school-and-university', label: 'AS&U Magazine' },
         { href: '/american-school-university-digital-edition-archive', label: 'AS&U Digital Editions' },
         { href: 'http://schooldesigns.com', label: 'SchoolDesigns.com', target: '_blank' },
@@ -41,8 +41,8 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/american-school-and-university/', label: 'Advertise', target: '_blank' },
-        { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=ASUnewpref', label: 'Newsletters', target: '_blank' },
-        { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6133_ASland', label: 'Subscribe', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
         { href: 'http://www.penton.com/privacy-policy#ThirdPartyAdvertisingTech', label: 'Ad Choices', target: '_blank' },

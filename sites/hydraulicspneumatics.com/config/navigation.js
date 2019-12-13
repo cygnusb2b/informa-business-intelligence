@@ -1,8 +1,8 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },
@@ -34,14 +34,14 @@ module.exports = {
         { href: 'http://directory.distributors.hydraulicspneumatics.com/Main/DirectoryHome.aspx', label: 'Distributors Directory' },
         { href: '/community/hydraulics-pneumatics-experts', label: 'Blogs' },
         { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
-        { href: 'https://informa.dragonforms.com/PEN6075_HLnew?NN9WEB', label: 'Subscribe', target: '_blank' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/learning-resources/webinar', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: 'hydraulicswallchart', label: 'Wall Charts' },
-        // { href: '#', label: 'Newsletter', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.informa.com/hydraulics-pneumatics/', label: 'Advertise', target: '_blank' },

@@ -1,8 +1,14 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0082605aa5695a243fc04',
+  },
   homePageSections: [
     { alias: 'business-technology', name: 'Business & Technology' },
     { alias: 'mergers-acquisitions', name: 'Mergers & Acquisitions' },
@@ -36,5 +42,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://endeavor.dragonforms.com/loading.do?omedasite=RERnewpref',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };

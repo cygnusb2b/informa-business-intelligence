@@ -30,8 +30,10 @@ $ const wrapperStyle = canLoadPrestitial(page) ? "opacity: 0;" : null;
   </@above-wrapper>
   <@above-container>
     <marko-web-gtm-track-load-more />
-    <default-theme-site-header />
-    <default-theme-site-menu />
+    <marko-web-identity-x-context|{ hasUser }|>
+      <default-theme-site-header has-user=hasUser reg-enabled=true />
+      <default-theme-site-menu has-user=hasUser reg-enabled=true />
+    </marko-web-identity-x-context>
     <${input.aboveContainer} />
   </@above-container>
   <@below-container>

@@ -1,8 +1,8 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },
@@ -32,7 +32,7 @@ module.exports = {
         { href: 'https://www.mwrf.com/', label: 'RF Design' },
         { href: 'https://www.machinedesign.com/', label: 'Machine Design' },
         { href: 'https://www.sourcetoday.com/', label: 'Procurement' },
-        // { href: '#', label: 'Newsletter', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },

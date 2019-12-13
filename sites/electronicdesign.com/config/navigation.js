@@ -1,8 +1,8 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },
@@ -33,13 +33,13 @@ module.exports = {
       items: [
         { href: '/design-learning-center', label: 'Design & Learning Center' },
         { href: 'http://sourceesb.com/', label: 'Find Parts', target: '_blank' },
-        { href: 'https://informa.dragonforms.com/loading.do?omedasite=PEN6062_egnew&PK=ED9WEB', label: 'Subscribe', target: '_blank' },
         { href: '/magazine-digital-archive', label: 'Digital Archive' },
-        // { href: '#', label: 'Newsletter', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.informa.com/electronic-design/', label: 'Advertise' },

@@ -1,8 +1,14 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0078f05aa56a96943fbfe',
+  },
   homePageSections: [
     { alias: 'columns', name: 'Columns' },
     { alias: 'contracting-business-success', name: 'Contracting Business Success' },
@@ -37,5 +43,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://endeavor.dragonforms.com/loading.do?omedasite=CBnewpref',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };

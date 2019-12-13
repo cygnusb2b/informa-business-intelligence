@@ -1,100 +1,26 @@
 import { getAsObject, get } from "@base-cms/object-path";
-import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
-$ const { site, GAM } = out.global;
 $ const { node: content } = input;
-$ const { type } = content;
 $ const primarySection = getAsObject(content, "primarySection");
+$ const requiresRegistration = get(content, "userRegistration.isRequired");
 
 <lazarus-skin-page-grid-col modifiers=["content-page"]>
   <lazarus-shared-content-page-card content=content />
 
-  <default-theme-page-contents|{ blockName }|>
-    <default-theme-content-contact-details obj=content />
-    <informa-gam-adunit
-      location=adLocation(type)
-      position="inarticle1"
-      modifiers=["max-width-300", "float-right"]
-    >
-      <@context content-id=content.id />
-    </informa-gam-adunit>
-
-    $ const bodyId = `content-body-${content.id}`;
-    <!-- Note: the `itemprop` attr must be set for Teads to properly select the body -->
-    <marko-web-content-body block-name=blockName obj=content attrs={ id: bodyId, itemprop: "articleBody" } />
-
-    <!-- Load media gallery slideshow button -->
-    <if(type === "media-gallery")>
-      <slideshow-button block-name=blockName path=get(content, "siteContext.path") />
-    </if>
-    <!-- Load "embedded" Eloqua iframes -->
-    <lazarus-load-eloqua-iframes body-id=bodyId />
-
-    <!-- Teads ads does its own injection. -->
-    <informa-gam-adunit
-      location=adLocation(type)
-      position="inarticlevid"
-    >
-      <@context content-id=content.id />
-    </informa-gam-adunit>
-
-    <!-- inject native ad after second paragraph -->
-    <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-of-type(2)`>
-      <@adunit location=adLocation(type) position="native_inline" modifiers=["body-inline"]>
-        <@context content-id=content.id />
-      </@adunit>
-    </informa-gam-direct-inject-adunit>
-
-    <informa-gam-inject-adunits selector=`#${bodyId}`>
-      <!-- @todo find a content item that is using the reveal position -->
-      <@inject
-        at=1200
-        location=adLocation(type)
-        position="reveal"
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=2500
-        location=adLocation(type)
-        position="inarticle2"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=3500
-        location=adLocation(type)
-        position="inarticle3"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=6000
-        location=adLocation(type)
-        position="inarticle4"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-    </informa-gam-inject-adunits>
-    <marko-web-content-sidebars block-name=blockName obj=content />
-
-    <if(type === "document")>
-      <default-theme-content-download obj=content>
-        <@wufoo user-name=site.get("wufoo.userName") />
-        <@link class="btn btn-lg btn-primary" />
-      </default-theme-content-download>
-    </if>
-    <if(type === "webinar")>
-      <default-theme-content-link-url
-        obj=content
-        label="Register/View"
-        target="_blank"
+  <marko-web-identity-x-access|context| enabled=requiresRegistration>
+    <if(!context.canAccess)>
+      <lazarus-shared-content-body-element node=content is-preview=true />
+      <lazarus-shared-content-gate
+        is-logged-in=context.isLoggedIn
+        has-required-access-level=context.hasRequiredAccessLevel
+        requires-access-level=context.hasRequiredAccessLevel
+        messages=context.messages
       />
     </if>
-  </default-theme-page-contents>
+    <else>
+      <lazarus-shared-content-body-element node=content />
+    </else>
+  </marko-web-identity-x-access>
 
   <lazarus-shared-related-content-block
     id=content.id

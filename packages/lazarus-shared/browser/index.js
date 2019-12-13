@@ -3,6 +3,7 @@ import GCSE from '@base-cms/marko-web-gcse/browser';
 import GTM from '@base-cms/marko-web-gtm/browser';
 import GAM from '@base-cms/marko-web-gam/browser';
 import InformaGAM from '@endeavor-business-media/informa-gam/browser';
+import IdentityX from '@base-cms/marko-web-identity-x/browser';
 
 import IncrementAdPos from './increment-ad-pos.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
@@ -15,6 +16,7 @@ export default (Browser) => {
   GAM(Browser);
   GCSE(Browser);
   InformaGAM(Browser);
+  IdentityX(Browser);
 
   const { EventBus } = Browser;
   Browser.register('LazarusSharedIncrementAdPos', IncrementAdPos, {

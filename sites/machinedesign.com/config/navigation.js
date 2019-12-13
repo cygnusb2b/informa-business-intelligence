@@ -1,8 +1,8 @@
+const dragonForms = require('./dragon-forms');
+
 module.exports = {
   tertiary: {
     items: [
-      // { href: '/login', label: 'Log In' },
-      // { href: '/register', label: 'Register' },
       { href: '/search', label: 'Search' },
     ],
   },
@@ -39,9 +39,9 @@ module.exports = {
         { href: 'http://www.industryweek.com/', label: 'The Business of Manufacturing' },
         { href: 'https://www.mfgtechshow.com/mts19/Public/Enter.aspx', label: 'Manufacturing & Technology Conference and Expo' },
         { href: 'http://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
-        { href: 'https://informa.dragonforms.com/PEN6095_MNnew?NN9WEB', label: 'Subscribe', target: '_blank' },
-        // { href: '#', label: 'Newsletter', target: '_blank' },
-        { href: '/webinars', label: 'Webinars' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '/learning-resources/webinars', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },

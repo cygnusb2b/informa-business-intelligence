@@ -1,8 +1,14 @@
 const navigation = require('./navigation');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
+  dragonForms,
+  identityX: {
+    enabled: false,
+    appId: '5df0e83705aa56c6f243fc30',
+  },
   homePageSections: [
     { alias: 'equipment', name: 'Equipment' },
     { alias: 'technology', name: 'Technology' },
@@ -36,5 +42,5 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
-  newsletterSubscribeLink: 'https://tr.informabi.com/LP=1295',
+  newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSignup'),
 };
