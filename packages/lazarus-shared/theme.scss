@@ -37,6 +37,7 @@ $theme-newsletter-block-button-bg-color: #c83e31 !default;
 $theme-site-header-z-index: 15000;
 
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
+@import "../../node_modules/@base-cms/marko-web-social-sharing/scss/buttons";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 
 $theme-sponsored-content-color: #ee591d !default;
@@ -151,6 +152,10 @@ $theme-sponsored-content-color: #ee591d !default;
       padding-bottom: 0;
     }
   }
+}
+
+.social-sharing {
+  margin-bottom: 20px;
 }
 
 .content-page-preview-overlay {

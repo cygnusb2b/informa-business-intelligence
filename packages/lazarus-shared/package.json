@@ -19,6 +19,7 @@
     "@base-cms/marko-web-gtm": "^1.0.3",
     "@base-cms/marko-web-icons": "^1.0.0",
     "@base-cms/marko-web-identity-x": "^1.4.0",
+    "@base-cms/marko-web-social-sharing": "^1.5.0",
     "@base-cms/marko-web-theme-default": "^1.2.0",
     "@base-cms/object-path": "^1.0.0",
     "@base-cms/utils": "^1.0.0",

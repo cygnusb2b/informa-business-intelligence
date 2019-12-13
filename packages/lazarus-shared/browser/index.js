@@ -4,6 +4,7 @@ import GTM from '@base-cms/marko-web-gtm/browser';
 import GAM from '@base-cms/marko-web-gam/browser';
 import InformaGAM from '@endeavor-business-media/informa-gam/browser';
 import IdentityX from '@base-cms/marko-web-identity-x/browser';
+import SocialSharing from '@base-cms/marko-web-social-sharing/browser';
 
 import IncrementAdPos from './increment-ad-pos.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
@@ -15,6 +16,7 @@ export default (Browser) => {
   GTM(Browser);
   GAM(Browser);
   GCSE(Browser);
+  SocialSharing(Browser);
   InformaGAM(Browser);
   IdentityX(Browser);
 
