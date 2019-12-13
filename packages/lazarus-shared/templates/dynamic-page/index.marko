@@ -14,6 +14,7 @@ $ const { id, alias, pageNode } = data;
       modifiers=["top-of-page"]
     /> -->
     <marko-web-resolve-page|{ data: page }| node=pageNode>
+      $ const bodyId = `content-page-${page.id}`;
       <marko-web-page-wrapper modifiers=["top-border"]>
         <@section>
           <div class="row">
@@ -25,7 +26,9 @@ $ const { id, alias, pageNode } = data;
         <@section>
           <div class="row">
             <default-theme-page-contents|{ blockName }| class="col">
-              <marko-web-content-body block-name=blockName obj=page />
+              <marko-web-content-body block-name=blockName obj=page attrs={ id: bodyId } />
+              <!-- Load "embedded" Eloqua iframes -->
+              <lazarus-load-eloqua-iframes body-id=bodyId />
             </default-theme-page-contents>
           </div>
         </@section>
