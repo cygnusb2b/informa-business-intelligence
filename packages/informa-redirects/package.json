@@ -13,7 +13,9 @@
     "@base-cms/db": "^1.0.0",
     "@base-cms/object-path": "^1.0.0",
     "@base-cms/utils": "^1.0.0",
+    "cheerio": "^1.0.0-rc.3",
     "dotenv": "^8.2.0",
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "node-fetch": "^2.6.0"
   }
 }
