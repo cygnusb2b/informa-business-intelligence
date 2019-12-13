@@ -31,10 +31,10 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/refrigerated-ltl-routing-guide', label: 'Refrigerated LTL Routing Guide' },
+        { href: '/page/refrigerated-ltl-routing-guide', label: 'Refrigerated LTL Routing Guide' },
         { href: '/resources/buyers-guide', label: 'Refrigerated Fleet Equipment Buyer\'s Guide' },
-        { href: '/reefer-repair-directory/refrigeration-unit-repair-directory', label: 'Refrigeration Unit Repair Directory' },
-        { href: '/cold-storage-facilities/public-refrigerated-warehousing-and-distribution-directory', label: 'Public Refrigerated Warehouse & Distribution Directory' },
+        { href: '/page/reefer-repair-directory/refrigeration-unit-repair-directory', label: 'Refrigeration Unit Repair Directory' },
+        { href: '/page/cold-storage-facilities/public-refrigerated-warehousing-and-distribution-directory', label: 'Public Refrigerated Warehouse & Distribution Directory' },
         { href: '/gross-revenue-reports/annual-gross-revenue-reports', label: 'Annual Gross Revenue Reports' },
         { href: '/event-calendar', label: 'Related Industry Events' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },

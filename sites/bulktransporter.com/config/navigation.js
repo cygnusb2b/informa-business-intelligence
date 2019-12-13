@@ -30,12 +30,12 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/tank-cleaning-directory/tank-cleaning-directory', label: 'Tank Cleaning Directory' },
-        { href: '/cargo-tank-repair-directory/cargo-tank-repair-directory', label: 'Cargo Tank Repair Directory' },
-        { href: '/transload-directory/bulk-transload-facilities-directory', label: 'Bulk Transload Facilities Directory' },
-        { href: '/depot-directory/tank-container-depot-directory', label: 'Tank Container Depot Directory' },
-        { href: '/grossrevenue', label: 'Gross Revenue Reports' },
-        { href: '/events-calendar/bulk-transporter-calendar', label: 'Convention Calendar' },
+        { href: '/page/tank-cleaning-directory/tank-cleaning-directory', label: 'Tank Cleaning Directory' },
+        { href: '/page/cargo-tank-repair-directory/cargo-tank-repair-directory', label: 'Cargo Tank Repair Directory' },
+        { href: '/page/transload-directory/bulk-transload-facilities-directory', label: 'Bulk Transload Facilities Directory' },
+        { href: '/page/depot-directory/tank-container-depot-directory', label: 'Tank Container Depot Directory' },
+        { href: '/page/grossrevenue', label: 'Gross Revenue Reports' },
+        { href: '/resources/events-calendar/article/21656378/convention-calendar', label: 'Convention Calendar' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },

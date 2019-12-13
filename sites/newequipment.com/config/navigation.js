@@ -30,7 +30,6 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: 'http://directory.newequipment.com/', label: 'NED Directory' },
-        { href: 'http://www.mfgtechshow.com/', label: 'M&T Show' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },

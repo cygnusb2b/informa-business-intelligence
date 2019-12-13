@@ -26,7 +26,7 @@ module.exports = {
         { href: '/materials', label: 'Materials' },
         { href: '/technologies/software', label: 'Software' },
         { href: '/learning-resources', label: 'Resources' },
-        { href: '/microwaves-rf-experts', label: 'Experts' },
+        { href: '/page/microwaves-rf-experts', label: 'Experts' },
       ],
     },
     {
@@ -45,7 +45,7 @@ module.exports = {
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.informa.com/microwaves-rf/', label: 'Advertise' },
-        { href: '/contributors', label: 'Contribute' },
+        { href: '/contribs', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
