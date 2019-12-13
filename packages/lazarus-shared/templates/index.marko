@@ -175,6 +175,55 @@ $ const { id, alias, name, pageNode } = data;
                   </div>
                 </if>
 
+                $ const [programA, programB] = site.getAsArray("homePagePrograms");
+                <if(programA)>
+                  <div class="col-md-6 mb-block">
+
+                    <marko-web-query|{ nodes }|
+                      name="website-scheduled-content"
+                      params={ sectionAlias: programA.alias, limit: 1, requiresImage: true, queryFragment }
+                    >
+                      <lazarus-shared-content-hero-flow nodes=nodes>
+                        <@header>
+                          <marko-web-link href=`/${sectionA.alias}`>
+                            ${programA.name}
+                          </marko-web-link>
+                        </@header>
+                        <@card
+                          with-teaser=false
+                          with-section=false
+                          modifiers=["light", "increased-padding"]
+                        />
+                      </lazarus-shared-content-hero-flow>
+                    </marko-web-query>
+
+                  </div>
+                </if>
+
+                <if(programB)>
+                  <div class="col-md-6 mb-block">
+
+                    <marko-web-query|{ nodes }|
+                      name="website-scheduled-content"
+                      params={ sectionAlias: programB.alias, limit: 1, requiresImage: true, queryFragment }
+                    >
+                      <lazarus-shared-content-hero-flow nodes=nodes>
+                        <@header>
+                          <marko-web-link href=`/${sectionA.alias}`>
+                            ${programB.name}
+                          </marko-web-link>
+                        </@header>
+                        <@card
+                          with-teaser=false
+                          with-section=false
+                          modifiers=["light", "increased-padding"]
+                        />
+                      </lazarus-shared-content-hero-flow>
+                    </marko-web-query>
+
+                  </div>
+                </if>
+
                 <div class="col-12">
                   <marko-web-query|{ nodes }|
                     name="all-published-content"
