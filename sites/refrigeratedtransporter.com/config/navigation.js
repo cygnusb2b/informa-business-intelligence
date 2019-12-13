@@ -38,7 +38,7 @@ module.exports = {
         { href: '/gross-revenue-reports/annual-gross-revenue-reports', label: 'Annual Gross Revenue Reports' },
         { href: '/event-calendar', label: 'Related Industry Events' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
-        // { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/page/about-us', label: 'About Us' },
