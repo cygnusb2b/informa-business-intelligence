@@ -29,12 +29,14 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers' },
+        { href: 'http://directory.newequipment.com/', label: 'NED Directory' },
+        { href: 'http://www.mfgtechshow.com/', label: 'M&T Show' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        // { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/new-equipment-digest/', label: 'Advertise' },
+        { href: 'https://designmanufacturing.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
