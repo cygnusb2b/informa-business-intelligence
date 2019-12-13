@@ -14,6 +14,10 @@ module.exports = {
     { alias: 'leadership', name: 'Leadership' },
     { alias: 'technology-and-iiot', name: 'Technology and IIoT' },
   ],
+  homePagePrograms: [
+    { alias: 'cloud-manufacturing', name: 'Cloud Manufacturing' },
+    { alias: 'supply-chain-initiative', name: 'Supply Chain Initiative' },
+  ],
   logos: {
     navbar: {
       src: 'https://img.industryweek.com/files/base/ebm/iw/static/iw_logo.png?h=30',

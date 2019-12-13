@@ -31,6 +31,9 @@ $theme-site-header-breakpoints: (
 $theme-newsletter-block-bg-color: $theme-site-navbar-menu-bg-color !default;
 $theme-newsletter-block-button-bg-color: #c83e31 !default;
 
+// @todo move to core skin
+$theme-lazarus-card-bg-color-light: rgba(244, 244, 244, .85) !default;
+
 // @todo Verify this. Reduced the z-index to prevent overlaying the welcome ad.
 // Currently, the ad template is z-indexing at 20000, so setting this lower.
 // The default value was 50000
@@ -123,6 +126,15 @@ $theme-sponsored-content-color: #ee591d !default;
     #{ $self } {
       &__sponsored-content {
         margin-top: .25rem;
+      }
+    }
+  }
+
+  // @todo move to core skin
+  &--light {
+    #{ $self } {
+      &__body {
+        background-color: $theme-lazarus-card-bg-color-light;
       }
     }
   }
