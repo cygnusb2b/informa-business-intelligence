@@ -10,9 +10,9 @@ module.exports = {
     appId: '5df0e98905aa56bf2c43fc3c',
   },
   homePageSections: [
-    { alias: 'power-management', name: 'Power Management' },
-    { alias: 'alternative-energy', name: 'Alternative Energy' },
-    { alias: 'automotive', name: 'Automotive' },
+    { alias: 'technologies/power-management', name: 'Power Management' },
+    { alias: 'technologies/alternative-energy', name: 'Alternative Energy' },
+    { alias: 'markets/automotive', name: 'Automotive' },
   ],
   logos: {
     navbar: {
