@@ -356,7 +356,7 @@ services:
       EXPOSED_PORT: 5724
       LIVERELOAD_PORT: 47114
       TENANT_KEY: ebm_hydraulicspneumatics
-      SITE_ID: 5dcc4298a6e83970038b4567
+      SITE_ID: 5dd408f584c75844058b4567
     ports:
       - "5724:80"
       - "47114:47114"
