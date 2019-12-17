@@ -10,7 +10,7 @@ module.exports = {
     appId: '5df0e8dc05aa5681de43fc36',
   },
   homePageSections: [
-    { alias: '/technologies/cylinders-actuators', name: 'Cylinders & Actuators' },
+    { alias: 'technologies/cylinders-actuators', name: 'Cylinders & Actuators' },
     { alias: 'technologies/hydraulic-valves', name: 'Hydraulic Valves' },
     { alias: 'technologies/hydraulic-pumps-motors', name: 'Hydraulic Pumps & Motors' },
   ],
