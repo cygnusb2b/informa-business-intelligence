@@ -12,7 +12,7 @@ module.exports = {
   homePageSections: [
     { alias: 'supply-chain', name: 'Supply Chain' },
     { alias: 'news', name: 'News' },
-    { alias: 'distributor-news', name: 'Distributor News' },
+    { alias: 'news/distributor-news', name: 'Distributor News' },
   ],
   logos: {
     navbar: {
