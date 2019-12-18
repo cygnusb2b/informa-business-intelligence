@@ -10,9 +10,9 @@ module.exports = {
     appId: '5df0e96005aa56e86643fc3a',
   },
   homePageSections: [
-    { alias: 'defense', name: 'Defense' },
-    { alias: 'components', name: 'Components' },
-    { alias: 'systems', name: 'Systems' },
+    { alias: 'markets/defense', name: 'Defense' },
+    { alias: 'technologies/components', name: 'Components' },
+    { alias: 'technologies/systems', name: 'Systems' },
   ],
   logos: {
     navbar: {
