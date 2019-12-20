@@ -531,3 +531,9 @@ $theme-sponsored-content-color: #ee591d !default;
     border: none;
   }
 }
+
+// allow embeds to display natural width no greater than 100%
+[data-embed-type] {
+  width: auto;
+  max-width: 100%;
+}
