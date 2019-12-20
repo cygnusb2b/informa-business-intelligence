@@ -36,7 +36,7 @@ module.exports = {
         { href: '/page/what-s-my-truck-worth', label: 'Truck Values' },
         { href: '/fleet-owner-magazine', label: 'Fleet Owner Magazine' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: 'http://www.argifocus.com/client/FleetOwner/LM1/lm/rsdefault.asp?elqTrack=true', label: 'Marketing Solutions' },
         { href: '/resource-center', label: 'Resource Center' },
         { href: '/resource-center/driver-management', label: 'Driver Management' },

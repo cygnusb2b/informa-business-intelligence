@@ -35,7 +35,7 @@ module.exports = {
         { href: 'https://www.sourcetoday.com/distribution/digital-issue', label: 'Digital Issue' },
         { href: 'http://www.industryweek.com/supply-chain', label: 'Business of Manufacturing' },
         { href: 'http://directory.newequipment.com/products/electrical-and-electronics', label: 'Equipment Product Directory' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.informa.com/source-today/', label: 'Advertise' },

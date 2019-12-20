@@ -39,7 +39,7 @@ module.exports = {
         { href: 'http://www.industryweek.com/', label: 'The Business of Manufacturing' },
         { href: 'http://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webinars', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
