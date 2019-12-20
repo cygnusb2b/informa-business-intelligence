@@ -1,0 +1,26 @@
+$ const { site } = out.global;
+$ const { id, type, pageNode } = data;
+
+<marko-web-content-page-layout id=id type=type>
+  <@head>
+    <marko-web-gtm-content-context|{ context }| id=id>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-content-context>
+  </@head>
+  <@page>
+    <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
+      $ const section = resolved.getAsObject("primarySection");
+
+      <marko-web-page-wrapper modifiers=["top-border"]>
+        <!-- @todo readable width should calculate to 780px -->
+        <@section>
+          <lazarus-shared-content-page-node
+            node=content
+            ads-enabled=false
+            full-width=true
+          />
+        </@section>
+      </marko-web-page-wrapper>
+    </marko-web-resolve-page>
+  </@page>
+</marko-web-content-page-layout>

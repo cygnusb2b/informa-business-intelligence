@@ -1,36 +1,57 @@
 import { getAsObject, get } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
 
 $ const { node: content } = input;
+$ const blockName = "content-page-node";
+
 $ const primarySection = getAsObject(content, "primarySection");
 $ const requiresRegistration = get(content, "userRegistration.isRequired");
 
-<lazarus-skin-page-grid-col modifiers=["content-page"]>
-  <lazarus-shared-content-page-card content=content />
+$ const fullWidth = defaultValue(input.fullWidth, false);
+$ const modifiers = [];
+$ const imgInput = {};
+$ if (fullWidth) {
+  modifiers.push("full-width");
+  imgInput.ar = "21:9";
+  imgInput.width = 1200;
+};
 
-  <marko-web-social-sharing
-    path=content.siteContext.path
-    providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
-  />
+<marko-web-block name=blockName modifiers=modifiers>
+  <lazarus-shared-content-page-card content=content modifiers=modifiers>
+    <@image ...imgInput />
+  </lazarus-shared-content-page-card>
+  <marko-web-element name="contents" block-name=blockName>
+    <marko-web-social-sharing
+      path=content.siteContext.path
+      providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
+    />
+    <marko-web-identity-x-access|context| enabled=requiresRegistration>
+      <if(!context.canAccess)>
+        <lazarus-shared-content-body-element
+          node=content
+          is-preview=true
+          ads-enabled=input.adsEnabled
+        />
+        <lazarus-shared-content-gate
+          is-logged-in=context.isLoggedIn
+          has-required-access-level=context.hasRequiredAccessLevel
+          requires-access-level=context.hasRequiredAccessLevel
+          messages=context.messages
+        />
+      </if>
+      <else>
+        <lazarus-shared-content-body-element
+          node=content
+          ads-enabled=input.adsEnabled
+        />
+      </else>
+    </marko-web-identity-x-access>
 
-  <marko-web-identity-x-access|context| enabled=requiresRegistration>
-    <if(!context.canAccess)>
-      <lazarus-shared-content-body-element node=content is-preview=true />
-      <lazarus-shared-content-gate
-        is-logged-in=context.isLoggedIn
-        has-required-access-level=context.hasRequiredAccessLevel
-        requires-access-level=context.hasRequiredAccessLevel
-        messages=context.messages
-      />
-    </if>
-    <else>
-      <lazarus-shared-content-body-element node=content />
-    </else>
-  </marko-web-identity-x-access>
-
-  <lazarus-shared-related-content-block
-    id=content.id
-    type=content.type
-    section-id=primarySection.id
-    section-name=primarySection.name
-  />
-</lazarus-skin-page-grid-col>
+    <lazarus-shared-related-content-block
+      id=content.id
+      type=content.type
+      section-id=primarySection.id
+      section-name=primarySection.name
+    />
+  </marko-web-element>
+</marko-web-block>

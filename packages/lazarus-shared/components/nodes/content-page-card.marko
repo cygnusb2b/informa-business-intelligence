@@ -1,5 +1,7 @@
 import { getAsObject, getAsArray, get } from "@base-cms/object-path";
 import { buildImgixUrl } from "@base-cms/image";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+import imageHeight from "@base-cms/marko-web/components/node/utils/image-height";
 
 $ const blockName = "content-page-card";
 
@@ -11,7 +13,12 @@ $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
 $ const { type } = content;
 
 $ const hasImage = Boolean(primaryImage.src);
-$ const src = buildImgixUrl(primaryImage.src, { w: 768, h: 432, fit: "crop" });
+$ const imgInput = getAsObject(input, "image");
+$ const imgWidth = defaultValue(imgInput.width, 768);
+$ const imgAspect = defaultValue(imgInput.ar, "16:9");
+$ const imgHeight = imageHeight(imgWidth, imgAspect);
+
+$ const src = buildImgixUrl(primaryImage.src, { w: imgWidth, h: imgHeight, fit: "crop" });
 $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
 
 $ const hasEmbedCode = Boolean(content.embedCode);
@@ -30,7 +37,11 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
   <marko-web-node-element name="header" block-name=blockName>
     <if(displayPrimaryImage)>
       <marko-web-node-element name="header-image-wrapper" block-name=blockName>
-        <marko-web-node-element name="image-inner-wrapper" block-name=blockName>
+        <marko-web-node-element
+          name="image-inner-wrapper"
+          block-name=blockName
+          modifiers=[imgAspect.replace(":", "by")]
+        >
           <marko-web-img
             src=src
             srcset=srcset

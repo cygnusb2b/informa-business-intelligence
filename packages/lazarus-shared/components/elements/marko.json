@@ -2,7 +2,8 @@
   "<lazarus-shared-content-body-element>": {
     "template": "./content-body.marko",
     "@node": "object",
-    "@is-preview": "boolean"
+    "@is-preview": "boolean",
+    "@ads-enabled": "boolean"
   },
   "<lazarus-shared-slideshow-button-element>": {
     "template": "./slideshow-button.marko",

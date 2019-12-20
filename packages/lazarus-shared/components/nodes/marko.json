@@ -35,7 +35,9 @@
   },
   "<lazarus-shared-content-page-node>": {
     "template": "./content-page.marko",
-    "@node": "object"
+    "@node": "object",
+    "@ads-enabled": "boolean",
+    "@full-width": "boolean"
   },
   "<lazarus-shared-contact-us-list-node>": {
     "template": "./contact-us-list.marko",
@@ -43,6 +45,10 @@
   },
   "<lazarus-shared-content-page-card>": {
     "template": "./content-page-card.marko",
+    "<image>": {
+      "@width": "number",
+      "@ar": "string"
+    },
     "@content": "object",
     "@tag": "string",
     "@class": "string",
