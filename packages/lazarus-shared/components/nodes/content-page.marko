@@ -1,12 +1,18 @@
 import { getAsObject, get } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
 
 $ const { node: content } = input;
-$ const primarySection = getAsObject(content, "primarySection");
-$ const requiresRegistration = get(content, "userRegistration.isRequired");
 $ const blockName = "content-page-node";
 
-<marko-web-block name=blockName>
-  <lazarus-shared-content-page-card content=content />
+$ const primarySection = getAsObject(content, "primarySection");
+$ const requiresRegistration = get(content, "userRegistration.isRequired");
+
+$ const fullWidth = defaultValue(input.fullWidth, false);
+$ const modifiers = [];
+$ if (fullWidth) modifiers.push("full-width");
+
+<marko-web-block name=blockName modifiers=modifiers>
+  <lazarus-shared-content-page-card content=content modifiers=modifiers />
   <marko-web-element name="contents" block-name=blockName>
     <marko-web-social-sharing
       path=content.siteContext.path

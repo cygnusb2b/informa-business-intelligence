@@ -12,10 +12,12 @@ $ const { id, type, pageNode } = data;
       $ const section = resolved.getAsObject("primarySection");
 
       <marko-web-page-wrapper modifiers=["top-border"]>
+        <!-- @todo readable width should calculate to 780px -->
         <@section>
           <lazarus-shared-content-page-node
             node=content
             ads-enabled=false
+            full-width=true
           />
         </@section>
       </marko-web-page-wrapper>

@@ -36,7 +36,8 @@
   "<lazarus-shared-content-page-node>": {
     "template": "./content-page.marko",
     "@node": "object",
-    "@ads-enabled": "boolean"
+    "@ads-enabled": "boolean",
+    "@full-width": "boolean"
   },
   "<lazarus-shared-contact-us-list-node>": {
     "template": "./contact-us-list.marko",
