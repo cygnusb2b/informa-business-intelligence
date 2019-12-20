@@ -8,11 +8,8 @@ $ const { id, type, pageNode } = data;
     </marko-web-gtm-content-context>
   </@head>
   <@page>
-    <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
-      $ const section = resolved.getAsObject("primarySection");
-
+    <marko-web-resolve-page|{ data: content }| node=pageNode>
       <marko-web-page-wrapper modifiers=["top-border"]>
-        <!-- @todo readable width should calculate to 780px -->
         <@section>
           <lazarus-shared-content-page-node
             node=content
