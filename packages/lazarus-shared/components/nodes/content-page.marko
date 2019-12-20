@@ -11,10 +11,13 @@ $ const requiresRegistration = get(content, "userRegistration.isRequired");
     path=content.siteContext.path
     providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
   />
-
   <marko-web-identity-x-access|context| enabled=requiresRegistration>
     <if(!context.canAccess)>
-      <lazarus-shared-content-body-element node=content is-preview=true />
+      <lazarus-shared-content-body-element
+        node=content
+        is-preview=true
+        ads-enabled=input.adsEnabled
+      />
       <lazarus-shared-content-gate
         is-logged-in=context.isLoggedIn
         has-required-access-level=context.hasRequiredAccessLevel
@@ -23,7 +26,10 @@ $ const requiresRegistration = get(content, "userRegistration.isRequired");
       />
     </if>
     <else>
-      <lazarus-shared-content-body-element node=content />
+      <lazarus-shared-content-body-element
+        node=content
+        ads-enabled=input.adsEnabled
+      />
     </else>
   </marko-web-identity-x-access>
 

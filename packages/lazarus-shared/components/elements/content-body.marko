@@ -7,19 +7,23 @@ $ const { site } = out.global;
 $ const { node: content } = input;
 $ const { type } = content;
 
+$ const adsEnabled = defaultValue(input.adsEnabled, true);
 $ const isPreview = defaultValue(input.isPreview, false);
 $ const body = isPreview ? getContentPreview({ body: content.body, selector: "p:nth-of-type(1)" }) : content.body;
 $ const bodyId = `content-body-${content.id}`;
 
 <default-theme-page-contents|{ blockName }|>
   <default-theme-content-contact-details obj=content />
-  <informa-gam-adunit
-    location=adLocation(type)
-    position="inarticle1"
-    modifiers=["max-width-300", "float-right"]
-  >
-    <@context content-id=content.id />
-  </informa-gam-adunit>
+
+  <if(adsEnabled)>
+    <informa-gam-adunit
+      location=adLocation(type)
+      position="inarticle1"
+      modifiers=["max-width-300", "float-right"]
+    >
+      <@context content-id=content.id />
+    </informa-gam-adunit>
+  </if>
 
   <!-- Note: the `itemprop` attr must be set for Teads to properly select the body -->
   <marko-web-content-body block-name=blockName obj={ body } attrs={ id: bodyId, itemprop: "articleBody" } />
@@ -34,55 +38,59 @@ $ const bodyId = `content-body-${content.id}`;
     <!-- Load "embedded" Eloqua iframes -->
     <lazarus-load-eloqua-iframes body-id=bodyId />
 
-    <!-- Teads ads does its own injection. -->
-    <informa-gam-adunit
-      location=adLocation(type)
-      position="inarticlevid"
-    >
-      <@context content-id=content.id />
-    </informa-gam-adunit>
+    <if(adsEnabled)>
+      <!-- Teads ads does its own injection. -->
+      <informa-gam-adunit
+        location=adLocation(type)
+        position="inarticlevid"
+      >
+        <@context content-id=content.id />
+      </informa-gam-adunit>
 
-    <!-- inject native ad after second paragraph -->
-    <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-of-type(2)`>
-      <@adunit location=adLocation(type) position="native_inline" modifiers=["body-inline"]>
-        <@context content-id=content.id />
-      </@adunit>
-    </informa-gam-direct-inject-adunit>
 
-    <informa-gam-inject-adunits selector=`#${bodyId}`>
-      <!-- @todo find a content item that is using the reveal position -->
-      <@inject
-        at=1200
-        location=adLocation(type)
-        position="reveal"
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=2500
-        location=adLocation(type)
-        position="inarticle2"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=3500
-        location=adLocation(type)
-        position="inarticle3"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-      <@inject
-        at=6000
-        location=adLocation(type)
-        position="inarticle4"
-        modifiers=["max-width-300", "float-right"]
-      >
-        <@context content-id=content.id />
-      </@inject>
-    </informa-gam-inject-adunits>
+      <!-- inject native ad after second paragraph -->
+      <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-of-type(2)`>
+        <@adunit location=adLocation(type) position="native_inline" modifiers=["body-inline"]>
+          <@context content-id=content.id />
+        </@adunit>
+      </informa-gam-direct-inject-adunit>
+
+      <informa-gam-inject-adunits selector=`#${bodyId}`>
+        <!-- @todo find a content item that is using the reveal position -->
+        <@inject
+          at=1200
+          location=adLocation(type)
+          position="reveal"
+        >
+          <@context content-id=content.id />
+        </@inject>
+        <@inject
+          at=2500
+          location=adLocation(type)
+          position="inarticle2"
+          modifiers=["max-width-300", "float-right"]
+        >
+          <@context content-id=content.id />
+        </@inject>
+        <@inject
+          at=3500
+          location=adLocation(type)
+          position="inarticle3"
+          modifiers=["max-width-300", "float-right"]
+        >
+          <@context content-id=content.id />
+        </@inject>
+        <@inject
+          at=6000
+          location=adLocation(type)
+          position="inarticle4"
+          modifiers=["max-width-300", "float-right"]
+        >
+          <@context content-id=content.id />
+        </@inject>
+      </informa-gam-inject-adunits>
+    </if>
+
     <marko-web-content-sidebars block-name=blockName obj=content />
 
     <if(type === "document")>
