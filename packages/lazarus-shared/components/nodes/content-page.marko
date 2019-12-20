@@ -3,40 +3,42 @@ import { getAsObject, get } from "@base-cms/object-path";
 $ const { node: content } = input;
 $ const primarySection = getAsObject(content, "primarySection");
 $ const requiresRegistration = get(content, "userRegistration.isRequired");
+$ const blockName = "content-page-node";
 
-<lazarus-skin-page-grid-col modifiers=["content-page"]>
+<marko-web-block name=blockName>
   <lazarus-shared-content-page-card content=content />
+  <marko-web-element name="contents" block-name=blockName>
+    <marko-web-social-sharing
+      path=content.siteContext.path
+      providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
+    />
+    <marko-web-identity-x-access|context| enabled=requiresRegistration>
+      <if(!context.canAccess)>
+        <lazarus-shared-content-body-element
+          node=content
+          is-preview=true
+          ads-enabled=input.adsEnabled
+        />
+        <lazarus-shared-content-gate
+          is-logged-in=context.isLoggedIn
+          has-required-access-level=context.hasRequiredAccessLevel
+          requires-access-level=context.hasRequiredAccessLevel
+          messages=context.messages
+        />
+      </if>
+      <else>
+        <lazarus-shared-content-body-element
+          node=content
+          ads-enabled=input.adsEnabled
+        />
+      </else>
+    </marko-web-identity-x-access>
 
-  <marko-web-social-sharing
-    path=content.siteContext.path
-    providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
-  />
-  <marko-web-identity-x-access|context| enabled=requiresRegistration>
-    <if(!context.canAccess)>
-      <lazarus-shared-content-body-element
-        node=content
-        is-preview=true
-        ads-enabled=input.adsEnabled
-      />
-      <lazarus-shared-content-gate
-        is-logged-in=context.isLoggedIn
-        has-required-access-level=context.hasRequiredAccessLevel
-        requires-access-level=context.hasRequiredAccessLevel
-        messages=context.messages
-      />
-    </if>
-    <else>
-      <lazarus-shared-content-body-element
-        node=content
-        ads-enabled=input.adsEnabled
-      />
-    </else>
-  </marko-web-identity-x-access>
-
-  <lazarus-shared-related-content-block
-    id=content.id
-    type=content.type
-    section-id=primarySection.id
-    section-name=primarySection.name
-  />
-</lazarus-skin-page-grid-col>
+    <lazarus-shared-related-content-block
+      id=content.id
+      type=content.type
+      section-id=primarySection.id
+      section-name=primarySection.name
+    />
+  </marko-web-element>
+</marko-web-block>
