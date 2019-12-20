@@ -527,6 +527,10 @@ $theme-content-page-node-full-width: 780px !default;
     p + .embed-container-eloqua {
       margin-top: -$theme-content-paragraph-margin-bottom;
     }
+
+    [data-embed-type="image"] {
+      margin-bottom: 1rem;
+    }
   }
 
   &__button {
@@ -593,4 +597,24 @@ $theme-content-page-node-full-width: 780px !default;
 [data-embed-type] {
   width: auto;
   max-width: 100%;
+  img {
+    width: auto;
+    min-width: auto;
+    max-width: 100%;
+  }
+  // temporarily set left/right aligned images like "center"
+  // @todo remove once resolved.
+  &[data-embed-align="left"],
+  &[data-embed-align="right"] {
+    float: none;
+    width: auto;
+  }
+
+  &[data-embed-align="left"] {
+    margin-right: 0;
+  }
+
+  &[data-embed-align="right"] {
+    margin-left: 0;
+  }
 }
