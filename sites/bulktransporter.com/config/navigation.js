@@ -39,7 +39,7 @@ module.exports = {
         { href: '/classifieds', label: 'Jobs/Classifieds' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://cv.informa.com/bulk-transporter/', label: 'Advertise' },

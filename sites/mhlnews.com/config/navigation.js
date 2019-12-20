@@ -35,7 +35,7 @@ module.exports = {
         { href: '/new-products', label: 'Latest Product & Services' },
         { href: '/webinars', label: 'Webinars' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/mhl/', label: 'Advertise' },
         { href: 'https://designmanufacturing.informa.com/contentstream/', label: 'Content Licensing' },

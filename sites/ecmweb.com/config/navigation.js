@@ -47,7 +47,7 @@ module.exports = {
         { href: '/ecm-digital-editions', label: 'Digital Editions Archive' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.informa.com/ecm', label: 'Advertise', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
