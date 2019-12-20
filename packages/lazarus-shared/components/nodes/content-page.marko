@@ -9,10 +9,17 @@ $ const requiresRegistration = get(content, "userRegistration.isRequired");
 
 $ const fullWidth = defaultValue(input.fullWidth, false);
 $ const modifiers = [];
-$ if (fullWidth) modifiers.push("full-width");
+$ const imgInput = {};
+$ if (fullWidth) {
+  modifiers.push("full-width");
+  imgInput.ar = "21:9";
+  imgInput.width = 1200;
+};
 
 <marko-web-block name=blockName modifiers=modifiers>
-  <lazarus-shared-content-page-card content=content modifiers=modifiers />
+  <lazarus-shared-content-page-card content=content modifiers=modifiers>
+    <@image ...imgInput />
+  </lazarus-shared-content-page-card>
   <marko-web-element name="contents" block-name=blockName>
     <marko-web-social-sharing
       path=content.siteContext.path
