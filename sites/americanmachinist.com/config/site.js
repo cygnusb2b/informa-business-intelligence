@@ -35,7 +35,7 @@ module.exports = {
   ],
   gam: { accountId: '3834', basePath: 'amermach.home' },
   gtm: {
-    containerId: 'GTM-56CR4G5',
+    containerId: 'GTM-W83QSM6',
   },
   gcse: {
     id: '003355913687346718228:pferilmwziq',
