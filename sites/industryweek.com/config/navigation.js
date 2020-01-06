@@ -35,7 +35,6 @@ module.exports = {
         { href: '/resources/industryweek-us-500', label: 'IW US 500' },
         { href: '/supply-chain-initiative', label: 'Supply Chain Initiative' },
         { href: '/trump-and-manufacturing', label: 'Trump and Manufacturing' },
-        { href: '/cloud-manufacturing', label: 'Cloud Manufacturing' },
         { href: '/resources/iw-best-practices-reports', label: 'IW Best Practices Reports' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
