@@ -27,7 +27,7 @@ module.exports = {
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
         { href: '<NOT SET>', label: 'Magazine Subscription', target: '_blank' },
-        { href: '<NOT SET>', label: 'eNewlsetter Subscription', target: '_blank' },
+        { href: '<NOT SET>', label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: '/advertise', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy Statement', target: '_blank' },
