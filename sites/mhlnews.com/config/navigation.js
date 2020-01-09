@@ -34,7 +34,6 @@ module.exports = {
         { href: '/trump-supply-chain', label: 'Trump & the Supply Chain' },
         { href: '/new-products', label: 'Latest Product & Services' },
         { href: '/webinars', label: 'Webinars' },
-        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/mhl/', label: 'Advertise' },
