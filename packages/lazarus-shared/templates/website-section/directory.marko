@@ -1,0 +1,62 @@
+import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
+
+$ const { id, alias, name, pageNode } = data;
+
+<marko-web-website-section-page-layout id=id alias=alias name=name>
+  <@head>
+    <marko-web-gtm-website-section-context|{ context }| alias=alias>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-website-section-context>
+  </@head>
+  <@page>
+    <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
+      <informa-gam-adunit
+        location="taxonomy"
+        position="top_banner"
+        modifiers=["top-of-page"]
+      >
+        <@context section-id=section.id />
+      </informa-gam-adunit>
+
+      <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
+        <@section>
+          <default-theme-website-section-breadcrumbs display-self=false section=section />
+          <marko-web-website-section-name class="page-wrapper__title" tag="h1" obj=section />
+
+          <informa-gam-adunit
+            location="taxonomy"
+            position="sponsored_logo"
+            modifiers=["sponsored-logo"]
+            collapse-before-ad-fetch=true
+            with-wrapper=true
+          >
+            <@context section-id=section.id />
+          </informa-gam-adunit>
+
+          <marko-web-website-section-description class="page-wrapper__deck" obj=section />
+        </@section>
+      </marko-web-page-wrapper>
+
+      <marko-web-page-wrapper modifiers=["website-section-contents"]>
+        <@section>
+          <div class="row">
+            <aside class="col-lg-4">
+              Left
+            </aside>
+            <div class="col-lg-8">
+              Right
+            </div>
+          </div>
+        </@section>
+      </marko-web-page-wrapper>
+    </marko-web-resolve-page>
+  </@page>
+  <@below-container>
+    <informa-gam-adunit
+      location="taxonomy"
+      position="hidden"
+    >
+      <@context section-id=id />
+    </informa-gam-adunit>
+  </@below-container>
+</marko-web-website-section-page-layout>
