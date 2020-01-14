@@ -2,8 +2,8 @@ import gql from 'graphql-tag';
 
 export default gql`
 
-query RootDirectorySections($rootAlias: String!) {
-  websiteSectionAlias(input: { alias: $rootAlias }) {
+query DirectorySections($sectionAlias: String!) {
+  websiteSectionAlias(input: { alias: $sectionAlias }) {
     id
     name
     children(input: { sort: { field: name, order: asc }, pagination: { limit: 0 } }) {
@@ -12,6 +12,9 @@ query RootDirectorySections($rootAlias: String!) {
           id
           name
           alias
+          children(input: { pagination: { limit: 1 } }) {
+            totalCount
+          }
         }
       }
     }
