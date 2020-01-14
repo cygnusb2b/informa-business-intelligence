@@ -289,8 +289,13 @@ $theme-content-page-node-full-width: 780px !default;
 
 .node-list {
   $self: &;
+  align-items: normal;
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
+
+  &__header {
+    align-self: flex-start;
+  }
 
   &--related-content {
     padding-top: map-get($spacers, block);
@@ -301,13 +306,11 @@ $theme-content-page-node-full-width: 780px !default;
       }
     }
   }
+}
 
-  &--full-width {
-    #{ $self } {
-      &__nodes {
-        width: 100%;
-      }
-    }
+.page {
+  &--load-more {
+    width: 100%;
   }
 }
 
