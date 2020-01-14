@@ -1,21 +1,22 @@
 <template>
   <div class="directory-facets__node">
     <toggle-button
-      :can-expand="hasChildren"
+      v-if="hasChildren"
       :is-expanded="isExpanded"
       @click="toggleExpanded"
     />
-    <a :href="`/${alias}`">
-      {{ name }}
-    </a>
+    <node-link :alias="alias" :name="name" />
+    <slot :has-children="hasChildren" :is-expanded="isExpanded" :alias="alias" />
   </div>
 </template>
 
 <script>
+import NodeLink from './link.vue';
 import ToggleButton from './toggle-button.vue';
 
 export default {
   components: {
+    NodeLink,
     ToggleButton,
   },
 
@@ -42,6 +43,10 @@ export default {
     hasChildren() {
       return Boolean(this.childCount);
     },
+  },
+
+  created() {
+    console.log(this.name);
   },
 
   methods: {
