@@ -16,7 +16,7 @@
       if (adblockOn) removeOpacity();
     }, 2000);
 
-    googletag.cmd.push(() => {
+    googletag.cmd.push(function() {
       googletag.pubads().addEventListener('slotRenderEnded', function(event) {
         adblockOn = 0;
         if (event.slot.getSlotElementId() === 'div-interstitial' && event.isEmpty) {
