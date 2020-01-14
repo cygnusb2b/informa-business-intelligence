@@ -13,6 +13,7 @@ $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
 $ const { type } = content;
 
 $ const hasImage = Boolean(primaryImage.src);
+$ const isLogo = defaultValue(primaryImage.isLogo, false);
 $ const imgInput = getAsObject(input, "image");
 $ const imgWidth = defaultValue(imgInput.width, 768);
 $ const imgAspect = defaultValue(imgInput.ar, "16:9");
@@ -23,8 +24,8 @@ $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
 
 $ const hasEmbedCode = Boolean(content.embedCode);
 
-$ const displayPrimaryImage = !hasEmbedCode && hasImage && type !== "media-gallery";
-$ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? false : true;
+$ const displayPrimaryImage = !hasEmbedCode && hasImage && type !== "media-gallery" && !isLogo;
+$ const displayPublishedDate = ["event", "webinar", "contact", "company"].includes(type) ? false : true;
 
 <!-- @todo add lower-right image caption -->
 <marko-web-block
@@ -72,6 +73,14 @@ $ const displayPublishedDate = ["event", "webinar", "contact"].includes(type) ? 
         block-name=blockName
         obj=content
       />
+
+      <if(isLogo)>
+        <marko-web-page-image
+          obj=primaryImage
+          fluid=false
+          width=250
+        />
+      </if>
 
       <if(type !== "contact")>
         <default-theme-content-attribution obj=content />
