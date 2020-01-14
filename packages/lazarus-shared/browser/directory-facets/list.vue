@@ -78,7 +78,6 @@ export default {
         this.error = null;
         try {
           this.sections = await this.loadSections();
-          console.log(this.sections);
           this.hasLoaded = true;
         } catch (e) {
           this.error = e;

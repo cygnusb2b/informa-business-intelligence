@@ -45,10 +45,6 @@ export default {
     },
   },
 
-  created() {
-    console.log(this.name);
-  },
-
   methods: {
     toggleExpanded() {
       this.isExpanded = !this.isExpanded;
