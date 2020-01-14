@@ -39,14 +39,33 @@ $ const { id, alias, name, pageNode } = data;
 
       <marko-web-page-wrapper modifiers=["website-section-contents"]>
         <@section>
-          <div class="row">
-            <aside class="col-lg-4">
+          <lazarus-skin-page-grid>
+            <@left-col>
               Left
-            </aside>
-            <div class="col-lg-8">
-              Right
-            </div>
-          </div>
+            </@left-col>
+            <@right-col>
+              <@bottom-row>
+                <marko-web-query|{ nodes }|
+                  name="website-scheduled-content"
+                  params={ sectionId: id, limit: 12, queryFragment }
+                >
+                  <lazarus-skin-page-grid-col modifiers=["full"]>
+                    <lazarus-shared-content-list-flow
+                      nodes=nodes
+                      flush-x=true
+                      flush-y=true
+                      inner-justified=false
+                      modifiers=["feed", "full-width"]
+                    >
+                      <@node>
+                        <@image width=120 />
+                      </@node>
+                    </lazarus-shared-content-list-flow>
+                  </lazarus-skin-page-grid-col>
+                </marko-web-query>
+              </@bottom-row>
+            </@right-col>
+          </lazarus-skin-page-grid>
         </@section>
       </marko-web-page-wrapper>
     </marko-web-resolve-page>
