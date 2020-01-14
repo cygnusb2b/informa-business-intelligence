@@ -55,7 +55,7 @@ $ const { id, alias, name, pageNode } = data;
                       flush-x=true
                       flush-y=true
                       inner-justified=false
-                      modifiers=["feed", "full-width"]
+                      modifiers=["feed"]
                     >
                       <@node>
                         <@image width=120 />
@@ -63,6 +63,24 @@ $ const { id, alias, name, pageNode } = data;
                     </lazarus-shared-content-list-flow>
                   </lazarus-skin-page-grid-col>
                 </marko-web-query>
+
+                <marko-web-load-more
+                  append-to=".page-grid__bottom-row"
+                  expand=500
+                  component-name="lazarus-shared-content-load-more-flow"
+                  component-input={
+                    node: { image: { width: 120 } },
+                    adunit: {
+                      location: "taxonomy",
+                      position: "infinitescroll",
+                      context: { sectionId: section.id },
+                    },
+                  }
+                  fragment-name="content-list"
+                  query-name="website-scheduled-content"
+                  query-params={ sectionId: id, limit: 12, skip: 12 }
+                  page-input={ for: "website-section", id }
+                />
               </@bottom-row>
             </@right-col>
           </lazarus-skin-page-grid>
