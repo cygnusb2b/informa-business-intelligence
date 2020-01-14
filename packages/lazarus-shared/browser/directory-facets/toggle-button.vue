@@ -1,5 +1,5 @@
 <template>
-  <button class="directory-facets__toggle-button" :disabled="!canExpand" @click="$emit('click')">
+  <button class="directory-facets__toggle-button" @click="$emit('click')">
     {{ label }}
   </button>
 </template>
@@ -7,10 +7,6 @@
 <script>
 export default {
   props: {
-    canExpand: {
-      type: Boolean,
-      default: false,
-    },
     isExpanded: {
       type: Boolean,
       default: false,
