@@ -57,7 +57,7 @@ $ const { id, alias, name, pageNode } = data;
                       inner-justified=false
                       modifiers=["feed"]
                     >
-                      <@node>
+                      <@node with-dates=false>
                         <@image width=120 />
                       </@node>
                     </lazarus-shared-content-list-flow>
@@ -69,7 +69,7 @@ $ const { id, alias, name, pageNode } = data;
                   expand=500
                   component-name="lazarus-shared-content-load-more-flow"
                   component-input={
-                    node: { image: { width: 120 } },
+                    node: { image: { width: 120 }, withDates: false },
                     adunit: {
                       location: "taxonomy",
                       position: "infinitescroll",
