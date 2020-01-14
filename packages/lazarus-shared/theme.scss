@@ -301,6 +301,14 @@ $theme-content-page-node-full-width: 780px !default;
       }
     }
   }
+
+  &--full-width {
+    #{ $self } {
+      &__nodes {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .page-grid {
