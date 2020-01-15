@@ -1,11 +1,13 @@
 <template>
   <div :class="classNames">
-    <toggle-button
-      v-if="hasChildren"
-      :is-expanded="isExpanded"
-      @click="toggleExpanded"
-    />
-    <facet-link :alias="alias" :name="name" />
+    <div :class="`${blockName}__contents`">
+      <toggle-button
+        :has-children="hasChildren"
+        :is-expanded="isExpanded"
+        @click="toggleExpanded"
+      />
+      <facet-link :alias="alias" :name="name" />
+    </div>
     <slot :has-children="hasChildren" :is-expanded="isExpanded" :alias="alias" />
   </div>
 </template>
@@ -41,11 +43,12 @@ export default {
 
   data: () => ({
     isExpanded: false,
+    blockName: 'directory-facet',
   }),
 
   computed: {
     classNames() {
-      const blockName = 'directory-facet';
+      const { blockName } = this;
       const classNames = [blockName];
       if (this.isActive) classNames.push(`${blockName}--active`);
       return classNames;
