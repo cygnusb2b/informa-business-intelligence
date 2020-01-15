@@ -7,4 +7,12 @@
       }
     }
   }
+
+  &__node {
+    &--active {
+      > a {
+        font-weight: 600;
+      }
+    }
+  }
 }
