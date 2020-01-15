@@ -1,9 +1,12 @@
 <template>
   <div
-    class="directory-facets"
+    :class="blockName"
     :data-root-alias="rootAlias"
     :data-active-alias="activeAlias"
   >
+    <div :class="`${blockName}__header`">
+      {{ header }}
+    </div>
     <directory-facets-list :alias="rootAlias" :active-alias="activeAlias" />
   </div>
 </template>
@@ -31,6 +34,14 @@ export default {
       type: String,
       default: null,
     },
+    header: {
+      type: String,
+      default: 'Categories',
+    },
   },
+
+  data: () => ({
+    blockName: 'directory-facets',
+  }),
 };
 </script>

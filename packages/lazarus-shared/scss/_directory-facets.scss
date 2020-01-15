@@ -1,5 +1,11 @@
 .directory-facets {
   $self: &;
+  &__header {
+    @include theme-card-header();
+    display: inline-block;
+    margin-bottom: .75rem;
+  }
+
   &__list {
     margin-bottom: 5px;
     #{ $self } {
