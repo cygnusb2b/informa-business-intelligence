@@ -1,8 +1,6 @@
 <template>
   <div class="directory-facets__list">
-    <p v-if="isLoading">
-      Loading...
-    </p>
+    <loading-spinner v-if="isLoading" />
     <p v-else-if="error">
       Error: {{ error.message }}
     </p>
@@ -28,6 +26,7 @@
 
 <script>
 import DirectoryFacet from './facet.vue';
+import LoadingSpinner from './loading-spinner.vue';
 import directorySectionsQuery from './graphql/directory-sections';
 import getEdgeNodes from './utils/get-edge-nodes';
 
@@ -35,6 +34,7 @@ export default {
   name: 'DirectoryFacetsList',
   components: {
     DirectoryFacet,
+    LoadingSpinner,
   },
 
   /**

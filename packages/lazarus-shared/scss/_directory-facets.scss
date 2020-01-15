@@ -17,3 +17,30 @@
     }
   }
 }
+
+@keyframes directory-loading-spinner {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.directory-facet-loading {
+  &__spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    color: $primary;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    animation: directory-loading-spinner .75s linear infinite;
+  }
+
+  &__message {
+    margin-left: 5px;
+  }
+}
