@@ -1,0 +1,10 @@
+.directory-facets {
+  $self: &;
+  &__list {
+    #{ $self } {
+      &__list {
+        padding: $grid-gutter-width / 2;
+      }
+    }
+  }
+}

@@ -42,6 +42,7 @@ $theme-site-header-z-index: 15000;
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-social-sharing/scss/buttons";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
+@import "./scss/directory-facets";
 
 $theme-sponsored-content-color: #ee591d !default;
 $theme-content-page-node-full-width: 780px !default;
