@@ -1,5 +1,5 @@
 <template>
-  <div class="directory-facets__node">
+  <div :class="classNames">
     <toggle-button
       v-if="hasChildren"
       :is-expanded="isExpanded"
@@ -33,6 +33,10 @@ export default {
       type: Number,
       default: 0,
     },
+    activeAlias: {
+      type: String,
+      default: null,
+    },
   },
 
   data: () => ({
@@ -40,9 +44,24 @@ export default {
   }),
 
   computed: {
+    classNames() {
+      const elementName = 'directory-facets__node';
+      const classNames = [elementName];
+      if (this.isActive) classNames.push(`${elementName}--active`);
+      return classNames;
+    },
     hasChildren() {
       return Boolean(this.childCount);
     },
+    isActive() {
+      const { alias, activeAlias } = this;
+      if (!activeAlias) return false;
+      return activeAlias.indexOf(alias) === 0;
+    },
+  },
+
+  mounted() {
+    if (this.isActive) this.isExpanded = true;
   },
 
   methods: {

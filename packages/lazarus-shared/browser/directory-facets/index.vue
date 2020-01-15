@@ -4,7 +4,7 @@
     :data-root-alias="rootAlias"
     :data-active-alias="activeAlias"
   >
-    <directory-facets-list :alias="rootAlias" />
+    <directory-facets-list :alias="rootAlias" :active-alias="activeAlias" />
   </div>
 </template>
 

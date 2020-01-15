@@ -13,9 +13,14 @@
       :alias="section.alias"
       :name="section.name"
       :child-count="section.children.totalCount"
+      :active-alias="activeAlias"
     >
       <template #default="{ hasChildren, isExpanded, alias }">
-        <directory-facets-list v-if="hasChildren && isExpanded" :alias="alias" />
+        <directory-facets-list
+          v-if="hasChildren && isExpanded"
+          :alias="alias"
+          :active-alias="activeAlias"
+        />
       </template>
     </directory-facets-node>
   </div>
@@ -39,6 +44,10 @@ export default {
     alias: {
       type: String,
       required: true,
+    },
+    activeAlias: {
+      type: String,
+      default: null,
     },
   },
 
