@@ -5,18 +5,18 @@
       :is-expanded="isExpanded"
       @click="toggleExpanded"
     />
-    <node-link :alias="alias" :name="name" />
+    <facet-link :alias="alias" :name="name" />
     <slot :has-children="hasChildren" :is-expanded="isExpanded" :alias="alias" />
   </div>
 </template>
 
 <script>
-import NodeLink from './link.vue';
+import FacetLink from './link.vue';
 import ToggleButton from './toggle-button.vue';
 
 export default {
   components: {
-    NodeLink,
+    FacetLink,
     ToggleButton,
   },
 
@@ -45,9 +45,9 @@ export default {
 
   computed: {
     classNames() {
-      const elementName = 'directory-facets__node';
-      const classNames = [elementName];
-      if (this.isActive) classNames.push(`${elementName}--active`);
+      const blockName = 'directory-facet';
+      const classNames = [blockName];
+      if (this.isActive) classNames.push(`${blockName}--active`);
       return classNames;
     },
     hasChildren() {

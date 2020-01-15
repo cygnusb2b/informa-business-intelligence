@@ -1,5 +1,5 @@
 <template>
-  <a class="directory-facets__link" :href="`/${alias}`">
+  <a class="directory-facet__link" :href="`/${alias}`">
     {{ name }}
   </a>
 </template>

@@ -7,12 +7,13 @@
       }
     }
   }
+}
 
-  &__node {
-    &--active {
-      > a {
-        font-weight: 600;
-      }
+.directory-facet {
+  $self: &;
+  &--active {
+    > #{ $self }__link {
+      font-weight: 600;
     }
   }
 }

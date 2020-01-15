@@ -1,5 +1,5 @@
 <template>
-  <button class="directory-facets__toggle-button" @click="$emit('click')">
+  <button class="directory-facet__toggle-button" @click="$emit('click')">
     {{ label }}
   </button>
 </template>

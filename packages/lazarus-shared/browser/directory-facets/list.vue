@@ -6,7 +6,7 @@
     <p v-else-if="error">
       Error: {{ error.message }}
     </p>
-    <directory-facets-node
+    <directory-facet
       v-for="section in sections"
       v-else
       :key="section.id"
@@ -22,19 +22,19 @@
           :active-alias="activeAlias"
         />
       </template>
-    </directory-facets-node>
+    </directory-facet>
   </div>
 </template>
 
 <script>
-import DirectoryFacetsNode from './node.vue';
+import DirectoryFacet from './facet.vue';
 import directorySectionsQuery from './graphql/directory-sections';
 import getEdgeNodes from './utils/get-edge-nodes';
 
 export default {
   name: 'DirectoryFacetsList',
   components: {
-    DirectoryFacetsNode,
+    DirectoryFacet,
   },
 
   /**
