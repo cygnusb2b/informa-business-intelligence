@@ -309,12 +309,6 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
-.page {
-  &--load-more {
-    width: 100%;
-  }
-}
-
 .directory-grid {
   @include make-row();
 
