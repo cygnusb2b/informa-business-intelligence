@@ -5,8 +5,9 @@ $ const {
   alias,
   name,
   pageNode,
-  rootAlias,
 } = data;
+$ const aliasParts = alias.split("/");
+$ const rootAlias = aliasParts.shift();
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
