@@ -1,6 +1,12 @@
 import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
 
-$ const { id, alias, name, pageNode } = data;
+$ const {
+  id,
+  alias,
+  name,
+  pageNode,
+  rootAlias,
+} = data;
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
@@ -39,7 +45,49 @@ $ const { id, alias, name, pageNode } = data;
 
       <marko-web-page-wrapper modifiers=["website-section-contents"]>
         <@section>
-          <lazarus-skin-page-grid>
+          <div class="directory-grid">
+            <div class="directory-grid__left-col">
+              <lazarus-shared-directory-facets root-alias=rootAlias active-alias=alias />
+            </div>
+            <div class="directory-grid__right-col">
+              <marko-web-query|{ nodes }|
+                name="website-scheduled-content"
+                params={ sectionId: id, limit: 12, queryFragment }
+              >
+                <lazarus-shared-content-list-flow
+                  nodes=nodes
+                  flush-x=true
+                  flush-y=true
+                  inner-justified=false
+                  modifiers=["feed"]
+                >
+                  <@node with-dates=false>
+                    <@image width=120 />
+                  </@node>
+                </lazarus-shared-content-list-flow>
+              </marko-web-query>
+
+              <marko-web-load-more
+                append-to=".directory-grid__right-col"
+                expand=500
+                component-name="lazarus-shared-content-load-more-flow"
+                component-input={
+                  node: { image: { width: 120 }, withDates: false },
+                  adunit: {
+                    location: "taxonomy",
+                    position: "infinitescroll",
+                    context: { sectionId: section.id },
+                  },
+                }
+                fragment-name="content-list"
+                query-name="website-scheduled-content"
+                query-params={ sectionId: id, limit: 12, skip: 12 }
+                page-input={ for: "website-section", id }
+              />
+            </div>
+          </div>
+
+          <!-- <lazarus-skin-page-grid modifiers=["wrap-left-col"]>
             <@left-col>
               <lazarus-shared-directory-facets active-alias=alias />
             </@left-col>
@@ -83,7 +131,7 @@ $ const { id, alias, name, pageNode } = data;
                 />
               </@bottom-row>
             </@right-col>
-          </lazarus-skin-page-grid>
+          </lazarus-skin-page-grid> -->
         </@section>
       </marko-web-page-wrapper>
     </marko-web-resolve-page>

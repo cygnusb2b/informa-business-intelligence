@@ -315,6 +315,35 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
+.directory-grid {
+  @include make-row();
+
+  &__left-col {
+    @include make-col-ready();
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+      position: sticky;
+      overflow: scroll;
+      @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
+        @media (max-width: $width) {
+          top: calc(#{calculate-navbar-height-for($breakpoint)});
+          height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
+        }
+      }
+    }
+  }
+
+  &__right-col {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(8);
+    }
+  }
+}
+
 .page-grid {
   &__left-col {
     padding-top: $grid-gutter-width;
