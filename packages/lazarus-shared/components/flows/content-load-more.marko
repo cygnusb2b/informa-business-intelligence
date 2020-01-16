@@ -1,6 +1,7 @@
 import { getAsArray, getAsObject } from "@base-cms/object-path";
 
 $ const nodes = getAsArray(input, "nodes");
+$ const image = getAsObject(input, "node.image");
 $ const adunit = getAsObject(input, "adunit");
 
 <if(nodes.length)>
@@ -23,8 +24,11 @@ $ const adunit = getAsObject(input, "adunit");
       inner-justified=false
       modifiers=["feed"]
     >
-      <@node>
-        <@image width=180 />
+      <@node ...input.node>
+        <@image
+          width=180
+          ...image
+        />
       </@node>
     </lazarus-shared-content-list-flow>
   </lazarus-skin-page-grid-col>

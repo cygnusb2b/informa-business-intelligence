@@ -31,5 +31,11 @@
     "template": "./gallery-slideshow.marko",
     "@active-slide-number": "number",
     "@images": "array"
+  },
+  "<lazarus-shared-directory-facets>": {
+    "template": "./directory-facets.marko",
+    "@root-alias": "string",
+    "@active-alias": "string",
+    "@modifiers": "array"
   }
 }

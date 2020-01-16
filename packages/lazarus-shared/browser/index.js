@@ -10,6 +10,7 @@ import IncrementAdPos from './increment-ad-pos.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
 
 const GallerySlideshow = () => import(/* webpackChunkName: "lazarus-shared-gallery-slideshow" */ './gallery-slideshow/index.vue');
+const DirectoryFacets = () => import(/* webpackChunkName: "lazarus-shared-directory-facets" */ './directory-facets/index.vue');
 
 export default (Browser) => {
   DefaultTheme(Browser);
@@ -27,5 +28,8 @@ export default (Browser) => {
   Browser.register('LazarusSharedLoadEloquaIframes', LoadEloquaIframes);
   Browser.register('LazarusSharedGallerySlideshow', GallerySlideshow, {
     provide: { EventBus },
+  });
+  Browser.register('LazarusSharedDirectoryFacets', DirectoryFacets, {
+    withApollo: true,
   });
 };

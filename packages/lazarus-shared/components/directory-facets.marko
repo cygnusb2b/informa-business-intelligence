@@ -1,0 +1,10 @@
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+import { getAsArray } from "@base-cms/object-path";
+
+$ const props = {
+  rootAlias: defaultValue(input.rootAlias, "directory"),
+  activeAlias: input.activeAlias,
+  modifiers: getAsArray(input, "modifiers"),
+};
+
+<marko-web-browser-component name="LazarusSharedDirectoryFacets" props=props />

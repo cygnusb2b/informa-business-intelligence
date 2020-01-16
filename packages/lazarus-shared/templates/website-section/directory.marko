@@ -1,0 +1,102 @@
+import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
+
+$ const {
+  id,
+  alias,
+  name,
+  pageNode,
+} = data;
+$ const aliasParts = alias.split("/");
+$ const rootAlias = aliasParts.shift();
+
+<marko-web-website-section-page-layout id=id alias=alias name=name>
+  <@head>
+    <marko-web-gtm-website-section-context|{ context }| alias=alias>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-website-section-context>
+  </@head>
+  <@page>
+    <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
+      <informa-gam-adunit
+        location="taxonomy"
+        position="top_banner"
+        modifiers=["top-of-page"]
+      >
+        <@context section-id=section.id />
+      </informa-gam-adunit>
+
+      <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
+        <@section>
+          <default-theme-website-section-breadcrumbs display-self=false section=section />
+          <marko-web-website-section-name class="page-wrapper__title" tag="h1" obj=section />
+
+          <informa-gam-adunit
+            location="taxonomy"
+            position="sponsored_logo"
+            modifiers=["sponsored-logo"]
+            collapse-before-ad-fetch=true
+            with-wrapper=true
+          >
+            <@context section-id=section.id />
+          </informa-gam-adunit>
+
+          <marko-web-website-section-description class="page-wrapper__deck" obj=section />
+        </@section>
+      </marko-web-page-wrapper>
+
+      <marko-web-page-wrapper modifiers=["website-section-contents"]>
+        <@section>
+          <div class="directory-grid">
+            <div class="directory-grid__left-col">
+              <lazarus-shared-directory-facets root-alias=rootAlias active-alias=alias />
+            </div>
+            <div class="directory-grid__right-col">
+              <marko-web-query|{ nodes }|
+                name="website-scheduled-content"
+                params={ sectionId: id, limit: 12, queryFragment }
+              >
+                <lazarus-shared-content-list-flow
+                  nodes=nodes
+                  flush-x=true
+                  flush-y=true
+                  inner-justified=false
+                  modifiers=["feed"]
+                >
+                  <@node with-dates=false>
+                    <@image width=120 />
+                  </@node>
+                </lazarus-shared-content-list-flow>
+              </marko-web-query>
+
+              <marko-web-load-more
+                append-to=".directory-grid__right-col"
+                expand=500
+                component-name="lazarus-shared-content-load-more-flow"
+                component-input={
+                  node: { image: { width: 120 }, withDates: false },
+                  adunit: {
+                    location: "taxonomy",
+                    position: "infinitescroll",
+                    context: { sectionId: section.id },
+                  },
+                }
+                fragment-name="content-list"
+                query-name="website-scheduled-content"
+                query-params={ sectionId: id, limit: 12, skip: 12 }
+                page-input={ for: "website-section", id }
+              />
+            </div>
+          </div>
+        </@section>
+      </marko-web-page-wrapper>
+    </marko-web-resolve-page>
+  </@page>
+  <@below-container>
+    <informa-gam-adunit
+      location="taxonomy"
+      position="hidden"
+    >
+      <@context section-id=id />
+    </informa-gam-adunit>
+  </@below-container>
+</marko-web-website-section-page-layout>
