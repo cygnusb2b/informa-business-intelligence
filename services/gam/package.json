@@ -10,10 +10,10 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@base-cms/db": "^1.0.0-rc.1",
-    "@base-cms/env": "^1.0.0-rc.1",
-    "@base-cms/object-path": "^1.0.0-rc.1",
-    "@base-cms/utils": "^1.0.0-rc.1",
+    "@base-cms/db": "^1.9.0",
+    "@base-cms/env": "^1.0.0",
+    "@base-cms/object-path": "^1.9.0",
+    "@base-cms/utils": "^1.9.0",
     "@godaddy/terminus": "^4.1.2",
     "apollo-server-express": "^2.5.0",
     "dataloader": "^2.0.0",
