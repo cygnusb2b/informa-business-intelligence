@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="blockName"
+    :class="classNames"
     :data-root-alias="rootAlias"
     :data-active-alias="activeAlias"
   >
@@ -38,10 +38,23 @@ export default {
       type: String,
       default: 'Categories',
     },
+    modifiers: {
+      type: Array,
+      default: () => [],
+    },
   },
 
   data: () => ({
     blockName: 'directory-facets',
   }),
+
+  computed: {
+    classNames() {
+      const { blockName } = this;
+      const classNames = [blockName];
+      this.modifiers.forEach(mod => classNames.push(`${blockName}--${mod}`));
+      return classNames;
+    },
+  },
 };
 </script>

@@ -33,6 +33,9 @@
     "@images": "array"
   },
   "<lazarus-shared-directory-facets>": {
-    "template": "./directory-facets.marko"
+    "template": "./directory-facets.marko",
+    "@root-alias": "string",
+    "@active-alias": "string",
+    "@modifiers": "array"
   }
 }
