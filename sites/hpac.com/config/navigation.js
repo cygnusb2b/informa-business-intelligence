@@ -30,6 +30,7 @@ module.exports = {
       items: [
         { href: '/adventures-johnny-tundra', label: 'Adventures of Johnny Tundra' },
         { href: '/hpac-digital-editions', label: 'HPAC Engineering Digital Editions' },
+        { href: '/directory', label: 'Buyers Guide' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/whitepapers', label: 'White Papers' },
         { href: '/page/hpac-engineering-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },

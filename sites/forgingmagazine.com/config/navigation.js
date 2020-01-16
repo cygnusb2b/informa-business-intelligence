@@ -31,7 +31,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://directory.forgingmagazine.com/Main/DirectoryHome.aspx', label: 'Buyers’ Guide' },
+        { href: '/directory', label: 'Buyers’ Guide' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },

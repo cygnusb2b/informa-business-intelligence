@@ -31,9 +31,9 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/calculators', label: 'Calculators' },
-        { href: '/webinars-1', label: 'Webinars' },
+        { href: '/webinars', label: 'Webinars' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
-        { href: 'http://directory.americanmachinist.com/Main/DirectoryHome.aspx', label: 'Buyers’ Guide' },
+        { href: '/directory', label: 'Buyers’ Guide' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designmanufacturing.informa.com/american-machinist', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
