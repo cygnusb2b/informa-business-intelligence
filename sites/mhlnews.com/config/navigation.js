@@ -33,6 +33,7 @@ module.exports = {
         { href: '/drones-and-autonomous-vehicles', label: 'Drones & Autonomous Vehicles' },
         { href: '/trump-supply-chain', label: 'Trump & the Supply Chain' },
         { href: '/new-products', label: 'Latest Product & Services' },
+        { href: '/directory', label: 'Buyers Guide' },
         { href: '/webinars', label: 'Webinars' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },

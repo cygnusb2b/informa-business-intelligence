@@ -30,8 +30,8 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://directory.manufacturers.hydraulicspneumatics.com/Main/DirectoryHome.aspx', label: 'Manufacturers Directory' },
-        { href: 'http://directory.distributors.hydraulicspneumatics.com/Main/DirectoryHome.aspx', label: 'Distributors Directory' },
+        { href: '/manufacturer-directory', label: 'Manufacturers Directory' },
+        { href: '/distributor-directory', label: 'Distributors Directory' },
         { href: '/hydraulics-pneumatics-blogs', label: 'Blogs' },
         { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },

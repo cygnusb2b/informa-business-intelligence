@@ -37,7 +37,7 @@ module.exports = {
         { href: 'https://buildings.informa.com/rental-equipment-register/', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: 'http://directory.rermag.com/Main/DirectoryHome.aspx', label: 'Buyers Guide', target: '_blank' },
+        { href: '/directory', label: 'Buyers Guide', target: '_blank' },
         { href: '/associations', label: 'Associations' },
         { href: 'https://www.argifocus.com/client/RentalEquipmentRegister/LM1/lm/rsdefault.asp', label: 'Free Product Info', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
