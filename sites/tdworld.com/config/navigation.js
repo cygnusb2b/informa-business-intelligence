@@ -41,7 +41,6 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/td-how', label: 'T&D HOW' },
-        { href: '/apps-and-calculators', label: 'Apps & Calculators' },
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/td-world-magazine-0', label: 'Magazine Archive' },
