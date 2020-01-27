@@ -30,7 +30,6 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/calculators', label: 'Calculators' },
         { href: '/webinars', label: 'Webinars' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/directory', label: 'Buyers’ Guide' },
