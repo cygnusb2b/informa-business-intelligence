@@ -26,6 +26,18 @@
     "@flush-y": "boolean",
     "@modifiers": "array"
   },
+  "<lazarus-shared-company-page-load-more-flow>": {
+    "template": "./company-page-load-more.marko",
+    "@content": "object",
+    "@nodes": "array",
+    "@page-number": "number"
+  },
+  "<lazarus-shared-contact-page-load-more-flow>": {
+    "template": "./contact-page-load-more.marko",
+    "@content": "object",
+    "@nodes": "array",
+    "@page-number": "number"
+  },
   "<lazarus-shared-content-page-load-more-flow>": {
     "template": "./content-page-load-more.marko",
     "@nodes": "array",
