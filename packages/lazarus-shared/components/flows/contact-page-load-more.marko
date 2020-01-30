@@ -1,26 +1,26 @@
-import { getAsArray } from "@base-cms/object-path";
+import { getAsArray, getAsObject } from "@base-cms/object-path";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
 $ const nodes = getAsArray(input, "nodes");
-$ const { pageNumber, content } = input;
+$ const adunit = getAsObject(input, "adunit");
+$ const { pageNumber } = input;
 
 <if(nodes.length)>
    <lazarus-skin-page-grid-col modifiers=["full"]>
     <informa-gam-adunit
-        location=adLocation(content.type)
-        position="infinitescroll"
-        pos-increment=(pageNumber - 1)
-        modifiers=["max-width-728", "margin-auto-x"]
-      >
-        <@context content-id=content.id />
-      </informa-gam-adunit>
-      <lazarus-shared-content-list-flow
-        nodes=nodes
-        flush-x=true
-        flush-y=true
-        inner-justified=false
-        modifiers=["feed"]
-      >
+      location=adunit.location
+      position=adunit.position
+      context=adunit.context
+      pos-increment=input.pageNumber
+      modifiers=["max-width-728", "margin-auto-x"]
+    />
+    <lazarus-shared-content-list-flow
+      nodes=nodes
+      flush-x=true
+      flush-y=true
+      inner-justified=false
+      modifiers=["feed"]
+    >
       <@node>
         <@image width=180 />
       </@node>
