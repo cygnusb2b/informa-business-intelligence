@@ -36,7 +36,7 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
             <@right-col>
               <@bottom-row>
                 <lazarus-shared-content-page-node node=content />
-                <if(type === 'company')>
+                <if(type === "company")>
                   <marko-web-load-more
                     append-to=".page-grid__bottom-row"
                     expand=500
@@ -54,7 +54,7 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
                     page-input={ for: "content", id, type }
                   />
                 </if>
-                <else-if(type === 'contact')>
+                <else-if(type === "contact")>
                   <marko-web-load-more
                     append-to=".page-grid__bottom-row"
                     expand=500
