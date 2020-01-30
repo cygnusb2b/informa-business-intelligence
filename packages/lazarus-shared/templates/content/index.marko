@@ -60,19 +60,17 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
                     page-input={ for: "content", id, type }
                   />
                 </else-if>
-                <else>
-                  <if(infiniteScrollEnabled)>
-                    <marko-web-load-more
-                      append-to=".page-grid__bottom-row"
-                      expand=500
-                      component-name="lazarus-shared-content-page-load-more-flow"
-                      fragment-name="content-page"
-                      query-name="website-scheduled-content"
-                      query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
-                      page-input={ for: "content", id, type }
-                    />
-                  </if>
-                </else>
+                <else-if(infiniteScrollEnabled)>
+                  <marko-web-load-more
+                    append-to=".page-grid__bottom-row"
+                    expand=500
+                    component-name="lazarus-shared-content-page-load-more-flow"
+                    fragment-name="content-page"
+                    query-name="website-scheduled-content"
+                    query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
+                    page-input={ for: "content", id, type }
+                  />
+                </else-if>
               </@bottom-row>
             </@right-col>
           </lazarus-skin-page-grid>
