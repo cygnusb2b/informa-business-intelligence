@@ -5,21 +5,29 @@ const directory = require('../templates/website-section/directory');
 const queryFragment = require('../graphql/fragments/website-section-page');
 const directoryFragment = require('../graphql/fragments/directory-page');
 
+const directoryAliases = [
+  'directory',
+  'manufacturer-directory',
+  'distributor-directory',
+];
+
 module.exports = (app) => {
   app.get('/:alias(contact-us)', withWebsiteSection({
     template: contactUs,
     queryFragment,
   }));
 
-  app.get('/:alias(directory)', withWebsiteSection({
-    template: directory,
-    queryFragment: directoryFragment,
-  }));
+  directoryAliases.forEach((alias) => {
+    app.get(`/:alias(${alias})`, withWebsiteSection({
+      template: directory,
+      queryFragment: directoryFragment,
+    }));
 
-  app.get('/:alias(directory/[a-z0-9-/]+)', withWebsiteSection({
-    template: directory,
-    queryFragment: directoryFragment,
-  }));
+    app.get(`/:alias(${alias}/[a-z0-9-/]+)`, withWebsiteSection({
+      template: directory,
+      queryFragment: directoryFragment,
+    }));
+  });
 
   app.get('/:alias([a-z0-9-/]+)', withWebsiteSection({
     template: section,
