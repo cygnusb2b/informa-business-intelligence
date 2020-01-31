@@ -36,11 +36,13 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
             <@right-col>
               <@bottom-row>
                 <lazarus-shared-content-page-node node=content />
-                <if(type === "company")>
+                <if(type === "company" || type === "contact")>
+                  $ const queryName = (type === "company") ? "all-company-content" : "all-author-content";
+                  $ const queryParams = (type === "company") ? { companyId: id, limit: 10 } : { contactId: id, limit: 10 };
                   <marko-web-load-more
                     append-to=".page-grid__bottom-row"
                     expand=500
-                    component-name="lazarus-shared-company-page-load-more-flow"
+                    component-name="lazarus-shared-content-load-more-flow"
                     component-input={
                       adunit: {
                         location: "taxonomy",
@@ -49,29 +51,11 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
                       },
                     }
                     fragment-name="content-list"
-                    query-name="all-company-content"
-                    query-params={ companyId: id, limit: 10 }
+                    query-name=queryName
+                    query-params=queryParams
                     page-input={ for: "content", id, type }
                   />
                 </if>
-                <else-if(type === "contact")>
-                  <marko-web-load-more
-                    append-to=".page-grid__bottom-row"
-                    expand=500
-                    component-name="lazarus-shared-contact-page-load-more-flow"
-                    component-input={
-                      adunit: {
-                        location: "taxonomy",
-                        position: "infinitescroll",
-                        context: { sectionId: section.id },
-                      },
-                    }
-                    fragment-name="content-list"
-                    query-name="all-author-content"
-                    query-params={ contactId: id, limit: 10 }
-                    page-input={ for: "content", id, type }
-                  />
-                </else-if>
                 <else-if(infiniteScrollEnabled)>
                   <marko-web-load-more
                     append-to=".page-grid__bottom-row"
