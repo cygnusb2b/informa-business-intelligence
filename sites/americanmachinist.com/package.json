@@ -15,11 +15,11 @@
     "test": "yarn lint && yarn compile && yarn build"
   },
   "dependencies": {
-    "@base-cms/marko-core": "^1.9.0",
-    "@base-cms/marko-web": "^1.9.0",
+    "@base-cms/marko-core": "^1.16.2",
+    "@base-cms/marko-web": "^1.17.0",
     "@base-cms/object-path": "^1.9.0",
     "@base-cms/utils": "^1.9.0",
-    "@base-cms/web-cli": "^1.9.0",
+    "@base-cms/web-cli": "^1.17.0",
     "@endeavor-business-media/informa-gam": "^1.7.0",
     "@endeavor-business-media/lazarus-shared": "^1.7.3",
     "graphql": "^14.5.4",
