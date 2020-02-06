@@ -33,8 +33,9 @@ module.exports = {
         { href: '/substations', label: 'Substations' },
         { href: '/test-and-measurement', label: 'Test and Measurement' },
         { href: '/transmission-reliability', label: 'Transmission Reliability' },
-        { href: '/vegetation-management', label: 'Vegetation Management' },
         { href: '/utility-business', label: 'Utility Business' },
+        { href: '/vegetation-management', label: 'Vegetation Management' },
+        { href: '/wildfire', label: 'Wildfire' },
       ],
     },
     {
