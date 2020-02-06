@@ -43,7 +43,7 @@ module.exports = {
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.informa.com/electronic-design/', label: 'Advertise' },
-        { href: '/contributors', label: 'Contribute' },
+        { href: '/page/contribute', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
