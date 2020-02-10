@@ -1,4 +1,5 @@
 import { getAsObject } from "@base-cms/object-path";
+import defaultValue  from "@base-cms/marko-core/utils/default-value";
 
 $ const { config } = out.global;
 
@@ -9,6 +10,7 @@ $ const {
   requiresAccessLevel,
 } = input;
 $ const messages = getAsObject(input, "messages");
+$ const title = defaultValue(input.title, "Log in to view the full article");
 
 <marko-web-block name=blockName>
   <if(isLoggedIn && !hasRequiredAccessLevel)>
@@ -19,7 +21,7 @@ $ const messages = getAsObject(input, "messages");
   </else-if>
   <else-if(!isLoggedIn)>
     <marko-web-element tag="h5" name="title" block-name=blockName>
-      Log in to view the full article
+      ${title}
     </marko-web-element>
 
     <marko-web-element name="body" block-name=blockName>
