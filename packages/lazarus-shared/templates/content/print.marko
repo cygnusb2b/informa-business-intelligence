@@ -119,6 +119,12 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
           <default-theme-content-contact-details obj=content />
           <marko-web-content-body block-name=contentsBlock obj=content />
           <marko-web-content-sidebars block-name=contentsBlock obj=content />
+
+          <hr>
+          <div>
+            <strong>Source URL:</strong> ${content.siteContext.canonicalUrl}
+          </div>
+
         </default-theme-page-contents>
       </marko-web-resolve-page>
 
