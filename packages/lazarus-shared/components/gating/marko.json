@@ -4,6 +4,7 @@
     "@is-logged-in": "boolean",
     "@has-required-access-level": "boolean",
     "@requires-access-level": "boolean",
-    "@messages": "object"
+    "@messages": "object",
+    "@title": "string"
   }
 }
