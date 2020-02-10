@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/informa-gam",
-  "version": "1.7.0",
+  "version": "1.9.1",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/packages/informa-gam",
   "license": "MIT",
@@ -12,12 +12,12 @@
   "dependencies": {
     "@base-cms/env": "^1.0.0",
     "@base-cms/inflector": "^1.0.0",
-    "@base-cms/marko-core": "^1.9.0",
-    "@base-cms/marko-web": "^1.9.0",
+    "@base-cms/marko-core": "^1.16.2",
+    "@base-cms/marko-web": "^1.19.2",
     "@base-cms/marko-web-gam": "^1.9.0",
     "@base-cms/object-path": "^1.9.0",
     "@base-cms/utils": "^1.9.0",
-    "@base-cms/web-cli": "^1.9.0",
+    "@base-cms/web-cli": "^1.19.2",
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link-http": "^1.5.16",

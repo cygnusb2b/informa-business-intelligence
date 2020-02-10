@@ -39,7 +39,7 @@ module.exports = {
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
-        { href: 'https://buildings.informa.com/american-school-and-university/', label: 'Advertise', target: '_blank' },
+        { href: 'https://buildings.endeavorb2b.com/american-school-and-university', label: 'Advertise', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

@@ -3,6 +3,7 @@
 
 User-agent: *
 Disallow: /__load-more
+Disallow: /print
 
 Sitemap: https://www.tdworld.com/sitemap.xml
 Sitemap: https://www.tdworld.com/sitemap-google-news.xml

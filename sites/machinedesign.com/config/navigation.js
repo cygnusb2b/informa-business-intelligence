@@ -46,7 +46,7 @@ module.exports = {
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.informa.com/machine-design/', label: 'Advertise' },
+        { href: 'https://designengineering.endeavorb2b.com/machine-design', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

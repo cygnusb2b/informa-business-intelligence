@@ -37,7 +37,7 @@ module.exports = {
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designmanufacturing.informa.com/foundry/', label: 'Advertise' },
+        { href: 'https://manufacturing.endeavorb2b.com/foundry', label: 'Advertise', target: '_blank' },
         { href: 'https://designmanufacturing.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
