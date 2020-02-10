@@ -34,7 +34,7 @@ module.exports = {
         { href: '/webinar', label: 'Webinars' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://buildings.informa.com/rental-equipment-register/', label: 'Advertise', target: '_blank' },
+        { href: 'https://buildings.endeavorb2b.com/rental-equipment-register', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: '/directory', label: 'Buyers Guide' },
