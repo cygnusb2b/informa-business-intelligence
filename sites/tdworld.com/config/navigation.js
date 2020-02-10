@@ -41,6 +41,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: 'https://jobs.tdworld.com', label: 'Job Center', target: '_blank' },
         { href: '/td-how', label: 'T&D HOW' },
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/resources/white-papers', label: 'White Papers' },
