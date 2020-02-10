@@ -39,7 +39,7 @@ module.exports = {
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://cv.informa.com/trailer-body-builders/', label: 'Advertise' },
+        { href: 'https://cv.endeavorb2b.com/trailer-body-builders', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],

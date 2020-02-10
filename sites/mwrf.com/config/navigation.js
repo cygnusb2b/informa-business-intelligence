@@ -44,7 +44,7 @@ module.exports = {
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.informa.com/microwaves-rf/', label: 'Advertise' },
+        { href: 'https://designengineering.endeavorb2b.com/microwaves-rf', label: 'Advertise', target: '_blank' },
         { href: '/contribs', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
