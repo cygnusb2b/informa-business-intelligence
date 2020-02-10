@@ -20,14 +20,17 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
     <div class="container p-5 bg-white">
       <div class="row mb-block">
         <div class="col">
-          <marko-web-img
-            link={ href: "/" }
-            src=site.get("logos.print.src")
-            srcset=site.getAsArray("logos.print.srcset")
-            lazyload=false
-            alt=config.website("name")
-            attrs={ style: "max-width: 40%;" }
-          />
+          $ const logoSrc = buildImgixUrl(site.get("logos.navbar.src"), { h: 100 });
+          <if(logoSrc)>
+            <marko-web-img
+              link={ href: "/" }
+              src=logoSrc
+              srcset=[`${buildImgixUrl(logoSrc, { dpr: 2 })} 2x`]
+              lazyload=false
+              alt=config.website("name")
+              attrs={ style: "max-width: 40%;" }
+            />
+          </if>
         </div>
       </div>
 
