@@ -4,6 +4,7 @@
 
 User-agent: *
 Disallow: /__load-more
+Disallow: /print
 
 Sitemap: https://www.foundrymag.com/sitemap.xml
 Sitemap: https://www.foundrymag.com/sitemap-google-news.xml
