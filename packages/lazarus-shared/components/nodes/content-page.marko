@@ -23,7 +23,8 @@ $ if (fullWidth) {
   <marko-web-element name="contents" block-name=blockName>
     <marko-web-social-sharing
       path=content.siteContext.path
-      providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
+      providers=["print", "email", "facebook", "linkedin", "twitter", "pinterest"]
+      print-path=`/print/content/${content.id}`
     />
     <marko-web-identity-x-access|context| enabled=requiresRegistration>
       <if(!context.canAccess)>
