@@ -12,7 +12,12 @@ module.exports = (app) => {
   const { site } = app.locals;
   const { appId, enabled, options } = site.getAsObject('identityX');
   if (appId && enabled) {
-    const config = new IdentityXConfig({ ...options, appId });
+    const config = new IdentityXConfig({
+      requiredServerFields: ['givenName', 'familyName', 'countryCode'],
+      requiredClientFields: ['regionCode', 'countryCode'],
+      ...options,
+      appId,
+    });
     IdentityX(app, config);
 
     const navConfig = [
