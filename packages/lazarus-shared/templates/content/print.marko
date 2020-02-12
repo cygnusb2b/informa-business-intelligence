@@ -51,7 +51,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
 
         <default-theme-page-contents|{ blockName: contentsBlock }|>
           <marko-web-identity-x-access|context| enabled=true>
-            <if(!context.isLoggedIn || context.requiresUserInput)>
+            <if(!context.canAccess || context.requiresUserInput)>
               <if(isSponsored)>
                 <div class=`${cardBlock}__sponsored-content`>Sponsored Content</div>
               </if>
@@ -71,6 +71,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
                 obj=content
               />
               <lazarus-shared-content-gate
+                can-access=context.canAccess
                 is-logged-in=context.isLoggedIn
                 has-required-access-level=true
                 requires-access-level=false
@@ -165,7 +166,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
   </@above-container>
   <@below-container>
     <marko-web-identity-x-access|context| enabled=true>
-      <if(context.isLoggedIn && !context.requiresUserInput)>
+      <if(context.canAccess && !context.requiresUserInput)>
         <script>
           (function() {
             window.print();

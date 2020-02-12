@@ -5,6 +5,7 @@ $ const { config } = out.global;
 
 $ const blockName = "content-page-gate";
 $ const {
+  canAccess,
   isLoggedIn,
   hasRequiredAccessLevel,
   requiresAccessLevel,
@@ -15,12 +16,28 @@ $ const title = defaultValue(input.title, "Log in to view the full article");
 $ const userInputTitle = defaultValue(input.userInputTitle, "Complete your profile to view the full article");
 
 <marko-web-block name=blockName>
-  <if(isLoggedIn && !hasRequiredAccessLevel)>
-    $!{messages.loggedInNoAccess}
+  <if(!canAccess)>
+    <if(isLoggedIn && !hasRequiredAccessLevel)>
+      $!{messages.loggedInNoAccess}
+    </if>
+    <else-if(!isLoggedIn && requiresAccessLevel)>
+      $!{messages.loggedOutNoAccess}
+    </else-if>
+    <else-if(!isLoggedIn)>
+      <marko-web-element tag="h5" name="title" block-name=blockName>
+        ${title}
+      </marko-web-element>
+
+      <marko-web-element name="body" block-name=blockName>
+        <p>Register on ${config.website("name")} and gain access to premium content, including this article and much more.</p>
+        <p>To log in or register, begin by entering your email address below.</p>
+      </marko-web-element>
+
+      <marko-web-element name="form-wrapper" block-name=blockName>
+        <marko-web-identity-x-form-register />
+      </marko-web-element>
+    </else-if>
   </if>
-  <else-if(!isLoggedIn && requiresAccessLevel)>
-    $!{messages.loggedOutNoAccess}
-  </else-if>
   <else-if(isLoggedIn && requiresUserInput)>
     <marko-web-element tag="h5" name="title" block-name=blockName>
       ${userInputTitle}
@@ -28,20 +45,6 @@ $ const userInputTitle = defaultValue(input.userInputTitle, "Complete your profi
 
     <marko-web-element name="form-wrapper" block-name=blockName>
       <marko-web-identity-x-form-profile reload-page-on-submit=true />
-    </marko-web-element>
-  </else-if>
-  <else-if(!isLoggedIn)>
-    <marko-web-element tag="h5" name="title" block-name=blockName>
-      ${title}
-    </marko-web-element>
-
-    <marko-web-element name="body" block-name=blockName>
-      <p>Register on ${config.website("name")} and gain access to premium content, including this article and much more.</p>
-      <p>To log in or register, begin by entering your email address below.</p>
-    </marko-web-element>
-
-    <marko-web-element name="form-wrapper" block-name=blockName>
-      <marko-web-identity-x-form-register />
     </marko-web-element>
   </else-if>
 </marko-web-block>

@@ -1,6 +1,7 @@
 {
   "<lazarus-shared-content-gate>": {
     "template": "./content-gate.marko",
+    "@can-access": "boolean",
     "@is-logged-in": "boolean",
     "@has-required-access-level": "boolean",
     "@requires-access-level": "boolean",
