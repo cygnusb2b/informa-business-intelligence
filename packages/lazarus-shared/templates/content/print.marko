@@ -74,8 +74,10 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
                 is-logged-in=context.isLoggedIn
                 has-required-access-level=true
                 requires-access-level=false
+                requires-user-input=context.requiresUserInput
                 messages=context.messages
                 title="Log in to print this article"
+                user-input-title="Complete your profile to print this article"
               />
             </if>
             <else>

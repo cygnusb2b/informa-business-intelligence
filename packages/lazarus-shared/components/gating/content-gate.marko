@@ -8,9 +8,11 @@ $ const {
   isLoggedIn,
   hasRequiredAccessLevel,
   requiresAccessLevel,
+  requiresUserInput,
 } = input;
 $ const messages = getAsObject(input, "messages");
 $ const title = defaultValue(input.title, "Log in to view the full article");
+$ const userInputTitle = defaultValue(input.userInputTitle, "Complete your profile to view the full article");
 
 <marko-web-block name=blockName>
   <if(isLoggedIn && !hasRequiredAccessLevel)>
@@ -18,6 +20,15 @@ $ const title = defaultValue(input.title, "Log in to view the full article");
   </if>
   <else-if(!isLoggedIn && requiresAccessLevel)>
     $!{messages.loggedOutNoAccess}
+  </else-if>
+  <else-if(isLoggedIn && requiresUserInput)>
+    <marko-web-element tag="h5" name="title" block-name=blockName>
+      ${userInputTitle}
+    </marko-web-element>
+
+    <marko-web-element name="form-wrapper" block-name=blockName>
+      <marko-web-identity-x-form-profile reload-page-on-submit=true />
+    </marko-web-element>
   </else-if>
   <else-if(!isLoggedIn)>
     <marko-web-element tag="h5" name="title" block-name=blockName>
