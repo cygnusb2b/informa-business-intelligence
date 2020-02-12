@@ -831,11 +831,12 @@
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.0.0.tgz#ff0270d64c679a5f7fcc8c33af91a59435aaec56"
   integrity sha512-KJ8bioDhhyTzZDmm+NQnjfO3xVRSXc6Q70PP2+KrT2JyrQuaforvfZxSDLASRb7txX0w+t3I624HUqoi6XvWoQ==
 
-"@base-cms/marko-web-identity-x@^1.19.1":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.19.1.tgz#d8956d6f51de06963e952c477e9d65184291cc2a"
-  integrity sha512-h/5mW41oHUlIDLi76n9T0reJ+tb5rP7lvVAZEO86pCYYkjlU0GQ5nAL+fg5bqolG1svSl6e77EJqaci50VAHXA==
+"@base-cms/marko-web-identity-x@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.20.0.tgz#c5de2485f5abcc9289795a6d62c5bd201343864d"
+  integrity sha512-eUd60Pd6tLWvGNh4nCh1fKi5XGX0IlbgVZONFJeJ8FEh3kEfTsLlZSA2cejYiW+js8V7e8z77qsIxEy5fvuWfg==
   dependencies:
+    "@base-cms/object-path" "^1.9.0"
     "@base-cms/utils" "^1.9.0"
     apollo-cache-inmemory "^1.6.3"
     apollo-client "^2.6.4"
@@ -853,10 +854,10 @@
   dependencies:
     "@base-cms/utils" "^1.9.0"
 
-"@base-cms/marko-web-theme-default@^1.19.1":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.19.1.tgz#73dc0c3fc853703fcb453484285947db6efd2deb"
-  integrity sha512-hFD4BojUXRHZ2xohPTZkeZQzCW4dEHK47vyEMV0sToii01hA1MxfWWhIM6z30g5g673fd4jRaXZWFFFKZotr3A==
+"@base-cms/marko-web-theme-default@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.20.0.tgz#f00838455a14697ae8a71e66af368473b88160b7"
+  integrity sha512-et0dUp3KGT0xJBuwB8DiyFKLVGguoz9geHnxOEBsIBOTaxRb7BA+AI6af8wE0ktt1nuouJjtAkGwd+nni6134Q==
   dependencies:
     "@base-cms/marko-web-icons" "^1.0.0"
     "@base-cms/object-path" "^1.9.0"
