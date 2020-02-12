@@ -3,7 +3,8 @@
     "template": "./content-body.marko",
     "@node": "object",
     "@is-preview": "boolean",
-    "@ads-enabled": "boolean"
+    "@ads-enabled": "boolean",
+    "@page-index": "number"
   },
   "<lazarus-shared-slideshow-button-element>": {
     "template": "./slideshow-button.marko",

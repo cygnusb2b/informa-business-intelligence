@@ -2,9 +2,13 @@ import { getAsArray, getAsObject } from "@base-cms/object-path";
 import { warn } from "@base-cms/utils";
 import DefineDisplayAd from "@base-cms/marko-web-gam/components/define-display-ad";
 import adunitAttrs from "../utils/create-adunit-attrs";
+import incrementPos from "../utils/increment-pos";
 
 $ const { gam, req } = out.global;
 $ const { testAd } = req.query;
+$ const { posIncrement, incrementor } = input;
+
+$ const posIncrementor = typeof incrementor === "function" ? incrementor : incrementPos;
 
 $ const loadAdunit = async () => {
   const unitInput = getAsObject(input, "adunit");
@@ -20,11 +24,14 @@ $ const loadAdunit = async () => {
 
   // Only allow one adunit to be rendered.
   const adunit = adunits[0];
+  const targeting = { ...adunit.targeting, ...unitInput.targeting, ...(testAd && { testAd }) };
+  const { pos } = targeting;
+  if (posIncrement && pos) targeting.pos = posIncrementor({ pos, inc: posIncrement });
   return {
     path: adunit.path,
     size: adunit.size,
     sizeMapping: adunit.sizeMapping,
-    targeting: ({ ...adunit.targeting, ...unitInput.targeting, ...(testAd && { testAd }) }),
+    targeting,
     collapse: unitInput.collapse,
     collapseBeforeAdFetch: unitInput.collapseBeforeAdFetch,
     id: unitInput.id,

@@ -59,7 +59,9 @@
   "<informa-gam-direct-inject-adunit>": {
     "template": "./direct-inject-adunit.marko",
     "<adunit>": {},
-    "@selector": "string"
+    "@selector": "string",
+    "@pos-increment": "number",
+    "@incrementor": "function"
   },
   "<informa-gam-prestitial>": {
     "template": "./prestitial.marko",
