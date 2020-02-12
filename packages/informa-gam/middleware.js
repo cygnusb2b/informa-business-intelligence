@@ -18,7 +18,7 @@ const mapSizes = size => asArray(size).map(({ width, height }) => [width, height
 const buildAdunit = ({ unit, config, globalTargeting }) => ({
   ...unit,
   path: config.createAdUnitPath(unit.path),
-  size: mapSizes(unit.size),
+  size: unit.fluid ? ['fluid'] : mapSizes(unit.size),
   sizeMapping: getAsArray(unit, 'sizeMapping').map(({ viewport: vp, size }) => ({ viewport: [vp.width, vp.height], size: mapSizes(size) })),
   targeting: { ...unit.targeting, ...globalTargeting },
 });
