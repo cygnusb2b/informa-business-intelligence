@@ -51,7 +51,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
 
         <default-theme-page-contents|{ blockName: contentsBlock }|>
           <marko-web-identity-x-access|context| enabled=true>
-            <if(!context.canAccess)>
+            <if(!context.isLoggedIn || context.requiresUserInput)>
               <if(isSponsored)>
                 <div class=`${cardBlock}__sponsored-content`>Sponsored Content</div>
               </if>
@@ -165,7 +165,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
   </@above-container>
   <@below-container>
     <marko-web-identity-x-access|context| enabled=true>
-      <if(context.canAccess)>
+      <if(context.isLoggedIn && !context.requiresUserInput)>
         <script>
           (function() {
             window.print();
