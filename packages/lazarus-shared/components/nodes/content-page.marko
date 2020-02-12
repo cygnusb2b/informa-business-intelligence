@@ -28,7 +28,7 @@ $ if (fullWidth) {
       print-path=`/print/content/${content.id}`
     />
     <marko-web-identity-x-access|context| enabled=requiresRegistration>
-      <if(!context.canAccess)>
+      <if(!context.canAccess || context.requiresUserInput)>
         <lazarus-shared-content-body-element
           node=content
           is-preview=true
@@ -36,9 +36,11 @@ $ if (fullWidth) {
           page-index=pageIndex
         />
         <lazarus-shared-content-gate
+          can-access=context.canAccess
           is-logged-in=context.isLoggedIn
           has-required-access-level=context.hasRequiredAccessLevel
           requires-access-level=context.hasRequiredAccessLevel
+          requires-user-input=context.requiresUserInput
           messages=context.messages
         />
       </if>
