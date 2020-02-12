@@ -1,6 +1,7 @@
 $ const { config } = out.global;
 
 $ const type = "authenticate";
+$ const description = `Login to ${config.website("name")}`;
 <marko-web-default-page-layout type=type title="Authenticate">
   <@head>
     <marko-web-gtm-default-context|{ context }| type=type>
@@ -21,6 +22,9 @@ $ const type = "authenticate";
           </@left-col>
           <@right-col>
             <@bottom-row>
+              <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
+                <h1 class="page-wrapper__title">${description}</h1>
+              </lazarus-skin-page-grid-col>
               <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
                 <marko-web-identity-x-form-authenticate />
               </lazarus-skin-page-grid-col>
