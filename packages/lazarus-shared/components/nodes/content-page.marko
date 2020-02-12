@@ -8,6 +8,7 @@ $ const primarySection = getAsObject(content, "primarySection");
 $ const requiresRegistration = get(content, "userRegistration.isRequired");
 
 $ const fullWidth = defaultValue(input.fullWidth, false);
+$ const pageIndex = defaultValue(input.pageNumber, 0);
 $ const modifiers = [];
 $ const imgInput = {};
 $ if (fullWidth) {
@@ -32,6 +33,7 @@ $ if (fullWidth) {
           node=content
           is-preview=true
           ads-enabled=input.adsEnabled
+          page-index=pageIndex
         />
         <lazarus-shared-content-gate
           is-logged-in=context.isLoggedIn
@@ -44,6 +46,7 @@ $ if (fullWidth) {
         <lazarus-shared-content-body-element
           node=content
           ads-enabled=input.adsEnabled
+          page-index=pageIndex
         />
       </else>
     </marko-web-identity-x-access>
