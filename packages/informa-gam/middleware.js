@@ -5,13 +5,16 @@ const { ApolloClient } = require('apollo-client');
 const { InMemoryCache } = require('apollo-cache-inmemory');
 const { createHttpLink } = require('apollo-link-http');
 const { asObject, asArray } = require('@base-cms/utils');
-const { dasherize } = require('@base-cms/inflector');
+const { dasherize, camelize } = require('@base-cms/inflector');
 const { getAsArray } = require('@base-cms/object-path');
 const GAMConfiguration = require('@base-cms/marko-web-gam/config');
 
 const { GAM_SERVICE_URI, TENANT_KEY } = require('./env');
 
-const createCacheKey = (location, context) => `${location}|${JSON.stringify(context || {})}`;
+const camelizeObj = obj => Object.keys(obj)
+  .reduce((o, key) => ({ ...o, [camelize(key)]: obj[key] }), {});
+
+const createCacheKey = (location, context) => `${location}|${JSON.stringify(camelizeObj(context || {}))}`;
 
 const mapSizes = size => asArray(size).map(({ width, height }) => [width, height]);
 
@@ -75,7 +78,12 @@ module.exports = ({ accountId, basePath } = {}) => (req, res, next) => {
     if (!cache.has(key)) {
       const input = { location };
       const headers = contextHeaders(context);
-      const promise = apollo.query({ query, variables: { input }, context: { headers } })
+      const promise = apollo.query({
+        query,
+        variables: { input },
+        context: { headers },
+        fetchPolicy: 'no-cache',
+      })
         .then(({ data }) => data.locationAdunits)
         .then(({ targeting: globalTargeting, adunits: units }) => units.reduce((map, unit) => {
           const { position } = unit;
