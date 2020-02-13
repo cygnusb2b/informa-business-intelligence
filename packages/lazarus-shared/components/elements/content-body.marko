@@ -9,8 +9,19 @@ $ const { type } = content;
 
 $ const adsEnabled = defaultValue(input.adsEnabled, true);
 $ const isPreview = defaultValue(input.isPreview, false);
+$ const pageIndex = defaultValue(input.pageIndex, 0);
 $ const body = isPreview ? getContentPreview({ body: content.body, selector: "p:nth-of-type(1)" }) : content.body;
 $ const bodyId = `content-body-${content.id}`;
+
+$ const incrementNativeInline = ({ pos, inc } = {}) => {
+  if (!pos) return pos;
+  const pattern = /(nativekey_13_)(\d{1,})/;
+  const matches = pattern.exec(pos);
+  if (!matches || !matches[2]) return pos;
+  const n = inc + parseInt(matches[2], 10);
+  const newPos = pos.replace(pattern, `$1${n <= 10 ? n : 10}`);
+  return newPos;
+};
 
 <default-theme-page-contents|{ blockName }|>
   <default-theme-content-contact-details obj=content />
@@ -49,7 +60,11 @@ $ const bodyId = `content-body-${content.id}`;
 
 
       <!-- inject native ad after second paragraph -->
-      <informa-gam-direct-inject-adunit selector=`#${bodyId} > p:nth-of-type(2)`>
+      <informa-gam-direct-inject-adunit
+        selector=`#${bodyId} > p:nth-of-type(2)`
+        pos-increment=pageIndex
+        incrementor=incrementNativeInline
+      >
         <@adunit location=adLocation(type) position="native_inline" modifiers=["body-inline"]>
           <@context content-id=content.id />
         </@adunit>

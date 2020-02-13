@@ -38,7 +38,7 @@ module.exports = {
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.informa.com/source-today/', label: 'Advertise' },
+        { href: 'https://designengineering.endeavorb2b.com/source-today', label: 'Advertise', target: '_blank' },
         { href: 'https://www.sourcetoday.com/contributors', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
