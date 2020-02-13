@@ -3,7 +3,7 @@ import { buildImgixUrl } from "@base-cms/image";
 import imageHeight from "@base-cms/marko-web/components/node/utils/image-height";
 
 $ const { id, type, pageNode } = data;
-$ const { site, config } = out.global;
+$ const { site, config, req } = out.global;
 
 $ const cardBlock = "content-page-card";
 $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includes(type) ? false : true;
@@ -15,6 +15,14 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <marko-web-content-page-metadata id=id />
+
+    <marko-web-gtm-init container-id=site.get("gtm.containerId") />
+    <marko-web-gtm-content-context|{ context }| id=id>
+      <!-- Override canonical path to print path -->
+      $ const ctx = { ...context, canonical_path: req.path };
+      <marko-web-gtm-push data=ctx />
+    </marko-web-gtm-content-context>
+    <marko-web-gtm-start />
   </@head>
   <@above-container>
     <div class="container p-5 bg-white">
