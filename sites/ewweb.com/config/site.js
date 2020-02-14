@@ -6,7 +6,7 @@ module.exports = {
   navigation,
   dragonForms,
   identityX: {
-    enabled: false,
+    enabled: true,
     appId: '5df007e405aa56cc6c43fc02',
   },
   homePageSections: [
