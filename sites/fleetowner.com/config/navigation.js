@@ -9,7 +9,7 @@ module.exports = {
   footer: {
     items: [
       { href: '/page/about-us', label: 'About Us' },
-      { href: '/page/contact-us', label: 'Contact Us' },
+      { href: '/page/about-us', label: 'Contact Us' },
       { href: 'https://cv.informa.com/fleet-owner/', label: 'Advertise' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
@@ -44,7 +44,7 @@ module.exports = {
         { href: '/resource-center/maintenance', label: 'Maintenance' },
         { href: '/resource-center/powertrain', label: 'Powertrain' },
         { href: '/news/regulations', label: 'Regulation' },
-        { href: '/page/about-us', label: 'About Us' },
+        { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'https://cv.endeavorb2b.com/fleet-owner', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
