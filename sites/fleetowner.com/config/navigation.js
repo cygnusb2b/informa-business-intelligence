@@ -44,7 +44,7 @@ module.exports = {
         { href: '/resource-center/maintenance', label: 'Maintenance' },
         { href: '/resource-center/powertrain', label: 'Powertrain' },
         { href: '/news/regulations', label: 'Regulation' },
-        { href: '/page/about-us', label: 'About Us' },
+        { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'http://www.argifocus.com/client/FleetOwner/LM1/lm/rsdefault.asp?elqTrack=true', label: 'Advertise' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
