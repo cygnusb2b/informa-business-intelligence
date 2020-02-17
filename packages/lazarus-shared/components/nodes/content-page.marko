@@ -8,6 +8,7 @@ $ const primarySection = getAsObject(content, "primarySection");
 $ const requiresRegistration = get(content, "userRegistration.isRequired");
 
 $ const fullWidth = defaultValue(input.fullWidth, false);
+$ const pageIndex = defaultValue(input.pageNumber, 0);
 $ const modifiers = [];
 $ const imgInput = {};
 $ if (fullWidth) {
@@ -23,19 +24,23 @@ $ if (fullWidth) {
   <marko-web-element name="contents" block-name=blockName>
     <marko-web-social-sharing
       path=content.siteContext.path
-      providers=["email", "facebook", "linkedin", "twitter", "pinterest"]
+      providers=["print", "email", "facebook", "linkedin", "twitter", "pinterest"]
+      print-path=`/print/content/${content.id}`
     />
     <marko-web-identity-x-access|context| enabled=requiresRegistration>
-      <if(!context.canAccess)>
+      <if(!context.canAccess || context.requiresUserInput)>
         <lazarus-shared-content-body-element
           node=content
           is-preview=true
           ads-enabled=input.adsEnabled
+          page-index=pageIndex
         />
         <lazarus-shared-content-gate
+          can-access=context.canAccess
           is-logged-in=context.isLoggedIn
           has-required-access-level=context.hasRequiredAccessLevel
           requires-access-level=context.hasRequiredAccessLevel
+          requires-user-input=context.requiresUserInput
           messages=context.messages
         />
       </if>
@@ -43,6 +48,7 @@ $ if (fullWidth) {
         <lazarus-shared-content-body-element
           node=content
           ads-enabled=input.adsEnabled
+          page-index=pageIndex
         />
       </else>
     </marko-web-identity-x-access>

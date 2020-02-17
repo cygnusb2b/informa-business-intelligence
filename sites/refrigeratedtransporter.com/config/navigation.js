@@ -42,7 +42,7 @@ module.exports = {
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/page/about-us', label: 'About Us' },
-        { href: 'https://cv.informa.com/refrigerated-transporter-2/', label: 'Advertise' },
+        { href: 'https://cv.endeavorb2b.com/refrigerated-transporter-2', label: 'Advertise', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },

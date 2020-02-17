@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/trailer-bodybuilders.com",
-  "version": "1.7.0",
+  "version": "1.10.2",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/trailer-bodybuilders.com",
   "license": "MIT",
@@ -15,13 +15,13 @@
     "test": "yarn lint && yarn compile && yarn build"
   },
   "dependencies": {
-    "@base-cms/marko-core": "^1.9.0",
-    "@base-cms/marko-web": "^1.9.0",
+    "@base-cms/marko-core": "^1.20.3",
+    "@base-cms/marko-web": "^1.20.4",
     "@base-cms/object-path": "^1.9.0",
     "@base-cms/utils": "^1.9.0",
-    "@base-cms/web-cli": "^1.9.0",
-    "@endeavor-business-media/informa-gam": "^1.7.0",
-    "@endeavor-business-media/lazarus-shared": "^1.7.0",
+    "@base-cms/web-cli": "^1.20.4",
+    "@endeavor-business-media/informa-gam": "^1.10.2",
+    "@endeavor-business-media/lazarus-shared": "^1.10.2",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }

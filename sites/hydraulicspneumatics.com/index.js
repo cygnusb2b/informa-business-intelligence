@@ -1,7 +1,6 @@
 const startServer = require('@endeavor-business-media/lazarus-shared/start-server');
 
-const sharedRoutes = require('@endeavor-business-media/lazarus-shared/routes');
-const siteRoutes = require('./server/routes');
+const routes = require('@endeavor-business-media/lazarus-shared/routes');
 const siteConfig = require('./config/site');
 const coreConfig = require('./config/core');
 
@@ -11,8 +10,5 @@ module.exports = startServer({
   rootDir: __dirname,
   coreConfig,
   siteConfig,
-  routes: (app) => {
-    siteRoutes(app);
-    sharedRoutes(app);
-  },
+  routes,
 }).then(() => log('Website started!')).catch(e => setImmediate(() => { throw e; }));

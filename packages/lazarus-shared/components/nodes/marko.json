@@ -37,7 +37,9 @@
     "template": "./content-page.marko",
     "@node": "object",
     "@ads-enabled": "boolean",
-    "@full-width": "boolean"
+    "@full-width": "boolean",
+    "@page-number": "number"
+
   },
   "<lazarus-shared-contact-us-list-node>": {
     "template": "./contact-us-list.marko",

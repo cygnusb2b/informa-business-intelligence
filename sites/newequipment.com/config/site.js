@@ -6,11 +6,11 @@ module.exports = {
   navigation,
   dragonForms,
   identityX: {
-    enabled: false,
+    enabled: true,
     appId: '5df0e97405aa56ad4d43fc3b',
   },
   homePageSections: [
-    { alias: 'plant-operations', name: 'Plant Operatinos' },
+    { alias: 'plant-operations', name: 'Plant Operations' },
     { alias: 'research-and-development', name: 'Research and Development' },
     { alias: 'industry-trends', name: 'Industry Trends' },
   ],
