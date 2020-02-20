@@ -34,7 +34,7 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4078692', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/channel/UCD6JFCCOwOPu2v-KBcww_qw', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'tdworld.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'tdworld.home' },
   gtm: {
     containerId: 'GTM-KPZQF6G',
   },

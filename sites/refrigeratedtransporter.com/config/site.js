@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/RefrigeratedTransporter/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/rtmag', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'reftrans.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'reftrans.home' },
   gtm: {
     containerId: 'GTM-PXKDQV7',
   },

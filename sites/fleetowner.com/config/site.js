@@ -33,7 +33,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/fleetowner', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4050439', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'fleet.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'fleet.home' },
   gtm: {
     containerId: 'GTM-N69H89Q',
   },

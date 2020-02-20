@@ -31,7 +31,7 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'linkedin', href: 'https://www.linkedin.com/organization/11093979', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'sourcetoday.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'sourcetoday.home' },
   gtm: {
     containerId: 'GTM-5VDJHFN',
   },

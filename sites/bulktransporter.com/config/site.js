@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/bulktrans/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/bulktransporter', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'bulktrans.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'bulktrans.home' },
   gtm: {
     containerId: 'GTM-5KBQKZR',
   },

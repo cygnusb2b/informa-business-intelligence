@@ -34,7 +34,7 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2685562', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/user/ecmwebtv', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'ecm.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'ecm.home' },
   gtm: {
     containerId: 'GTM-MMN8GXJ',
   },
