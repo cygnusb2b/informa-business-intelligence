@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/powerelectronicstech/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/PowerElecTech', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'powertech.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'powertech.home' },
   gtm: {
     containerId: 'GTM-MKCRX6P',
   },

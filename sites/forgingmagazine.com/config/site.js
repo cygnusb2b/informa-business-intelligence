@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/ForgingMagazine', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/ForgingMag', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'forging.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'forging.home' },
   gtm: {
     containerId: 'GTM-MCQ2JVM',
   },

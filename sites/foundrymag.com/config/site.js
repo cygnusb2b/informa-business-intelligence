@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/pages/Foundry-Management-Technology/481245725222286', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/FoundryMag', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'foundry.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'foundry.home' },
   gtm: {
     containerId: 'GTM-59NC7KQ',
   },

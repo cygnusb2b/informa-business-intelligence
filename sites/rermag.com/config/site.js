@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/rentalequipmentregister', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/RERmagazine', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'rermag.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'rermag.home' },
   gtm: {
     containerId: 'GTM-WDNJSMG',
   },

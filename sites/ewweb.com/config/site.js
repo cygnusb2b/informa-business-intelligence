@@ -33,7 +33,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/ElecWholesaling', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2187051', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'elecwhole.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'elecwhole.home' },
   gtm: {
     containerId: 'GTM-PNM3CF6',
   },

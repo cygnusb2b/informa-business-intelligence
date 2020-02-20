@@ -32,7 +32,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/asumag/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/asu_mag', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'asumag.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'asumag.home' },
   gtm: {
     containerId: 'GTM-5W6GRZ7',
   },

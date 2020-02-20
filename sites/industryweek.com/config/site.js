@@ -38,7 +38,7 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/industry-week', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/user/industryweek', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'iw.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'iw.home' },
   gtm: {
     containerId: 'GTM-MQVBJZ5',
   },

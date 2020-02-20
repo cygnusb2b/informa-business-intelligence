@@ -33,7 +33,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/ContractingBiz', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4078340', target: '_blank' },
   ],
-  gam: { accountId: '3834', basePath: 'contractbus.home' },
+  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'contractbus.home' },
   gtm: {
     containerId: 'GTM-TPH92QZ',
   },
