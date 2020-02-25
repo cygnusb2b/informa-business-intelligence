@@ -1,0 +1,52 @@
+$ const { nodes, section } = input;
+
+<if(nodes.length > 1)>
+  $ const heroNodes = nodes.slice(0, 1);
+  $ const cardNodes = nodes.slice(1, 3);
+  $ const listNodes = nodes.slice(3);
+
+  <if(heroNodes)>
+    <lazarus-shared-content-hero-flow nodes=heroNodes>
+      <@header>Highlights</@header>
+      <@card
+        image-position="top"
+        with-sponsored=true
+        with-section=false
+      >
+        <@image width=1280 />
+      </@card>
+    </lazarus-shared-content-hero-flow>
+  </if>
+
+  <if(cardNodes.length)>
+    <div class="row">
+      <for|node| of=cardNodes>
+        <lazarus-skin-page-grid-col modifiers=["half", "bottom-spacer"]>
+          <lazarus-shared-content-card-node
+            node=node
+            with-sponsored=true
+            with-section=false
+          >
+            <@image width=480 use-placeholder=true />
+          </lazarus-shared-content-card-node>
+        </lazarus-skin-page-grid-col>
+      </for>
+    </div>
+  </if>
+
+  <if(listNodes.length)>
+    <div class="row">
+      <for|node| of=listNodes>
+        <lazarus-skin-page-grid-col modifiers=["half", "bottom-spacer"]>
+          <lazarus-shared-content-list-node
+            node=node
+            with-sponsored=true
+            with-section=false
+          >
+            <@image width=240 />
+          </lazarus-shared-content-list-node>
+        </lazarus-skin-page-grid-col>
+      </for>
+    </div>
+  </if>
+</if>

@@ -1,0 +1,13 @@
+$ const { section } = input;
+$ const styles = {
+  background: section.coverImage ? `url(${section.coverImage.src}) top center no-repeat` : undefined,
+  'background-size': 'cover',
+};
+
+<div class="program__header bg-primary" style=styles>
+  <marko-web-website-section-name class="page-wrapper__title page-wrapper__title--text-light" tag="h1" obj=section />
+  <marko-web-website-section-description class="page-wrapper__deck page-wrapper__deck--text-light" obj=section />
+  <if(section.logo)>
+    <img src=section.logo.src class="program__logo" alt="Sponsor logo">
+  </if>
+</div>
