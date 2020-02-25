@@ -508,10 +508,17 @@ $theme-content-page-node-full-width: 780px !default;
     padding: 0;
   }
 
-  &--program-highlights,
-  &--program-contents {
-    padding-top: 10px;
-    margin-top: 1rem;
+  &__section {
+    &--header {
+      text-align: center;
+    }
+    &--program {
+      max-width: 820px;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__title,
