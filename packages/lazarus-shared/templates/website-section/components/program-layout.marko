@@ -24,7 +24,7 @@ $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, require
       </div>
       <div class="col-sm-4">
         $ const resources = { ...query, limit: 4, excludeContentTypes: [], includeContentTypes: ["Promotion"] };
-        <marko-web-query|{ nodes }| name="website-optioned-content" params=resources>
+        <marko-web-query|{ nodes }| name="website-optioned-content" params=resources collapsible=false>
           <program-resources nodes=nodes section=section />
         </marko-web-query>
         <informa-gam-adunit location="taxonomy" position="right_rail_rect" class="my-block">
