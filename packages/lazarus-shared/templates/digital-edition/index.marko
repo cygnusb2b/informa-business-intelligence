@@ -1,0 +1,34 @@
+$ const { config, site } = out.global;
+
+$ const newsletterSubscribeLink = site.get("newsletterSubscribeLink");
+
+$ const type = "subscribe";
+$ const description = `Digital Edition`;
+
+<marko-web-default-page-layout type=type title="Subscribe" description=description>
+  <@head>
+    <marko-web-gtm-default-context|{ context }| type=type>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-default-context>
+  </@head>
+  <@page>
+    <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
+      <@section>
+        <h1 class="page-wrapper__title">Information at Your Fingertips</h1>
+        <div class="page-wrapper__deck">${description}</div>
+      </@section>
+    </marko-web-page-wrapper>
+    <marko-web-page-wrapper>
+      <@section>
+        <script type="text/javascript" src="https://secure.api.viewer.zmags.com/viewer/viewer.js"></script>
+        <div id="myViewerContent" style="position:absolute; top:8%; left:0px; height:85%; width:100%;"></div>
+        <script>
+            var viewer = new com.zmags.api.Viewer();
+            viewer.setPublicationID("b1b3b8f8");
+            viewer.setParentElementID("myViewerContent");
+            viewer.show();
+        </script>
+      </@section>
+    </marko-web-page-wrapper>
+  </@page>
+</marko-web-default-page-layout>
