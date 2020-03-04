@@ -4,7 +4,7 @@ import queryFragment from "../../graphql/fragments/content-list";
 
 $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
-$ const includeContentTypes = ["Article", "MediaGallery", "Video"];
+$ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper", "Webinar"];
 
 <if(adunit.location)>
   <lazarus-shared-increment-ad-pos slot-id=slotId />
