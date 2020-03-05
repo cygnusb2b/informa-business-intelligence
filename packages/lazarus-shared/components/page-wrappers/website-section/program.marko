@@ -3,7 +3,7 @@ import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragm
 $ const { section, resolved } = input;
 $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, requiresImage: true, queryFragment, excludeContentTypes: ["Promotion"],  };
 
-<marko-web-page-wrapper modifiers=["custom-channel"]>
+<marko-web-page-wrapper modifiers=["program"]>
   <@section modifiers=["header"]>
     <lazarus-shared-program-header section=section />
   </@section>
