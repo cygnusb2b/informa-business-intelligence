@@ -45,11 +45,20 @@ $ if (fullWidth) {
         />
       </if>
       <else>
-        <lazarus-shared-content-body-element
-          node=content
-          ads-enabled=input.adsEnabled
-          page-index=pageIndex
-        />
+        <if(input.renderBody)>
+          <${input.renderBody}
+            node=content
+            ads-enabled=input.adsEnabled
+            page-index=pageIndex
+          />
+        </if>
+        <else>
+          <lazarus-shared-content-body-element
+            node=content
+            ads-enabled=input.adsEnabled
+            page-index=pageIndex
+          />
+        </else>
       </else>
     </marko-web-identity-x-access>
 
