@@ -1,0 +1,18 @@
+{
+  "<lazarus-shared-program-header>": {
+    "template": "./header.marko",
+    "@section": "object"
+  },
+  "<lazarus-shared-program-highlights>": {
+    "template": "./highlights.marko",
+    "@nodes": "array"
+  },
+  "<lazarus-shared-program-recent>": {
+    "template": "./recent.marko",
+    "@nodes": "array"
+  },
+  "<lazarus-shared-program-resources>": {
+    "template": "./resources.marko",
+    "@nodes": "array"
+  }
+}

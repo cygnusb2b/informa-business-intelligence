@@ -4,7 +4,9 @@
     "./elements/marko.json",
     "./flows/marko.json",
     "./gating/marko.json",
-    "./nodes/marko.json"
+    "./nodes/marko.json",
+    "./page-wrappers/marko.json",
+    "./program/marko.json"
   ],
   "<lazarus-shared-increment-ad-pos>": {
     "template": "./increment-ad-pos.marko",
