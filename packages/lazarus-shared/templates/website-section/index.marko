@@ -20,10 +20,10 @@ $ const { id, alias, name, pageNode } = data;
       </informa-gam-adunit>
 
       <if(getAsArray(section, 'labels').includes("Program"))>
-        <program-layout section=section resolved=resolved />
+        <lazarus-shared-website-section-program-page-wrapper section=section resolved=resolved />
       </if>
       <else>
-        <default-layout section=section resolved=resolved />
+        <lazarus-shared-website-section-default-page-wrapper section=section resolved=resolved />
       </else>
     </marko-web-resolve-page>
   </@page>

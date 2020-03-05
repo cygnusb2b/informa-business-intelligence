@@ -5,12 +5,12 @@ $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, require
 
 <marko-web-page-wrapper modifiers=["custom-channel"]>
   <@section modifiers=["header"]>
-    <program-header section=section />
+    <lazarus-shared-program-header section=section />
   </@section>
 
   <@section modifiers=["program"]>
     <marko-web-query|{ nodes }| name="website-optioned-content" params=query>
-      <program-highlights nodes=nodes section=section />
+      <lazarus-shared-program-highlights nodes=nodes />
     </marko-web-query>
   </@section>
 
@@ -19,13 +19,13 @@ $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, require
       <div class="col-sm-8">
         $ const recent = { ...query, limit: 10, skip: 5 };
         <marko-web-query|{ nodes }| name="website-optioned-content" params=recent>
-          <program-recent nodes=nodes section=section />
+          <lazarus-shared-program-recent nodes=nodes />
         </marko-web-query>
       </div>
       <div class="col-sm-4">
         $ const resources = { ...query, limit: 4, excludeContentTypes: [], includeContentTypes: ["Promotion"] };
         <marko-web-query|{ nodes }| name="website-optioned-content" params=resources collapsible=false>
-          <program-resources nodes=nodes section=section />
+          <lazarus-shared-program-resources nodes=nodes />
         </marko-web-query>
         <informa-gam-adunit location="taxonomy" position="right_rail_rect" class="my-block">
           <@context section-id=section.id />

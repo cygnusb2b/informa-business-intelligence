@@ -1,0 +1,12 @@
+{
+  "<lazarus-shared-website-section-default-page-wrapper>": {
+    "template": "./default.marko",
+    "@section": "object",
+    "@resolved": "object"
+  },
+  "<lazarus-shared-website-section-program-page-wrapper>": {
+    "template": "./program.marko",
+    "@section": "object",
+    "@resolved": "object"
+  }
+}
