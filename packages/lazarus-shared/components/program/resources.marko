@@ -3,14 +3,12 @@ $ const { nodes } = input;
 
 <lazarus-skin-page-grid-col modifiers=["full", "flush-x"]>
   <marko-web-node-list
-    collapsible=false
     inner-justified=false
     flush-x=true
     flush-y=true
     modifiers=["feed"]
   >
     <@header>Resources</@header>
-    <@footer>&nbsp;</@footer>
     <@nodes nodes=nodes>
       <@slot|{ node }|>
         $ const content = node;
