@@ -1,7 +1,6 @@
 import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
 
 $ const { section, resolved } = input;
-$ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, requiresImage: true, queryFragment, excludeContentTypes: ["Promotion"],  };
 
 <marko-web-page-wrapper modifiers=["program"]>
   <@section modifiers=["header"]>
@@ -9,7 +8,17 @@ $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, require
   </@section>
 
   <@section modifiers=["program"]>
-    <marko-web-query|{ nodes }| name="website-optioned-content" params=query>
+    <marko-web-query|{ nodes }|
+      name="website-optioned-content"
+      params={
+        sectionId: section.id,
+        optionName: "Pinned",
+        limit: 5,
+        requiresImage: true,
+        queryFragment,
+        excludeContentTypes: ["Promotion"],
+      }
+    >
       <lazarus-shared-program-highlights nodes=nodes />
     </marko-web-query>
   </@section>
@@ -17,14 +26,33 @@ $ const query = { sectionId: section.id, optionName: "Pinned", limit: 5, require
   <@section modifiers=["program"]>
     <div class="row mb-block">
       <div class="col-sm-8">
-        $ const recent = { ...query, limit: 10, skip: 5 };
-        <marko-web-query|{ nodes }| name="website-optioned-content" params=recent>
+        <marko-web-query|{ nodes }|
+          name="website-optioned-content"
+          params={
+            sectionId: section.id,
+            optionName: "Pinned",
+            limit: 10,
+            skip: 5,
+            requiresImage: true,
+            queryFragment,
+            excludeContentTypes: ["Promotion"],
+          }
+        >
           <lazarus-shared-program-recent nodes=nodes />
         </marko-web-query>
       </div>
       <div class="col-sm-4">
-        $ const resources = { ...query, limit: 4, excludeContentTypes: [], includeContentTypes: ["Promotion"] };
-        <marko-web-query|{ nodes }| name="website-optioned-content" params=resources collapsible=false>
+        <marko-web-query|{ nodes }|
+          name="website-optioned-content"
+          params={
+            sectionId: section.id,
+            optionName: "Pinned",
+            limit: 4,
+            requiresImage: true,
+            queryFragment,
+            includeContentTypes: ["Promotion"],
+          }
+        >
           <lazarus-shared-program-resources nodes=nodes />
         </marko-web-query>
         <informa-gam-adunit location="taxonomy" position="right_rail_rect" class="my-block">
