@@ -1,0 +1,16 @@
+$ const { nodes } = input;
+
+<lazarus-skin-page-grid-col modifiers=["full", "flush-x"]>
+  <lazarus-shared-content-list-flow
+    nodes=nodes
+    flush-x=true
+    flush-y=true
+    inner-justified=false
+    modifiers=["feed"]
+  >
+    <@header>Recent</@header>
+    <@node with-sponsored=true with-section=false>
+      <@image width=180 />
+    </@node>
+  </lazarus-shared-content-list-flow>
+</lazarus-skin-page-grid-col>

@@ -1,0 +1,58 @@
+import { getAsObject, getAsArray } from "@base-cms/object-path";
+$ const { nodes } = input;
+
+<lazarus-skin-page-grid-col modifiers=["full", "flush-x"]>
+  <marko-web-node-list
+    inner-justified=false
+    flush-x=true
+    flush-y=true
+    modifiers=["feed"]
+  >
+    <@header>Resources</@header>
+    <@nodes nodes=nodes>
+      <@slot|{ node }|>
+        $ const content = node;
+        $ const primaryImage = getAsObject(content, "primaryImage");
+        <marko-web-node
+          type=`${content.type}-content`
+          image-position="left"
+          flush=true
+        >
+          <@image
+            ar="1:1"
+            width=100
+            align="top"
+            use-placeholder=true
+            src=primaryImage.src
+            alt=primaryImage.alt
+            fluid=false
+            link={ href: content.siteContext.path }
+          />
+          <@body>
+            <@title tag="h5">
+              <marko-web-content-short-name tag=null obj=content link={ href: content.siteContext.path } />
+            </@title>
+            <@text|{ blockName }|>
+              <div style="max-width: 80%">
+                <marko-core-link
+                  class="btn btn-primary btn-block mx-auto"
+                  href=content.linkUrl
+                  target="_blank"
+                >
+                  <if(content.linkText)>
+                    ${content.linkText}
+                  </if>
+                  <else>
+                    Learn More
+                  </else>
+                </marko-core-link>
+              </div>
+            </@text>
+          </@body>
+        </marko-web-node>
+      </@slot>
+    </@nodes>
+  </marko-web-node-list>
+</lazarus-skin-page-grid-col>
+
+<div id="program-resources" />

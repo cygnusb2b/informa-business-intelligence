@@ -1,0 +1,27 @@
+import { getAsObject } from "@base-cms/object-path";
+import { buildImgixUrl } from "@base-cms/image";
+
+$ const { section } = input;
+$ const logo = getAsObject(section, "logo");
+$ const coverImage = getAsObject(section, "coverImage");
+
+$ const styles = {
+  background: coverImage.src ? `url(${coverImage.src}) top center no-repeat` : undefined,
+  "background-size": "cover",
+};
+
+<div class="program__header" style=styles>
+  <marko-web-website-section-name class="page-wrapper__title page-wrapper__title--text-light" tag="h1" obj=section />
+  <marko-web-website-section-description class="page-wrapper__deck page-wrapper__deck--text-light" obj=section />
+  <if(logo.src)>
+    $ const src = buildImgixUrl(logo.src, { h: 100 });
+    $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
+    <marko-web-img
+      src=src
+      srcset=srcset
+      alt="Sponsor logo"
+      class="program__logo"
+      lazyload=true
+    />
+  </if>
+</div>
