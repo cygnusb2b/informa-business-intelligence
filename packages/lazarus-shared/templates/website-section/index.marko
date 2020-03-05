@@ -19,7 +19,7 @@ $ const { id, alias, name, pageNode } = data;
         <@context section-id=section.id />
       </informa-gam-adunit>
 
-      <if(getAsArray(section, 'labels').includes("Program"))>
+      <if(getAsArray(section, "labels").includes("Program"))>
         <lazarus-shared-website-section-program-page-wrapper section=section resolved=resolved />
       </if>
       <else>
