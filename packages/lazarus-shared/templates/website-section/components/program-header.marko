@@ -1,3 +1,5 @@
+import { buildImgixUrl } from "@base-cms/image";
+
 $ const { section } = input;
 $ const styles = {
   background: section.coverImage ? `url(${section.coverImage.src}) top center no-repeat` : undefined,
@@ -8,6 +10,14 @@ $ const styles = {
   <marko-web-website-section-name class="page-wrapper__title page-wrapper__title--text-light" tag="h1" obj=section />
   <marko-web-website-section-description class="page-wrapper__deck page-wrapper__deck--text-light" obj=section />
   <if(section.logo)>
-    <img src=section.logo.src class="program__logo" alt="Sponsor logo">
+    $ const src = buildImgixUrl(section.logo.src, { h: 100 });
+    $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
+    <marko-web-img
+      src=src
+      srcset=srcset
+      alt="Sponsor logo"
+      class="program__logo"
+      lazyload=true
+    />
   </if>
 </div>
