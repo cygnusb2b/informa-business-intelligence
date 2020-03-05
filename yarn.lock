@@ -826,15 +826,15 @@
     graphql "^14.5.4"
     graphql-tag "^2.10.1"
 
-"@base-cms/marko-web-icons@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.0.0.tgz#ff0270d64c679a5f7fcc8c33af91a59435aaec56"
-  integrity sha512-KJ8bioDhhyTzZDmm+NQnjfO3xVRSXc6Q70PP2+KrT2JyrQuaforvfZxSDLASRb7txX0w+t3I624HUqoi6XvWoQ==
+"@base-cms/marko-web-icons@^1.24.0":
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.24.0.tgz#f03f3afa456d9d1229a217f2c7efe15065fac02c"
+  integrity sha512-hU6A/4nr/QmwO5ePCboe/oWl/NW6eCZcZVHKLMoYQ+tfO46BhwcKiUz5CAMZJorx5rveAwoAd8eT9g6f4SRVAw==
 
-"@base-cms/marko-web-identity-x@^1.21.6":
-  version "1.21.6"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.21.6.tgz#7d56e9705ac502c52ef3420ee39ce63c90055031"
-  integrity sha512-o1OoMNCtWBkJS2fJl0brB2dR1Zdytz0njiUtboxAB6dpMSBh/e18Z+f+SIANBHMhrlaO84GKdhE+SJCGbV/3aQ==
+"@base-cms/marko-web-identity-x@^1.24.0":
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.24.0.tgz#964dc541532599a55a3ea7a5be9383d4fa52b578"
+  integrity sha512-fTcSWm32hIH5Qn5jCTa63s+eJLMu5bTuXL9sQYM5qzGdjBU1+rBh1HNAttp5ER/4VH/z6AA1VJNtPFtDYiCwFg==
   dependencies:
     "@base-cms/object-path" "^1.9.0"
     "@base-cms/utils" "^1.9.0"
@@ -854,12 +854,12 @@
   dependencies:
     "@base-cms/utils" "^1.9.0"
 
-"@base-cms/marko-web-theme-default@^1.23.1":
-  version "1.23.1"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.23.1.tgz#a0eecfd4e15095e3a0376f05c950659e573c67ad"
-  integrity sha512-GgNba77VSCP2vqUqtd3X3PrEqPahHD4lRLPLdas235sCZVVKm6ybRrpgO5Ni4AoqN+jvaxbK7IUBY7Jd1TZrCA==
+"@base-cms/marko-web-theme-default@^1.24.0":
+  version "1.24.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.24.0.tgz#5e2f42245c9f3fef00da563a25aafd52a0eadebd"
+  integrity sha512-9Pu8VTmoHO4Ibg1Z3HoNL5Kn4OVCZTwK42Qa1gSyjCQtkuoy5FxsQ67HYTiRKi0TWoUDQxZpQPKGPOXo0q/HNQ==
   dependencies:
-    "@base-cms/marko-web-icons" "^1.0.0"
+    "@base-cms/marko-web-icons" "^1.24.0"
     "@base-cms/object-path" "^1.9.0"
     "@base-cms/utils" "^1.9.0"
     bootstrap "4.3.1"
