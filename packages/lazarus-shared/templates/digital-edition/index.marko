@@ -22,7 +22,11 @@ $ const description = ``;
     <marko-web-page-wrapper>
       <@section>
         <script type="text/javascript" src="https://secure.api.viewer.zmags.com/viewer/viewer.js"></script>
-        <div id="myViewerContent" style="position:absolute; top:8%; left:0px; height:85%; width:100%;"></div>
+
+        <div class="zmags">
+          <div id="myViewerContent" class="zmags__viewer"></div>
+        </div>
+
         <script>
             var viewer = new com.zmags.api.Viewer();
             viewer.setPublicationID('${id}');
