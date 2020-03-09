@@ -21,18 +21,33 @@ $ const description = ``;
     </marko-web-page-wrapper>
     <marko-web-page-wrapper>
       <@section>
-        <script type="text/javascript" src="https://secure.api.viewer.zmags.com/viewer/viewer.js"></script>
+        <marko-web-identity-x-access|context| enabled=true>
+          <if(!context.canAccess || context.requiresUserInput)>
+            <lazarus-shared-content-gate
+              can-access=context.canAccess
+              is-logged-in=context.isLoggedIn
+              has-required-access-level=context.hasRequiredAccessLevel
+              requires-access-level=context.hasRequiredAccessLevel
+              requires-user-input=context.requiresUserInput
+              messages=context.messages
+            />
+          </if>
+          <else>
+            <script type="text/javascript" src="https://secure.api.viewer.zmags.com/viewer/viewer.js"></script>
 
-        <div class="zmags">
-          <div id="myViewerContent" class="zmags__viewer"></div>
-        </div>
+            <div class="zmags">
+              <div id="myViewerContent" class="zmags__viewer"></div>
+            </div>
 
-        <script>
-            var viewer = new com.zmags.api.Viewer();
-            viewer.setPublicationID('${id}');
-            viewer.setParentElementID("myViewerContent");
-            viewer.show();
-        </script>
+            <script>
+                var viewer = new com.zmags.api.Viewer();
+                viewer.setPublicationID('${id}');
+                viewer.setParentElementID("myViewerContent");
+                viewer.show();
+            </script>
+          </else>
+        </marko-web-identity-x-access>
+
       </@section>
     </marko-web-page-wrapper>
   </@page>
