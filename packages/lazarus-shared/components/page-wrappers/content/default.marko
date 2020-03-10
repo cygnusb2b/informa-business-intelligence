@@ -2,6 +2,7 @@ import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/conten
 
 $ const { content, section } = input;
 $ const { id, type } = content;
+$ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false : true;
 
 <marko-web-page-wrapper modifiers=["top-border"]>
   <@section>
