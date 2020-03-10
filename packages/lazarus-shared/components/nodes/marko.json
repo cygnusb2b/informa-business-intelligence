@@ -38,7 +38,8 @@
     "@node": "object",
     "@ads-enabled": "boolean",
     "@full-width": "boolean",
-    "@page-number": "number"
+    "@page-number": "number",
+    "<body>": {}
 
   },
   "<lazarus-shared-contact-us-list-node>": {

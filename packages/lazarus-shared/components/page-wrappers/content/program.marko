@@ -12,34 +12,36 @@ $ const { id, type } = content;
 
 <marko-web-page-wrapper modifiers=["top-border", "mt-block"]>
   <@section>
-    <lazarus-shared-content-page-node|{ pageIndex, adsEnabled }| node=content full-width=true>
-      <div class="row">
-        <div class="col col-lg-8">
-          <lazarus-shared-content-body-element
-            node=content
-            ads-enabled=adsEnabled
-            page-index=pageIndex
-          />
+    <lazarus-shared-content-page-node node=content full-width=true>
+      <@body|{ pageIndex, adsEnabled }|>
+        <div class="row">
+          <div class="col col-lg-8">
+            <lazarus-shared-content-body-element
+              node=content
+              ads-enabled=adsEnabled
+              page-index=pageIndex
+            />
+          </div>
+          <div class="col col-lg-4">
+            <marko-web-query|{ nodes }|
+              name="website-optioned-content"
+              params={
+                sectionId: section.id,
+                optionName: "Pinned",
+                limit: 4,
+                requiresImage: true,
+                queryFragment,
+                includeContentTypes: ["Promotion"],
+              }
+            >
+              <lazarus-shared-program-resources nodes=nodes />
+            </marko-web-query>
+            <informa-gam-adunit location="taxonomy" position="right_rail_rect" class="my-block">
+              <@context section-id=section.id />
+            </informa-gam-adunit>
+          </div>
         </div>
-        <div class="col col-lg-4">
-          <marko-web-query|{ nodes }|
-            name="website-optioned-content"
-            params={
-              sectionId: section.id,
-              optionName: "Pinned",
-              limit: 4,
-              requiresImage: true,
-              queryFragment,
-              includeContentTypes: ["Promotion"],
-            }
-          >
-            <lazarus-shared-program-resources nodes=nodes />
-          </marko-web-query>
-          <informa-gam-adunit location="taxonomy" position="right_rail_rect" class="my-block">
-            <@context section-id=section.id />
-          </informa-gam-adunit>
-        </div>
-      </div>
+      </@body>
     </lazarus-shared-content-page-node>
   </@section>
 
