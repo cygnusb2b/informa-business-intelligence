@@ -35,11 +35,11 @@
   },
   "<lazarus-shared-content-page-node>": {
     "template": "./content-page.marko",
+    "<body>": {},
     "@node": "object",
     "@ads-enabled": "boolean",
     "@full-width": "boolean",
-    "@page-number": "number",
-    "<body>": {}
+    "@page-number": "number"
 
   },
   "<lazarus-shared-contact-us-list-node>": {
