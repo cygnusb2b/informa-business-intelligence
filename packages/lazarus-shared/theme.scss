@@ -508,6 +508,10 @@ $theme-content-page-node-full-width: 780px !default;
     padding: 0;
   }
 
+  &--mt-block {
+    margin-top: map-get($spacers, block);
+  }
+
   &__section {
     &--header {
       text-align: center;

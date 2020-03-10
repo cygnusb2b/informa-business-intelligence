@@ -30,6 +30,16 @@ fragment ContentPageFragment on Content {
       alias
       canonicalPath
     }
+    labels
+    description
+    logo {
+      id
+      src(input: { options: { h: 100 } })
+    }
+    coverImage {
+      id
+      src(input: { options: { w: 1280 } })
+    }
   }
   primaryImage {
     id
