@@ -17,26 +17,29 @@ $ const userInputTitle = defaultValue(input.userInputTitle, "Complete your profi
 
 <marko-web-block name=blockName>
   <if(!canAccess)>
+    <marko-web-element tag="h5" name="title" block-name=blockName>
+      ${title}
+    </marko-web-element>
     <if(isLoggedIn && !hasRequiredAccessLevel)>
-      $!{messages.loggedInNoAccess}
-    </if>
-    <else-if(!isLoggedIn && requiresAccessLevel)>
-      $!{messages.loggedOutNoAccess}
-    </else-if>
-    <else-if(!isLoggedIn)>
-      <marko-web-element tag="h5" name="title" block-name=blockName>
-        ${title}
-      </marko-web-element>
-
       <marko-web-element name="body" block-name=blockName>
-        <p>Register on ${config.website("name")} and gain access to premium content, including this article and much more.</p>
-        <p>To log in or register, begin by entering your email address below.</p>
+        $!{messages.loggedInNoAccess}
+      </marko-web-element>
+    </if>
+    <else>
+      <marko-web-element name="body" block-name=blockName>
+        <if(!requiresAccessLevel)>
+          $!{messages.loggedOutNoAccess}
+        </if>
+        <else>
+          <p>Register on ${config.website("name")} and gain access to premium content, including this article and much more.</p>
+          <p>To log in or register, begin by entering your email address below.</p>
+        </else>
       </marko-web-element>
 
       <marko-web-element name="form-wrapper" block-name=blockName>
         <marko-web-identity-x-form-register />
       </marko-web-element>
-    </else-if>
+    </else>
   </if>
   <else-if(isLoggedIn && requiresUserInput)>
     <marko-web-element tag="h5" name="title" block-name=blockName>
