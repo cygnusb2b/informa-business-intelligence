@@ -1,4 +1,4 @@
-import { getAsObject, get } from "@base-cms/object-path";
+import { getAsArray, getAsObject, get } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 
 $ const { node: content } = input;
@@ -6,6 +6,7 @@ $ const blockName = "content-page-node";
 
 $ const primarySection = getAsObject(content, "primarySection");
 $ const requiresRegistration = get(content, "userRegistration.isRequired");
+$ const accessLevels = getAsArray(content, "userRegistration.accessLevels");
 
 $ const fullWidth = defaultValue(input.fullWidth, false);
 $ const pageIndex = defaultValue(input.pageNumber, 0);
@@ -27,7 +28,10 @@ $ if (fullWidth) {
       providers=["print", "email", "facebook", "linkedin", "twitter", "pinterest"]
       print-path=`/print/content/${content.id}`
     />
-    <marko-web-identity-x-access|context| enabled=requiresRegistration>
+    <marko-web-identity-x-access|context|
+      enabled=requiresRegistration
+      required-access-level-ids=accessLevels
+    >
       <if(!context.canAccess || context.requiresUserInput)>
         <lazarus-shared-content-body-element
           node=content
