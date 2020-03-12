@@ -2,10 +2,10 @@ $ const { config, site } = out.global;
 
 $ const { id } = data;
 
-$ const type = 'digital-edition';
-$ const title = 'Digital Edition';
+$ const type = "digital-edition";
+$ const title = "Digital Edition";
 
-<marko-web-default-page-layout type=type title=title description=description>
+<marko-web-default-page-layout type=type title=title>
   <@head>
     <marko-web-gtm-default-context|{ context }| type=type>
       <marko-web-gtm-push data=context />
