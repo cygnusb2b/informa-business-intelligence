@@ -33,23 +33,29 @@ $ const title = "Digital Edition";
             />
           </if>
           <else>
-            <script type="text/javascript" src="https://secure.api.viewer.zmags.com/viewer/viewer.js"></script>
-
             <div class="zmags">
               <div id="zmags-content" class="zmags__viewer"></div>
             </div>
-
             <script>
-              (function()) {
-                var viewer = new com.zmags.api.Viewer();
-                viewer.setPublicationID('${id}');
-                viewer.setParentElementID('zmags-content');
-                viewer.show();
-              })();
+              (function(d) {
+                function loadScript(src, cb) {
+                  var ele = d.body || d.documentElement;
+                  var s = d.createElement('script');
+                  s.src = src; ele.appendChild(s);
+                  s.onload = cb;
+                  s.onerror = cb;
+                  return s;
+                }
+                loadScript('https://secure.api.viewer.zmags.com/viewer/viewer.js', function() {
+                  var viewer = new com.zmags.api.Viewer();
+                  viewer.setPublicationID('${id}');
+                  viewer.setParentElementID('zmags-content');
+                  viewer.show();
+                });
+              })(document);
             </script>
           </else>
         </marko-web-identity-x-access>
-
       </@section>
     </marko-web-page-wrapper>
   </@page>
