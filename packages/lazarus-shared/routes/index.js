@@ -6,6 +6,7 @@ const subscribe = require('./subscribe');
 const digitalEdition = require('./digital-edition');
 const websiteSections = require('./website-section');
 const user = require('./user');
+const eloqua = require('./eloqua');
 
 module.exports = (app) => {
   // User (IdentityX)
@@ -31,4 +32,7 @@ module.exports = (app) => {
 
   // Website Sections
   websiteSections(app);
+
+  // Get Eloqua Form
+  eloqua(app);
 };
