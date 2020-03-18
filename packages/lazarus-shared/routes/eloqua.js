@@ -9,7 +9,7 @@ module.exports = (app) => {
       {
         headers: {
           'content-type': 'application/json',
-          Authorization: `Basic ${auth}`,
+          authorization: `basic ${auth}`,
         },
       },
     );
