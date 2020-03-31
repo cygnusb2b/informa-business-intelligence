@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/management', label: 'Business Management' },
         { href: '/codes', label: 'Code' },
         { href: '/hydronics', label: 'Hydronics' },

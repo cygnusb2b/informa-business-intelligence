@@ -27,6 +27,7 @@ module.exports = {
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/resources', label: 'Resources' },
         { href: '/blogs', label: 'Experts' },
+        { href: '/covid-19', label: 'COVID-19' },
       ],
     },
     {

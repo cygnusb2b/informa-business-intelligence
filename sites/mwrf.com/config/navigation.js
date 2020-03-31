@@ -28,6 +28,7 @@ module.exports = {
         { href: '/technologies/software', label: 'Software' },
         { href: '/learning-resources', label: 'Resources' },
         { href: '/page/microwaves-rf-experts', label: 'Experts' },
+        { href: '/covid-19', label: 'COVID-19' },
       ],
     },
     {

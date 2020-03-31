@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/heating', label: 'Heating' },
         { href: '/iaq-ventilation', label: 'Ventilation' },
         { href: '/air-conditioning', label: 'Air Conditioning/Cooling' },
