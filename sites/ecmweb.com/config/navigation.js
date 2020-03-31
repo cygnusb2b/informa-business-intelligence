@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/national-electrical-code', label: 'National Electrical Code' },
         { href: '/design', label: 'Design' },
         { href: '/construction', label: 'Construction' },

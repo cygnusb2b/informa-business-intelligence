@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/news', label: 'News' },
         { href: '/business-management', label: 'Business Management' },
         { href: '/electrical-economy', label: 'Electrical Economy' },

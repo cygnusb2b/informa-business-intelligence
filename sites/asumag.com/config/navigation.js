@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/facilities-management/business-finance', label: 'Business & Finance' },
         { href: '/planning-design', label: 'Design' },
         { href: '/construction', label: 'Construction' },

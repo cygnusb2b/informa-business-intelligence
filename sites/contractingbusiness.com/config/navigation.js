@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid-19', label: 'COVID-19' },
         { href: '/contracting-business-success', label: 'Contracting Business Success' },
         { href: '/residential-hvac', label: 'Residential HVAC' },
         { href: '/commercial-hvac', label: 'Commercial HVAC' },
