@@ -19,7 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: '/careers', label: 'Careers' },
+        { href: '/careers', label: 'Careers & Jobs' },
         { href: '/disaster-response', label: 'Disaster Response' },
         { href: '/distributed-energy-resources', label: 'Distributed Energy Resources' },
         { href: '/electric-utility-operations', label: 'Electric Utility Operations' },
