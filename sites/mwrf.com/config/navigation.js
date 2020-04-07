@@ -10,7 +10,7 @@ module.exports = {
     items: [
       { href: '/page/about-us', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
-      { href: 'https://designengineering.informa.com/microwaves-rf/', label: 'Advertise' },
+      { href: 'https://designengineering.endeavorb2b.com/microwaves-rf/', label: 'Advertise' },
       { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EBM_DoNotSell', label: 'California Do Not Sell', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
@@ -46,7 +46,7 @@ module.exports = {
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.informa.com/microwaves-rf/', label: 'Advertise' },
+        { href: 'https://designengineering.endeavorb2b.com/microwaves-rf/', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
