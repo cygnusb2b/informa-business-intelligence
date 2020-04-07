@@ -10,7 +10,7 @@ module.exports = {
     items: [
       { href: '/page/about-us', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
-      { href: 'https://designmanufacturing.informa.com/industryweek/', label: 'Advertise' },
+      { href: 'https://manufacturing.endeavorb2b.com/industryweek', label: 'Advertise', target: '_blank' },
       { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EBM_DoNotSell', label: 'California Do Not Sell', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
