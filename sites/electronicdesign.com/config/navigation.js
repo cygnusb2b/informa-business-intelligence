@@ -25,7 +25,7 @@ module.exports = {
         { href: '/power-management', label: 'Power Management' },
         { href: '/technologies/embedded-revolution', label: 'Embedded Revolution' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
-        { href: '/resources', label: 'Resources' },
+        { href: '/page/resources', label: 'Resources' },
         { href: '/blogs', label: 'Experts' },
         { href: '/covid-19', label: 'COVID-19' },
       ],
