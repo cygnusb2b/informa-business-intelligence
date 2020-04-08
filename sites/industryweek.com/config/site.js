@@ -15,7 +15,7 @@ module.exports = {
     { alias: 'technology-and-iiot', name: 'Technology and IIoT' },
   ],
   homePagePrograms: [
-    { alias: 'covid-19', name: 'COVID-19 Crisis' },
+    { alias: 'covid19', name: 'COVID-19 Crisis' },
     { alias: 'supply-chain-initiative', name: 'Supply Chain Initiative' },
   ],
   logos: {
