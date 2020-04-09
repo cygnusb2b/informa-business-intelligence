@@ -26,7 +26,7 @@ module.exports = {
         { href: '/technologies/systems', label: 'Systems' },
         { href: '/materials', label: 'Materials' },
         { href: '/technologies/software', label: 'Software' },
-        { href: '/learning-resources', label: 'Resources' },
+        { href: '/page/resources', label: 'Resources' },
         { href: '/page/microwaves-rf-experts', label: 'Experts' },
         { href: '/covid-19', label: 'COVID-19' },
       ],
