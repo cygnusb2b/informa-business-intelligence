@@ -35,13 +35,14 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference' },
         { href: '/americas-safest-companies-awards', label: 'ASC Awards' },
         { href: '/news', label: 'Latest Headlines' },
         { href: '/ghs', label: 'GHS' },
         { href: '/arc-flash', label: 'Arc Flash' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers-and-case-studies', label: 'White Papers' },
+        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
+        { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
