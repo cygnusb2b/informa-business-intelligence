@@ -31,6 +31,8 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: 'http://directory.newequipment.com/', label: 'NED Directory' },
+        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
+        { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },

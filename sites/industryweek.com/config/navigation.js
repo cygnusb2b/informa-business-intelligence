@@ -39,6 +39,8 @@ module.exports = {
         { href: '/resources/iw-best-practices-reports', label: 'IW Best Practices Reports' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/white-papers', label: 'White Papers' },
+        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
+        { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
