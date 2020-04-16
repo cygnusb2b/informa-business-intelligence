@@ -35,6 +35,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/covid19', label: 'COVID-19 Crisis' },
         { href: '/americas-safest-companies-awards', label: 'ASC Awards' },
         { href: '/news', label: 'Latest Headlines' },
         { href: '/ghs', label: 'GHS' },
