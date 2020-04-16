@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/covid19', label: 'COVID-19 Crisis' },
         { href: '/transportation-distribution', label: 'Transportation & Distribution' },
         { href: '/facilities-management', label: 'Facilities Management' },
         { href: '/warehousing', label: 'Warehousing' },
@@ -31,7 +32,6 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/covid19', label: 'COVID-19 Crisis' },
         { href: '/drones-and-autonomous-vehicles', label: 'Drones & Autonomous Vehicles' },
         { href: '/trump-supply-chain', label: 'Trump & the Supply Chain' },
         { href: '/new-products', label: 'Latest Product & Services' },
