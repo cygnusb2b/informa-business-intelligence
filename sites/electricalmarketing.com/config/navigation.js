@@ -30,13 +30,8 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/current-issue/november-22-2019', label: 'Digital Edition' },
+        { href: '/current-issue', label: 'Digital Edition' },
         { href: '/industry-stats/electrical-price-index', label: 'Electrical Price Index' },
-        { href: '/hot-topics/metals-markets', label: 'Materials Pricing' },
-        { href: '/market-segments/commercial', label: 'Commercial Market' },
-        { href: '/market-segments/residential', label: 'Residential Market' },
-        { href: '/market-segments/industrial', label: 'Industrial Market' },
-        { href: '/market-segments/utility', label: 'Utility Market' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'http://ebmarketing.penton.com/brands/electrical-marketing/', label: 'Advertise', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
