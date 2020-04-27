@@ -3,7 +3,8 @@ const DragonFormsConfig = require('@endeavor-business-media/lazarus-shared/confi
 const config = new DragonFormsConfig({ url: 'https://endeavor.dragonforms.com' });
 
 config
-  .addForm('newsletterSignup', { omedasite: 'FMTnewpref' })
+  .addForm('newsletterSubscribe', { omedasite: 'FMTnewpref' })
+  .addForm('newsletterSignup', { omedasite: 'FMTnewpref', query: { pk: 'ARTWEB' } })
   .addForm('magazineSignup', { omedasite: 'FMT_new', query: { pk: 'NNHWEB' } });
 
 module.exports = config;
