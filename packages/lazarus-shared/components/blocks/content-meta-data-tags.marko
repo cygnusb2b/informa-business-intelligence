@@ -1,0 +1,25 @@
+import { asObject } from '@base-cms/utils';
+
+$ const name = input.name || 'dataLayer';
+$ const obj = asObject(input.data);
+$ let createdBy = (obj.created_by.firstName);
+$ createdBy = (!obj.created_by.lastName) ? Created_by : createdBy += obj.created_by.lastName;
+$ createdBy = (createdBy) ? createdBy : obj.created_by.username;
+$ const tags = obj.taxonomy.map((tag) => tag.name).join(',');
+$ const authors = obj.authors.map((tag) => tag.name).join(',');
+$ const secondarySections = obj.section_hierarchy.filter(section => section.id !== obj.section.id).map((tag) => tag.name).join(',');
+
+<meta name="page_type" content=obj.page_type>
+<meta name="content" content=obj.content.type>
+<meta name="canonical_path" content=obj.canonical_path>
+<meta name="Created_by" content=obj.created_by.username>
+<if(obj.company.name !== 'undefined')>
+  <meta name="Company" content="">
+</if>
+<meta name="section" content=obj.section.name>
+<meta name="primary_section" content=obj.section.name>
+<if(secondarySections)>
+  <meta name="secondary_sections" content=secondarySections>
+</if>
+<meta name="authors" content=authors>
+<meta name="tags" content=tags>
