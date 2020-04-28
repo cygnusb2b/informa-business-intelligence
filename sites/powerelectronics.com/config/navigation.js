@@ -33,7 +33,7 @@ module.exports = {
         { href: 'https://www.mwrf.com/', label: 'RF Design' },
         { href: 'https://www.machinedesign.com/', label: 'Machine Design' },
         { href: 'https://www.sourcetoday.com/', label: 'Procurement' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
