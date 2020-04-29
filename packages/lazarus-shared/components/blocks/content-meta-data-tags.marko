@@ -9,17 +9,17 @@ $ const tags = obj.taxonomy.map((tag) => tag.name).join(',');
 $ const authors = obj.authors.map((tag) => tag.name).join(',');
 $ const secondarySections = obj.section_hierarchy.filter(section => section.id !== obj.section.id).map((tag) => tag.name).join(',');
 
-<meta name="page_type" content=obj.page_type>
-<meta name="content" content=obj.content.type>
-<meta name="canonical_path" content=obj.canonical_path>
-<meta name="Created_by" content=obj.created_by.username>
-<if(obj.company.name !== 'undefined')>
-  <meta name="Company" content="">
+<meta name="Page_Type" content=obj.page_type>
+<meta name="Content" content=obj.content.type>
+<meta name="Canonical_Path" content=obj.canonical_path>
+<meta name="Created_By" content=obj.created_by.username>
+<if(obj.company.name)>
+  <meta name="Company" content=obj.company.name>
 </if>
-<meta name="section" content=obj.section.name>
-<meta name="primary_section" content=obj.section.name>
+<meta name="Section" content=obj.section.name>
+<meta name="Primary_Section" content=obj.section.name>
 <if(secondarySections)>
-  <meta name="secondary_sections" content=secondarySections>
+  <meta name="Secondary_Sections" content=secondarySections>
 </if>
-<meta name="authors" content=authors>
-<meta name="tags" content=tags>
+<meta name="Authors" content=authors>
+<meta name="Tags" content=tags>
