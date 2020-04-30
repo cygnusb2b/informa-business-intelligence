@@ -40,7 +40,7 @@ module.exports = {
         { href: '/learning-resources/webinar', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/page/hydraulicswallchart', label: 'Wall Charts' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },

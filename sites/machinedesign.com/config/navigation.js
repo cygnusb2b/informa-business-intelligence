@@ -42,7 +42,7 @@ module.exports = {
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webinars', label: 'Webinars' },
         { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },

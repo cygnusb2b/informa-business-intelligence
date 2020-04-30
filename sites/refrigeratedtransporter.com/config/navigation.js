@@ -40,7 +40,7 @@ module.exports = {
         { href: '/event-calendar', label: 'Related Industry Events' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://cv.endeavorb2b.com/refrigerated-transporter-2', label: 'Advertise', target: '_blank' },
