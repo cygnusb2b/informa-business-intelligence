@@ -43,7 +43,6 @@ module.exports = {
         { href: 'https://www.argifocus.com/client/RentalEquipmentRegister/LM1/lm/rsdefault.asp', label: 'Free Product Info', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
-        { href: 'http://www.penton.com/privacy-policy#ThirdPartyAdvertisingTech', label: 'Ad Choices', target: '_blank' },
       ],
     },
   ],
