@@ -1,0 +1,6 @@
+{
+  "<lazarus-shared-blueconic-metatag>": {
+    "template": "./metatag.marko",
+    "@context": "object"
+  }
+}

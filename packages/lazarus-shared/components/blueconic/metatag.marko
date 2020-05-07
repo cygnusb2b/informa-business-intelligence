@@ -1,0 +1,5 @@
+$ const { site } = out.global;
+
+<if(site.get('blueconic.enabled'))>
+  <meta name="BlueConic" content=JSON.stringify(input.context)>
+</if>
