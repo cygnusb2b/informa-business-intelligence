@@ -13,20 +13,6 @@
       "<context>": {}
     }
   },
-  "<lazarus-shared-content-meta-data-context>": {
-    "template": "./content-meta-data.marko",
-    "@id": "number",
-    "@builder": "function",
-    "@query-fragment": "expression"
-  },
-  "<lazarus-shared-content-meta-data-tags>": {
-    "template": "./content-meta-data-tags.marko",
-    "@name": {
-      "type": "string",
-      "default-value": "dataLayer"
-    },
-    "@data": "object"
-  },
   "<lazarus-shared-newsletter-signup-block>": {
     "template": "./omeda-newsletter-signup.marko"
   }

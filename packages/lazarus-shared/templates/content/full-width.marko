@@ -6,10 +6,8 @@ $ const { id, type, pageNode } = data;
     <marko-web-gtm-content-context|{ context }| id=id>
       <!-- $ console.log(context); -->
       <marko-web-gtm-push data=context />
+      <lazarus-shared-blueconic-metatag context=context />
     </marko-web-gtm-content-context>
-    <lazarus-shared-content-meta-data-context|{ context }| id=id>
-      <lazarus-shared-content-meta-data-tags data=context />
-    </lazarus-shared-content-meta-data-context>
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: content }| node=pageNode>

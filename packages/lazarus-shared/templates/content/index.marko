@@ -1,5 +1,4 @@
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
-
 $ const { site } = out.global;
 $ const { id, type, pageNode } = data;
 
@@ -7,10 +6,8 @@ $ const { id, type, pageNode } = data;
   <@head>
     <marko-web-gtm-content-context|{ context }| id=id>
       <marko-web-gtm-push data=context />
+      <lazarus-shared-blueconic-metatag context=context />
     </marko-web-gtm-content-context>
-    <lazarus-shared-content-meta-data-context|{ context }| id=id>
-      <lazarus-shared-content-meta-data-tags data=context />
-    </lazarus-shared-content-meta-data-context>
   </@head>
   <@page>
 

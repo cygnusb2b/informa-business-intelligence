@@ -5,6 +5,9 @@ module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  blueconic: {
+    enabled: true,
+  },
   identityX: {
     enabled: true,
     appId: '5df0e87f05aa56586843fc32',

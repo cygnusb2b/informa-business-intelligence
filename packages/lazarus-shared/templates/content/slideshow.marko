@@ -1,5 +1,3 @@
-import { get } from "@base-cms/object-path";
-
 $ const { id, type, pageNode } = data;
 
 $ const { req } = out.global;
@@ -18,9 +16,6 @@ $ const getGalleryImages = (resolved) => {
     <marko-web-gtm-content-context|{ context }| id=id>
       <marko-web-gtm-push data=context />
     </marko-web-gtm-content-context>
-    <lazarus-shared-content-meta-data-context|{ context }| id=id>
-      <lazarus-shared-content-meta-data-tags data=context />
-    </lazarus-shared-content-meta-data-context>
   </@head>
   <@page>
     <marko-web-gam-refresh-ad on="gallery-slideshow-slide-change" slot-id="gpt-slideshow-top-banner" />
