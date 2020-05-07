@@ -35,7 +35,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'https://cv.endeavorb2b.com/american-trucker', label: 'Advertise', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

@@ -19,13 +19,13 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/page/resources', label: 'Resources' },
         { href: '/markets/automotive', label: 'Automotive' },
         { href: '/industrial-automation', label: 'Industrial Automation' },
         { href: '/technologies/analog', label: 'Analog' },
         { href: '/power-management', label: 'Power Management' },
         { href: '/technologies/embedded-revolution', label: 'Embedded Revolution' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
-        { href: '/page/resources', label: 'Resources' },
         { href: '/blogs', label: 'Experts' },
         { href: '/covid-19', label: 'COVID-19' },
       ],
@@ -40,10 +40,10 @@ module.exports = {
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.endeavorb2b.com/electronic-design', label: 'Advertise', target: '_blank' },
+        { href: 'https://designengineering.endeavorb2b.com/electronic-design-2/', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
         { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

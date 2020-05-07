@@ -34,7 +34,7 @@ module.exports = {
       items: [
         { href: '/directory', label: 'Buyers’ Guide' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://manufacturing.endeavorb2b.com/forging', label: 'Advertise', target: '_blank' },
         { href: 'https://designmanufacturing.informa.com/contentstream/', label: 'Content Licensing' },

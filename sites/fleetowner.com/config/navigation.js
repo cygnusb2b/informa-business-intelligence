@@ -38,7 +38,7 @@ module.exports = {
         { href: '/page/what-s-my-truck-worth', label: 'Truck Values' },
         { href: '/fleet-owner-magazine', label: 'Fleet Owner Magazine' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: 'https://cv.endeavorb2b.com/fleet-owner/', label: 'Marketing Solutions' },
         { href: '/resource-center', label: 'Resource Center' },
         { href: '/resource-center/driver-management', label: 'Driver Management' },

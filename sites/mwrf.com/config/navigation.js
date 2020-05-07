@@ -41,7 +41,7 @@ module.exports = {
         { href: 'https://www.sourcetoday.com/', label: 'Procurement' },
         { href: '/magazine-digital-archive', label: 'Digital Archive' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: dragonForms.getFormUrl('newsletterSignup'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webcasts' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/page/about-us', label: 'About Us' },
