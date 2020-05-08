@@ -41,6 +41,8 @@ module.exports = {
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: '/whats-in-print', label: 'What\'s In Print' },
+        { href: '/fleet-management/article/21657602/bulk-transporter-magazineissue-archives', label: 'Magazine Archives' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://cv.endeavorb2b.com/bulk-transporter', label: 'Advertise', target: '_blank' },
