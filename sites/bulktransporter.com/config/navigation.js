@@ -39,6 +39,8 @@ module.exports = {
         { href: '/resources/events-calendar/article/21656378/convention-calendar', label: 'Convention Calendar' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
+        { href: '/whats-in-print', label: 'What\'s In Print' },
+        { href: '/fleet-management/article/21657602/bulk-transporter-magazineissue-archives', label: 'Magazine Archives' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },

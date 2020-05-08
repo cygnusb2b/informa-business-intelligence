@@ -36,6 +36,8 @@ module.exports = {
         { href: '/equipment-parts/snow-ice', label: 'Snow & Ice Directory' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: '/whats-in-print', label: 'What\'s In Print' },
+        { href: '/trailers/article/21743431/trailerbody-builders-magazineissue-archives', label: 'Magazine Archives' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/page/about-us', label: 'About Us' },
