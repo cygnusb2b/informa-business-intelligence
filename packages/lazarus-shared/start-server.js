@@ -4,6 +4,7 @@ const { get, set } = require('@base-cms/object-path');
 const gam = require('@endeavor-business-media/informa-gam/middleware');
 const cleanResponse = require('@base-cms/marko-core/middleware/clean-marko-response');
 
+const identityX = require('./identity-x');
 const document = require('./components/document');
 const components = require('./components');
 const fragments = require('./fragments');
@@ -26,6 +27,8 @@ module.exports = (options = {}) => {
         set(app.locals, 'markoCoreDate.format', 'MMM DD, YYYY');
         next();
       });
+      // Setup IdentityX
+      identityX(app, options);
       // Clean all response bodies.
       app.use(cleanResponse());
     },

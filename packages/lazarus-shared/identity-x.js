@@ -1,16 +1,16 @@
 const IdentityX = require('@base-cms/marko-web-identity-x');
 const IdentityXConfig = require('@base-cms/marko-web-identity-x/config');
-const authenticate = require('../templates/user/authenticate');
-const login = require('../templates/user/login');
-const logout = require('../templates/user/logout');
-const profile = require('../templates/user/profile');
-const register = require('../templates/user/register');
+const { getAsObject, get } = require('@base-cms/object-path');
+const authenticate = require('./templates/user/authenticate');
+const login = require('./templates/user/login');
+const logout = require('./templates/user/logout');
+const profile = require('./templates/user/profile');
+const register = require('./templates/user/register');
 
 const { isArray } = Array;
 
-module.exports = (app) => {
-  const { site } = app.locals;
-  const { appId, enabled, options } = site.getAsObject('identityX');
+module.exports = (app, startOptions) => {
+  const { appId, enabled, options } = getAsObject(startOptions, 'siteConfig.identityX');
   if (appId && enabled) {
     const config = new IdentityXConfig({
       requiredServerFields: ['givenName', 'familyName', 'countryCode'],
@@ -27,7 +27,7 @@ module.exports = (app) => {
       { href: config.getEndpointFor('register'), label: 'Register', when: 'logged-out' },
     ];
 
-    const navItems = site.get('navigation.tertiary.items');
+    const navItems = get(startOptions, 'siteConfig.navigation.tertiary.items');
     if (isArray(navItems)) navItems.unshift(...navConfig);
 
     app.get(config.getEndpointFor('authenticate'), (_, res) => { res.marko(authenticate); });
