@@ -32,7 +32,7 @@ $ if (fullWidth) {
       enabled=requiresRegistration
       required-access-level-ids=accessLevels
     >
-      <if(!context.canAccess || context.requiresUserInput)>
+      <if(!context.canAccess || requiresRegistration && context.isLoggedIn && context.requiresUserInput)>
         <lazarus-shared-content-body-element
           node=content
           is-preview=true
