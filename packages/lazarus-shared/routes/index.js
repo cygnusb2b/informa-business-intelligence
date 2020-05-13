@@ -5,12 +5,8 @@ const search = require('./search');
 const subscribe = require('./subscribe');
 const digitalEdition = require('./digital-edition');
 const websiteSections = require('./website-section');
-const user = require('./user');
 
 module.exports = (app) => {
-  // User (IdentityX)
-  user(app);
-
   // Homepage
   home(app);
 

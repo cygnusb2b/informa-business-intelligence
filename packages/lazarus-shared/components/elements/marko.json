@@ -10,5 +10,15 @@
     "template": "./slideshow-button.marko",
     "@block-name": "string",
     "@path": "string"
+  },
+  "<lazarus-shared-content-comments>": {
+    "template": "./content-comments.marko",
+    "<content>": {
+      "@id": "number",
+      "@name": "string",
+      "@teaser": "string",
+      "@url": "string"
+    },
+    "@should-display": "boolean"
   }
 }
