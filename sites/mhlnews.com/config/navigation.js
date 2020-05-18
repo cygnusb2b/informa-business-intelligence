@@ -37,7 +37,7 @@ module.exports = {
         { href: '/new-products', label: 'Latest Product & Services' },
         { href: '/directory', label: 'Buyers Guide' },
         { href: '/webinars', label: 'Webinars' },
-        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
+        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
