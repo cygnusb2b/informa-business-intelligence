@@ -39,7 +39,7 @@ module.exports = {
         { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
         { href: 'http://www.industryweek.com/', label: 'The Business of Manufacturing' },
         { href: 'http://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
-        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology', target: '_blank' },
+        { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
