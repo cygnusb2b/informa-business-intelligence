@@ -39,6 +39,7 @@ module.exports = {
         { href: '/industry-perspectives', label: 'Industry Perspectives' },
         { href: '/page/electrical-wholesaling-authors-and-contributors', label: 'Industry Experts and Advisors' },
         { href: '/webinars', label: 'Webinars' },
+        { href: '/podcasts', label: 'Podcasts' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.endeavorb2b.com/electrical-wholesaling/', label: 'Advertise', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
