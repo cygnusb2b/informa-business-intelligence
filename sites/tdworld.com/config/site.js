@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0083505aa568f1543fc05',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'distributed-energy-resources', name: 'Distributed Energy Resources' },

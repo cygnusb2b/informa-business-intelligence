@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0078f05aa56a96943fbfe',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'columns', name: 'Columns' },

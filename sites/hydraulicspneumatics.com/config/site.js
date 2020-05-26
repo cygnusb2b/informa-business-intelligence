@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0e8dc05aa5681de43fc36',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'technologies/cylinders-actuators', name: 'Cylinders & Actuators' },
