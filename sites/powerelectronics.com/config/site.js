@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0e98905aa56bf2c43fc3c',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'technologies/power-management', name: 'Power Management' },

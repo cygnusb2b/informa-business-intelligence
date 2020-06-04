@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0e82405aa56699b43fc2f',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'machining-cutting', name: 'Machining / Cutting' },

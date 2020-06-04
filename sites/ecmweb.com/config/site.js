@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df007b605aa565ec343fc00',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'design', name: 'Design' },

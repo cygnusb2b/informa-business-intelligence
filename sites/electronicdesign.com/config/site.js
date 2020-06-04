@@ -11,6 +11,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0e87f05aa56586843fc32',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'industrial-automation', name: 'Industrial Automation' },

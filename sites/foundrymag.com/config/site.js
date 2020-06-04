@@ -8,6 +8,7 @@ module.exports = {
   identityX: {
     enabled: true,
     appId: '5df0e8b205aa567ebb43fc35',
+    comments: { enabled: true },
   },
   homePageSections: [
     { alias: 'ask-the-expert', name: 'Ask the Expert' },
