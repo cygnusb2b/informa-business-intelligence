@@ -1,0 +1,47 @@
+$ const { site } = out.global;
+
+$ const type = "magazines";
+$ const title = "Back Issues";
+$ const description = site.get("magazines.description");
+
+<marko-web-default-page-layout type=type title=title description=description>
+  <!-- <@head>
+    <marko-web-gtm-default-context|{ context }| type=type>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-default-context>
+  </@head> -->
+  <@page>
+    <informa-gam-adunit
+      location="homepage"
+      position="top_banner"
+      modifiers=["top-of-page"]
+    />
+
+    <marko-web-page-wrapper modifiers=["top-border"]>
+      <@section>
+        <lazarus-skin-page-grid>
+          <@left-col>
+            <lazarus-shared-global-left-rail-block>
+              <@adunit location="homepage" />
+            </lazarus-shared-global-left-rail-block>
+          </@left-col>
+          <@right-col>
+            <@top-row>
+              <div class="col-12">
+                <h1 class="page-wrapper__title">${title}</h1>
+                <if(description)>
+                  <p class="page-wrapper__deck">${description}</p>
+                </if>
+              </div>
+            </@top-row>
+            <@bottom-row>
+              <div class="col-12">
+                <lazarus-shared-magazine-publications-block />
+              </div>
+            </@bottom-row>
+          </@right-col>
+        </lazarus-skin-page-grid>
+      </@section>
+    </marko-web-page-wrapper>
+  </@page>
+</marko-web-default-page-layout>

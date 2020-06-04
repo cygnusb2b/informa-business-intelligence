@@ -45,5 +45,8 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
+  magazines: {
+    description: '',
+  },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
 };
