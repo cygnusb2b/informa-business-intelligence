@@ -45,5 +45,8 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
+  magazines: {
+    description: 'Since 1949, T&D World has provided utility professionals with critical information for electric power-delivery systems. T&D World connects the dots between energy delivery and usage audiences to educate on new ways to source, save and sell energy.',
+  },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
 };
