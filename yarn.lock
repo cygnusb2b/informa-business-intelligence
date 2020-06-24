@@ -777,6 +777,18 @@
   dependencies:
     inflected "^2.0.4"
 
+"@base-cms/leaders-program@^1.29.5":
+  version "1.29.5"
+  resolved "https://registry.yarnpkg.com/@base-cms/leaders-program/-/leaders-program-1.29.5.tgz#4ee273f7ab598a0abc5f2b9473eece171681a874"
+  integrity sha512-LEfMjei76nopS7CBTFivYrabgxstwhQ/wOx7+4RH+2YxrS8+sN2M3DUUlJNJKQ8XYu+RTaQCeX93+76EDJ4eCw==
+  dependencies:
+    core-js "^3.3.2"
+    graphql "^14.5.4"
+    graphql-tag "^2.10.1"
+    object-path "^0.11.4"
+    portal-vue "^2.1.6"
+    vue "^2.6.11"
+
 "@base-cms/marko-compiler@^1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@base-cms/marko-compiler/-/marko-compiler-1.8.0.tgz#697b515a895b97db379d64d9de3098e65e31b107"
@@ -831,6 +843,11 @@
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.24.0.tgz#f03f3afa456d9d1229a217f2c7efe15065fac02c"
   integrity sha512-hU6A/4nr/QmwO5ePCboe/oWl/NW6eCZcZVHKLMoYQ+tfO46BhwcKiUz5CAMZJorx5rveAwoAd8eT9g6f4SRVAw==
 
+"@base-cms/marko-web-icons@^1.29.6":
+  version "1.29.6"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.29.6.tgz#64ac8d9c05b92cfe0819c9512849d30b26c5e78c"
+  integrity sha512-cNM2pAXtquQpDueBMBWv1K1vcjq5zPfFoQ9AlNfso8jf5PFmeGXX7GNQ57zAlYHy1xIA7VtKJMfIht7kXABJmw==
+
 "@base-cms/marko-web-identity-x@^1.29.4":
   version "1.29.4"
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.29.4.tgz#82665287297fbe693f11d42de4f031c16320b1ac"
@@ -847,6 +864,15 @@
     graphql-tag "^2.10.1"
     moment "^2.24.0"
     node-fetch "^2.6.0"
+
+"@base-cms/marko-web-leaders@^1.29.5":
+  version "1.29.5"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-leaders/-/marko-web-leaders-1.29.5.tgz#8169310b60210490dc1496f9c776ef3e5bdbad59"
+  integrity sha512-cK/Xb3CNAeW5Mjll8eAzG4cvUAgbQvCeflaOsWcnYeDZs5ga7YFx+60kyjv1Su/hUVRyl0dgdvNDE6ew1EfMuA==
+  dependencies:
+    "@base-cms/leaders-program" "^1.29.5"
+    graphql "^14.5.4"
+    graphql-tag "^2.10.1"
 
 "@base-cms/marko-web-social-sharing@^1.25.0":
   version "1.25.0"
@@ -4054,6 +4080,11 @@ core-js@^3.0.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.1.tgz#76dd6828412900ab27c8ce0b22e6114d7ce21b18"
   integrity sha512-KX/dnuY/J8FtEwbnrzmAjUYgLqtk+cxM86hfG60LGiW3MmltIc2yAmDgBgEkfm0blZhUrdr1Zd84J2Y14mLxzg==
+
+core-js@^3.3.2:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -9074,6 +9105,11 @@ plumb@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/plumb/-/plumb-0.1.0.tgz#4c57790a509692832fdbf10dfaddd7948c5cb574"
   integrity sha1-TFd5ClCWkoMv2/EN+t3XlIxctXQ=
+
+portal-vue@^2.1.6:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/portal-vue/-/portal-vue-2.1.7.tgz#ea08069b25b640ca08a5b86f67c612f15f4e4ad4"
+  integrity sha512-+yCno2oB3xA7irTt0EU5Ezw22L2J51uKAacE/6hMPMoO/mx3h4rXFkkBkT4GFsMDv/vEe8TNKC3ujJJ0PTwb6g==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"

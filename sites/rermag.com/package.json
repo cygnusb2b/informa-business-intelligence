@@ -22,6 +22,7 @@
     "@base-cms/web-cli": "^1.27.3",
     "@endeavor-business-media/informa-gam": "^1.15.0",
     "@endeavor-business-media/lazarus-shared": "^1.18.2",
+    "@endeavor-business-media/package-leaders": "^1.18.12",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }

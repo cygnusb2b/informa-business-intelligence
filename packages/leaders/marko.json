@@ -1,0 +1,30 @@
+{
+  "taglib-id": "@endeavor-business-media/package-leaders",
+  "tags": {
+    "leaders-dropdown-portal": {
+      "template": "./components/dropdown-portal.marko"
+    },
+    "leaders-all": {
+      "template": "./components/all.marko"
+    },
+    "leaders-home-page": {
+      "template": "./components/home-page.marko"
+    },
+    "leaders-contextual": {
+      "template": "./components/contextual.marko",
+      "@content-id": "number"
+    },
+    "leaders-gtm-tracker": {
+      "template": "./components/gtm-tracker.marko"
+    },
+    "leaders-company-website-link": {
+      "template": "./components/company-website-link.marko",
+      "@company": "object"
+    },
+    "leaders-company-social-link": {
+      "template": "./components/company-social-link.marko",
+      "@company": "object",
+      "@item": "object"
+    }
+  }
+}

@@ -26,6 +26,7 @@ $ const wrapperStyle = canLoadPrestitial(page) ? "opacity: 0;" : null;
   </@head>
   <@body-wrapper enabled=true attrs={ id: "body-wrapper", class: "full-flex-column", style: wrapperStyle } />
   <@above-wrapper>
+    <leaders-dropdown-portal />
     <informa-gam-prestitial display=true page=page />
   </@above-wrapper>
   <@above-container>

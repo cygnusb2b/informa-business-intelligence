@@ -1,0 +1,24 @@
+{
+  "name": "@endeavor-business-media/package-leaders",
+  "version": "1.18.12",
+  "author": "Josh Worden <josh@limit0.io>",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/packages/leaders",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js --ext .vue --max-warnings 5 --ignore-path ../../.eslintignore ./",
+    "test": "yarn lint"
+  },
+  "dependencies": {
+    "@base-cms/marko-core": "^1.26.2",
+    "@base-cms/marko-web": "^1.27.3",
+    "@base-cms/marko-web-icons": "^1.29.6",
+    "@base-cms/marko-web-leaders": "^1.29.5",
+    "@base-cms/object-path": "^1.25.0",
+    "graphql-tag": "^2.10.1",
+    "object-path": "^0.11.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3"
+  }
+}
