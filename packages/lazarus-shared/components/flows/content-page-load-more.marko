@@ -14,7 +14,10 @@ $ const { pageNumber } = input;
 <if(nodes.length)>
   $ const content = nodes[0];
 
-  <if(site.get("leaders.alias") && site.get("leaders.componentsEnabled", true) && pageNumber === 1)>
+  $ const leadersEnabled = site.get("leaders.alias") && site.get("leaders.componentsEnabled", true);
+  $ const displayLeaders = leadersEnabled && pageNumber === 1 && content.type !== "company";
+
+  <if(displayLeaders)>
     <lazarus-skin-page-grid-col modifiers=["full", "top-spacer", "no-gutters"]>
       <leaders-contextual content-id=content.id />
     </lazarus-skin-page-grid-col>
