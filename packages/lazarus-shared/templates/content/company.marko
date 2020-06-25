@@ -50,23 +50,23 @@ $ const { id, type, pageNode } = data;
             <@company id=id name=resolved.get("name") />
           </lazarus-shared-company-page-featured-videos>
 
-          <!-- <shared-company-content-list-block company-id=id>
-            <@header>Products & Press Releases</@header>
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Products & Press Releases</@header>
             <@list class="mb-block" />
             <@query-params include-content-types=["Product", "PressRelease"] />
-          </shared-company-content-list-block>
+          </lazarus-shared-company-content-list-block>
 
-          <shared-company-content-list-block company-id=id>
-            <@header>Articles & News</@header>
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Articles & News</@header>
             <@list class="mb-block" />
             <@query-params include-content-types=["Article", "Blog", "News"] />
-          </shared-company-content-list-block>
+          </lazarus-shared-company-content-list-block>
 
-          <shared-company-content-list-block company-id=id>
-            <@header>Videos & Resources</@header>
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Videos & Resources</@header>
             <@list class="mb-block" />
             <@query-params include-content-types=["Video", "Whitepaper", "Webinar", "Document", "MediaGallery", "Podcast"] />
-          </shared-company-content-list-block> -->
+          </lazarus-shared-company-content-list-block>
         </div>
 
         <div class="col-lg-4 mb-block page-rail">

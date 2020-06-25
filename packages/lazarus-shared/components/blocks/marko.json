@@ -25,5 +25,19 @@
   },
   "<lazarus-shared-magazine-publications-block>": {
     "template": "./magazine-publications.marko"
+  },
+  "<lazarus-shared-company-content-list-block>": {
+    "template": "./company-content-list.marko",
+    "<list>": {
+      "<node>": {
+        "<attribution>": {}
+      }
+    },
+    "<query-params>": {},
+    "<header>": {},
+    "@company-id": {
+      "type": "string",
+      "required": true
+    }
   }
 }
