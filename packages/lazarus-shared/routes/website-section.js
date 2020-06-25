@@ -14,10 +14,16 @@ const directoryAliases = [
 ];
 
 module.exports = (app) => {
-  app.get('/:alias(leaders)', withWebsiteSection({
-    template: leaders,
-    queryFragment: leadersFragment,
-  }));
+  const { site } = app.locals;
+  const leadersAlias = site.get('leaders.alias');
+
+  if (leadersAlias) {
+    app.get(`/:alias(${leadersAlias})`, withWebsiteSection({
+      template: leaders,
+      queryFragment: leadersFragment,
+    }));
+  }
+
   app.get('/:alias(contact-us)', withWebsiteSection({
     template: contactUs,
     queryFragment,
