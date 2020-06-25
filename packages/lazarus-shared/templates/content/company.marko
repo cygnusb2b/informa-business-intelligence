@@ -87,4 +87,12 @@ $ const { id, type, pageNode } = data;
       </div>
     </marko-web-resolve-page>
   </@page>
+
+  <@below-page>
+    <marko-web-resolve-page|{ data: content }| node=pageNode>
+      <lazarus-shared-company-page-load-more-block>
+        <@content id=id type=type name=content.name />
+      </lazarus-shared-company-page-load-more-block>
+    </marko-web-resolve-page>
+  </@below-page>
 </marko-web-content-page-layout>

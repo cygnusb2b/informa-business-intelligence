@@ -143,6 +143,9 @@ $theme-content-page-node-full-width: 780px !default;
       &__sponsored-content {
         margin-top: .25rem;
       }
+      &__image-wrapper {
+        border: 1px solid rgba(0, 0, 0, .075);
+      }
     }
   }
 
@@ -654,6 +657,14 @@ $theme-content-page-node-full-width: 780px !default;
 .embed-container-eloqua {
   padding-bottom: $theme-content-paragraph-margin-bottom;
   clear: both;
+}
+
+.page {
+  &--company-load-more {
+    padding-top: $marko-web-node-list-padding;
+    padding-right: $marko-web-node-list-padding;
+    padding-left: $marko-web-node-list-padding;
+  }
 }
 
 .page-contents {

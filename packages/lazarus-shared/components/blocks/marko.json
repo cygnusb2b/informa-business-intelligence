@@ -39,5 +39,13 @@
       "type": "string",
       "required": true
     }
+  },
+  "<lazarus-shared-company-page-load-more-block>": {
+    "template": "./company-page-load-more.marko",
+    "<content>": {
+      "@id": "string",
+      "@type": "string",
+      "@name": "string"
+    }
   }
 }
