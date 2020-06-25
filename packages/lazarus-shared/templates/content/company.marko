@@ -78,9 +78,9 @@ $ const { id, type, pageNode } = data;
           <if(resolved.get("enableRmi"))>
             <marko-web-node-list collapsible=false modifiers=["sticky-top"]>
               <@header modifiers=["no-border", "large-text"]>Request More Information</@header>
-              <!-- <@body>
+              <@body>
                 <marko-web-inquiry-form content=content with-header=false modifiers=["right-rail"] />
-              </@body> -->
+              </@body>
             </marko-web-node-list>
           </if>
         </div>
