@@ -175,9 +175,11 @@ $ const { id, alias, name, pageNode } = data;
                   </div>
                 </if>
 
-                <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
+                <if(site.get("leaders.alias") && site.get("leaders.componentsEnabled", true))>
+                  <lazarus-skin-page-grid-col modifiers=["full", "bottom-spacer"]>
                     <leaders-home-page />
-                </lazarus-skin-page-grid-col>
+                  </lazarus-skin-page-grid-col>
+                </if>
 
                 $ const [programA, programB] = site.getAsArray("homePagePrograms");
                 <if(programA)>
