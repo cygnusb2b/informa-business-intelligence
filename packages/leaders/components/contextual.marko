@@ -13,6 +13,7 @@ $ const { contentId } = input;
     promotionLimit: site.get("leaders.promotionLimit", 3),
     videoLimit: site.get("leaders.videoLimit", 2),
     viewAllHref: `/${site.get("leaders.alias")}`,
+    useContentPrimarySection: true,
     mediaQueries: [
       { prop: "open", value: "left", query: "(min-width: 1250px)" },
       { prop: "columns", value: 2, query: "(min-width: 700px)" },
