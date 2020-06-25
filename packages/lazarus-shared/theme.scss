@@ -85,9 +85,11 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
-.leaders-sections-wrapper {
-  padding-right: map-get($spacers, 3);
-  padding-left: map-get($spacers, 3);
+.leaders {
+  background-color: $white;
+  &__body {
+    padding: $marko-web-node-padding;
+  }
 }
 
 .full-flex-column {
