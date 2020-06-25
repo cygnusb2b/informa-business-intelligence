@@ -6,6 +6,7 @@ import InformaGAM from '@endeavor-business-media/informa-gam/browser';
 import IdentityX from '@base-cms/marko-web-identity-x/browser';
 import SocialSharing from '@base-cms/marko-web-social-sharing/browser';
 import Leaders from '@endeavor-business-media/package-leaders/browser';
+import Inquiry from '@base-cms/marko-web-inquiry/browser';
 import IncrementAdPos from './increment-ad-pos.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
 
@@ -21,6 +22,7 @@ export default (Browser) => {
   InformaGAM(Browser);
   IdentityX(Browser);
   Leaders(Browser);
+  Inquiry(Browser);
 
   const { EventBus } = Browser;
   Browser.register('LazarusSharedIncrementAdPos', IncrementAdPos, {
