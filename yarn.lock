@@ -865,6 +865,24 @@
     moment "^2.24.0"
     node-fetch "^2.6.0"
 
+"@base-cms/marko-web-inquiry@^1.27.3":
+  version "1.27.3"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.27.3.tgz#94e627273efa4e96b13b9a849ff4a486ba3d0a6c"
+  integrity sha512-7rq7hcTopwZ253EmIbzTkc31qPGUhDS5YYO9N7ExbcKUmVCEtC2l4+bH5mL1AdsMjLTrooJav/ZRWtMzHn76nQ==
+  dependencies:
+    "@base-cms/env" "^1.0.0"
+    "@base-cms/marko-core" "^1.26.2"
+    "@base-cms/marko-web" "^1.27.3"
+    "@base-cms/object-path" "^1.25.0"
+    "@base-cms/utils" "^1.25.0"
+    "@base-cms/web-common" "^1.26.2"
+    "@sendgrid/mail" "^6.4.0"
+    body-parser "^1.19.0"
+    express "^4.17.1"
+    graphql "^14.5.4"
+    graphql-tag "^2.10.1"
+    node-fetch "^2.6.0"
+
 "@base-cms/marko-web-leaders@^1.29.5":
   version "1.29.5"
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-leaders/-/marko-web-leaders-1.29.5.tgz#8169310b60210490dc1496f9c776ef3e5bdbad59"
