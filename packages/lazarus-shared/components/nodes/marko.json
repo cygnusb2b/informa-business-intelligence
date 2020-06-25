@@ -84,5 +84,15 @@
 
     "@modifiers": "array",
     "@attrs": "object"
+  },
+  "<lazarus-shared-key-contact-card-node>": {
+    "template": "./key-contact-card.marko",
+    "@node": "object",
+    "@with-email": "boolean"
+  },
+  "<lazarus-shared-youtube-card-node>": {
+    "template": "./youtube-card.marko",
+    "@node": "object",
+    "@link-attrs": "object"
   }
 }
