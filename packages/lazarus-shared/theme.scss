@@ -85,6 +85,11 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
+.leaders-sections-wrapper {
+  padding-right: map-get($spacers, 3);
+  padding-left: map-get($spacers, 3);
+}
+
 .full-flex-column {
   display: flex;
   flex-direction: column;
