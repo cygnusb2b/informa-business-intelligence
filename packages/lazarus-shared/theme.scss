@@ -3,6 +3,10 @@ $light: #e9ecef;
 $dark: #212529;
 $info: #6c757d;
 
+$leaders-primary-color: $primary;
+$leaders-primary-color-light: lighten($leaders-primary-color, 10%);
+$leaders-accent-color: $primary;
+
 $theme-site-navbar-secondary-bg-color: #fff;
 $theme-site-navbar-primary-bg-color: $primary;
 
@@ -42,6 +46,8 @@ $theme-site-header-z-index: 15000;
 @import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
 @import "../../node_modules/@base-cms/marko-web-social-sharing/scss/buttons";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
+@import "../../node_modules/@endeavor-business-media/package-leaders/scss/index";
+@import "./scss/company-page";
 @import "./scss/directory-facets";
 @import "./scss/identity-x";
 
@@ -77,6 +83,13 @@ $theme-content-page-node-full-width: 780px !default;
 @mixin gutter-padding-y-modifier() {
   &--gutter-padding-y {
     @include gutter-padding-y();
+  }
+}
+
+.leaders {
+  background-color: $white;
+  &__body {
+    padding: $marko-web-node-padding;
   }
 }
 
@@ -129,6 +142,9 @@ $theme-content-page-node-full-width: 780px !default;
     #{ $self } {
       &__sponsored-content {
         margin-top: .25rem;
+      }
+      &__image-wrapper {
+        border: 1px solid rgba(0, 0, 0, .075);
       }
     }
   }
@@ -297,6 +313,14 @@ $theme-content-page-node-full-width: 780px !default;
 
   &__header {
     align-self: flex-start;
+
+    &--no-border {
+      border-width: 0;
+    }
+
+    &--large-text {
+      font-size: 18px;
+    }
   }
 
   &--related-content {
@@ -305,6 +329,22 @@ $theme-content-page-node-full-width: 780px !default;
     #{ $self } {
       &__nodes {
         width: 100%;
+      }
+    }
+  }
+
+  &--sticky-top {
+    @media (min-height: 710px) {
+      position: sticky;
+
+      $sorted: sort-map-by-values($theme-site-header-breakpoints, desc);
+      $highest: nth($sorted, 1);
+      top: calculate-navbar-height-for($highest, 20px);
+
+      @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
+        @media (max-width: $width) {
+          top: calculate-navbar-height-for($breakpoint, 20px);
+        }
       }
     }
   }
@@ -524,6 +564,9 @@ $theme-content-page-node-full-width: 780px !default;
       margin-right: auto;
       margin-left: auto;
     }
+    &--company-page {
+      padding: map-get($spacers, 3);
+    }
   }
 
   &__title,
@@ -588,6 +631,22 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
+.card-deck-flow {
+  $self: &;
+  &--featured-youtube-videos {
+    #{ $self } {
+      &__node {
+        @include media-breakpoint-up(md) {
+          @include make-col(4);
+        }
+        @include media-breakpoint-up(lg) {
+          @include make-col(4);
+        }
+      }
+    }
+  }
+}
+
 // Informa/Penton Eloqua Forms
 .eloqua-iframe {
   width: 100%;
@@ -598,6 +657,14 @@ $theme-content-page-node-full-width: 780px !default;
 .embed-container-eloqua {
   padding-bottom: $theme-content-paragraph-margin-bottom;
   clear: both;
+}
+
+.page {
+  &--company-load-more {
+    padding-top: $marko-web-node-list-padding;
+    padding-right: $marko-web-node-list-padding;
+    padding-left: $marko-web-node-list-padding;
+  }
 }
 
 .page-contents {

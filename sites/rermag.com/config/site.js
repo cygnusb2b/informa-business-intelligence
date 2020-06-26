@@ -1,10 +1,12 @@
 const navigation = require('./navigation');
 const dragonForms = require('./dragon-forms');
+const leaders = require('./leaders');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  leaders,
   identityX: {
     enabled: true,
     appId: '5df0082605aa5695a243fc04',
@@ -44,4 +46,17 @@ module.exports = {
     userName: 'cygnuscorporate',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'A new inquiry submission was received.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: false, // enable this to directly send to the company
+    sendTo: 'notifications@rermag.com',
+    sendFrom: 'RERMag.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.rermag.com/files/base/ebm/rermag/image/static/rermag-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };

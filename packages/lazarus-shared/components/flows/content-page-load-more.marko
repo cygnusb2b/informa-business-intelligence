@@ -1,6 +1,7 @@
 import { getAsArray } from "@base-cms/object-path";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 
+$ const { site } = out.global;
 $ const nodes = getAsArray(input, "nodes");
 $ const { pageNumber } = input;
 
@@ -12,6 +13,16 @@ $ const { pageNumber } = input;
 
 <if(nodes.length)>
   $ const content = nodes[0];
+
+  $ const leadersEnabled = site.get("leaders.alias") && site.get("leaders.componentsEnabled", true);
+  $ const displayLeaders = leadersEnabled && pageNumber === 1 && content.type !== "company";
+
+  <if(displayLeaders)>
+    <lazarus-skin-page-grid-col modifiers=["full", "top-spacer", "no-gutters"]>
+      <leaders-contextual content-id=content.id />
+    </lazarus-skin-page-grid-col>
+  </if>
+
   <lazarus-skin-page-grid-col modifiers=["full", "flex", "bottom-spacer", "body-bg"]>
     <informa-gam-adunit
       location=adLocation(content.type)

@@ -1,4 +1,6 @@
 const { withWebsiteSection } = require('@base-cms/marko-web/middleware');
+const leadersFragment = require('@endeavor-business-media/package-leaders/graphql/fragments/leaders-section');
+const leaders = require('../templates/website-section/leaders');
 const section = require('../templates/website-section');
 const contactUs = require('../templates/website-section/contact-us');
 const directory = require('../templates/website-section/directory');
@@ -12,6 +14,16 @@ const directoryAliases = [
 ];
 
 module.exports = (app) => {
+  const { site } = app.locals;
+  const leadersAlias = site.get('leaders.alias');
+
+  if (leadersAlias) {
+    app.get(`/:alias(${leadersAlias})`, withWebsiteSection({
+      template: leaders,
+      queryFragment: leadersFragment,
+    }));
+  }
+
   app.get('/:alias(contact-us)', withWebsiteSection({
     template: contactUs,
     queryFragment,

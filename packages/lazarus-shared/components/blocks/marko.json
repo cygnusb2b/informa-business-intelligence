@@ -25,5 +25,27 @@
   },
   "<lazarus-shared-magazine-publications-block>": {
     "template": "./magazine-publications.marko"
+  },
+  "<lazarus-shared-company-content-list-block>": {
+    "template": "./company-content-list.marko",
+    "<list>": {
+      "<node>": {
+        "<attribution>": {}
+      }
+    },
+    "<query-params>": {},
+    "<header>": {},
+    "@company-id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "<lazarus-shared-company-page-load-more-block>": {
+    "template": "./company-page-load-more.marko",
+    "<content>": {
+      "@id": "string",
+      "@type": "string",
+      "@name": "string"
+    }
   }
 }

@@ -1,0 +1,98 @@
+$ const { site } = out.global;
+$ const { id, type, pageNode } = data;
+
+<marko-web-content-page-layout id=id type=type>
+  <@head>
+    <marko-web-gtm-content-context|{ context }| id=id>
+      <marko-web-gtm-push data=context />
+      <lazarus-shared-blueconic-metatag context=context />
+    </marko-web-gtm-content-context>
+  </@head>
+  <@page>
+    <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
+      <marko-web-page-wrapper modifiers=["top-border"] class="mb-block">
+        <@section modifiers=["company-page"]>
+          <div class="row">
+            <div class="col-md-9 col-sm-12 col-lg-10">
+              <div class="ldp">
+                <div class="ldp__logo">
+                  <lazarus-shared-company-page-logo content=content />
+                </div>
+                <div class="ldp__title">
+                  <marko-web-content-name tag="h1" class="page-wrapper__title" obj=content />
+                  <marko-web-content-city-state-zip tag="p" class="text-small text-muted" obj=content />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-2 col-sm-12 justify-content-center d-flex flex-column">
+              <div class="ldp__social">
+                <leaders-company-website-link company=content />
+                <div class="mt-2 d-flex justify-content-around">
+                  <for|item| of=resolved.getAsArray("socialLinks")>
+                    <leaders-company-social-link company=content item=item />
+                  </for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </@section>
+      </marko-web-page-wrapper>
+      <div class="row">
+        <div class="col-lg-8 mb-block">
+          <lazarus-shared-company-page-overview content=content class="mb-block" />
+          <lazarus-shared-company-page-details content=content class="mb-block" />
+
+          <lazarus-shared-company-page-featured-videos
+            videos=resolved.getEdgeNodesFor("youtubeVideos")
+            href=resolved.get("youtube.url")
+            class="mb-block"
+          >
+            <@company id=id name=resolved.get("name") />
+          </lazarus-shared-company-page-featured-videos>
+
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Products & Press Releases</@header>
+            <@list class="mb-block" />
+            <@query-params include-content-types=["Product", "PressRelease"] />
+          </lazarus-shared-company-content-list-block>
+
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Articles & News</@header>
+            <@list class="mb-block" />
+            <@query-params include-content-types=["Article", "Blog", "News"] />
+          </lazarus-shared-company-content-list-block>
+
+          <lazarus-shared-company-content-list-block company-id=id>
+            <@header modifiers=["no-border", "large-text"]>Videos & Resources</@header>
+            <@list class="mb-block" />
+            <@query-params include-content-types=["Video", "Whitepaper", "Webinar", "Document", "MediaGallery", "Podcast"] />
+          </lazarus-shared-company-content-list-block>
+        </div>
+
+        <div class="col-lg-4 mb-block page-rail">
+          <lazarus-shared-company-page-key-contacts
+            contacts=resolved.getEdgeNodesFor("publicContacts")
+            class="mb-block"
+          />
+
+          <if(resolved.get("enableRmi"))>
+            <marko-web-node-list collapsible=false modifiers=["sticky-top"]>
+              <@header modifiers=["no-border", "large-text"]>Request More Information</@header>
+              <@body>
+                <marko-web-inquiry-form content=content with-header=false modifiers=["right-rail"] />
+              </@body>
+            </marko-web-node-list>
+          </if>
+        </div>
+      </div>
+    </marko-web-resolve-page>
+  </@page>
+
+  <@below-page>
+    <marko-web-resolve-page|{ data: content }| node=pageNode>
+      <lazarus-shared-company-page-load-more-block>
+        <@content id=id type=type name=content.name />
+      </lazarus-shared-company-page-load-more-block>
+    </marko-web-resolve-page>
+  </@below-page>
+</marko-web-content-page-layout>

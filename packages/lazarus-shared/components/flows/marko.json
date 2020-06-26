@@ -56,5 +56,18 @@
     "@nodes": "array",
     "@cols": "number",
     "@modifiers": "array"
+  },
+  "<lazarus-shared-content-card-deck-flow>": {
+    "template": "./content-card-deck.marko",
+    "<node>": {
+      "<image>": {},
+      "<title>": {}
+    },
+    "@nodes": "array",
+    "@cols": "number",
+    "@tag": "string",
+    "@class": "string",
+    "@modifiers": "array",
+    "@attrs": "object"
   }
 }

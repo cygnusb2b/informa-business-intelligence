@@ -1,0 +1,17 @@
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+
+<default-theme-card-deck-flow
+  tag=input.tag
+  class=input.class
+  modifiers=input.modifiers
+  attrs=input.attrs
+  cols=defaultValue(input.cols, 3)
+  nodes=input.nodes
+>
+  <@slot|{ node, index }|>
+    <lazarus-shared-content-card-node
+      ...input.node
+      node=node
+    />
+  </@slot>
+</default-theme-card-deck-flow>

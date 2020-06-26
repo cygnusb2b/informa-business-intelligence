@@ -1,0 +1,41 @@
+{
+  "<lazarus-shared-company-page-overview>": {
+    "template": "./overview.marko",
+    "@content": "object",
+    "@class": "string"
+  },
+  "<lazarus-shared-company-page-details>": {
+    "template": "./details.marko",
+    "@content": "object",
+    "@class": "string"
+  },
+  "<lazarus-shared-company-page-at-a-glance>": {
+    "template": "./at-a-glance.marko",
+    "<header>": {},
+    "@content": "object"
+  },
+  "<lazarus-shared-company-page-logo>": {
+    "template": "./logo.marko",
+    "@content": "object"
+  },
+  "<lazarus-shared-company-page-label>": {
+    "template": "./label.marko",
+    "@tag": "string",
+    "@modifiers": "array"
+  },
+  "<lazarus-shared-company-page-key-contacts>": {
+    "template": "./key-contacts.marko",
+    "@contacts": "array",
+    "@class": "string"
+  },
+  "<lazarus-shared-company-page-featured-videos>": {
+    "template": "./featured-videos.marko",
+    "<company>": {
+      "@id": "number",
+      "@name": "string"
+    },
+    "@videos": "array",
+    "@class": "string",
+    "@href": "string"
+  }
+}

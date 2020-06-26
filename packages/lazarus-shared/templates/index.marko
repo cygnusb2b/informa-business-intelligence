@@ -175,6 +175,12 @@ $ const { id, alias, name, pageNode } = data;
                   </div>
                 </if>
 
+                <if(site.get("leaders.alias") && site.get("leaders.componentsEnabled", true))>
+                  <div class="col-12 mb-block">
+                    <leaders-home-page />
+                  </div>
+                </if>
+
                 $ const [programA, programB] = site.getAsArray("homePagePrograms");
                 <if(programA)>
                   <div class="col-md-6 mb-block">
