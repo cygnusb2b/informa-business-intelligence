@@ -22,7 +22,9 @@ $ const wrapperStyle = canLoadPrestitial(page) ? "opacity: 0;" : null;
       include-path=false
       include-host=false
       include-env=false
-    />
+    >
+      <@lazy-load ...site.getAsObject("gam.lazyLoad") />
+    </marko-web-gam-enable>
   </@head>
   <@body-wrapper enabled=true attrs={ id: "body-wrapper", class: "full-flex-column", style: wrapperStyle } />
   <@above-wrapper>
