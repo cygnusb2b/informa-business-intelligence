@@ -37,7 +37,16 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/ElectronicDesgn', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4210549/profile', target: '_blank' },
   ],
-  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'elecdes.home' },
+  gam: {
+    accountId: process.env.GAM_ACCCOUNT_ID || '21687441225',
+    basePath: 'elecdes.home',
+    lazyLoad: {
+      enabled: false, // set to true to enable lazy loading
+      fetchMarginPercent: 100, // fetch ad when one viewport away
+      renderMarginPercent: 50, // render ad when half viewport away
+      mobileScaling: 2, // double these on mobile
+    },
+  },
   gtm: {
     containerId: 'GTM-KTXH6VJ',
   },

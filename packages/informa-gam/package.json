@@ -14,7 +14,7 @@
     "@base-cms/inflector": "^1.0.0",
     "@base-cms/marko-core": "^1.26.2",
     "@base-cms/marko-web": "^1.29.10",
-    "@base-cms/marko-web-gam": "^1.25.10",
+    "@base-cms/marko-web-gam": "^1.30.0",
     "@base-cms/object-path": "^1.25.0",
     "@base-cms/utils": "^1.25.0",
     "@base-cms/web-cli": "^1.29.10",

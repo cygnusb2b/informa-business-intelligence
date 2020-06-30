@@ -810,10 +810,10 @@
     moment "^2.24.0"
     moment-timezone "^0.5.26"
 
-"@base-cms/marko-web-gam@^1.25.10":
-  version "1.25.10"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.25.10.tgz#f40f44f4d68ebab4c51d8ce0b42efc139bd618ee"
-  integrity sha512-QC2UaGQaozbrElM2mjaNpuEL+3ifKkRStOIv3/jn1yd4jVuUv6m8bbtfDOpNxEF0+66e6aFWVCnVOlqPwDjfxQ==
+"@base-cms/marko-web-gam@^1.30.0":
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.30.0.tgz#c949b6cf651d26e93d71d8bacee4821c6a4af660"
+  integrity sha512-0GKAE0NMs9xmzkH4ejxgRZyEmNhhn9cHOXNrsEqJImE2EGakMvsM8cgufgzdawpvh7tmVZKRPhjPaX5RrGnssQ==
   dependencies:
     "@base-cms/object-path" "^1.25.0"
     "@base-cms/utils" "^1.25.0"
