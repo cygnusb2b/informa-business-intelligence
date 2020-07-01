@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/page/resources', label: 'MWRF Resources' },
         { href: '/markets/defense', label: 'Defense' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/technologies/components', label: 'Components' },
@@ -26,8 +27,6 @@ module.exports = {
         { href: '/technologies/systems', label: 'Systems' },
         { href: '/materials', label: 'Materials' },
         { href: '/technologies/software', label: 'Software' },
-        { href: '/page/resources', label: 'Resources' },
-        { href: '/page/microwaves-rf-experts', label: 'Experts' },
         { href: '/covid-19', label: 'COVID-19' },
       ],
     },
