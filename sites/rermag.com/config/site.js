@@ -34,6 +34,7 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'facebook', href: 'https://www.facebook.com/rentalequipmentregister', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/RERmagazine', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4078580/', target: '_blank' },
   ],
   gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'rermag.home' },
   gtm: {
