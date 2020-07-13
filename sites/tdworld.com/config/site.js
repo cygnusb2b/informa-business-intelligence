@@ -49,4 +49,17 @@ module.exports = {
     description: 'Since 1949, T&D World has provided utility professionals with critical information for electric power-delivery systems. T&D World connects the dots between energy delivery and usage audiences to educate on new ways to source, save and sell energy.',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'A new inquiry submission was received.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: false, // enable this to directly send to the company
+    sendTo: 'notifications@tdworld.com',
+    sendFrom: 'TDworld.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };
