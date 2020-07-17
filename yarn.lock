@@ -860,10 +860,10 @@
     moment "^2.24.0"
     node-fetch "^2.6.0"
 
-"@base-cms/marko-web-inquiry@^1.30.2":
-  version "1.30.2"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.30.2.tgz#aefbe4f0f6a7f7ac177ed49c0fc2eddfa2f564c3"
-  integrity sha512-xsDs9c+rg54DStMY8bxEQWgyMA3OnusYhdZyCtA3tqBe3mGU45MHyMo7lHUVqOMefeLSMzpNABTJTTcznm5o5g==
+"@base-cms/marko-web-inquiry@^1.31.0":
+  version "1.31.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.31.0.tgz#6a93752212c682946e6ae9f72d8fc3ff9b9ec7f1"
+  integrity sha512-AeuaXB1u5LFPc6aZrhn6o5ttUL/yfgC6oWneKFihOxgP8kvYTdicQeVLFRoFRKbfmjlg0niEGRTCHM6QtvPB3Q==
   dependencies:
     "@base-cms/env" "^1.0.0"
     "@base-cms/marko-core" "^1.30.2"
@@ -877,6 +877,7 @@
     graphql "^14.5.4"
     graphql-tag "^2.10.1"
     node-fetch "^2.6.0"
+    vue-recaptcha "^1.2.0"
 
 "@base-cms/marko-web-leaders@^1.29.5":
   version "1.29.5"
