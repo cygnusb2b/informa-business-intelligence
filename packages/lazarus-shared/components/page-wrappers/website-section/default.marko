@@ -60,6 +60,14 @@ $ const children = resolved.getEdgeNodesFor("children");
             </marko-web-query>
           </@left-col>
           <@right-col>
+            <marko-web-query|{ nodes }|
+              name="website-scheduled-content"
+              params={ sectionId: section.id, optionName: "Recommended", limit: 4, requiresImage: true, queryFragment }
+            >
+              <lazarus-shared-content-hero-flow nodes=nodes>
+                <@header>Recommended</@header>
+              </lazarus-shared-content-hero-flow>
+            </marko-web-query>
             <informa-gam-adunit
               location="taxonomy"
               position="right_rail_rect"
