@@ -19,6 +19,9 @@ module.exports = {
     { alias: 'covid19', name: 'COVID-19 Crisis' },
     { alias: 'supply-chain-initiative', name: 'Supply Chain Initiative' },
   ],
+  recommendedBlock: {
+    enabled: true,
+  },
   logos: {
     navbar: {
       src: 'https://img.industryweek.com/files/base/ebm/iw/static/iw_logo.png?h=30',

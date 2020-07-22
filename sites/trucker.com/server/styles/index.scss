@@ -4,3 +4,13 @@ $theme-site-navbar-menu-bg-color: #555759;
 $theme-lazarus-card-bg-color-dark: rgba(35, 36, 37, .9);
 
 @import "../../node_modules/@endeavor-business-media/lazarus-shared/theme";
+
+.node-list {
+  &__header {
+    &--home-recommended {
+      padding-top: 0;
+      padding-left: 0;
+      margin-left: 10px;
+    }
+  }
+}
