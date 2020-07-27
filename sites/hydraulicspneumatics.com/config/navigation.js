@@ -46,7 +46,6 @@ module.exports = {
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.endeavorb2b.com/hydraulics-pneumatics', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
-        { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
