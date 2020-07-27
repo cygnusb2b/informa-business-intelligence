@@ -3,4 +3,8 @@ $navbar-color: #003e51;
 $theme-site-navbar-menu-bg-color: #003e51;
 $theme-lazarus-card-bg-color-dark: rgba(62, 57, 53, .9);
 
+$leaders-primary-color: $primary;
+$leaders-primary-color-light: lighten($leaders-primary-color, 10%);
+$leaders-accent-color: $primary;
+
 @import "../../node_modules/@endeavor-business-media/lazarus-shared/theme";
