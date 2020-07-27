@@ -13,8 +13,8 @@ $ const { id, pageNode } = data;
       modifiers=["top-of-page"]
     />
 
-    <marko-web-page-wrapper>
-      <@section>
+    <marko-web-page-wrapper class="mb-1" modifiers=["website-section-header", "top-border"]>
+      <@section modifiers=["header"]>
         <div class="row">
           <div class="col">
             <marko-web-resolve-page|{ data: publication }| node=pageNode>
