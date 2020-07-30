@@ -26,7 +26,6 @@ module.exports = {
         { href: '/mechanical-motion-systems', label: 'Mechanical & Motion Systems' },
         { href: '/medical-design', label: 'Medical Design' },
         { href: '/markets/robotics', label: 'Robotics' },
-        { href: '/community/contributing-technical-experts', label: 'Experts' },
         { href: '/news/products', label: 'Product News' },
         { href: '/learning-resources', label: 'Learning Resources' },
       ],
@@ -34,6 +33,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: 'https://www.csiaexchange.com/', label: 'CSIA Exchange', target: '_blank' },
         { href: '/markets', label: 'Markets' },
         { href: 'http://www.electronicdesign.com/', label: 'Design with Electronics' },
         { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
