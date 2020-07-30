@@ -42,7 +42,6 @@ module.exports = {
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.endeavorb2b.com/electronic-design/', label: 'Advertise' },
         { href: '/page/contribute', label: 'Contribute' },
-        { href: 'https://electronics.informa.com/contentstream/', label: 'Content Licensing' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
