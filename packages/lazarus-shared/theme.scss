@@ -321,6 +321,12 @@ $theme-content-page-node-full-width: 780px !default;
     &--large-text {
       font-size: 18px;
     }
+
+    &--home-recommended {
+      padding-top: 0;
+      padding-left: 0;
+      margin-left: 10px;
+    }
   }
 
   &--related-content {
