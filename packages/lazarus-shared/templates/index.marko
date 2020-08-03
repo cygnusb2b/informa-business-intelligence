@@ -2,6 +2,7 @@ import queryFragment from "../graphql/fragments/content-list";
 
 $ const { GAM, site } = out.global;
 $ const { id, alias, name, pageNode } = data;
+$ const homePageRecommended = site.get("homePageRecommended.enabled");
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
@@ -28,46 +29,12 @@ $ const { id, alias, name, pageNode } = data;
             </@left-col>
             <@right-col>
               <@top-row>
-                <div class="col-12">
-                  <marko-web-query|{ nodes }|
-                    name="website-optioned-content"
-                    params={ sectionId: id, optionName: "Pinned", limit: 4, requiresImage: true, queryFragment }
-                  >
-                    <default-theme-hero-flow nodes=nodes>
-                      <@header>Top Stories</@header>
-                      <@hero|{ node }|>
-                        <lazarus-shared-content-card-node node=node>
-                          <@image width=630 />
-                          <@title modifiers=["large"] />
-                        </lazarus-shared-content-card-node>
-                      </@hero>
-                      <@list|{ nodes: listNodes }|>
-                        <default-theme-card-deck-flow cols=3 nodes=listNodes>
-                          <@slot|{ node }| position="at" index=1>
-                            <informa-gam-adunit
-                              location="homepage"
-                              position="native_top_stories"
-                              collapse=false
-                              modifiers=["no-shadow", "text-left", "full-height"]
-                            >
-                              <lazarus-shared-content-card-node node=node />
-                            </informa-gam-adunit>
-                          </@slot>
-                          <@slot|{ node }|>
-                            <lazarus-shared-content-card-node node=node />
-                          </@slot>
-                        </default-theme-card-deck-flow>
-                      </@list>
-                    </default-theme-hero-flow>
-                  </marko-web-query>
-
-                  <informa-gam-adunit
-                    location="homepage"
-                    position="right_col_jumbotron"
-                    class="mb-block"
-                    modifiers=["max-width-300", "margin-auto-x"]
-                  />
-                </div>
+                <if(homePageRecommended)>
+                  <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
+                </if>
+                <else>
+                  <lazarus-shared-home-page-hero-full-block section-id=id/>
+                </else>
               </@top-row>
               <@bottom-row>
                 <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
