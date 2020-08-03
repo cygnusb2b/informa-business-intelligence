@@ -3,7 +3,7 @@ import { getAsObject } from "@base-cms/object-path";
 
 $ const { GAM, site } = out.global;
 $ const { id, alias, name, pageNode } = data;
-$ const homePageRecommended = getAsObject(site.config, "homePageRecommended");
+$ const homePageRecommended = site.get("homePageRecommended.enabled");
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
@@ -30,7 +30,7 @@ $ const homePageRecommended = getAsObject(site.config, "homePageRecommended");
             </@left-col>
             <@right-col>
               <@top-row>
-                <if(homePageRecommended.enabled)>
+                <if(homePageRecommended)>
                   <div class="col-12 ml-0 mr-0">
                     <div class="row">
                       <div class="col-8 mr-0">
