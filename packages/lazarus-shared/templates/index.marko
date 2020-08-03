@@ -54,9 +54,6 @@ $ const homePageRecommended = getAsObject(site.config, "homePageRecommended");
                           name="website-scheduled-content"
                           params={ sectionId: section.id, optionName: "Recommended", limit: 4, queryFragment }
                         >
-
-
-
                           <lazarus-shared-content-list-flow nodes=recommended>
                             <@header modifiers=["home-recommended"]>Recommended</@header>
                             <@node display-image=false with-teaser=false />
