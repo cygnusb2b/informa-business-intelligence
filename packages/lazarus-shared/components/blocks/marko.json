@@ -47,5 +47,19 @@
       "@type": "string",
       "@name": "string"
     }
+  },
+  "<lazarus-shared-home-page-hero-full-block>": {
+    "template": "./home-page-hero-full.marko",
+    "@section-id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "<lazarus-shared-home-page-hero-with-recommended-block>": {
+    "template": "./home-page-hero-with-recommended.marko",
+    "@section-id": {
+      "type": "number",
+      "required": true
+    }
   }
 }
