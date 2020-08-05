@@ -323,7 +323,7 @@ $theme-content-page-node-full-width: 780px !default;
     }
   }
 
-  &--home-recommended {
+  &--recommended {
     .node-list {
       &__nodes {
         padding-top: 0;
@@ -404,6 +404,14 @@ $theme-content-page-node-full-width: 780px !default;
 
   &__right-col {
     padding-top: $grid-gutter-width;
+  }
+
+  &__top-right-col > {
+    .hero-flow {
+      &--recommended {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__col {
