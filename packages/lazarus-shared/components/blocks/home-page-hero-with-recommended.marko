@@ -21,12 +21,16 @@ $ const id = input.sectionId;
       </marko-web-query>
     </div>
     <div class="col-4 ml-0">
-      <marko-web-query|{ nodes: recommended }|
+      <marko-web-query|{ nodes }|
         name="website-scheduled-content"
-        params={ sectionId: id, optionName: "Recommended", limit: 4, queryFragment }
+        params={ sectionId: id, optionName: "Recommended", limit: 2, requiresImage: true, queryFragment }
       >
-        <lazarus-shared-content-list-flow nodes=recommended>
-          <@header modifiers=["home-recommended"]>Recommended</@header>
+      $ const featuredNode = nodes.slice(0,1);
+      $ const standardNodes = nodes.slice(1);
+        <lazarus-shared-content-hero-flow nodes=featuredNode modifiers=["home-recommended"]>
+          <@header>Recommended</@header>
+        </lazarus-shared-content-hero-flow>
+        <lazarus-shared-content-list-flow nodes=standardNodes modifiers=["home-recommended"]>
           <@node display-image=false with-teaser=false />
         </lazarus-shared-content-list-flow>
       </marko-web-query>
@@ -36,7 +40,7 @@ $ const id = input.sectionId;
     <div class="col-12">
       <marko-web-query|{ nodes }|
         name="website-optioned-content"
-        params={ sectionId: id, optionName: "Pinned", limit: 1, requiresImage: true, queryFragment }
+        params={ sectionId: id, optionName: "Pinned", limit: 4, requiresImage: true, queryFragment }
       >
         <default-theme-hero-flow nodes=nodes>
           <@list|{ nodes: listNodes }|>
