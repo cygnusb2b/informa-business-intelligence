@@ -25,8 +25,8 @@ $ const id = input.sectionId;
         name="website-scheduled-content"
         params={ sectionId: id, optionName: "Recommended", limit: 2, requiresImage: true, queryFragment }
       >
-      $ const featuredNode = nodes.slice(0,1);
-      $ const standardNodes = nodes.slice(1);
+        $ const featuredNode = nodes.slice(0,1);
+        $ const standardNodes = nodes.slice(1);
         <lazarus-shared-content-hero-flow nodes=featuredNode modifiers=["home-recommended"]>
           <@header>Recommended</@header>
         </lazarus-shared-content-hero-flow>
