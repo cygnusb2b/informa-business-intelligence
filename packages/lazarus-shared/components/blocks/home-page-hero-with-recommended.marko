@@ -27,10 +27,10 @@ $ const id = input.sectionId;
       >
         $ const featuredNode = nodes.slice(0,1);
         $ const standardNodes = nodes.slice(1);
-        <lazarus-shared-content-hero-flow nodes=featuredNode modifiers=["home-recommended"]>
+        <lazarus-shared-content-hero-flow nodes=featuredNode modifiers=["recommended"]>
           <@header>Recommended</@header>
         </lazarus-shared-content-hero-flow>
-        <lazarus-shared-content-list-flow nodes=standardNodes modifiers=["home-recommended"]>
+        <lazarus-shared-content-list-flow nodes=standardNodes modifiers=["recommended"]>
           <@node display-image=false with-teaser=false />
         </lazarus-shared-content-list-flow>
       </marko-web-query>
