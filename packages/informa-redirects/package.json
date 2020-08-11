@@ -10,7 +10,7 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@base-cms/db": "^1.25.0",
+    "@base-cms/db": "^1.33.1",
     "@base-cms/object-path": "^1.25.0",
     "@base-cms/utils": "^1.25.0",
     "cheerio": "^1.0.0-rc.3",
