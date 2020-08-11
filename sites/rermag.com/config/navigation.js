@@ -33,12 +33,12 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/webinar', label: 'Webinars' },
+        { href: '/leaders', label: 'RER Leaders' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://buildings.endeavorb2b.com/rental-equipment-register', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: '/directory', label: 'Buyers Guide' },
         { href: '/associations', label: 'Associations' },
         { href: 'https://www.argifocus.com/client/RentalEquipmentRegister/LM1/lm/rsdefault.asp', label: 'Free Product Info', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },

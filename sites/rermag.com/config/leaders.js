@@ -7,5 +7,5 @@ module.exports = {
   },
   // Remove this (or set to true) to enable integrated components on the home page and content page
   // This has no effect on the leaders landing page
-  componentsEnabled: false,
+  componentsEnabled: true,
 };
