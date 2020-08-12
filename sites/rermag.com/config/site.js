@@ -49,11 +49,11 @@ module.exports = {
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
   inquiry: {
     // the subject line of the email sent to the brand and/or the company/advertiser
-    notificationSubject: 'A new inquiry submission was received.',
+    notificationSubject: 'RER Mag has sent you a new sales inquiry.',
     // the subject line of the email sent to the user who submitted the form
     confirmationSubject: 'Your inquiry was received.',
     enabled: true,
-    directSend: false, // enable this to directly send to the company
+    directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@rermag.com',
     sendFrom: 'RERMag.com <noreply@baseplatform.io>',
     sendBcc: 'emailactivity@cygnus.com',
