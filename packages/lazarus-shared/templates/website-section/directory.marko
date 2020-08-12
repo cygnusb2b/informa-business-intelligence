@@ -60,7 +60,7 @@ $ const rootAlias = aliasParts.shift();
             <div class="directory-grid__right-col">
               <marko-web-query|{ nodes }|
                 name="website-scheduled-content"
-                params={ optionName:"Featured", limit:3, includeContentTypes:["Company"], sectionId: id, queryFragment }
+                params={ optionName:"Pinned", limit:3, includeContentTypes:["Company"], sectionId: id, queryFragment }
               >
                 <lazarus-shared-content-list-flow
                   nodes=nodes
