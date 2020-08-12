@@ -1,5 +1,10 @@
 <template>
   <div class="directory-facets__list">
+    <auto-scroll
+      v-if="loadAutoScroll"
+      container-target=".directory-facets__list"
+      element-target=".directory-facet--active"
+    />
     <loading-spinner v-if="isLoading" />
     <p v-else-if="error">
       Error: {{ error.message }}
@@ -25,6 +30,7 @@
 </template>
 
 <script>
+import AutoScroll from '../auto-scroll.vue';
 import DirectoryFacet from './facet.vue';
 import LoadingSpinner from './loading-spinner.vue';
 import directorySectionsQuery from './graphql/directory-sections';
@@ -33,6 +39,7 @@ import getEdgeNodes from './utils/get-edge-nodes';
 export default {
   name: 'DirectoryFacetsList',
   components: {
+    AutoScroll,
     DirectoryFacet,
     LoadingSpinner,
   },
@@ -57,6 +64,7 @@ export default {
   data: () => ({
     isLoading: false,
     hasLoaded: false,
+    loadAutoScroll: false,
     error: null,
     sections: [],
   }),
@@ -92,6 +100,7 @@ export default {
           this.error = e;
         } finally {
           this.isLoading = false;
+          this.loadAutoScroll = true;
         }
       }
     },
