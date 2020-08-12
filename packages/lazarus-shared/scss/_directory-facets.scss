@@ -7,7 +7,9 @@
   }
 
   &__list {
+    max-height: 400px;
     margin-bottom: 5px;
+    overflow: scroll;
     #{ $self } {
       &__list {
         padding-left: 21px;

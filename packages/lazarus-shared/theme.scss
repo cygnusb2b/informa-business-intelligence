@@ -362,24 +362,49 @@ $theme-content-page-node-full-width: 780px !default;
   }
 }
 
+.page {
+  &--directory {
+    background: transparent;
+
+    .page-grid {
+
+      &__col {
+
+        &--full {
+          padding-right: 0;
+          padding-left: 0;
+
+          & .node-list {
+            padding-right: $grid-gutter-width;
+            padding-left: $grid-gutter-width;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}
+
 .directory-grid {
   @include make-row();
 
-  &__left-col {
+  &__left-col,
+  &__right-col {
     @include make-col-ready();
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
+  }
 
+  &__left-col {
     @include media-breakpoint-up(lg) {
       @include make-col(4);
-      position: sticky;
-      overflow: scroll;
-      @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
-        @media (max-width: $width) {
-          top: calc(#{calculate-navbar-height-for($breakpoint)});
-          height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
-        }
-      }
+    }
+    & .ad-container {
+      margin-top: $grid-gutter-width * 2;
+      margin-bottom: $grid-gutter-width * 2;
     }
   }
 
