@@ -1,7 +1,6 @@
 <template>
   <div class="directory-facets__list">
     <auto-scroll
-      v-if="loadAutoScroll"
       container-target=".directory-facets__list"
       element-target=".directory-facet--active"
     />
@@ -64,7 +63,6 @@ export default {
   data: () => ({
     isLoading: false,
     hasLoaded: false,
-    loadAutoScroll: false,
     error: null,
     sections: [],
   }),
@@ -100,7 +98,6 @@ export default {
           this.error = e;
         } finally {
           this.isLoading = false;
-          this.loadAutoScroll = true;
         }
       }
     },
