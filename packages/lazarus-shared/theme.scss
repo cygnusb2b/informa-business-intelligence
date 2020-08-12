@@ -375,8 +375,8 @@ $theme-content-page-node-full-width: 780px !default;
           padding-left: 0;
 
           & .node-list {
-            padding-right: $grid-gutter-width;
-            padding-left: $grid-gutter-width;
+            padding-right: $grid-gutter-width / 2;
+            padding-left: $grid-gutter-width / 2;
           }
 
         }
