@@ -43,7 +43,7 @@ module.exports = {
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
-        { href: 'https://designengineering.endeavorb2b.com/electronic-design-2/', label: 'Advertise', target: '_blank' },
+        { href: 'https://designengineering.endeavorb2b.com/electronic-design', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
