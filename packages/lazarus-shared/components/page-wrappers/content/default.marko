@@ -44,7 +44,7 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper", "promotion"].includes(
               component-name="lazarus-shared-content-page-load-more-flow"
               fragment-name="content-page"
               query-name="website-scheduled-content"
-              query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
+              query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id], excludeContentTypes: ["promotion"] }
               page-input={ for: "content", id, type }
             />
           </else-if>
