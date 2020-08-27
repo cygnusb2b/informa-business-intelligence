@@ -1,5 +1,4 @@
 const gql = require('graphql-tag');
-
 module.exports = gql`
 
 fragment WebsiteContentListFragment on Content {
@@ -27,6 +26,10 @@ fragment WebsiteContentListFragment on Content {
   ... on ContentPromotion {
     linkText
     linkUrl
+    # needed for handling bluecomic promotion redirects
+    promotionContext: siteContext(input: { enableLinkUrl: false }) {
+      path
+    }
   }
   ... on ContentWebinar {
     startDate
