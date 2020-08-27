@@ -2,5 +2,13 @@
   "<lazarus-shared-blueconic-metatag>": {
     "template": "./metatag.marko",
     "@context": "object"
+  },
+  "<lazarus-shared-blueconic-redirect>": {
+    "template": "./redirect.marko",
+    "@enabled": "boolean",
+    "@redirect-to": "string",
+    "@timeout": "number",
+    "@library-src": "string",
+    "@debug": "boolean"
   }
 }

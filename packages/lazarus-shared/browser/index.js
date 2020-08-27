@@ -12,6 +12,7 @@ import LoadEloquaIframes from './load-eloqua-iframes.vue';
 
 const GallerySlideshow = () => import(/* webpackChunkName: "lazarus-shared-gallery-slideshow" */ './gallery-slideshow/index.vue');
 const DirectoryFacets = () => import(/* webpackChunkName: "lazarus-shared-directory-facets" */ './directory-facets/index.vue');
+const BlueConicRedirect = () => import(/* webpackChunkName: "lazarus-shared-blueconic-redirect" */ './blueconic/redirect.vue');
 
 export default (Browser) => {
   DefaultTheme(Browser);
@@ -35,4 +36,5 @@ export default (Browser) => {
   Browser.register('LazarusSharedDirectoryFacets', DirectoryFacets, {
     withApollo: true,
   });
+  Browser.register('LazarusSharedBlueConicRedirect', BlueConicRedirect);
 };
