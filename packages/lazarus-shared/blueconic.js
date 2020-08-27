@@ -29,4 +29,22 @@ module.exports = {
         return getAsArray(promotion, 'labels').includes('BlueConic');
     }
   },
+
+  /**
+   * Gets the BlueConic library script src.
+   * Is used when redirecting promotions... the src must be present in the DOM before redirecting.
+   *
+   * @param {object} params
+   * @param {object} params.site The site config object
+   */
+  librarySrc: ({ site }) => site.get('blueconic.librarySrc', 'https://cdn.blueconic.net/informa.js'),
+
+  /**
+   * The timeout (in milliseconds) before redirecting a user on a promotion page.
+   * Defaults to 2000ms (2 seconds)
+   *
+   * @param {object} params
+   * @param {object} params.site The site config object
+   */
+  redirectTimeout: ({ site }) => site.get('blueconic.redirectTimeout', 2000),
 };
