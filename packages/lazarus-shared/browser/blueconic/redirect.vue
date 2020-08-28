@@ -18,7 +18,7 @@ export default {
     },
     timeout: {
       type: Number,
-      default: 2000,
+      default: 500,
     },
     debug: {
       type: Boolean,
