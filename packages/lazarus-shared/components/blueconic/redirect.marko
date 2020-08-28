@@ -5,7 +5,7 @@ import blueconic from "../../blueconic";
 $ const { site } = out.global;
 
 $ const { redirectTo, librarySrc, enabled, debug } = input;
-$ const timeout = defaultValue(input.timeout, 2000);
+$ const timeout = defaultValue(input.timeout, 500);
 
 <if(enabled)>
   $ const props = { redirectTo, librarySrc, timeout, debug };
