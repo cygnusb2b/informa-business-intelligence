@@ -49,7 +49,9 @@ module.exports = (app) => {
       loaderQueryFragment: gql`
         fragment WithContentPromotion on Content {
           ... on ContentPromotion {
+            # needed to check for the BlueConic label
             labels
+            # must use a field alias here, since siteContext is already used by the default loader fragment
             promotionContext: siteContext(input: { enableLinkUrl: false }) {
               path
             }
