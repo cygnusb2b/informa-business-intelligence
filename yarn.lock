@@ -861,14 +861,14 @@
     moment "^2.24.0"
     node-fetch "^2.6.0"
 
-"@base-cms/marko-web-inquiry@^1.34.0":
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.34.0.tgz#8adc85a2680687d87539f2686b73976ecd7f08d6"
-  integrity sha512-imwqlkQfxlqPopT2rVP2NJa8cyaVLkiVYcyiTL2zW1c7YxMzFjD7qKRvOfznKQE3jo2WoT47KgOLxG9nGwrwWg==
+"@base-cms/marko-web-inquiry@^1.35.0":
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.35.0.tgz#b6d31e9740566bbf08fc392a102eca8dd965be86"
+  integrity sha512-brh34KLkukLhiiLULrOwEVhevEdD9iMf5xbESMQ1nvcOunYnIoxPsiKVtSkOMQsbufpwGWVbLFJOUMbrh9rBPw==
   dependencies:
     "@base-cms/env" "^1.0.0"
     "@base-cms/marko-core" "^1.34.0"
-    "@base-cms/marko-web" "^1.34.0"
+    "@base-cms/marko-web" "^1.35.0"
     "@base-cms/object-path" "^1.25.0"
     "@base-cms/utils" "^1.25.0"
     "@base-cms/web-common" "^1.34.0"
@@ -908,10 +908,10 @@
     graphql "^14.5.4"
     graphql-tag "^2.10.1"
 
-"@base-cms/marko-web@^1.34.0":
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web/-/marko-web-1.34.0.tgz#3c56b7dfbfe0c570e1d8434d386aef98413b1bcd"
-  integrity sha512-QyUbKIbB3v1GcCbZnmK1W79YhtQIVG2JEkmC4UJ7yUggUq8pD1gwyOH7uvjji+wwVIn8A1wh1IcnbwugvxRVHg==
+"@base-cms/marko-web@^1.35.0":
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web/-/marko-web-1.35.0.tgz#58a0ef76ec9f968802ab7e3eb9777e6ec4a8e755"
+  integrity sha512-SmCh+/AGof0QzNMBqhXVxDICG3M0bbFlZG7mE4qgC7h5Y0Z1X0ftpPEE7oISCKRCk74hGC9ENN5Sa48zzOADtA==
   dependencies:
     "@base-cms/embedded-media" "^1.34.0"
     "@base-cms/express-apollo" "^1.9.0"
@@ -958,10 +958,10 @@
   resolved "https://registry.yarnpkg.com/@base-cms/utils/-/utils-1.25.0.tgz#84658dc9da247046e35d7c3ad6f56a0a0670497e"
   integrity sha512-gHFztvnOJ31+31Tu4tjFDwLPvpxyHSxbIFW2ibjNbrEAbKHtbvZLxbirWklEu0RZ3Vh8tgJ4YrcmbH1Ok2Cjnw==
 
-"@base-cms/web-cli@^1.34.0":
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/web-cli/-/web-cli-1.34.0.tgz#e153308d37028c71eeb3b75b412ccd16bfaef440"
-  integrity sha512-ryWwOQj3SgnUwrH/Sh/yVv0+aqnqHe9/IM/WbQSP4sUl4Tm5qbdExHGVMw4xrrMLmovnXD9frObpUXL/E22PoQ==
+"@base-cms/web-cli@^1.35.0":
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/web-cli/-/web-cli-1.35.0.tgz#c2f769f99cdc341225d7fcd5204c3ec125b5abda"
+  integrity sha512-IrJHuqyP5AVSrV8JCAK/b0HQwKprLXu2424oCtcNj0wB1pj+3ynfiwHugcAkiHU7Tj76qXs3qbC5G5oWEEfUbw==
   dependencies:
     "@babel/core" "^7.6.0"
     "@babel/plugin-transform-runtime" "^7.6.0"
@@ -970,7 +970,7 @@
     "@babel/runtime-corejs2" "^7.6.0"
     "@base-cms/cli-utils" "^1.13.0"
     "@base-cms/express-apollo" "^1.9.0"
-    "@base-cms/marko-web" "^1.34.0"
+    "@base-cms/marko-web" "^1.35.0"
     autoprefixer "^9.6.1"
     babel-eslint "^10.0.3"
     babel-loader "^8.0.6"
