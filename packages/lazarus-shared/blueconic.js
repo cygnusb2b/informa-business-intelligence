@@ -48,4 +48,15 @@ module.exports = {
    * @param {object} params.site The site config object
    */
   redirectTimeout: ({ site }) => site.get('blueconic.redirectTimeout', 500),
+
+  /**
+   * The timeout (in milliseconds) to wait for the BlueConic script
+   * tag to become present in the DOM.
+   * The timeout is ignored if the script tag is immediately present.
+   * Defaults to 2000ms (2 seconds)
+   *
+   * @param {object} params
+   * @param {object} params.site The site config object
+   */
+  scriptTimeout: ({ site }) => site.get('blueconic.scriptTimeout', 2000),
 };

@@ -9,6 +9,7 @@
     "@redirect-to": "string",
     "@timeout": "number",
     "@library-src": "string",
+    "@script-timeout": "number",
     "@debug": "boolean"
   }
 }

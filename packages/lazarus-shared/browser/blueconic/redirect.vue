@@ -20,6 +20,10 @@ export default {
       type: Number,
       default: 500,
     },
+    scriptTimeout: {
+      type: Number,
+      default: 2000,
+    },
     debug: {
       type: Boolean,
       default: false,
@@ -85,7 +89,7 @@ export default {
               for (let x = 0; x < mutation.addedNodes.length; x += 1) {
                 const added = mutation.addedNodes[x];
                 if (added.tagName && added.tagName === 'SCRIPT' && added.matches(this.target)) {
-                  this.log('BC JS tag added to the DOM. Redirect');
+                  this.log('BC JS tag added to the DOM. Redirect.');
                   this.redirect();
                 }
               }
@@ -93,6 +97,11 @@ export default {
           }
         });
         observer.observe(document.body, { childList: true, subtree: true });
+        window.setTimeout(() => {
+          this.log('BC JS tag timeout reached. Redirect.');
+          observer.disconnect();
+          this.redirect();
+        }, this.scriptTimeout);
       } else {
         this.log('This browser does not support MutationObservers. Redirect.');
         this.redirect();
