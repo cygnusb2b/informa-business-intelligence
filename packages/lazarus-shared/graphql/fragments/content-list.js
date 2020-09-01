@@ -27,6 +27,10 @@ fragment WebsiteContentListFragment on Content {
   ... on ContentPromotion {
     linkText
     linkUrl
+    # needed for handling bluecomic promotion redirects
+    promotionContext: siteContext(input: { enableLinkUrl: false }) {
+      path
+    }
   }
   ... on ContentWebinar {
     startDate

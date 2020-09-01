@@ -2,6 +2,7 @@ import { get } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/content-ad-location";
 import getContentPreview from "./get-content-preview";
+import blueconic from "../../blueconic";
 
 $ const { site } = out.global;
 $ const { node: content } = input;
@@ -13,7 +14,7 @@ $ const pageIndex = defaultValue(input.pageIndex, 0);
 $ const body = isPreview ? getContentPreview({ body: content.body, selector: "p:nth-of-type(1)" }) : content.body;
 $ const bodyId = `content-body-${content.id}`;
 
-$ const displayComments = ["contact", "document", "whitepaper", "product", "company"].includes(type) ? false : true;
+$ const displayComments = ["contact", "document", "whitepaper", "product", "company", "promotion"].includes(type) ? false : true;
 
 $ const incrementNativeInline = ({ pos, inc } = {}) => {
   if (!pos) return pos;
@@ -121,6 +122,16 @@ $ const incrementNativeInline = ({ pos, inc } = {}) => {
         obj=content
         label="Register/View"
         target="_blank"
+      />
+    </if>
+
+    <if(type === "promotion")>
+      <lazarus-shared-blueconic-redirect
+        enabled=blueconic.useStickyPromotions({ site, promotion: content })
+        redirect-to=content.redirectTo
+        timeout=blueconic.redirectTimeout({ site })
+        library-src=blueconic.librarySrc({ site })
+        script-timeout=blueconic.scriptTimeout({ site })
       />
     </if>
     <lazarus-shared-content-comments should-display=displayComments>

@@ -1,5 +1,8 @@
-import { getAsObject, getAsArray } from "@base-cms/object-path";
+import { getAsObject, getAsArray, get } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
+import blueconic from "../../blueconic";
+
+$ const { site } = out.global;
 
 $ const content = getAsObject(input, "node");
 $ const primaryImage = getAsObject(content, "primaryImage");
@@ -10,6 +13,9 @@ $ const withTeaser = defaultValue(input.withTeaser, true);
 $ const withSection = defaultValue(input.withSection, true);
 $ const withDates = defaultValue(input.withDates, true);
 $ const withSponsored = defaultValue(input.withSponsored, true);
+
+$ const useStickyPromotions = content.type === "promotion" ? blueconic.useStickyPromotions({ site, promotion: content }) : false;
+$ const href = useStickyPromotions ? get(content, "promotionContext.path") : get(content, "siteContext.path");
 
 $ const { linkAttrs } = input;
 
@@ -32,7 +38,7 @@ $ const { linkAttrs } = input;
       alt=primaryImage.alt
       is-logo=primaryImage.isLogo
       fluid=true
-      link={ href: content.siteContext.path, attrs: linkAttrs }
+      link={ href, attrs: linkAttrs }
     />
   </if>
   <@body>
@@ -44,13 +50,13 @@ $ const { linkAttrs } = input;
       </@header>
     </if>
     <@title tag="h5" ...input.title>
-      <marko-web-content-short-name tag=null obj=content link={ attrs: linkAttrs } />
+      <marko-web-content-short-name tag=null obj=content link={ href, attrs: linkAttrs } />
     </@title>
     <@text|{ blockName }| show=withDates>
       <dates block-name=blockName content=content />
     </@text>
     <@text modifiers=["teaser"] show=(withTeaser && content.teaser)>
-      <marko-web-content-teaser tag=null obj=content link={ attrs: linkAttrs } />
+      <marko-web-content-teaser tag=null obj=content link={ href, attrs: linkAttrs } />
     </@text>
     <if(withSection)>
       <@footer>

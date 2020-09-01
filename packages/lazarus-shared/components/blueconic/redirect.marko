@@ -1,0 +1,12 @@
+import { getAsObject } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
+import blueconic from "../../blueconic";
+
+$ const { redirectTo, librarySrc, enabled, debug } = input;
+$ const timeout = defaultValue(input.timeout, 500);
+$ const scriptTimeout = defaultValue(input.scriptTimeout, 2000);
+
+<if(enabled)>
+  $ const props = { redirectTo, librarySrc, timeout, debug, scriptTimeout };
+  <marko-web-browser-component name="LazarusSharedBlueConicRedirect" props=props />
+</if>

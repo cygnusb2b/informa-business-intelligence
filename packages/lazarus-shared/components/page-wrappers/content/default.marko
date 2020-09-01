@@ -2,7 +2,7 @@ import adLocation from "@endeavor-business-media/lazarus-shared/utils/gam/conten
 
 $ const { content, section } = input;
 $ const { id, type } = content;
-$ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false : true;
+$ const infiniteScrollEnabled = ["webinar", "whitepaper", "promotion"].includes(type) ? false : true;
 
 <marko-web-page-wrapper modifiers=["top-border"]>
   <@section>
@@ -44,7 +44,7 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper"].includes(type) ? false
               component-name="lazarus-shared-content-page-load-more-flow"
               fragment-name="content-page"
               query-name="website-scheduled-content"
-              query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id] }
+              query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id], excludeContentTypes: ["Promotion"] }
               page-input={ for: "content", id, type }
             />
           </else-if>

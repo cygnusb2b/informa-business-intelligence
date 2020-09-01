@@ -57,6 +57,10 @@ fragment ContentPageFragment on Content {
     isRequired
     accessLevels
   }
+  ... on ContentPromotion {
+    # needed for BlueConic promotion redirect handling.
+    redirectTo
+  }
   ... on ContentVideo {
     embedCode
   }
