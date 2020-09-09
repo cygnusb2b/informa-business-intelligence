@@ -1,0 +1,9 @@
+$ const tenantKey = input.tenantKey ? input.tenantKey : process.env.TENANT_KEY;
+
+$ const props = {
+  applicationId: input.applicationId,
+  searchApiKey: input.searchApiKey,
+  tenantKey,
+};
+
+<marko-web-browser-component name="LazarusSharedAlgoliaSiteSearch" props=props />

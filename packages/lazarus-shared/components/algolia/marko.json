@@ -1,0 +1,8 @@
+{
+  "<lazarus-shared-algolia-site-search>": {
+    "template": "./site-search.marko",
+    "@application-id": "string",
+    "@search-api-key": "string",
+    "@tenant-key": "string"
+  }
+}

@@ -47,6 +47,7 @@ $theme-site-header-z-index: 15000;
 @import "../../node_modules/@base-cms/marko-web-social-sharing/scss/buttons";
 @import "../../node_modules/@base-cms/marko-web-theme-default/skins/lazarus/skin.scss";
 @import "../../node_modules/@endeavor-business-media/package-leaders/scss/index";
+@import "./scss/algolia";
 @import "./scss/company-page";
 @import "./scss/directory-facets";
 @import "./scss/identity-x";

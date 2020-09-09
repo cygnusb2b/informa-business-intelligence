@@ -28,14 +28,18 @@
     "@endeavor-business-media/informa-gam": "^1.21.1",
     "@endeavor-business-media/package-leaders": "^1.21.1",
     "@sendgrid/mail": "^6.4.0",
+    "algoliasearch": "^4.4.0",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.3",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1",
+    "instantsearch.js": "^4.8.0",
     "newrelic": "^5.11.0",
     "node-fetch": "^2.6.0",
     "object-path": "^0.11.4",
-    "vue-recaptcha": "^1.2.0"
+    "vue-instantsearch": "^3.2.0",
+    "vue-recaptcha": "^1.2.0",
+    "vue-server-renderer": "^2.6.12"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3"

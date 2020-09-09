@@ -1,5 +1,6 @@
 {
   "taglib-imports": [
+    "./algolia/marko.json",
     "./blocks/marko.json",
     "./blueconic/marko.json",
     "./company-page/marko.json",
