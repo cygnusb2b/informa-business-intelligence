@@ -10,6 +10,10 @@
     list-style: none;
   }
 
+  &-InstantSearch {
+    padding-bottom: $grid-gutter-width;
+  }
+
   &-HierarchicalMenu {
     margin-bottom: 20px;
     &-link {
