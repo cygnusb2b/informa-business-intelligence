@@ -32,7 +32,7 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'facebook', href: 'https://www.facebook.com/MachineDesignMagazine/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/MachineDesign', target: '_blank' },
-    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/78772/profile', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/company/10998894', target: '_blank' },
   ],
   gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'machdesign.home' },
   gtm: {
