@@ -38,8 +38,9 @@ module.exports = {
   gtm: {
     containerId: 'GTM-N69H89Q',
   },
-  gcse: {
-    id: '003355913687346718228:japjnxmbcvw',
+  algolia: {
+    applicationId: '80YJALCHBD',
+    searchApiKey: '54e907df9d8e8e66dbaf63ac1938c740',
   },
   wufoo: {
     userName: 'cygnuscorporate',
