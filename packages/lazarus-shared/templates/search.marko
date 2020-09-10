@@ -5,7 +5,6 @@ $ const { config, site } = out.global;
 $ const type = "search";
 $ const title = "Search";
 $ const description = `Search ${config.website("name")}`;
-$ const apiKey = site.get("gcse.id");
 $ const applicationId = site.get("algolia.applicationId");
 $ const searchApiKey = site.get("algolia.searchApiKey");
 
@@ -26,14 +25,11 @@ $ const searchApiKey = site.get("algolia.searchApiKey");
       <@section>
         <div class="row">
           <div class="col">
-            <if(apiKey)>
-              <marko-web-gcse-simple-search-box api-key=apiKey />
-            </if>
-            <else-if(applicationId && searchApiKey)>
+            <if(applicationId && searchApiKey)>
               <lazarus-shared-algolia-site-search application-id=applicationId search-api-key=searchApiKey />
-            </else-if>
+            </if>
             <else>
-              $ warn("Unable to load search: no `gsce.id || algolia.applicationId && algoliaApiKey` values are configured.");
+              $ warn("Unable to load search: no `algolia.applicationId && algoliaApiKey` values are configured.");
             </else>
           </div>
         </div>
