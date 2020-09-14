@@ -31,8 +31,8 @@ module.exports = {
   },
   socialMediaLinks: [
     { provider: 'facebook', href: 'https://www.facebook.com/HydraulicsPneumatics', target: '_blank' },
-    { provider: 'twitter', href: 'https://twitter.com/HPpenton', target: '_blank' },
-    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/40236/profile', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/H_and_P_knows', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/company/11091630', target: '_blank' },
   ],
   gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'hnp.home' },
   gtm: {
