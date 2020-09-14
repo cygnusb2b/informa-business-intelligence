@@ -29,12 +29,7 @@ $ const homePageRecommended = site.get("homePageRecommended.enabled");
             </@left-col>
             <@right-col>
               <@top-row>
-                <if(homePageRecommended)>
-                  <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
-                </if>
-                <else>
-                  <lazarus-shared-home-page-hero-full-block section-id=id/>
-                </else>
+                <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
               </@top-row>
               <@bottom-row>
                 <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
