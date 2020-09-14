@@ -1,0 +1,220 @@
+.ais{
+  &-HierarchicalMenu-list,
+  &-Hits-list,
+  &-Results-list,
+  &-Pagination-list,
+  &-RefinementList-list,
+  &-ToggleRefinement-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &-InstantSearch {
+    padding-bottom: $grid-gutter-width;
+  }
+
+  &-HierarchicalMenu {
+    margin-bottom: 20px;
+    &-link {
+      padding-bottom: 5px;
+      &:hover {
+        color: #505050;
+      }
+    }
+    &-item {
+      padding: .4rem 0;
+      line-height: 1.4rem;
+    }
+    &-label {
+      font-size: 14px;
+      color: #505050;
+      text-transform: uppercase;
+    }
+    &-item--selected {
+      padding: 5px 5px 5px 10px;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &-HierarchicalMenu-list &-HierarchicalMenu-list {
+    margin: 0 .5em 0 1.5em;
+  }
+
+  &-RefinementList {
+    padding: .4rem 0;
+    line-height: 1.4rem;
+    &-labelText {
+      margin-left: 5px;
+      font-size: 14px;
+      color: #505050;
+      text-transform: uppercase;
+    }
+  }
+
+  &-HierarchicalMenu-count,
+  &-RefinementList-count {
+    display: inline-block;
+    padding: 2px 4px;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #848ab8;
+    letter-spacing: 1.3px;
+    background-color: #f3f4f9;
+    border-radius: 4px;
+  }
+
+  &-header {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #e2e2e3;
+  }
+
+  &-Pagination {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-link {
+      display: block;
+      padding: .3rem .6rem;
+      border: 1px solid #c4c8d8;
+      border-radius: 5px;
+    }
+    &-item {
+      $self: &;
+      & + #{ $self } {
+        margin-left: .3rem;
+      }
+    }
+  }
+
+  &-SearchBox {
+    &-input {
+      position: relative;
+      width: 100%;
+      padding: .3rem 1.7rem;
+      background-color: #fff;
+      border: 1px solid #c4c8d8;
+      border-radius: 5px;
+      appearance: none;
+    }
+    &-form {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &-SortBy {
+    padding-bottom: 30px;
+  }
+
+  &-ClearRefinements-button,
+  &-CurrentRefinements-delete,
+  &-CurrentRefinements-reset,
+  &-HierarchicalMenu-showMore,
+  &-SortBy-select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #515151;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, #fff, #f5f5fa);
+    border: 0;
+    box-shadow: 0 4px 11px 0 rgba(37, 44, 97, .15), 0 2px 3px 0 rgba(93, 100, 148, .2);
+    transition: all .2s ease-out;
+  }
+
+  &-image-wrapper {
+    padding-bottom: 10px;
+  }
+
+  &-GeoSearch-redo,
+  &-GeoSearch-reset,
+  &-InfiniteHits-loadPrevious,
+  &-InfiniteHits-loadMore,
+  &-InfiniteResults-loadMore,
+  &-Menu-showMore,
+  &-RangeInput-submit,
+  &-RefinementList-showMore,
+  &-SearchBox-submit,
+  &-SearchBox-reset,
+  &-VoiceSearch-button {
+    padding: 0;
+    overflow: visible;
+    line-height: normal;
+    color: inherit;
+    user-select: none;
+    background: none;
+    border: 0;
+  }
+
+  &-SearchBox-input::-ms-clear,
+  &-SearchBox-input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &-SearchBox-input::-webkit-search-decoration,
+  &-SearchBox-input::-webkit-search-cancel-button,
+  &-SearchBox-input::-webkit-search-results-button,
+  &-SearchBox-input::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  &-SearchBox-submit,
+  &-SearchBox-reset,
+  &-SearchBox-loadingIndicator {
+    position: absolute;
+    top: 50%;
+    right: .3rem;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    appearance: none;
+  }
+
+  &-SearchBox-submit {
+    left: .3rem;
+  }
+
+  &-SearchBox-reset {
+    right: .3rem;
+  }
+
+  &-SearchBox-submitIcon,
+  &-SearchBox-resetIcon,
+  &-SearchBox-loadingIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &-SearchBox-submitIcon path,
+  &-SearchBox-resetIcon path {
+    fill: #495588;
+  }
+
+  &-SearchBox-submitIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  &-SearchBox-resetIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  // Mobile media query currently targeting the "Type" and "Categories" filters.
+  @include media-breakpoint-down(sm) {
+    &-mobile-hide {
+      display: none;
+    }
+  }
+
+}
