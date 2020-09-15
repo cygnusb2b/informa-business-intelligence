@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-v-html-->
 <template>
   <ais-instant-search
     :index-name="tenantKey"
@@ -20,6 +21,7 @@
             { value: tenantKey, label: 'Relevance' },
             { value: `${tenantKey}_published`, label: 'Published Date' },
           ]"
+          :transform-items="sortedClicked"
         />
         <div
           slot="showMoreLabel"
@@ -81,20 +83,20 @@
               <div class="node__body">
                 <div class="node__contents node__contents--body">
                   <h5 class="node__title">
-                    <a :href="`/${item.id}`">
-                      {{ item.name }}
-                    </a>
+                    <a :href="`/${item.id}`" v-html="item.name" />
                   </h5>
                   <div v-if="item.teaser === '...'" class="node__text node__text--teaser" />
-                  <div v-else-if="item.teaser" class="node__text node__text--teaser">
-                    {{ item.teaser }}
+                  <div
+                    v-else-if="item.teaser"
+                    class="node__text node__text--teaser"
+                    v-html="item.teaser"
+                  />
+                </div>
+                <div class="node__footer node__footer--body">
+                  <div class="node__footer-right">
+                    <div>{{ getDate(item.published) }}</div>
                   </div>
                 </div>
-                <!-- <div class="node__footer node__footer--body">
-                  <div class="node__footer-right">
-                    <div>{{ item.published }}</div>
-                  </div>
-                </div> -->
               </div>
             </div>
           </div>
@@ -118,6 +120,7 @@ import {
   AisHits,
   AisPagination,
 } from 'vue-instantsearch';
+import moment from 'moment';
 import algoliasearch from 'algoliasearch/lite';
 import { history as historyRouter } from 'instantsearch.js/es/lib/routers';
 import { simple as simpleMapping } from 'instantsearch.js/es/lib/stateMappings';
@@ -148,22 +151,18 @@ export default {
       type: String,
       required: true,
     },
+    dateFormat: {
+      type: String,
+      default: 'MMM Do, YYYY',
+    },
   },
 
   data() {
     return {
+      sorted: false,
       routing: {
         router: historyRouter(),
         stateMapping: simpleMapping(),
-      },
-      searchFunction(helper) {
-        const page = helper.getPage();
-        helper
-          .addNumericRefinement('published', '<', new Date().getTime())
-          .addNumericRefinement('unpublished', '>', new Date().getTime())
-          .addNumericRefinement('status', '=', 1)
-          .setPage(page)
-          .search();
       },
     };
   },
@@ -172,6 +171,37 @@ export default {
       this.applicationId,
       this.searchApiKey,
     );
+  },
+  methods: {
+    searchFunction(helper) {
+      const page = helper.getPage();
+      // if query null set default sort to published
+      if (!this.sorted) {
+        const index = (helper.state.query) ? this.tenantKey : `${this.tenantKey}_published`;
+        helper.setIndex(index);
+      }
+
+      const timestamp = new Date().getTime();
+      helper
+        .addNumericRefinement('published', '<', timestamp)
+        .addNumericRefinement('unpublished', '>', timestamp)
+        .addNumericRefinement('status', '=', 1)
+        .setPage(page)
+        .search();
+    },
+    sortedClicked(items) {
+      const uri = window.location.search.substring(1);
+      const params = new URLSearchParams(uri);
+      if (params.get(`${this.tenantKey}[query]`)) {
+        this.sorted = true;
+      } else {
+        this.sorted = false;
+      }
+      return items;
+    },
+    getDate(date) {
+      return moment(date).format(this.dateFormat);
+    },
   },
 };
 </script>
