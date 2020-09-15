@@ -3,8 +3,8 @@ import queryFragment from "../../graphql/fragments/content-list";
 $ const id = input.sectionId;
 
 <div class="col-12 ml-0 mr-0">
-  <div class="row">
-    <div class="col-8 mr-0">
+  <div class="row home-recommended d-flex">
+    <div class="col-md-8 flex-grow-1 mr-0">
       <marko-web-query|{ nodes }|
         name="website-optioned-content"
         params={ sectionId: id, optionName: "Pinned", limit: 1, requiresImage: true, queryFragment }
@@ -20,7 +20,7 @@ $ const id = input.sectionId;
         </default-theme-hero-flow>
       </marko-web-query>
     </div>
-    <div class="col-4 ml-0">
+    <div class="col-md-4 flex-shrink-1 ml-0">
       <marko-web-query|{ nodes }|
         name="website-scheduled-content"
         params={ sectionId: id, optionName: "Recommended", limit: 2, requiresImage: true, queryFragment }

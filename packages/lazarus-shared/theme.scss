@@ -101,6 +101,16 @@ $theme-content-page-node-full-width: 780px !default;
   height: 100%;
 }
 
+.home-recommended {
+  .col-md-8.flex-grow-1 {
+    max-width: initial;
+  }
+
+  .col-md-4.flex-shrink-1:empty {
+    display: none;
+  }
+}
+
 .ad-container {
   @include gutter-padding-x-modifier();
   @include gutter-padding-y-modifier();
@@ -386,6 +396,12 @@ $theme-content-page-node-full-width: 780px !default;
 
     }
 
+  }
+
+  &--company-load-more {
+    padding-top: $marko-web-node-list-padding;
+    padding-right: $marko-web-node-list-padding;
+    padding-left: $marko-web-node-list-padding;
   }
 }
 
@@ -703,14 +719,6 @@ $theme-content-page-node-full-width: 780px !default;
 .embed-container-eloqua {
   padding-bottom: $theme-content-paragraph-margin-bottom;
   clear: both;
-}
-
-.page {
-  &--company-load-more {
-    padding-top: $marko-web-node-list-padding;
-    padding-right: $marko-web-node-list-padding;
-    padding-left: $marko-web-node-list-padding;
-  }
 }
 
 .page-contents {

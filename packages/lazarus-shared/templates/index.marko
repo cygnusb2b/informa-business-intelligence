@@ -2,7 +2,6 @@ import queryFragment from "../graphql/fragments/content-list";
 
 $ const { GAM, site } = out.global;
 $ const { id, alias, name, pageNode } = data;
-$ const homePageRecommended = site.get("homePageRecommended.enabled");
 
 <marko-web-website-section-page-layout id=id alias=alias name=name>
   <@head>
