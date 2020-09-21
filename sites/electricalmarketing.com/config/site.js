@@ -32,7 +32,16 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'twitter', href: 'https://twitter.com/electricalmktg', target: '_blank' },
   ],
-  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'elecmktg.home' },
+  gam: {
+    accountId: process.env.GAM_ACCCOUNT_ID || '3834',
+    basePath: 'elecmktg.home',
+    lazyLoad: {
+      enabled: true, // set to true to enable lazy loading
+      fetchMarginPercent: 100, // fetch ad when one viewport away
+      renderMarginPercent: 50, // render ad when half viewport away
+      mobileScaling: 2, // double these on mobile
+    },
+  },
   gtm: {
     containerId: 'GTM-MQ9CK3N',
   },
