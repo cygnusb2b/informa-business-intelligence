@@ -31,7 +31,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/adventures-johnny-tundra', label: 'Adventures of Johnny Tundra' },
-        { href: '/hpac-digital-editions', label: 'HPAC Engineering Digital Editions' },
+        { href: '/magazine/5e6baacfa1b8b3c98147a03a', label: 'Digital Back Issues' },
         { href: '/directory', label: 'Buyers Guide' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/whitepapers', label: 'White Papers' },
