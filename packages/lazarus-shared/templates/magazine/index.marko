@@ -16,8 +16,17 @@ $ const description = site.get("magazines.description");
       position="top_banner"
       modifiers=["top-of-page"]
     />
-
-    <marko-web-page-wrapper class="mb-1" modifiers=["website-section-header", "top-border"]>
+    <marko-web-page-wrapper modifiers=["website-section-header", "top-border"]>
+      <@section>
+        <div class="col-12">
+          <h1 class="page-wrapper__title">${title}</h1>
+          <if(description)>
+            <p class="page-wrapper__deck">${description}</p>
+          </if>
+        </div>
+      </@section>
+    </marko-web-page-wrapper>
+    <marko-web-page-wrapper modifiers=["website-section-contents"]>
       <@section>
         <lazarus-skin-page-grid>
           <@left-col>
@@ -28,17 +37,9 @@ $ const description = site.get("magazines.description");
           <@right-col>
             <@top-row>
               <div class="col-12">
-                <h1 class="page-wrapper__title">${title}</h1>
-                <if(description)>
-                  <p class="page-wrapper__deck">${description}</p>
-                </if>
-              </div>
-            </@top-row>
-            <@bottom-row>
-              <div class="col-12">
                 <lazarus-shared-magazine-publications-block />
               </div>
-            </@bottom-row>
+            </@top-row>
           </@right-col>
         </lazarus-skin-page-grid>
       </@section>
