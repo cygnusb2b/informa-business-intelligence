@@ -2,6 +2,20 @@
 
 .page {
 
+  &--magazines {
+    .magazine-publication-card-block {
+      &__header {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .node {
+        &__title {
+          text-align: center;
+        }
+      }
+    }
+  }
+
   &--magazine-publication {
     margin-top: 0;
   }
