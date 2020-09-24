@@ -439,12 +439,6 @@ $theme-content-page-node-full-width: 780px !default;
   &__left-col {
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
-    @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
-      @media (max-width: $width) {
-        top: calc(#{calculate-navbar-height-for($breakpoint)});
-        height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
-      }
-    }
   }
 
   &__right-col {
