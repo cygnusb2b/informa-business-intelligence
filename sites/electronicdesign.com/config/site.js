@@ -14,9 +14,9 @@ module.exports = {
     comments: { enabled: true },
   },
   homePageSections: [
-    { alias: 'industrial-automation', name: 'Industrial Automation' },
-    { alias: 'markets/automotive', name: 'Automotive' },
-    { alias: 'power-management', name: 'Power Management' },
+    { alias: 'resources/technology-advancements', name: 'Technology Advancements' },
+    { alias: 'resources/products-and-solutions', name: 'Products and Solutions' },
+    { alias: 'resources/industry-insights', name: 'Industry Insights' },
   ],
   logos: {
     navbar: {
