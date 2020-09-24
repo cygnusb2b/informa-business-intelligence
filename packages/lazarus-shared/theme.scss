@@ -122,9 +122,11 @@ $theme-content-page-node-full-width: 780px !default;
   }
 
   &--left-rail-sticky {
-    position: sticky;
-    top: -$grid-gutter-width;
-    z-index: 1;
+    @media (min-width: 1068px) {
+      position: sticky;
+      top: -$grid-gutter-width;
+      z-index: 1;
+    }
   }
 
   &--text-left {
