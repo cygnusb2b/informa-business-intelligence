@@ -8,6 +8,11 @@
         padding-top: 0;
         padding-bottom: 0;
       }
+      .node {
+        &__title {
+          text-align: center;
+        }
+      }
     }
   }
 
