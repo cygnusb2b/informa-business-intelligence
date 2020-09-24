@@ -336,6 +336,8 @@ $theme-content-page-node-full-width: 780px !default;
   }
 
   &--recommended {
+    height: initial;
+
     .node-list {
       &__nodes {
         padding-top: 0;
