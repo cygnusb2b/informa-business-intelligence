@@ -34,7 +34,16 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/H_and_P_knows', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/11091630', target: '_blank' },
   ],
-  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'hnp.home' },
+  gam: {
+    accountId: process.env.GAM_ACCCOUNT_ID || '3834',
+    basePath: 'hnp.home',
+    lazyLoad: {
+      enabled: true, // set to true to enable lazy loading
+      fetchMarginPercent: 100, // fetch ad when one viewport away
+      renderMarginPercent: 50, // render ad when half viewport away
+      mobileScaling: 2, // double these on mobile
+    },
+  },
   gtm: {
     containerId: 'GTM-NNFQ6CV',
   },

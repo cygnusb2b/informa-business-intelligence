@@ -35,7 +35,16 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/groups/2003884', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/channel/UCTO3PUFzLZbmdcva2Lq_bAQ', target: '_blank' },
   ],
-  gam: { accountId: process.env.GAM_ACCCOUNT_ID || '3834', basePath: 'mhl.home' },
+  gam: {
+    accountId: process.env.GAM_ACCCOUNT_ID || '3834',
+    basePath: 'mhl.home',
+    lazyLoad: {
+      enabled: true, // set to true to enable lazy loading
+      fetchMarginPercent: 100, // fetch ad when one viewport away
+      renderMarginPercent: 50, // render ad when half viewport away
+      mobileScaling: 2, // double these on mobile
+    },
+  },
   gtm: {
     containerId: 'GTM-TDLXZDD',
   },
