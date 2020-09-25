@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/powerelectronics.com",
-  "version": "1.21.5",
+  "version": "1.21.6",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/powerelectronics.com",
   "license": "MIT",
@@ -20,8 +20,8 @@
     "@base-cms/object-path": "^1.37.0",
     "@base-cms/utils": "^1.37.0",
     "@base-cms/web-cli": "^1.37.0",
-    "@endeavor-business-media/informa-gam": "^1.21.1",
-    "@endeavor-business-media/lazarus-shared": "^1.21.5",
+    "@endeavor-business-media/informa-gam": "^1.21.6",
+    "@endeavor-business-media/lazarus-shared": "^1.21.6",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }
