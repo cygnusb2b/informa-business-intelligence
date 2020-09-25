@@ -834,3 +834,12 @@ $theme-content-page-node-full-width: 780px !default;
     height: 100%;
   }
 }
+
+.site-footer {
+  &__items {
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+  }
+}
