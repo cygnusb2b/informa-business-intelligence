@@ -34,7 +34,7 @@ $ const { id, type, pageNode } = data;
   </@page>
   <@below-page>
     <marko-web-resolve-page|{ data: section }| node=pageNode>
-        <if(!getAsArray(section, "labels").includes("Program"))>
+        <if(!labels.includes("Program"))>
           <lazarus-shared-content-load-more-wrapper section=section />
         </if>
     </marko-web-resolve-page>
