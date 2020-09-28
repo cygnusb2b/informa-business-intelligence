@@ -1,0 +1,23 @@
+import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
+
+$ const { section } = input;
+
+<marko-web-page-wrapper modifiers=["website-section-contents"]>
+  <@section>
+    <marko-web-load-more
+      expand=500
+      component-name="lazarus-shared-content-load-more-flow"
+      component-input={
+        adunit: {
+          location: "taxonomy",
+          position: "infinitescroll",
+          context: { sectionId: section.id },
+        },
+      }
+      fragment-name="content-list"
+      query-name="website-scheduled-content"
+      query-params={ sectionId: section.id, limit: 7, skip: 15 }
+      page-input={ for: "website-section", id: section.id }
+    />
+  </@section>
+</marko-web-page-wrapper>

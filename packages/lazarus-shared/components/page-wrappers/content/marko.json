@@ -8,5 +8,10 @@
     "template": "./program.marko",
     "@content": "object",
     "@section": "object"
+  },
+  "<lazarus-shared-content-load-more-wrapper>": {
+    "template": "./load-more.marko",
+    "@content": "object",
+    "@section": "object"
   }
 }

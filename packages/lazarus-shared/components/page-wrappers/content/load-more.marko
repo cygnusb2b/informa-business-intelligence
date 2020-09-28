@@ -1,0 +1,39 @@
+import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
+
+$ const { section } = input;
+$ const { id, type } = content;
+$ const infiniteScrollEnabled = ["webinar", "whitepaper", "promotion"].includes(type) ? false : true;
+
+<marko-web-page-wrapper modifiers=["website-section-contents"]>
+  <@section>
+    <if(type === "company" || type === "contact")>
+      $ const queryName = (type === "company") ? "all-company-content" : "all-author-content";
+      $ const queryParams = (type === "company") ? { companyId: id, limit: 10 } : { contactId: id, limit: 10 };
+      <marko-web-load-more
+        expand=500
+        component-name="lazarus-shared-content-load-more-flow"
+        component-input={
+          adunit: {
+            location: "taxonomy",
+            position: "infinitescroll",
+            context: { sectionId: section.id },
+          },
+        }
+        fragment-name="content-list"
+        query-name=queryName
+        query-params=queryParams
+        page-input={ for: "content", id, type }
+      />
+    </if>
+    <else-if(infiniteScrollEnabled)>
+      <marko-web-load-more
+        expand=500
+        component-name="lazarus-shared-content-page-load-more-flow"
+        fragment-name="content-page"
+        query-name="website-scheduled-content"
+        query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id], excludeContentTypes: ["Promotion"] }
+        page-input={ for: "content", id, type }
+      />
+    </else-if>
+  </@section>
+</marko-web-page-wrapper>
