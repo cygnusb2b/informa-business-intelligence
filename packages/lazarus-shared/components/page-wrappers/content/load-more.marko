@@ -1,6 +1,6 @@
 import queryFragment from "@endeavor-business-media/lazarus-shared/graphql/fragments/content-list";
 
-$ const { section } = input;
+$ const { section, content } = input;
 $ const { id, type } = content;
 $ const infiniteScrollEnabled = ["webinar", "whitepaper", "promotion"].includes(type) ? false : true;
 

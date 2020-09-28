@@ -33,10 +33,12 @@ $ const { id, type, pageNode } = data;
     </marko-web-resolve-page>
   </@page>
   <@below-page>
-    <marko-web-resolve-page|{ data: section }| node=pageNode>
-        <if(!labels.includes("Program"))>
-          <lazarus-shared-content-load-more-wrapper section=section />
-        </if>
+    <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
+      $ const section = resolved.getAsObject("primarySection");
+      $ const labels = resolved.getAsArray("primarySection.labels");
+      <if(!labels.includes("Program"))>
+        <lazarus-shared-content-load-more-wrapper section=section content=content />
+      </if>
     </marko-web-resolve-page>
   </@below-page>
   <@below-container>
