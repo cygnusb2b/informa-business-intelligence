@@ -136,9 +136,11 @@ body {
   }
 
   &--left-rail-sticky {
-    position: sticky;
-    top: -$grid-gutter-width;
-    z-index: 1;
+    @media(min-width: 1068px) {
+      position: sticky;
+      top: -$grid-gutter-width;
+      z-index: 1;
+    }
   }
 
   &--text-left {
@@ -453,12 +455,6 @@ body {
   &__left-col {
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
-    @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
-      @media (max-width: $width) {
-        top: calc(#{calculate-navbar-height-for($breakpoint)});
-        height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
-      }
-    }
   }
 
   &__right-col {
