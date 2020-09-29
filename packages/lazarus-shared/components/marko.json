@@ -9,7 +9,8 @@
     "./gating/marko.json",
     "./nodes/marko.json",
     "./page-wrappers/marko.json",
-    "./program/marko.json"
+    "./program/marko.json",
+    "./page-grid/marko.json"
   ],
   "<lazarus-shared-increment-ad-pos>": {
     "template": "./increment-ad-pos.marko",
@@ -42,5 +43,13 @@
     "@root-alias": "string",
     "@active-alias": "string",
     "@modifiers": "array"
+  },
+  "<lazarus-skin-content-page-card>": {
+    "template": "./content-page-card.marko",
+    "@content": "object",
+    "@tag": "string",
+    "@class": "string",
+    "@modifiers": "array",
+    "@attrs": "object"
   }
 }
