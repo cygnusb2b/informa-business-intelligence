@@ -18,7 +18,6 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
   &__left-col {
     @include make-col-ready();
     flex: 0 0 100%;
-    order: 1;
 
     @each $breakpoint, $width in sort-map-by-values($new-breakpoint-list, asc) {
       @if ($width >= $desktop-grid-breakpoint) {
@@ -32,7 +31,6 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
     @media (min-width: $desktop-grid-breakpoint) {
       position: sticky;
       flex: 0 0 330px;
-      order: 0;
       max-width: 330px;
       overflow: scroll;
       opacity: 1;
@@ -65,10 +63,7 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
 
   &__right-col {
     @include make-col-ready();
-    order: 0;
-
     @media (min-width: $desktop-grid-breakpoint) {
-      order: 1;
       max-width: 870px;
     }
   }
