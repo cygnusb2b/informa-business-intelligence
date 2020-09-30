@@ -1,0 +1,113 @@
+$desktop-grid-breakpoint: 1068px;
+$rail-size: 340px;
+$new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-breakpoint: $desktop-grid-breakpoint));
+
+.page-with-rail {
+  display: grid;
+  grid-template-areas:
+    "topContent"
+    "rail"
+    "bottomContent"
+  ;
+
+  @media (min-width: $desktop-grid-breakpoint) {
+    grid-template-columns: $rail-size auto;
+    grid-template-areas:
+      "rail topContent"
+      "rail bottomContent"
+    ;
+  }
+
+  &__rail {
+    grid-area: rail;
+
+    @each $breakpoint, $width in sort-map-by-values($new-breakpoint-list, asc) {
+      @if ($width >= $desktop-grid-breakpoint) {
+        @media (min-width: $width) {
+          top: calc(#{calculate-navbar-height-for($breakpoint)} + #{$grid-gutter-width / 2});
+          height: calc(100vh - #{calculate-navbar-height-for($breakpoint)} - #{$grid-gutter-width / 2});
+        }
+      }
+    }
+
+    @media (min-width: $desktop-grid-breakpoint) {
+      position: sticky;
+      flex: 0 0 330px;
+      max-width: 330px;
+      overflow: scroll;
+      opacity: 1;
+      transition-duration: 375ms;
+      transition-property: width, max-width, padding, opacity;
+      will-change: width, max-width, padding, opacity;
+    }
+
+    > * {
+      margin-bottom: map-get($spacers, block);
+    }
+
+    .ad-container {
+      &--max-width-728,
+      &--max-width-300 {
+        max-width: 100%;
+      }
+      @media (min-width: $desktop-grid-breakpoint) {
+        &--max-width-728 {
+          max-width: 728px;
+        }
+        &--max-width-300 {
+          max-width: 300px;
+        }
+      }
+    }
+
+  }
+
+  &__top-content {
+    grid-area: topContent;
+  }
+
+  &__bottom-content {
+    grid-area: bottomContent;
+  }
+
+}
+
+.global-left-rail {
+  display: grid;
+  grid-template-areas:
+    "top"
+    "bottom"
+  ;
+
+  @media (min-width: $rail-size * 2) and (max-width: $desktop-grid-breakpoint) {
+    justify-content: space-between;
+    grid-template-columns: $rail-size;
+    grid-template-areas: "top bottom";
+
+    &__top,
+    &__bottom {
+      max-width: $rail-size;
+      margin: 0 auto;
+    }
+
+  }
+
+  > * {
+    margin-bottom: map-get($spacers, block);
+  }
+
+  .ad-container {
+    &--max-width-300 {
+      margin: 10px auto;
+    }
+  }
+
+  &__top {
+    grid-area: top;
+  }
+
+  &__bottom {
+    grid-area: bottom;
+  }
+
+}
