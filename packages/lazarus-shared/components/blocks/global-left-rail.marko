@@ -6,91 +6,92 @@ $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 $ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper", "Webinar"];
 
-<if(adunit.location)>
-  <lazarus-shared-increment-ad-pos slot-id=slotId />
-  <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
-</if>
+<div class="global-left-rail">
+  <if(adunit.location)>
+    <lazarus-shared-increment-ad-pos slot-id=slotId />
+    <marko-web-gam-refresh-ad on="load-more-in-view" slot-id=slotId />
+  </if>
 
-<!-- @todo check out stickybits js lib for handling position: sticky -->
-<marko-web-query|{ nodes }|
-  name="all-published-content"
-  params={
-    limit: 2,
-    includeContentTypes,
-    queryFragment,
-  }>
-  <lazarus-shared-content-list-flow
-    nodes=nodes
-    inner-justified=false
-    flush-x=true
-    flush-y=true
-    modifiers=["gutter-padding-x"]
-    ad-index=1
-  >
-    <@header>Recent</@header>
-    <@node display-image=false with-teaser=false />
-    <@adunit
+  <marko-web-query|{ nodes }|
+    name="all-published-content"
+    params={
+      limit: 2,
+      includeContentTypes,
+      queryFragment,
+    }>
+    <lazarus-shared-content-list-flow
+      nodes=nodes
+      inner-justified=false
+      flush-x=true
+      flush-y=true
+      modifiers=["gutter-padding-x"]
+      ad-index=1
+    >
+      <@header>Recent</@header>
+      <@node display-image=false with-teaser=false />
+      <@adunit
+        ...adunit
+        location=adunit.location
+        position="native_leftrail_1"
+        modifiers=["max-width-300", "no-shadow", "text-left"]
+      />
+    </lazarus-shared-content-list-flow>
+  </marko-web-query>
+
+  <if(adunit.location)>
+    <informa-gam-adunit
       ...adunit
       location=adunit.location
-      position="native_leftrail_1"
-      modifiers=["max-width-300", "no-shadow", "text-left"]
+      position="left_rail_rect"
+      context=adunit.context
+      id=slotId
+      modifiers=["max-width-300", "left-rail-sticky"]
     />
-  </lazarus-shared-content-list-flow>
-</marko-web-query>
+  </if>
 
-<if(adunit.location)>
-  <informa-gam-adunit
-    ...adunit
-    location=adunit.location
-    position="left_rail_rect"
-    context=adunit.context
-    id=slotId
-    modifiers=["max-width-300", "left-rail-sticky"]
-  />
-</if>
+  <marko-web-query|{ nodes }|
+    name="all-published-content"
+    params={
+      limit: 3,
+      skip: 2,
+      includeContentTypes,
+      queryFragment,
+    }>
+    <lazarus-shared-content-list-flow
+      nodes=nodes
+      inner-justified=false
+      flush-x=true
+      flush-y=true
+      modifiers=["gutter-padding-x"]
+      ad-index=1
+    >
+      <@node display-image=false with-teaser=false />
+      <@adunit
+        ...adunit
+        location=adunit.location
+        position="native_leftrail_2"
+        modifiers=["max-width-300", "no-shadow", "text-left"]
+      />
+    </lazarus-shared-content-list-flow>
+  </marko-web-query>
 
-<marko-web-query|{ nodes }|
-  name="all-published-content"
-  params={
-    limit: 3,
-    skip: 2,
-    includeContentTypes,
-    queryFragment,
-  }>
-  <lazarus-shared-content-list-flow
-    nodes=nodes
-    inner-justified=false
-    flush-x=true
-    flush-y=true
-    modifiers=["gutter-padding-x"]
-    ad-index=1
-  >
-    <@node display-image=false with-teaser=false />
-    <@adunit
-      ...adunit
-      location=adunit.location
-      position="native_leftrail_2"
-      modifiers=["max-width-300", "no-shadow", "text-left"]
-    />
-  </lazarus-shared-content-list-flow>
-</marko-web-query>
-
-<marko-web-query|{ nodes }|
-  name="website-optioned-content"
-  params={
-    sectionAlias: "home",
-    optionName: "Pinned",
-    limit: 4,
-    queryFragment,
-  }>
-  <lazarus-shared-content-list-flow
-    nodes=nodes
-    inner-justified=false
-    flush-x=true
-    flush-y=true
-    modifiers=["gutter-padding-x"]
-  >
-    <@header>Featured</@header>
-    <@node display-image=false with-teaser=false />
-  </lazarus-shared-content-list-flow>
-</marko-web-query>
+  <marko-web-query|{ nodes }|
+    name="website-optioned-content"
+    params={
+      sectionAlias: "home",
+      optionName: "Pinned",
+      limit: 4,
+      queryFragment,
+    }>
+    <lazarus-shared-content-list-flow
+      nodes=nodes
+      inner-justified=false
+      flush-x=true
+      flush-y=true
+      modifiers=["gutter-padding-x"]
+    >
+      <@header>Featured</@header>
+      <@node display-image=false with-teaser=false />
+    </lazarus-shared-content-list-flow>
+  </marko-web-query>
+</div>
