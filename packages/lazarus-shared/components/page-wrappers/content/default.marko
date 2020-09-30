@@ -6,50 +6,50 @@ $ const infiniteScrollEnabled = ["webinar", "whitepaper", "promotion"].includes(
 
 <marko-web-page-wrapper modifiers=["top-border"]>
   <@section>
-    <lazarus-skin-page-grid>
-      <@left-col>
+    <div class="page-with-rail">
+      <div class="page-with-rail__top-content">
+        <lazarus-shared-content-page-node node=content />
+      </div>
+      <div class="page-with-rail__rail">
         <lazarus-shared-global-left-rail-block>
           <@adunit location=adLocation(type)>
             <@context content-id=content.id />
           </@adunit>
         </lazarus-shared-global-left-rail-block>
-      </@left-col>
-      <@right-col>
-        <@bottom-row>
-          <lazarus-shared-content-page-node node=content />
-          <if(type === "company" || type === "contact")>
-            $ const queryName = (type === "company") ? "all-company-content" : "all-author-content";
-            $ const queryParams = (type === "company") ? { companyId: id, limit: 10 } : { contactId: id, limit: 10 };
-            <marko-web-load-more
-              append-to=".page-grid__bottom-row"
-              expand=500
-              component-name="lazarus-shared-content-load-more-flow"
-              component-input={
-                adunit: {
-                  location: "taxonomy",
-                  position: "infinitescroll",
-                  context: { sectionId: section.id },
-                },
-              }
-              fragment-name="content-list"
-              query-name=queryName
-              query-params=queryParams
-              page-input={ for: "content", id, type }
-            />
-          </if>
-          <else-if(infiniteScrollEnabled)>
-            <marko-web-load-more
-              append-to=".page-grid__bottom-row"
-              expand=500
-              component-name="lazarus-shared-content-page-load-more-flow"
-              fragment-name="content-page"
-              query-name="website-scheduled-content"
-              query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id], excludeContentTypes: ["Promotion"] }
-              page-input={ for: "content", id, type }
-            />
-          </else-if>
-        </@bottom-row>
-      </@right-col>
-    </lazarus-skin-page-grid>
+      </div>
+      <div class="page-with-rail__bottom-content">
+        <if(type === "company" || type === "contact")>
+          $ const queryName = (type === "company") ? "all-company-content" : "all-author-content";
+          $ const queryParams = (type === "company") ? { companyId: id, limit: 10 } : { contactId: id, limit: 10 };
+          <marko-web-load-more
+            append-to=".page-with-rail__bottom-content"
+            expand=500
+            component-name="lazarus-shared-content-load-more-flow"
+            component-input={
+              adunit: {
+                location: "taxonomy",
+                position: "infinitescroll",
+                context: { sectionId: section.id },
+              },
+            }
+            fragment-name="content-list"
+            query-name=queryName
+            query-params=queryParams
+            page-input={ for: "content", id, type }
+          />
+        </if>
+        <else-if(infiniteScrollEnabled)>
+          <marko-web-load-more
+            append-to=".page-with-rail__bottom-content"
+            expand=500
+            component-name="lazarus-shared-content-page-load-more-flow"
+            fragment-name="content-page"
+            query-name="website-scheduled-content"
+            query-params={ sectionId: section.id, limit: 1, skip: 0, excludeContentIds: [id], excludeContentTypes: ["Promotion"] }
+            page-input={ for: "content", id, type }
+          />
+        </else-if>
+      </div>
+    </div>
   </@section>
 </marko-web-page-wrapper>
