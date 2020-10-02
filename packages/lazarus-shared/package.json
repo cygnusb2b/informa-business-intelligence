@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/lazarus-shared",
-  "version": "1.21.5",
+  "version": "1.21.6",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/packages/lazarus-shared",
   "license": "MIT",
@@ -25,8 +25,8 @@
     "@base-cms/object-path": "^1.37.0",
     "@base-cms/utils": "^1.37.0",
     "@base-cms/web-cli": "^1.37.0",
-    "@endeavor-business-media/informa-gam": "^1.21.1",
-    "@endeavor-business-media/package-leaders": "^1.21.1",
+    "@endeavor-business-media/informa-gam": "^1.21.6",
+    "@endeavor-business-media/package-leaders": "^1.21.6",
     "@sendgrid/mail": "^6.4.0",
     "algoliasearch": "^4.4.0",
     "body-parser": "^1.19.0",
