@@ -10,11 +10,11 @@
     "test": "yarn lint"
   },
   "dependencies": {
-    "@base-cms/marko-core": "^1.36.1",
-    "@base-cms/marko-web": "^1.36.3",
-    "@base-cms/marko-web-icons": "^1.29.6",
-    "@base-cms/marko-web-leaders": "^1.36.3",
-    "@base-cms/object-path": "^1.25.0",
+    "@base-cms/marko-core": "^1.38.0",
+    "@base-cms/marko-web": "^1.37.0",
+    "@base-cms/marko-web-icons": "^1.37.0",
+    "@base-cms/marko-web-leaders": "^1.37.0",
+    "@base-cms/object-path": "^1.37.0",
     "graphql-tag": "^2.10.1",
     "object-path": "^0.11.4"
   },
