@@ -122,9 +122,11 @@ $theme-content-page-node-full-width: 780px !default;
   }
 
   &--left-rail-sticky {
-    position: sticky;
-    top: -$grid-gutter-width;
-    z-index: 1;
+    @media (min-width: 1068px) {
+      position: sticky;
+      top: -$grid-gutter-width;
+      z-index: 1;
+    }
   }
 
   &--text-left {
@@ -439,12 +441,6 @@ $theme-content-page-node-full-width: 780px !default;
   &__left-col {
     padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
-    @each $breakpoint, $width in sort-map-by-values($theme-site-header-breakpoints, desc) {
-      @media (max-width: $width) {
-        top: calc(#{calculate-navbar-height-for($breakpoint)});
-        height: calc(100vh - #{calculate-navbar-height-for($breakpoint)});
-      }
-    }
   }
 
   &__right-col {
@@ -836,5 +832,14 @@ $theme-content-page-node-full-width: 780px !default;
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.site-footer {
+  &__items {
+    flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
   }
 }
