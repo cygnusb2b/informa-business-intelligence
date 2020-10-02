@@ -136,7 +136,7 @@ body {
   }
 
   &--left-rail-sticky {
-    @media(min-width: 1068px) {
+    @media (min-width: 1068px) {
       position: sticky;
       top: -$grid-gutter-width;
       z-index: 1;
