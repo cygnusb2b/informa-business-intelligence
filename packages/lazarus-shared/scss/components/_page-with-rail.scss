@@ -7,15 +7,13 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
   grid-template-areas:
     "topContent"
     "rail"
-    "bottomContent"
-  ;
+    "bottomContent";
 
   @media (min-width: $desktop-grid-breakpoint) {
     grid-template-columns: $rail-size auto;
     grid-template-areas:
       "rail topContent"
-      "rail bottomContent"
-    ;
+      "rail bottomContent";
   }
 
   &__rail {
@@ -68,6 +66,12 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
 
   &__bottom-content {
     grid-area: bottomContent;
+
+    /* temp fix until new platform */
+    /* stylelint-disable-next-line */
+    .page-grid__col--half {
+      float: left;
+    }
   }
 
 }
