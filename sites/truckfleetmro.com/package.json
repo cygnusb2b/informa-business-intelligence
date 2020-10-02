@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/truckfleetmro.com",
-  "version": "1.21.7",
+  "version": "1.21.8",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/truckfleetmro.com",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "@base-cms/utils": "^1.37.0",
     "@base-cms/web-cli": "^1.37.0",
     "@endeavor-business-media/informa-gam": "^1.21.7",
-    "@endeavor-business-media/lazarus-shared": "^1.21.7",
+    "@endeavor-business-media/lazarus-shared": "^1.21.8",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }
