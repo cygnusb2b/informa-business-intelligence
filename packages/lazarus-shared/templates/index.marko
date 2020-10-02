@@ -20,202 +20,203 @@ $ const { id, alias, name, pageNode } = data;
 
       <marko-web-page-wrapper modifiers=["top-border"]>
         <@section>
-          <lazarus-skin-page-grid>
-            <@left-col>
+          <div class="page-with-rail">
+            <div class="page-with-rail__top-content">
+              <div class="page-grid__top-left-col">
+                <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
+
+              </div>
+            </div>
+            <div class="page-with-rail__rail">
               <lazarus-shared-global-left-rail-block>
                 <@adunit location="homepage" />
               </lazarus-shared-global-left-rail-block>
-            </@left-col>
-            <@right-col>
-              <@top-row>
-                <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
-              </@top-row>
-              <@bottom-row>
-                <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
-                  <lazarus-shared-newsletter-signup-block />
-                </lazarus-skin-page-grid-col>
+            </div>
+            <div class="page-with-rail__bottom-content">
+              <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
+                <lazarus-shared-newsletter-signup-block />
+              </lazarus-skin-page-grid-col>
 
-                $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
-                <if(sectionA)>
-                  <div class="col-md-6 mb-block">
+              $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
+              <if(sectionA)>
+                <div class="col-md-6 mb-block">
 
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: sectionA.alias, limit: 3, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${sectionA.alias}`>
-                            ${sectionA.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["dark", "increased-padding"]
-                        />
-                        <@list>
-                          <@node with-teaser=false with-section=false />
-                          <@adunit location="homepage" position="native_category_1" modifiers=["no-shadow", "text-left"] />
-                        </@list>
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
-
-                  </div>
-                </if>
-
-                <if(sectionB)>
-                  <div class="col-md-6 mb-block">
-
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: sectionB.alias, limit: 3, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${sectionB.alias}`>
-                            ${sectionB.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["dark", "increased-padding"]
-                        />
-                        <@list>
-                          <@node with-teaser=false with-section=false />
-                          <@adunit location="homepage" position="native_category_2" modifiers=["no-shadow", "text-left"] />
-                        </@list>
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
-
-                  </div>
-                </if>
-
-                <if(sectionC)>
-                  <div class="col-12 mb-block">
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: sectionC.alias, limit: 5, requiresImage: true, queryFragment }
-                    >
-                      <default-theme-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${sectionC.alias}`>
-                            ${sectionC.name}
-                          </marko-web-link>
-                        </@header>
-
-                        <@hero|{ node, blockName }|>
-                          <marko-web-element block-name=blockName name="ad-wrapper">
-                            <lazarus-shared-content-card-node
-                              node=node
-                              with-teaser=false
-                              with-section=false
-                              modifiers=["dark", "increased-padding"]
-                            >
-                              <@image width=500 />
-                              <@title modifiers=["large"] />
-                            </lazarus-shared-content-card-node>
-                            <marko-web-element block-name=blockName name="ad" modifiers=["max-width-300"]>
-                              <informa-gam-adunit location="homepage" position="third_cat_jumbotron" />
-                            </marko-web-element>
-                          </marko-web-element>
-                        </@hero>
-                        <@list|{ nodes: listNodes }|>
-                          <lazarus-shared-content-list-flow nodes=listNodes
-                            flush-x=true
-                            flush-y=true
-                            modifiers=["rows"]
-                          >
-                            <@node with-teaser=false with-section=false />
-                            <@adunit location="homepage" position="native_category_3" modifiers=["no-shadow", "text-left"] />
-                          </lazarus-shared-content-list-flow>
-                        </@list>
-                      </default-theme-hero-flow>
-                    </marko-web-query>
-                  </div>
-                </if>
-
-                <if(site.get("leaders.alias") && site.get("leaders.componentsEnabled", true))>
-                  <div class="col-12 mb-block">
-                    <leaders-home-page />
-                  </div>
-                </if>
-
-                $ const [programA, programB] = site.getAsArray("homePagePrograms");
-                <if(programA)>
-                  <div class="col-md-6 mb-block">
-
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: programA.alias, limit: 1, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${programA.alias}`>
-                            ${programA.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["light", "increased-padding"]
-                        />
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
-
-                  </div>
-                </if>
-
-                <if(programB)>
-                  <div class="col-md-6 mb-block">
-
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: programB.alias, limit: 1, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${programB.alias}`>
-                            ${programB.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["light", "increased-padding"]
-                        />
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
-
-                  </div>
-                </if>
-
-                <div class="col-12">
                   <marko-web-query|{ nodes }|
-                    name="all-published-content"
-                    params={ limit: 1, includeContentTypes: ["MediaGallery"], requiresImage: true, queryFragment }
+                    name="website-scheduled-content"
+                    params={ sectionAlias: sectionA.alias, limit: 3, requiresImage: true, queryFragment }
                   >
                     <lazarus-shared-content-hero-flow nodes=nodes>
-                      <@header>Featured Media</@header>
+                      <@header>
+                        <marko-web-link href=`/${sectionA.alias}`>
+                          ${sectionA.name}
+                        </marko-web-link>
+                      </@header>
                       <@card
+                        with-teaser=false
                         with-section=false
                         modifiers=["dark", "increased-padding"]
                       />
+                      <@list>
+                        <@node with-teaser=false with-section=false />
+                        <@adunit location="homepage" position="native_category_1" modifiers=["no-shadow", "text-left"] />
+                      </@list>
                     </lazarus-shared-content-hero-flow>
                   </marko-web-query>
-                </div>
 
-                <lazarus-skin-page-grid-col modifiers=["full", "flex", "body-bg"]>
-                  <informa-gam-adunit
-                    location="homepage"
-                    position="bottom_banner"
-                    modifiers=["max-width-728", "margin-auto-x"]
-                  />
-                </lazarus-skin-page-grid-col>
-              </@bottom-row>
-            </@right-col>
-          </lazarus-skin-page-grid>
+                </div>
+              </if>
+
+              <if(sectionB)>
+                <div class="col-md-6 mb-block">
+
+                  <marko-web-query|{ nodes }|
+                    name="website-scheduled-content"
+                    params={ sectionAlias: sectionB.alias, limit: 3, requiresImage: true, queryFragment }
+                  >
+                    <lazarus-shared-content-hero-flow nodes=nodes>
+                      <@header>
+                        <marko-web-link href=`/${sectionB.alias}`>
+                          ${sectionB.name}
+                        </marko-web-link>
+                      </@header>
+                      <@card
+                        with-teaser=false
+                        with-section=false
+                        modifiers=["dark", "increased-padding"]
+                      />
+                      <@list>
+                        <@node with-teaser=false with-section=false />
+                        <@adunit location="homepage" position="native_category_2" modifiers=["no-shadow", "text-left"] />
+                      </@list>
+                    </lazarus-shared-content-hero-flow>
+                  </marko-web-query>
+
+                </div>
+              </if>
+
+              <if(sectionC)>
+                <div class="col-12 mb-block">
+                  <marko-web-query|{ nodes }|
+                    name="website-scheduled-content"
+                    params={ sectionAlias: sectionC.alias, limit: 5, requiresImage: true, queryFragment }
+                  >
+                    <default-theme-hero-flow nodes=nodes>
+                      <@header>
+                        <marko-web-link href=`/${sectionC.alias}`>
+                          ${sectionC.name}
+                        </marko-web-link>
+                      </@header>
+
+                      <@hero|{ node, blockName }|>
+                        <marko-web-element block-name=blockName name="ad-wrapper">
+                          <lazarus-shared-content-card-node
+                            node=node
+                            with-teaser=false
+                            with-section=false
+                            modifiers=["dark", "increased-padding"]
+                          >
+                            <@image width=500 />
+                            <@title modifiers=["large"] />
+                          </lazarus-shared-content-card-node>
+                          <marko-web-element block-name=blockName name="ad" modifiers=["max-width-300"]>
+                            <informa-gam-adunit location="homepage" position="third_cat_jumbotron" />
+                          </marko-web-element>
+                        </marko-web-element>
+                      </@hero>
+                      <@list|{ nodes: listNodes }|>
+                        <lazarus-shared-content-list-flow nodes=listNodes
+                          flush-x=true
+                          flush-y=true
+                          modifiers=["rows"]
+                        >
+                          <@node with-teaser=false with-section=false />
+                          <@adunit location="homepage" position="native_category_3" modifiers=["no-shadow", "text-left"] />
+                        </lazarus-shared-content-list-flow>
+                      </@list>
+                    </default-theme-hero-flow>
+                  </marko-web-query>
+                </div>
+              </if>
+
+              <if(site.get("leaders.alias") && site.get("leaders.componentsEnabled", true))>
+                <div class="col-12 mb-block">
+                  <leaders-home-page />
+                </div>
+              </if>
+
+              $ const [programA, programB] = site.getAsArray("homePagePrograms");
+              <if(programA)>
+                <div class="col-md-6 mb-block">
+
+                  <marko-web-query|{ nodes }|
+                    name="website-scheduled-content"
+                    params={ sectionAlias: programA.alias, limit: 1, requiresImage: true, queryFragment }
+                  >
+                    <lazarus-shared-content-hero-flow nodes=nodes>
+                      <@header>
+                        <marko-web-link href=`/${programA.alias}`>
+                          ${programA.name}
+                        </marko-web-link>
+                      </@header>
+                      <@card
+                        with-teaser=false
+                        with-section=false
+                        modifiers=["light", "increased-padding"]
+                      />
+                    </lazarus-shared-content-hero-flow>
+                  </marko-web-query>
+
+                </div>
+              </if>
+
+              <if(programB)>
+                <div class="col-md-6 mb-block">
+
+                  <marko-web-query|{ nodes }|
+                    name="website-scheduled-content"
+                    params={ sectionAlias: programB.alias, limit: 1, requiresImage: true, queryFragment }
+                  >
+                    <lazarus-shared-content-hero-flow nodes=nodes>
+                      <@header>
+                        <marko-web-link href=`/${programB.alias}`>
+                          ${programB.name}
+                        </marko-web-link>
+                      </@header>
+                      <@card
+                        with-teaser=false
+                        with-section=false
+                        modifiers=["light", "increased-padding"]
+                      />
+                    </lazarus-shared-content-hero-flow>
+                  </marko-web-query>
+
+                </div>
+              </if>
+
+              <div class="col-12">
+                <marko-web-query|{ nodes }|
+                  name="all-published-content"
+                  params={ limit: 1, includeContentTypes: ["MediaGallery"], requiresImage: true, queryFragment }
+                >
+                  <lazarus-shared-content-hero-flow nodes=nodes>
+                    <@header>Featured Media</@header>
+                    <@card
+                      with-section=false
+                      modifiers=["dark", "increased-padding"]
+                    />
+                  </lazarus-shared-content-hero-flow>
+                </marko-web-query>
+              </div>
+
+              <lazarus-skin-page-grid-col modifiers=["full", "flex", "body-bg"]>
+                <informa-gam-adunit
+                  location="homepage"
+                  position="bottom_banner"
+                  modifiers=["max-width-728", "margin-auto-x"]
+                />
+              </lazarus-skin-page-grid-col>
+            </div>
+          </div>
         </@section>
       </marko-web-page-wrapper>
 
