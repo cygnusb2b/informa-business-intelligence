@@ -29,59 +29,63 @@ $ const { id, alias, name, pageNode } = data;
                   </lazarus-skin-page-grid-col>
 
                 $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
-                <if(sectionA)>
-                  <div class="col-md-6 mb-block">
+                <if(sectionA || sectionB)>
+                  <div class="row">
+                    <if(sectionA)>
+                      <div class="col-md-6 mb-block">
 
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: sectionA.alias, limit: 3, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${sectionA.alias}`>
-                            ${sectionA.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["dark", "increased-padding"]
-                        />
-                        <@list>
-                          <@node with-teaser=false with-section=false />
-                          <@adunit location="homepage" position="native_category_1" modifiers=["no-shadow", "text-left"] />
-                        </@list>
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
+                        <marko-web-query|{ nodes }|
+                          name="website-scheduled-content"
+                          params={ sectionAlias: sectionA.alias, limit: 3, requiresImage: true, queryFragment }
+                        >
+                          <lazarus-shared-content-hero-flow nodes=nodes>
+                            <@header>
+                              <marko-web-link href=`/${sectionA.alias}`>
+                                ${sectionA.name}
+                              </marko-web-link>
+                            </@header>
+                            <@card
+                              with-teaser=false
+                              with-section=false
+                              modifiers=["dark", "increased-padding"]
+                            />
+                            <@list>
+                              <@node with-teaser=false with-section=false />
+                              <@adunit location="homepage" position="native_category_1" modifiers=["no-shadow", "text-left"] />
+                            </@list>
+                          </lazarus-shared-content-hero-flow>
+                        </marko-web-query>
 
-                  </div>
-                </if>
+                      </div>
+                    </if>
 
-                <if(sectionB)>
-                  <div class="col-md-6 mb-block">
+                    <if(sectionB)>
+                      <div class="col-md-6 mb-block">
 
-                    <marko-web-query|{ nodes }|
-                      name="website-scheduled-content"
-                      params={ sectionAlias: sectionB.alias, limit: 3, requiresImage: true, queryFragment }
-                    >
-                      <lazarus-shared-content-hero-flow nodes=nodes>
-                        <@header>
-                          <marko-web-link href=`/${sectionB.alias}`>
-                            ${sectionB.name}
-                          </marko-web-link>
-                        </@header>
-                        <@card
-                          with-teaser=false
-                          with-section=false
-                          modifiers=["dark", "increased-padding"]
-                        />
-                        <@list>
-                          <@node with-teaser=false with-section=false />
-                          <@adunit location="homepage" position="native_category_2" modifiers=["no-shadow", "text-left"] />
-                        </@list>
-                      </lazarus-shared-content-hero-flow>
-                    </marko-web-query>
+                        <marko-web-query|{ nodes }|
+                          name="website-scheduled-content"
+                          params={ sectionAlias: sectionB.alias, limit: 3, requiresImage: true, queryFragment }
+                        >
+                          <lazarus-shared-content-hero-flow nodes=nodes>
+                            <@header>
+                              <marko-web-link href=`/${sectionB.alias}`>
+                                ${sectionB.name}
+                              </marko-web-link>
+                            </@header>
+                            <@card
+                              with-teaser=false
+                              with-section=false
+                              modifiers=["dark", "increased-padding"]
+                            />
+                            <@list>
+                              <@node with-teaser=false with-section=false />
+                              <@adunit location="homepage" position="native_category_2" modifiers=["no-shadow", "text-left"] />
+                            </@list>
+                          </lazarus-shared-content-hero-flow>
+                        </marko-web-query>
 
+                      </div>
+                    </if>
                   </div>
                 </if>
 
