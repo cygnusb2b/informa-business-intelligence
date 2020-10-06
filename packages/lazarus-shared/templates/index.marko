@@ -9,6 +9,12 @@ $ const { id, alias, name, pageNode } = data;
       <marko-web-gtm-push data=context />
     </marko-web-gtm-website-section-context>
   </@head>
+  <@above-container>
+    <informa-gam-adunit
+      location="homepage"
+      position="hidden"
+    />
+  </@above-container>
   <@page>
     <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
 
@@ -221,10 +227,4 @@ $ const { id, alias, name, pageNode } = data;
 
     </marko-web-resolve-page>
   </@page>
-  <@below-container>
-    <informa-gam-adunit
-      location="homepage"
-      position="hidden"
-    />
-  </@below-container>
 </marko-web-website-section-page-layout>
