@@ -17,6 +17,7 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
 
   &__left-col {
     @include make-col-ready();
+    display: none;
     flex: 0 0 100%;
     order: 1;
 
@@ -31,6 +32,7 @@ $new-breakpoint-list: map-merge($theme-site-header-breakpoints, (desktop-grid-br
 
     @media (min-width: $desktop-grid-breakpoint) {
       position: sticky;
+      display: flex;
       flex: 0 0 330px;
       order: 0;
       max-width: 330px;
