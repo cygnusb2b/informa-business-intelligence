@@ -20,13 +20,20 @@ $ const { id, alias, name, pageNode } = data;
 
       <marko-web-page-wrapper modifiers=["top-border"]>
         <@section>
-          <div class="page-with-rail">
-            <div class="page-with-rail__top-content">
-              <div class="page-grid__top-left-col">
+          <lazarus-skin-page-grid>
+            <@left-col>
+              <lazarus-shared-global-left-rail-block>
+                <@adunit location="homepage" />
+              </lazarus-shared-global-left-rail-block>
+            </@left-col>
+            <@right-col>
+              <@top-row>
                 <lazarus-shared-home-page-hero-with-recommended-block section-id=id/>
+              </@top-row>
+              <@bottom-row>
                 <lazarus-skin-page-grid-col modifiers=["full", "no-gutters", "bottom-spacer"]>
-                    <lazarus-shared-newsletter-signup-block />
-                  </lazarus-skin-page-grid-col>
+                  <lazarus-shared-newsletter-signup-block />
+                </lazarus-skin-page-grid-col>
 
                 $ const [sectionA, sectionB, sectionC] = site.getAsArray("homePageSections");
                 <if(sectionA)>
@@ -206,14 +213,9 @@ $ const { id, alias, name, pageNode } = data;
                     modifiers=["max-width-728", "margin-auto-x"]
                   />
                 </lazarus-skin-page-grid-col>
-              </div>
-            </div>
-            <div class="page-with-rail__rail">
-              <lazarus-shared-global-left-rail-block>
-                <@adunit location="homepage" />
-              </lazarus-shared-global-left-rail-block>
-            </div>
-          </div>
+              </@bottom-row>
+            </@right-col>
+          </lazarus-skin-page-grid>
         </@section>
       </marko-web-page-wrapper>
 
