@@ -10,6 +10,14 @@ $ const { id, type, pageNode } = data;
       <lazarus-shared-blueconic-metatag context=context />
     </marko-web-gtm-content-context>
   </@head>
+  <@above-container>
+    <informa-gam-adunit
+      location="article"
+      position="hidden"
+    >
+      <@context content-id=id />
+    </informa-gam-adunit>
+  </@above-container>
   <@page>
 
     <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
@@ -32,12 +40,4 @@ $ const { id, type, pageNode } = data;
       </else>
     </marko-web-resolve-page>
   </@page>
-  <@below-container>
-    <informa-gam-adunit
-      location="article"
-      position="hidden"
-    >
-      <@context content-id=id />
-    </informa-gam-adunit>
-  </@below-container>
 </marko-web-content-page-layout>
