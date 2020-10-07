@@ -14,7 +14,8 @@ export default {
   created() {
     const elements = document.querySelectorAll(this.selector);
     Array.prototype.forEach.call(elements, (element) => {
-      const src = element.getAttribute('data-src');
+      const qs = window.location.search.substring(1);
+      const src = element.getAttribute('data-src').includes('?') ? `${element.getAttribute('data-src')}&${qs}` : `${element.getAttribute('data-src')}?${qs}`;
       const hasProcessed = element.getAttribute('data-has-processed');
       if (!hasProcessed && src) {
         const iframe = document.createElement('iframe');
