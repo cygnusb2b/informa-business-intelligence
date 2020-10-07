@@ -915,10 +915,10 @@
     moment "^2.24.0"
     moment-timezone "^0.5.26"
 
-"@base-cms/marko-web-gam@^1.37.0":
-  version "1.37.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.37.0.tgz#7e0204b29f32dd58e25ff177c259abe505f2c799"
-  integrity sha512-RTI/RQYCN1t1JCe9J0et0b1x2B2YIQSZPmu4h/S5kodvBxD9oKcC4gWxUf0xDUq+qodQoelgZcO5lzxN/zIkaQ==
+"@base-cms/marko-web-gam@^1.42.0":
+  version "1.42.0"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-gam/-/marko-web-gam-1.42.0.tgz#720b3d912aac7ae95a166f4157ec6d473f3fda34"
+  integrity sha512-ZYEgTcp4mDo/2AiHsZIjKu3CD/0jSo7OoOxO99FzX42LapAOg+Eh0cr1snk5bPTLemGOTL8xZIM2T7WxImj7gg==
   dependencies:
     "@base-cms/object-path" "^1.37.0"
     "@base-cms/utils" "^1.37.0"
@@ -1000,10 +1000,10 @@
   dependencies:
     "@base-cms/utils" "^1.37.0"
 
-"@base-cms/marko-web-theme-default@^1.41.0":
-  version "1.41.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.41.0.tgz#c096d5e8c3cb54f42d1eb6eecd43b7f6ef6983cb"
-  integrity sha512-2vZlNvKGw271/p2uJVr+0d7ZQqBrB7GhfdxszrPQn747HD4kNLEyLHFomNSmvN2D3MRZDwAbDtrexClMyC14mQ==
+"@base-cms/marko-web-theme-default@^1.41.1":
+  version "1.41.1"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-theme-default/-/marko-web-theme-default-1.41.1.tgz#04a78cf5f4b7ac58cac684a0f90e895a3fa86c55"
+  integrity sha512-IlLfhwz/qSUsWeDpc/6sMmFO+m4NdhZryEbHXX/3pLwUKbnm4QDpVAs5wFU81IaMlusm6ke/KO2niqbkr10mGw==
   dependencies:
     "@base-cms/marko-web-icons" "^1.37.0"
     "@base-cms/object-path" "^1.37.0"
