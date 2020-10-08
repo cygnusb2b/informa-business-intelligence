@@ -18,6 +18,8 @@
     "@targeting": "object",
     "@collapse": "boolean",
     "@collapse-before-ad-fetch": "boolean",
+    "@request-on-media-match": "string",
+    "@debug-media-query": "boolean",
     "@id": "string",
     "@modifiers": "array",
     "@apply-style": "boolean",

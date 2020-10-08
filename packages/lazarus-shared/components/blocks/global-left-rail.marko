@@ -5,6 +5,7 @@ import queryFragment from "../../graphql/fragments/content-list";
 $ const adunit = getAsObject(input, "adunit");
 $ const slotId = generateId();
 $ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper", "Webinar"];
+$ const requestAdsOnMediaMatch = "(min-width: 1068px)";
 
 <div class="global-left-rail">
   <div class="global-left-rail__top">
@@ -35,6 +36,8 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper",
           location=adunit.location
           position="native_leftrail_1"
           modifiers=["no-shadow", "text-left"]
+          request-on-media-match=requestAdsOnMediaMatch
+          debug-media-query=true
         />
       </lazarus-shared-content-list-flow>
     </marko-web-query>
@@ -47,6 +50,8 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper",
         context=adunit.context
         id=slotId
         modifiers=["max-width-300", "left-rail-sticky"]
+        request-on-media-match=requestAdsOnMediaMatch
+        debug-media-query=true
       />
     </if>
 
@@ -72,6 +77,8 @@ $ const includeContentTypes = ["Article", "MediaGallery", "Video", "Whitepaper",
           location=adunit.location
           position="native_leftrail_2"
           modifiers=["max-width-300", "no-shadow", "text-left"]
+          request-on-media-match=requestAdsOnMediaMatch
+          debug-media-query=true
         />
       </lazarus-shared-content-list-flow>
     </marko-web-query>
