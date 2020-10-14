@@ -15,8 +15,8 @@ module.exports = {
   },
   homePageSections: [
     { alias: 'resources/technology-advancements', name: 'Technology Advancements' },
-    { alias: 'resources/products-and-solutions', name: 'Products and Solutions' },
     { alias: 'resources/industry-insights', name: 'Industry Insights' },
+    { alias: 'resources/products-and-solutions', name: 'Products and Solutions' },
   ],
   logos: {
     navbar: {
