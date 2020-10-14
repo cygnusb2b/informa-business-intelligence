@@ -11,9 +11,9 @@ module.exports = {
     comments: { enabled: true },
   },
   homePageSections: [
-    { alias: 'markets/defense', name: 'Defense' },
-    { alias: 'technologies/components', name: 'Components' },
-    { alias: 'technologies/systems', name: 'Systems' },
+    { alias: 'resources/technology-advancements', name: 'Technology Advancements' },
+    { alias: 'resources/industry-insights', name: 'Industry Insights' },
+    { alias: 'resources/products-and-solutions', name: 'Products and Solutions' },
   ],
   logos: {
     navbar: {
