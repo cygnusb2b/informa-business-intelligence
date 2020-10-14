@@ -11,12 +11,14 @@ $ const { id, type, pageNode } = data;
     </marko-web-gtm-content-context>
   </@head>
   <@above-container>
-    <informa-gam-adunit
-      location="article"
-      position="hidden"
-    >
-      <@context content-id=id />
-    </informa-gam-adunit>
+    <if (type !== "promotion" && site.name !== "electronicdesign.com")>
+      <informa-gam-adunit
+        location="article"
+        position="hidden"
+      >
+        <@context content-id=id />
+      </informa-gam-adunit>
+    </if>
   </@above-container>
   <@page>
 
@@ -24,13 +26,15 @@ $ const { id, type, pageNode } = data;
       $ const section = resolved.getAsObject("primarySection");
       $ const labels = resolved.getAsArray("primarySection.labels");
 
-      <informa-gam-adunit
-        location=adLocation(type)
-        position="top_banner"
-        modifiers=["top-of-page"]
-      >
-        <@context content-id=content.id />
-      </informa-gam-adunit>
+      <if (type !== "promotion" && site.name !== "electronicdesign.com")>
+        <informa-gam-adunit
+          location=adLocation(type)
+          position="top_banner"
+          modifiers=["top-of-page"]
+        >
+          <@context content-id=content.id />
+        </informa-gam-adunit>
+      </if>
 
       <if(labels.includes("Program"))>
         <lazarus-shared-content-program-page-wrapper content=content section=section />
