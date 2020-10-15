@@ -46,7 +46,7 @@ module.exports = {
         { href: '/webinars', label: 'Webinars' },
         { href: '/e-books-library', label: 'e-books Library' },
         { href: '/ecm-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
-        { href: '/ecm-digital-editions', label: 'Digital Editions Archive' },
+        { href: '/magazine/5e6ba86ca1b8b3c9813c6a2a', label: 'Digital Back Issues' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://buildings.endeavorb2b.com/ecm', label: 'Advertise', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
