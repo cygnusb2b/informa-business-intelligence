@@ -71,7 +71,7 @@
                   <img
                     v-if="item.primaryImage.isLogo"
                     class="node__image"
-                    :src="`${item.primaryImage.src}?auto=format&fit=fill&h=191&w=340`"
+                    :src="`${item.primaryImage.src}?auto=format&fit=fillmax&fill=solid&h=191&w=340`"
                   >
                   <img
                     v-else
