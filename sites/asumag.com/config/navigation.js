@@ -35,7 +35,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/page/awards', label: 'Awards & Competitions' },
-        { href: '/american-school-university-digital-edition-archive', label: 'AS&U Digital Editions' },
+        { href: '/magazine/5e6b9462a1b8b3c981e0f161', label: 'Digital Back Issues' },
         { href: 'http://schooldesigns.com', label: 'SchoolDesigns.com', target: '_blank' },
         { href: '/resources', label: 'Resources' },
         { href: '/resources/webinars', label: 'Webinars' },

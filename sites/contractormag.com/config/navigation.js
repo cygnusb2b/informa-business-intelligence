@@ -32,9 +32,8 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/radiant', label: 'Radiant' },
-        { href: '/magazine/5e6ba1e4a1b8b3c9811e2928', label: 'Back Issues' },
         { href: '/nate-digital-editions', label: 'NATE Magazine' },
-        { href: '/contractor-digital-editions', label: 'CONTRACTOR Digital Editions' },
+        { href: '/magazine/5e6ba1e4a1b8b3c9811e2928', label: 'Digital Back Issues' },
         { href: '/learning-resources/whitepapers', label: 'White Papers' },
         { href: '/learning-resources/webinar', label: 'Webinars' },
         { href: '/page/contractor-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },

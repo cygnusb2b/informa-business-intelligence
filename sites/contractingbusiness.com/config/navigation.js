@@ -32,7 +32,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/contracting-business-digital-archive', label: 'Contracting Business Digital Edition' },
+        { href: '/magazine/5e6ba79ba1b8b3c98138e151', label: 'Digital Back Issues' },
         { href: '/hvacrdb', label: 'HVACR Distribution Business' },
         { href: '/nate-digital-editions', label: 'NATE Magazine' },
         { href: '/whitepapers', label: 'White Papers' },
