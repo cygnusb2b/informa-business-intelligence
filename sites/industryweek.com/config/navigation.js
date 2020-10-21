@@ -31,7 +31,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://directory.newequipment.com/', label: 'Manufacturing Products' },
+        { href: 'https://directory.newequipment.com/', label: 'Manufacturing Products' },
         { href: '/resources/industryweek-best-plants-awards', label: 'IndustryWeek Best Plants Awards' },
         { href: '/resources/industryweek-50-best-us-manufacturers', label: 'IW US 50 Best' },
         { href: '/resources/industryweek-us-500', label: 'IW US 500' },
