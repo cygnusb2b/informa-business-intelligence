@@ -23,15 +23,15 @@ module.exports = {
         { href: '/technologies/hydraulic-valves', label: 'Hydraulic Valves' },
         { href: '/technologies/hydraulic-pumps-motors', label: 'Hydraulic Pumps & Motors' },
         { href: '/technologies/cylinders-actuators', label: 'Cylinders and Actuators' },
-        { href: '/directories', label: 'Directories' },
+        { href: '/hpconnect', label: 'H&P Connect' },
         { href: '/learning-resources', label: 'Resources' },
-        { href: '/page/community/hydraulics-pneumatics-experts', label: 'Experts' },
+        { href: '/magazine/5e6baaf6a1b8b3c9814869e5', label: 'Digital Edition Archives' },
       ],
     },
     {
       modifiers: ['secondary'],
       items: [
-        { href: '/manufacturer-directory', label: 'Manufacturers Directory' },
+        { href: '/hpconnect', label: 'Manufacturers Directory' },
         { href: '/distributor-directory', label: 'Distributors Directory' },
         { href: '/hydraulics-pneumatics-blogs', label: 'Blogs' },
         { href: 'https://directory.newequipment.com/', label: 'Equipment Product Directory' },

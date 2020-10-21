@@ -33,12 +33,13 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/magazine/5e6babaaa1b8b3c9814b80f2', label: 'Digital Edition Archives' },
         { href: 'https://www.csiaexchange.com/', label: 'CSIA Exchange', target: '_blank' },
         { href: '/markets', label: 'Markets' },
-        { href: 'http://www.electronicdesign.com/', label: 'Design with Electronics' },
-        { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
-        { href: 'http://www.industryweek.com/', label: 'The Business of Manufacturing' },
-        { href: 'http://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
+        { href: 'https://www.electronicdesign.com/', label: 'Electronic Design' },
+        { href: 'https://directory.newequipment.com/', label: 'New Equipment Digest' },
+        { href: 'https://www.industryweek.com/', label: 'Industry Week' },
+        { href: 'https://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
