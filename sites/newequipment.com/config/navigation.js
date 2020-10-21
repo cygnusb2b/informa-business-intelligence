@@ -23,14 +23,14 @@ module.exports = {
         { href: '/technology-innovations', label: 'Technology Innovations' },
         { href: '/plant-operations', label: 'Plant Operations' },
         { href: '/research-and-development', label: 'Research & Development' },
-        { href: 'http://directory.newequipment.com', label: 'Find Products' },
-        { href: 'http://directory.newequipment.com/top/companies', label: 'Browse Suppliers' },
+        { href: 'https://directory.newequipment.com', label: 'Find Products' },
+        { href: 'https://directory.newequipment.com/top/companies', label: 'Browse Suppliers' },
       ],
     },
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://directory.newequipment.com/', label: 'NED Directory' },
+        { href: 'https://directory.newequipment.com/', label: 'NED Directory' },
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },

@@ -34,7 +34,7 @@ module.exports = {
         { href: '/manufacturer-directory', label: 'Manufacturers Directory' },
         { href: '/distributor-directory', label: 'Distributors Directory' },
         { href: '/hydraulics-pneumatics-blogs', label: 'Blogs' },
-        { href: 'http://directory.newequipment.com/', label: 'Equipment Product Directory' },
+        { href: 'https://directory.newequipment.com/', label: 'Equipment Product Directory' },
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
         { href: '/learning-resources/webinar', label: 'Webinars' },

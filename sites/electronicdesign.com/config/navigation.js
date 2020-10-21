@@ -33,7 +33,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'http://sourceesb.com/', label: 'Find Parts', target: '_blank' },
+        { href: 'https://sourceesb.com/', label: 'Find Parts', target: '_blank' },
         { href: '/magazine-digital-archive', label: 'Digital Archive' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },

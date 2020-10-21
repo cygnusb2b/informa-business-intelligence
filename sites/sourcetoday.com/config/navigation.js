@@ -34,8 +34,8 @@ module.exports = {
       items: [
         { href: 'https://sourceesb.com/', label: 'Find Parts' },
         { href: 'https://www.sourcetoday.com/distribution/digital-issue', label: 'Digital Issue' },
-        { href: 'http://www.industryweek.com/supply-chain', label: 'Business of Manufacturing' },
-        { href: 'http://directory.newequipment.com/products/electrical-and-electronics', label: 'Equipment Product Directory' },
+        { href: 'https://www.industryweek.com/supply-chain', label: 'Business of Manufacturing' },
+        { href: 'https://directory.newequipment.com/products/electrical-and-electronics', label: 'Equipment Product Directory' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
