@@ -7,19 +7,18 @@
   }
 
   &__title {
-    margin-bottom: .75rem;
+    margin: .75rem 0;
     font-size: 34px;
   }
 
   &__header {
-    margin-bottom: .75rem;
+    margin: .75rem 0;
   }
 
   &__logo {
     display: flex;
     padding: .75rem;
-    margin-right: .75rem;
-    margin-bottom: .75rem;
+    margin: .75rem .75rem .75rem 0;
     background-color: $leaders-primary-color;
   }
 
