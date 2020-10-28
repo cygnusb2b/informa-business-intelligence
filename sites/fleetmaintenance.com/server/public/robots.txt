@@ -6,5 +6,5 @@ User-agent: *
 Disallow: /__load-more
 Disallow: /print
 
-Sitemap: https://www.fleetowner.com/sitemap.xml
-Sitemap: https://www.fleetowner.com/sitemap-google-news.xml
+Sitemap: https://www.fleetmaintenance.com/sitemap.xml
+Sitemap: https://www.fleetmaintenance.com/sitemap-google-news.xml
