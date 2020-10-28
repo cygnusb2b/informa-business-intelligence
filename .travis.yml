@@ -193,6 +193,18 @@ jobs:
       env: [ENVIRONMENT=staging RANCHER_CLUSTERID=c-rc5kp]
 
     - stage: production
+      name: fleetmaintenance.com
+      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com gemenon
+      install: skip
+      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-gxsr7]
+
+    - stage: staging
+      name: fleetmaintenance.com
+      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com gemenon
+      install: skip
+      env: [ENVIRONMENT=staging RANCHER_CLUSTERID=c-rc5kp]
+
+    - stage: production
       name: forgingmagazine.com
       script: npx @base-cms/website-deployment-tool deploy forgingmagazine.com gemenon
       install: skip
