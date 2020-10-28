@@ -45,11 +45,11 @@ module.exports = {
     },
   },
   gtm: {
-    containerId: 'GTM-N69H89Q',
   },
   algolia: {
     applicationId: '80YJALCHBD',
     searchApiKey: '54e907df9d8e8e66dbaf63ac1938c740',
+    containerId: 'GTM-5LVGPHG',
   },
   wufoo: {
     userName: 'cygnuscorporate',
