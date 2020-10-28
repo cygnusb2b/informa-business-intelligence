@@ -30,9 +30,9 @@ module.exports = {
     },
   },
   socialMediaLinks: [
-    { provider: 'facebook', href: 'https://www.facebook.com/fleetowner', target: '_blank' },
-    { provider: 'twitter', href: 'https://twitter.com/fleetowner', target: '_blank' },
-    { provider: 'linkedin', href: 'https://www.linkedin.com/groups/4050439', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/FleetMaintenanceMag', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/fleetmx', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/company/fm-mag/', target: '_blank' },
   ],
   gam: {
     accountId: process.env.GAM_ACCCOUNT_ID || '3834',
