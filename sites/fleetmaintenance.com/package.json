@@ -1,8 +1,8 @@
 {
-  "name": "@endeavor-business-media/fleetowner.com",
+  "name": "@endeavor-business-media/fleetmaintenance.com",
   "version": "1.21.14",
-  "author": "Jacob Bare <jacob@limit0.io>",
-  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/fleetowner.com",
+  "author": "Brandon Krigbaum <brandon@parameter1.com>",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/fleetmaintenance.com",
   "license": "MIT",
   "private": true,
   "scripts": {
