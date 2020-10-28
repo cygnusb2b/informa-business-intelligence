@@ -36,7 +36,7 @@ module.exports = {
   ],
   gam: {
     accountId: process.env.GAM_ACCCOUNT_ID || '3834',
-    basePath: 'fleet.home',
+    basePath: 'fleetmaintenance.home',
     lazyLoad: {
       enabled: true, // set to true to enable lazy loading
       fetchMarginPercent: 100, // fetch ad when one viewport away
