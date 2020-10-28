@@ -1,0 +1,28 @@
+{
+  "name": "@endeavor-business-media/fleetowner.com",
+  "version": "1.21.14",
+  "author": "Jacob Bare <jacob@limit0.io>",
+  "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/fleetowner.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "basecms-website dev index.js",
+    "build": "basecms-website build",
+    "compile": "basecms-marko-compile compile --dir ./ --silent true",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:js": "eslint --ext .js --ext .vue --max-warnings 5 --ignore-path ../../.eslintignore ./",
+    "lint:css": "stylelint ./**/*.scss --max-warnings 5",
+    "test": "yarn lint && yarn compile && yarn build"
+  },
+  "dependencies": {
+    "@base-cms/marko-core": "^1.38.0",
+    "@base-cms/marko-web": "^1.37.0",
+    "@base-cms/object-path": "^1.37.0",
+    "@base-cms/utils": "^1.37.0",
+    "@base-cms/web-cli": "^1.37.0",
+    "@endeavor-business-media/informa-gam": "^1.21.11",
+    "@endeavor-business-media/lazarus-shared": "^1.21.14",
+    "graphql": "^14.5.4",
+    "graphql-tag": "^2.10.1"
+  }
+}
