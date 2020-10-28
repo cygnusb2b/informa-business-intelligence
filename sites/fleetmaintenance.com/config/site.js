@@ -17,15 +17,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=30',
+      src: 'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=30',
       srcset: [
-        'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=60 2x',
+        'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=45',
+      src: 'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=45',
       srcset: [
-        'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=90 2x',
+        'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=90 2x',
       ],
     },
   },
@@ -45,12 +45,12 @@ module.exports = {
     },
   },
   gtm: {
-  },
-  algolia: {
-    applicationId: '80YJALCHBD',
-    searchApiKey: '54e907df9d8e8e66dbaf63ac1938c740',
     containerId: 'GTM-5LVGPHG',
   },
+  // algolia: {
+  //   applicationId: '80YJALCHBD',
+  //   searchApiKey: '54e907df9d8e8e66dbaf63ac1938c740',
+  // },
   wufoo: {
     userName: 'cygnuscorporate',
   },
