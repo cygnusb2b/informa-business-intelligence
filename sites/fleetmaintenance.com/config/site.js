@@ -17,15 +17,15 @@ module.exports = {
   ],
   logos: {
     navbar: {
-      src: 'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=30',
+      src: 'https://img.fleetmaintenance.com/files/base/ebm/fm/image/static/fm-logo.png?h=30',
       srcset: [
-        'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=60 2x',
+        'https://img.fleetmaintenance.com/files/base/ebm/fm/image/static/fm-logo.png?h=60 2x',
       ],
     },
     footer: {
-      src: 'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=45',
+      src: 'https://img.fleetmaintenance.com/files/base/ebm/fm/image/static/fm-logo.png?h=45',
       srcset: [
-        'https://img.fleetowner.com/files/base/ebm/fm/image/static/fm-logo.png?h=90 2x',
+        'https://img.fleetmaintenance.com/files/base/ebm/fm/image/static/fm-logo.png?h=90 2x',
       ],
     },
   },
@@ -33,6 +33,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/FleetMaintenanceMag', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/fleetmx', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/fm-mag/', target: '_blank' },
+    { provider: 'instagram', href: 'https://www.instagram.com/cv_eschueller/', target: '_blank' },
   ],
   gam: {
     accountId: process.env.GAM_ACCCOUNT_ID || '3834',
