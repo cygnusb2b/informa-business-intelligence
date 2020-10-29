@@ -1,10 +1,12 @@
 const navigation = require('./navigation');
 const dragonForms = require('./dragon-forms');
+const leaders = require('./leaders');
 
 module.exports = {
   company: 'Endeavor Business Media, LLC',
   navigation,
   dragonForms,
+  leaders,
   identityX: {
     enabled: true,
     appId: '5df0e8dc05aa5681de43fc36',
