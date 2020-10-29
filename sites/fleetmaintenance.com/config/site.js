@@ -7,13 +7,13 @@ module.exports = {
   dragonForms,
   identityX: {
     enabled: true,
-    appId: '5df0e89005aa56175543fc33',
+    appId: '5f9b152313ad55340efa192d',
     comments: { enabled: true },
   },
   homePageSections: [
-    { alias: 'safety', name: 'Safety' },
+    { alias: 'in-the-bay', name: 'In the Bay' },
     { alias: 'equipment', name: 'Equipment' },
-    { alias: 'fleet-management', name: 'Fleet Management' },
+    { alias: 'shop-operations', name: 'Shop Operations' },
   ],
   logos: {
     navbar: {
