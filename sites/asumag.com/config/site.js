@@ -54,4 +54,17 @@ module.exports = {
     userName: 'cygnuscorporate',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'ASUMag.com has sent you a new sales inquiry.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: true, // enable this to directly send to the company
+    sendTo: 'notifications@asumag.com',
+    sendFrom: 'ASUMag.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.asumag.com/files/base/ebm/asumag/image/static/asumag-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };

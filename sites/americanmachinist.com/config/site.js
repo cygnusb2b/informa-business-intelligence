@@ -57,4 +57,17 @@ module.exports = {
     userName: 'cygnuscorporate',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'AmericanMachinist.com has sent you a new sales inquiry.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: true, // enable this to directly send to the company
+    sendTo: 'notifications@americanmachinist.com',
+    sendFrom: 'AmericanMachinist.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };

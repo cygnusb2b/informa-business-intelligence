@@ -53,4 +53,17 @@ module.exports = {
     userName: 'cygnuscorporate',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'ElectricalMarketing.com has sent you a new sales inquiry.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: true, // enable this to directly send to the company
+    sendTo: 'notifications@electricalmarketing.com',
+    sendFrom: 'ElectricalMarketing.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.electricalmarketing.com/files/base/ebm/electricalmarketing/image/static/electricalmarketing-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };

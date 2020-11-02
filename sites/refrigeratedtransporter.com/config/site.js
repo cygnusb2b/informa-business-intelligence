@@ -53,4 +53,17 @@ module.exports = {
     userName: 'cygnuscorporate',
   },
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
+  inquiry: {
+    // the subject line of the email sent to the brand and/or the company/advertiser
+    notificationSubject: 'RefrigeratedTransporter.com has sent you a new sales inquiry.',
+    // the subject line of the email sent to the user who submitted the form
+    confirmationSubject: 'Your inquiry was received.',
+    enabled: true,
+    directSend: true, // enable this to directly send to the company
+    sendTo: 'notifications@refrigeratedtransporter.com',
+    sendFrom: 'RefrigeratedTransporter.com <noreply@baseplatform.io>',
+    sendBcc: 'emailactivity@cygnus.com',
+    logo: 'https://img.refrigeratedtransporter.com/files/base/ebm/refrigeratedtransporter/image/static/refrigeratedtransporter-logo.png?h=60',
+    bgColor: '#ffffff',
+  },
 };
