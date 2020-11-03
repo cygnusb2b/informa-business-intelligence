@@ -68,7 +68,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@tdworld.com',
     sendFrom: 'TDWorld.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.tdworld.com/files/base/ebm/tdworld/image/static/tdworld-logo.png?h=60',
     bgColor: '#ffffff',
   },
