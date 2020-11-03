@@ -64,7 +64,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@hpac.com',
     sendFrom: 'HPAC.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.hpac.com/files/base/ebm/hpac/image/static/hpac-logo.png?h=60',
     bgColor: '#ffffff',
   },

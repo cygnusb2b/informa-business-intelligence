@@ -66,7 +66,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@americanmachinist.com',
     sendFrom: 'AmericanMachinist.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.americanmachinist.com/files/base/ebm/americanmachinist/image/static/americanmachinist-logo.png?h=60',
     bgColor: '#ffffff',
   },

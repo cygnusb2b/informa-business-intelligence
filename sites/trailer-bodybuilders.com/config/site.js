@@ -62,7 +62,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@trailer-bodybuilders.com',
     sendFrom: 'Trailer-Bodybuilders.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.trailer-bodybuilders.com/files/base/ebm/trailer-bodybuilders/image/static/trailer-bodybuilders-logo.png?h=60',
     bgColor: '#ffffff',
   },

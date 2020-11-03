@@ -66,7 +66,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@rermag.com',
     sendFrom: 'RERMag.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.rermag.com/files/base/ebm/rermag/image/static/rermag-logo.png?h=60',
     bgColor: '#ffffff',
   },

@@ -64,7 +64,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@ehstoday.com',
     sendFrom: 'EHSToday.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.ehstoday.com/files/base/ebm/ehstoday/image/static/ehstoday-logo.png?h=60',
     bgColor: '#ffffff',
   },

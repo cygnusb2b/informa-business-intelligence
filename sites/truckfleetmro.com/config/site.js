@@ -60,7 +60,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@truckfleetmro.com',
     sendFrom: 'TruckFleetMRO.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.truckfleetmro.com/files/base/ebm/truckfleetmro/image/static/truckfleetmro-logo.png?h=60',
     bgColor: '#ffffff',
   },

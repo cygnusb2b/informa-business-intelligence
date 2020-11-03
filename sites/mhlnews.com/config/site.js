@@ -65,7 +65,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@mhlnews.com',
     sendFrom: 'MHLNews.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.mhlnews.com/files/base/ebm/mhlnews/image/static/mhlnews-logo.png?h=60',
     bgColor: '#ffffff',
   },

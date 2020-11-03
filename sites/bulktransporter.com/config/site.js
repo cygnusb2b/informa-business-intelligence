@@ -62,7 +62,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@bulktransporter.com',
     sendFrom: 'BulkTransporter.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.bulktransporter.com/files/base/ebm/bulktransporter/image/static/bulktransporter-logo.png?h=60',
     bgColor: '#ffffff',
   },

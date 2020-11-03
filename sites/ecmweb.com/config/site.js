@@ -65,7 +65,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@ecmweb.com',
     sendFrom: 'ECMWeb.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.ecmweb.com/files/base/ebm/ecmweb/image/static/ecmweb-logo.png?h=60',
     bgColor: '#ffffff',
   },

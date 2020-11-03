@@ -64,7 +64,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@fleetowner.com',
     sendFrom: 'FleetOwner.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.fleetowner.com/files/base/ebm/fleetowner/image/static/fleetowner-logo.png?h=60',
     bgColor: '#ffffff',
   },

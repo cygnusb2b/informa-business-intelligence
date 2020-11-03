@@ -64,7 +64,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@ewweb.com',
     sendFrom: 'EWWeb.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.ewweb.com/files/base/ebm/ewweb/image/static/ewweb-logo.png?h=60',
     bgColor: '#ffffff',
   },

@@ -63,7 +63,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@foundrymag.com',
     sendFrom: 'FoundryMag.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.foundrymag.com/files/base/ebm/foundrymag/image/static/foundrymag-logo.png?h=60',
     bgColor: '#ffffff',
   },

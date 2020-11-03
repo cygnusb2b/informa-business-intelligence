@@ -63,7 +63,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@asumag.com',
     sendFrom: 'ASUMag.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.asumag.com/files/base/ebm/asumag/image/static/asumag-logo.png?h=60',
     bgColor: '#ffffff',
   },

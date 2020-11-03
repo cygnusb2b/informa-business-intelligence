@@ -67,7 +67,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@electronicdesign.com',
     sendFrom: 'ElectronicDesign.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.electronicdesign.com/files/base/ebm/electronicdesign/image/static/electronicdesign-logo.png?h=60',
     bgColor: '#ffffff',
   },

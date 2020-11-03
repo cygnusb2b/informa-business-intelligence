@@ -63,7 +63,7 @@ module.exports = {
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@forgingmagazine.com',
     sendFrom: 'ForgingMagazine.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
+    sendBcc: 'eActivity@endeavorb2b.com',
     logo: 'https://img.forgingmagazine.com/files/base/ebm/forgingmagazine/image/static/forgingmagazine-logo.png?h=60',
     bgColor: '#ffffff',
   },
