@@ -33,7 +33,6 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/white-papers/whitepaper/21146343/forgings-202021-buyers-guide?code=UM_MENU', label: 'Buyers’ Guide' },
-        // { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://manufacturing.endeavorb2b.com/forging', label: 'Advertise', target: '_blank' },
