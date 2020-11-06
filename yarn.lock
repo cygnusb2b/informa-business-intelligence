@@ -965,10 +965,10 @@
     moment "^2.24.0"
     node-fetch "^2.6.1"
 
-"@base-cms/marko-web-inquiry@^1.38.0":
-  version "1.38.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.38.0.tgz#97620094991230a5449d5c1664be9410ff9ba391"
-  integrity sha512-K+dlPyVNOgWlZAjP/7Kcx8JMewOCspgURuM/b+x/FXTWNgvdZv2C2X6Wn6q+Sq8hJ/glqs7C6O2kA4H8yUKC+g==
+"@base-cms/marko-web-inquiry@^1.45.1":
+  version "1.45.1"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-inquiry/-/marko-web-inquiry-1.45.1.tgz#e5eea9c66e0a608c2efc2aa1c8c404f013b8c289"
+  integrity sha512-PEssgoHlqWgpPTjl7fejeKMXxCxMk4xff8LoWeRza/Qx9oHlCnUNu/GdKstgDY8LZTCXHfTMMpR7kQHXOG5WIg==
   dependencies:
     "@base-cms/env" "^1.37.0"
     "@base-cms/marko-core" "^1.38.0"
