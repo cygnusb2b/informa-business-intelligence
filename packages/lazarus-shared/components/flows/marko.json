@@ -24,7 +24,8 @@
     "@inner-justified": "boolean",
     "@flush-x": "boolean",
     "@flush-y": "boolean",
-    "@modifiers": "array"
+    "@modifiers": "array",
+    "@class": "string"
   },
   "<lazarus-shared-content-page-load-more-flow>": {
     "template": "./content-page-load-more.marko",
