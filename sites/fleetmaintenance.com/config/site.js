@@ -11,8 +11,8 @@ module.exports = {
     comments: { enabled: true },
   },
   homePageSections: [
-    { alias: 'in-the-bay', name: 'In the Bay' },
     { alias: 'equipment', name: 'Equipment' },
+    { alias: 'in-the-bay', name: 'In the Bay' },
     { alias: 'shop-operations', name: 'Shop Operations' },
   ],
   logos: {

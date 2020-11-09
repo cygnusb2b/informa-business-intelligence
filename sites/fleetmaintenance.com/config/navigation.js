@@ -19,8 +19,8 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: '/in-the-bay', label: 'In the Bay' },
         { href: '/equipment', label: 'Equipment' },
+        { href: '/in-the-bay', label: 'In the Bay' },
         { href: '/shop-operations', label: 'Shop Operations' },
         { href: '/industry-news', label: 'Industry News' },
         { href: '/video-network', label: 'Video Network' },
@@ -31,11 +31,13 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        // { href: '/magazine/5ed53081dcdbbc9b048b473b', label: 'Fleet Maintenance Magazine' },
+        { href: '/webinars', label: 'Webinars' },
+        { href: '/whitepapers', label: 'Whitepapers' },
+        { href: '/magazine', label: 'In Print' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
-        { href: 'https://cv.endeavorb2b.com/fleet-maintenance/', label: 'Marketing Solutions & Advertising Info', target: '_blank' },
-        { href: '/page/about-us', label: 'About Us / Contact Us' },
+        { href: 'https://cv.endeavorb2b.com/fleet-maintenance/', label: 'Advertising Info', target: '_blank' },
+        { href: '/page/about-us', label: 'Contact Us' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],
