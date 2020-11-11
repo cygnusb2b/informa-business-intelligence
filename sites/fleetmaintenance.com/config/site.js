@@ -36,7 +36,7 @@ module.exports = {
     { provider: 'instagram', href: 'https://www.instagram.com/cv_eschueller/', target: '_blank' },
   ],
   gam: {
-    accountId: process.env.GAM_ACCCOUNT_ID || '3834',
+    accountId: process.env.GAM_ACCCOUNT_ID || '21687441225',
     basePath: 'fleetmaintenance.home',
     lazyLoad: {
       enabled: true, // set to true to enable lazy loading
