@@ -117,7 +117,7 @@ $ const rootAlias = aliasParts.shift();
         }
         fragment-name="content-list"
         query-name="website-scheduled-content"
-        query-params={ includeContentTypes: ["Company"], sectionId: id, limit: 18, skip: 7 }
+        query-params={ includeContentTypes: ["Company", "Article", "Product"], sectionId: id, limit: 18, skip: 7 }
         page-input={ for: "website-section", id, modifiers: ["directory"] }
       />
     </marko-web-resolve-page>
