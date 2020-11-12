@@ -27,3 +27,12 @@
     margin-bottom: 0;
   }
 }
+
+.company-attribution {
+  > * {
+    display: inline-block;
+  }
+  .company-attribution__prefix {
+    margin-right: 5px;
+  }
+}

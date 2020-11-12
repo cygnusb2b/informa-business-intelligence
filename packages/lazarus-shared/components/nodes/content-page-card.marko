@@ -83,7 +83,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
       </if>
 
       <if(type !== "contact")>
-        <default-theme-content-attribution obj=content />
+        <default-theme-content-attribution obj=content elements=["byline", "authors", "contributors", "photographers", "source", "sponsors"] />
         <default-theme-page-dates|{ blockName }|>
           <if(type === "event")>
             <marko-web-content-start-date block-name=blockName obj=content />
@@ -96,6 +96,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
             <marko-web-content-published block-name=blockName obj=content />
           </if>
         </default-theme-page-dates>
+        <div class="company-attribution"><div class="company-attribution__prefix">Related To: </div><default-theme-content-attribution obj=content elements=["company"] /></div>
       </if>
     </marko-web-node-element>
   </marko-web-node-element>
