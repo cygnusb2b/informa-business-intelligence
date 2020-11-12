@@ -6,8 +6,5 @@ $theme-lazarus-card-bg-color-dark: rgba(0, 38, 51, 0.9);
 @import "../../node_modules/@endeavor-business-media/lazarus-shared/theme";
 
 .page-attribution__content-company-name {
-  &::before {
-    content: "Related To: ";
-    font-weight: 200;
-  }
+  display: none;
 }
