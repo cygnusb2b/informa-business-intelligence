@@ -60,7 +60,7 @@ $ const rootAlias = aliasParts.shift();
             <div class="directory-grid__right-col">
               <marko-web-query|{ nodes }|
                 name="website-scheduled-content"
-                params={ optionName:"Pinned", limit:3, includeContentTypes:["Company"], sectionId: id, queryFragment }
+                params={ optionName:"Pinned", limit:3, includeContentTypes:["Company","Article","Product"], sectionId: id, queryFragment }
               >
                 <lazarus-shared-content-list-flow
                   nodes=nodes
@@ -69,7 +69,7 @@ $ const rootAlias = aliasParts.shift();
                   inner-justified=false
                   modifiers=["feed"]
                 >
-                  <@header>Featured Companies</@header>
+                  <@header>Featured</@header>
                   <@node with-dates=false>
                     <@image width=120 />
                   </@node>
@@ -77,7 +77,7 @@ $ const rootAlias = aliasParts.shift();
               </marko-web-query>
               <marko-web-query|{ nodes }|
                 name="website-scheduled-content"
-                params={ limit:7, includeContentTypes:["Company"], sectionId: id, queryFragment }
+                params={ limit:7, includeContentTypes:["Company", "Article", "Product"], sectionId: id, queryFragment }
               >
                 <lazarus-shared-content-list-flow
                   nodes=nodes
@@ -86,7 +86,7 @@ $ const rootAlias = aliasParts.shift();
                   inner-justified=false
                   modifiers=["feed"]
                 >
-                  <@header>Latest Companies</@header>
+                  <@header>Latest</@header>
                   <@node with-dates=false>
                     <@image width=120 />
                   </@node>
@@ -117,7 +117,7 @@ $ const rootAlias = aliasParts.shift();
         }
         fragment-name="content-list"
         query-name="website-scheduled-content"
-        query-params={ includeContentTypes: ["Company"], sectionId: id, limit: 18, skip: 7 }
+        query-params={ includeContentTypes: ["Company", "Article", "Product"], sectionId: id, limit: 18, skip: 7 }
         page-input={ for: "website-section", id, modifiers: ["directory"] }
       />
     </marko-web-resolve-page>
