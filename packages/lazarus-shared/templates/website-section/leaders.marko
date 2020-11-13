@@ -40,7 +40,12 @@ $ const { id, alias, name, pageNode, section } = data;
                   ${site.get("leaders.title")}
                 </h1>
                 <div class="leaders-index-page__description">
-                  <p>Welcome to <em>${config.siteName()}'s</em> ${site.get("leaders.title")} program.</p>
+                  <if(site.get("leaders.description"))>
+                    <p>${site.get("leaders.description")}</p>
+                  </if>
+                  <else>
+                    <p>Welcome to <em>${config.siteName()}'s</em> ${site.get("leaders.title")} program.</p>
+                  </else>
                 </div>
               </div>
             </div>
