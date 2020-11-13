@@ -1,5 +1,6 @@
 module.exports = {
-  title: 'Leaders in Hydraulics & Pneumatics',
+  title: 'Connect with Leaders in Hydraulics & Pneumatics',
+  description: 'Finding the right parts and suppliers has never been easier.',
   alias: 'hpconnect',
   calloutValue: 'Welcome to H&P Connect',
   header: {
