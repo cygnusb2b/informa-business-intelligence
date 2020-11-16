@@ -9,7 +9,6 @@ module.exports = {
   footer: {
     items: [
       { href: '/page/about-us', label: 'About Us' },
-      { href: '/page/about-us', label: 'Contact Us' },
       { href: 'https://cv.endeavorb2b.com/fleet-maintenance/', label: 'Advertise', target: '_blank' },
       { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EBM_DoNotSell', label: 'California Do Not Sell', target: '_blank' },
       { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
