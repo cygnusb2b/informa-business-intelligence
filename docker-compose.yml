@@ -31,6 +31,12 @@ x-env-gemenon: &env-gemenon
   RSS_URI: ${RSS_URI-https://gemenon.rss.base-cms.io}
   SITEMAPS_URI: ${SITEMAPS_URI-https://gemenon.sitemaps.base-cms.io}
 
+x-env-picon: &env-picon
+  GRAPHQL_URI: ${GRAPHQL_URI-https://picon.graphql.base-cms.io}
+  OEMBED_URI: ${OEMBED_URI-https://picon.oembed.base-cms.io}
+  RSS_URI: ${RSS_URI-https://picon.rss.base-cms.io}
+  SITEMAPS_URI: ${SITEMAPS_URI-https://picon.sitemaps.base-cms.io}
+
 x-env-development: &env-development
   GRAPHQL_URI: ${GRAPHQL_URI-http://host.docker.internal:10002}
   OEMBED_URI: ${OEMBED_URI-http://host.docker.internal:10013}
@@ -596,3 +602,21 @@ services:
     ports:
       - "5738:80"
       - "47128:47128"
+
+  fleetmaintenance.com:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/fleetmaintenance.com
+    depends_on:
+      - gam
+    environment:
+      <<: *env
+      <<: *env-picon
+      PORT: 80
+      EXPOSED_PORT: 5739
+      LIVERELOAD_PORT: 47129
+      TENANT_KEY: ebm_fm
+      SITE_ID: 578631623bab465e7f4932d8
+    ports:
+      - "5739:80"
+      - "47129:47129"
