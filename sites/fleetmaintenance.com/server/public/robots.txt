@@ -3,4 +3,8 @@
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
 User-agent: *
-Disallow: *
+Disallow: /__load-more
+Disallow: /print
+
+Sitemap: https://www.fleetmaintenance.com/sitemap.xml
+Sitemap: https://www.fleetmaintenance.com/sitemap-google-news.xml
