@@ -194,13 +194,13 @@ jobs:
 
     - stage: production
       name: fleetmaintenance.com
-      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com gemenon
+      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com picon
       install: skip
       env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-gxsr7]
 
     - stage: staging
       name: fleetmaintenance.com
-      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com gemenon
+      script: npx @base-cms/website-deployment-tool deploy fleetmaintenance.com picon
       install: skip
       env: [ENVIRONMENT=staging RANCHER_CLUSTERID=c-rc5kp]
 
