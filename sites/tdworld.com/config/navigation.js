@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/directory', label: 'Buyer\'s Guide' },
         { href: '/careers', label: 'Careers & Jobs' },
         { href: '/disaster-response', label: 'Disaster Response' },
         { href: '/distributed-energy-resources', label: 'Distributed Energy Resources' },
