@@ -4,7 +4,7 @@ const config = new DragonFormsConfig({ url: 'https://endeavor.dragonforms.com' }
 
 config
   .addForm('newsletterSubscribe', { omedasite: 'FMSPrefPage' })
-  .addForm('newsletterSignup', { omedasite: 'FMSnewpref', query: { pk: 'ARTWEB' } })
+  .addForm('newsletterSignup', { omedasite: 'FMSnewpref' })
   .addForm('magazineSignup', { omedasite: 'FMS_new' });
 
 module.exports = config;
