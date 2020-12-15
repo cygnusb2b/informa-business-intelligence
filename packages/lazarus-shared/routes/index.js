@@ -9,6 +9,9 @@ const digitalEdition = require('./digital-edition');
 const websiteSections = require('./website-section');
 
 module.exports = (app) => {
+  // get the site config off the app.
+  const { site } = app.locals;
+
   // Handle submissions on /__inquiry
   loadInquiry(app);
 
@@ -28,7 +31,9 @@ module.exports = (app) => {
   search(app);
 
   // Subscription Pages
-  subscribe(app);
+  if (!site.get('removeSubscribeRoute')) {
+    subscribe(app);
+  }
 
   // Digital Edition Pages
   digitalEdition(app);
