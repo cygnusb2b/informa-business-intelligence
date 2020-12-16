@@ -19,7 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: '/page/resources', label: 'Resources' },
+        { href: '/page/resources', label: 'Read me First' },
         { href: '/markets/automotive', label: 'Automotive' },
         { href: '/industrial-automation', label: 'Industrial Automation' },
         { href: '/technologies/analog', label: 'Analog' },
