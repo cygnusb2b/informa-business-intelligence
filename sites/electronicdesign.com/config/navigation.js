@@ -8,7 +8,7 @@ module.exports = {
   },
   footer: {
     items: [
-      { href: '/page/about-us', label: 'About Us' },
+      { href: '/21144843', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
       { href: 'https://designengineering.endeavorb2b.com/electronic-design', label: 'Advertise', target: '_blank' },
       { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EBM_DoNotSell', label: 'California Do Not Sell', target: '_blank' },
@@ -41,7 +41,7 @@ module.exports = {
         { href: '/learning-resources/basics-design', label: 'Basics of Design' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
-        { href: '/page/about-us', label: 'About Us' },
+        { href: '/21144843', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.endeavorb2b.com/electronic-design', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
