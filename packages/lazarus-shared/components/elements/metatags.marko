@@ -1,0 +1,25 @@
+$ const primarySection = input.context.section.name.toLowerCase();
+
+$ const contentType = input.context.content.type;
+$ const publishedDate = input.context.content.published.slice(0, 10);
+$ const authorNames = input.context.authors.map(author => author.name).join();
+$ const taxonomyNames = input.context.taxonomy.map(taxonomy => taxonomy.name).join().toLowerCase();
+
+
+//Primary Section
+<meta name="pterm" content=primarySection/>
+
+//@todo - Website Schedule Section Names
+<meta name="sterm"/>
+
+//Content Type
+<meta name="type" content=contentType/>
+
+//Published Date
+<meta name="date-pub" content=publishedDate/>
+
+//Author(s)
+<meta name="author" content=authorNames/>
+
+//Taxonomy Tag(s)
+<meta name="tag" content=taxonomyNames/>
