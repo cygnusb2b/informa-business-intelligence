@@ -20,5 +20,9 @@
       "@url": "string"
     },
     "@should-display": "boolean"
+  },
+  "<lazarus-shared-metatags>": {
+    "template": "./metatags.marko",
+    "@context": "object"
   }
 }
