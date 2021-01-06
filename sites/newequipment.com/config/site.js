@@ -46,6 +46,7 @@ module.exports = {
   gtm: {
     containerId: 'GTM-NGMR8Z5',
   },
+  removeSubscribeRoute: true,
   algolia: {
     applicationId: '80YJALCHBD',
     searchApiKey: 'ZWE3YmVlNWYyYmIzN2E5YWNlNTNiNDE2N2FlOGQyZDYyOTQ0OGU5MTQ3MWIyYmZlMjFhMTczNDVhMzMxNmRkN2ZpbHRlcnM9Tk9UJTIwdHlwZSUzQWNvbnRhY3QlMjBBTkQlMjBOT1QlMjB0eXBlJTNBcHJvbW90aW9u',
