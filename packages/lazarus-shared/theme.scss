@@ -813,14 +813,6 @@ body {
     min-width: auto;
     max-width: 100%;
   }
-
-  &[data-embed-align="left"] {
-    margin-right: 0;
-  }
-
-  &[data-embed-align="right"] {
-    margin-left: 0;
-  }
 }
 
 .program {
