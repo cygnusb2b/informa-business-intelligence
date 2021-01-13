@@ -28,13 +28,11 @@ module.exports = {
         { href: '/galleries', label: 'Galleries' },
         { href: '/american-trucker-magazine', label: 'American Trucker Magazine' },
         { href: '/inquire', label: 'Advertiser Info' },
-        { href: 'https://equipmentsearch.trucker.com/', label: 'Equipment Search' },
       ],
     },
     {
       modifiers: ['secondary'],
       items: [
-        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'https://cv.endeavorb2b.com/american-trucker', label: 'Advertise', target: '_blank' },
