@@ -8,7 +8,7 @@ module.exports = {
   },
   footer: {
     items: [
-      { href: '/page/about-us', label: 'About Us' },
+      { href: '/companies/company/21145007/microwaves-rf', label: 'About Us' },
       { href: '/page/contact-us', label: 'Contact Us' },
       { href: 'https://designengineering.endeavorb2b.com/microwaves-rf/', label: 'Advertise' },
       { href: 'https://endeavor.dragonforms.com/loading.do?omedasite=EBM_DoNotSell', label: 'California Do Not Sell', target: '_blank' },
@@ -43,7 +43,7 @@ module.exports = {
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webcasts' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },
-        { href: '/page/about-us', label: 'About Us' },
+        { href: '/companies/company/21145007/microwaves-rf', label: 'About Us' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://designengineering.endeavorb2b.com/microwaves-rf/', label: 'Advertise', target: '_blank' },
         { href: '/page/contribute', label: 'Contribute' },
