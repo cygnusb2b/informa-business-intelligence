@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'EHS Intelligence' },
         { href: '/covid19', label: 'COVID-19 Crisis' },
         { href: '/environment', label: 'Environment' },
         { href: '/health', label: 'Health' },
@@ -36,6 +37,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: '/americas-safest-companies-awards', label: 'ASC Awards' },
         { href: '/news', label: 'Latest Headlines' },
         { href: '/ghs', label: 'GHS' },
