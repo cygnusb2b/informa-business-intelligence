@@ -22,6 +22,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Premium Content' },
         { href: '/directory', label: 'Buyer\'s Guide' },
         { href: '/careers', label: 'Careers & Jobs' },
         { href: '/disaster-response', label: 'Disaster Response' },
@@ -46,6 +47,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: 'https://jobs.tdworld.com', label: 'Job Center', target: '_blank' },
         { href: '/apps-calculators ', label: 'Apps & Calculators' },
         { href: '/resources/webinars', label: 'Webinars' },
