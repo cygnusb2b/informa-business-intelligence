@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Members Content' },
         { href: '/page/resources', label: 'Read me First' },
         { href: '/markets/automotive', label: 'Automotive' },
         { href: '/industrial-automation', label: 'Industrial Automation' },
@@ -33,6 +34,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: 'https://sourceesb.com/', label: 'Find Parts', target: '_blank' },
         { href: '/magazine-digital-archive', label: 'Digital Archive' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },

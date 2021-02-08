@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Premium Content' },
         { href: '/covid-19', label: 'COVID-19' },
         { href: '/national-electrical-code', label: 'National Electrical Code' },
         { href: '/design', label: 'Design' },
@@ -42,6 +43,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: '/whitepapers-0', label: 'White Papers' },
         { href: '/webinars', label: 'Webinars' },
         { href: '/e-books-library', label: 'e-books Library' },

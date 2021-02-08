@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Members Content' },
         { href: '/covid-19-coverage', label: 'COVID-19 Coverage 2020' },
         { href: '/news', label: 'News' },
         { href: '/equipment', label: 'Equipment' },
@@ -33,6 +34,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/truck-stats', label: 'Truck Statistics' },
