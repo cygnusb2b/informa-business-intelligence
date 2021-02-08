@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Premium Content' },
         { href: '/covid-19', label: 'COVID-19' },
         { href: '/heating', label: 'Heating' },
         { href: '/iaq-ventilation', label: 'Ventilation' },
@@ -30,6 +31,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: '/adventures-johnny-tundra', label: 'Adventures of Johnny Tundra' },
         { href: '/magazine/5e6baacfa1b8b3c98147a03a', label: 'Digital Back Issues' },
         { href: '/directory', label: 'Buyers Guide' },

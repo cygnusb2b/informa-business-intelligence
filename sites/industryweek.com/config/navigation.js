@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'IW Intelligence' },
         { href: '/covid19', label: 'COVID-19 Crisis' },
         { href: '/talent', label: 'Talent' },
         { href: '/technology-and-iiot', label: 'Technology & IIoT' },
@@ -31,6 +32,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: 'https://directory.newequipment.com/', label: 'Manufacturing Products' },
         { href: '/resources/industryweek-best-plants-awards', label: 'IndustryWeek Best Plants Awards' },
         { href: '/resources/industryweek-50-best-us-manufacturers', label: 'IW US 50 Best' },

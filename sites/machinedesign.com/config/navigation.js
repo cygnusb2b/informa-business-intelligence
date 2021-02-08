@@ -19,6 +19,7 @@ module.exports = {
   menu: [
     {
       items: [
+        { href: '/members', label: 'Members Content' },
         { href: '/3d-printing-cad', label: '3D Printing & CAD' },
         { href: '/automation-iiot', label: 'Automation & IIoT' },
         { href: '/fastening-joining', label: 'Fastening & Joining' },
@@ -33,6 +34,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
+        { href: '/page/join', label: 'Member Benefits' },
         { href: '/magazine/5e6babaaa1b8b3c9814b80f2', label: 'Digital Edition Archives' },
         { href: 'https://www.csiaexchange.com/', label: 'CSIA Exchange', target: '_blank' },
         { href: '/markets', label: 'Markets' },
