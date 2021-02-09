@@ -19,7 +19,6 @@ module.exports = {
   menu: [
     {
       items: [
-        { href: '/covid-19-coverage', label: 'COVID-19 Coverage 2020' },
         { href: '/news', label: 'News' },
         { href: '/equipment', label: 'Equipment' },
         { href: '/business', label: 'Business' },
