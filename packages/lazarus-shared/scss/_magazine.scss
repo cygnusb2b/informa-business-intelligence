@@ -20,4 +20,14 @@
     margin-top: 0;
   }
 
+  // to override packages/lazarus-shared/scss/components/_node.scss setting
+  // not sure what else it would affect, so scoping the override to this block
+  // now match current setting from /@base-cms/marko-web/scss/node.scss
+  &--image-top {
+    #{ $self } {
+      &__image-wrapper + #{ $self }__body {
+        margin-top: .75rem;
+      }
+    }
+  }
 }
