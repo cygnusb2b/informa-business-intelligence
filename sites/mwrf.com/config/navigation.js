@@ -20,7 +20,7 @@ module.exports = {
     {
       items: [
         { href: '/page/resources', label: 'MWRF Resources' },
-        { href: '/markets/defense', label: 'Defense' },
+        { href: '/markets', label: 'Markets' },
         { href: '/technologies/test-measurement', label: 'Test & Measurement' },
         { href: '/technologies/components', label: 'Components' },
         { href: '/technologies/semiconductors', label: 'Semiconductors' },
@@ -38,7 +38,8 @@ module.exports = {
         { href: 'https://www.powerelectronics.com/', label: 'Power Design' },
         { href: 'https://www.machinedesign.com/', label: 'Machine Design' },
         { href: 'https://www.sourcetoday.com/', label: 'Procurement' },
-        { href: '/magazine-digital-archive', label: 'Digital Archive' },
+        { href: '/magazine', label: 'Digital Editions' },
+        { href: '/magazine/600a38f1b98b456a318b46b1', label: 'TechXchange' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webcasts' },

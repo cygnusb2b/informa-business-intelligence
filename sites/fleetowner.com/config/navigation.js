@@ -20,7 +20,6 @@ module.exports = {
     {
       items: [
         { href: '/members', label: 'Members Content' },
-        { href: '/covid-19-coverage', label: 'COVID-19 Coverage 2020' },
         { href: '/news', label: 'News' },
         { href: '/equipment', label: 'Equipment' },
         { href: '/safety', label: 'Safety' },
@@ -38,7 +37,6 @@ module.exports = {
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/truck-stats', label: 'Truck Statistics' },
-        { href: '/page/what-s-my-truck-worth', label: 'Truck Values' },
         { href: '/magazine/5ed53081dcdbbc9b048b473b', label: 'FleetOwner Magazine' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },

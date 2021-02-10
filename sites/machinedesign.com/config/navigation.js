@@ -40,7 +40,7 @@ module.exports = {
         { href: '/markets', label: 'Markets' },
         { href: 'https://www.electronicdesign.com/', label: 'Electronic Design' },
         { href: 'https://directory.newequipment.com/', label: 'New Equipment Digest' },
-        { href: 'https://www.industryweek.com/', label: 'Industry Week' },
+        { href: 'https://www.industryweek.com/', label: 'IndustryWeek' },
         { href: 'https://www.hydraulicspneumatics.com/', label: 'Hydraulics & Pneumatics' },
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },

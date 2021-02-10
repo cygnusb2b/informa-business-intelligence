@@ -21,7 +21,7 @@ module.exports = {
       items: [
         { href: '/members', label: 'Members Content' },
         { href: '/page/resources', label: 'Read me First' },
-        { href: '/markets/automotive', label: 'Automotive' },
+        { href: '/markets', label: 'Markets' },
         { href: '/industrial-automation', label: 'Industrial Automation' },
         { href: '/technologies/analog', label: 'Analog' },
         { href: '/power-management', label: 'Power Management' },
@@ -36,7 +36,8 @@ module.exports = {
       items: [
         { href: '/page/join', label: 'Member Benefits' },
         { href: 'https://sourceesb.com/', label: 'Find Parts', target: '_blank' },
-        { href: '/magazine-digital-archive', label: 'Digital Archive' },
+        { href: '/magazine', label: 'Digital Editions' },
+        { href: '/magazine/6008d29a2105c72c308b463d', label: 'TechXchange' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
