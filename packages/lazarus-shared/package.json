@@ -18,7 +18,7 @@
     "@base-cms/marko-web-gcse": "^1.37.0",
     "@base-cms/marko-web-gtm": "^1.37.0",
     "@base-cms/marko-web-icons": "^1.37.0",
-    "@base-cms/marko-web-identity-x": "^1.53.0",
+    "@base-cms/marko-web-identity-x": "^1.54.0",
     "@base-cms/marko-web-inquiry": "^1.52.0",
     "@base-cms/marko-web-social-sharing": "^1.47.0",
     "@base-cms/marko-web-theme-default": "^1.41.1",
