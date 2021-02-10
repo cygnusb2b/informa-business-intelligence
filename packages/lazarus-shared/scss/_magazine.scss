@@ -24,6 +24,7 @@
   // not sure what else it would affect, so scoping the override to this block
   // now match current setting from /@base-cms/marko-web/scss/node.scss
   .node {
+    $self: &;
     &--image-top {
       #{ $self } {
         &__image-wrapper + #{ $self }__body {
