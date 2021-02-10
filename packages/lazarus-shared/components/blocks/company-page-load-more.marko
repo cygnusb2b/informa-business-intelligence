@@ -8,6 +8,6 @@ $ const content = getAsObject(input, "content");
   component-input={ node: { attribution: { displayCompany: false } } }
   fragment-name="content-list"
   query-name="all-company-content"
-  query-params={ companyId: content.id, limit: 12, excludeContentTypes: ["Promotion", "Contact"] }
+  query-params={ companyId: content.id, limit: 12, skip: 6, excludeContentTypes: ["Promotion", "Contact"] }
   page-input={ for: "content", id: content.id, type: content.type, modifiers: ["company-load-more"] }
 />
