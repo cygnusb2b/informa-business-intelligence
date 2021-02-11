@@ -19,5 +19,19 @@
   &--magazine-publication {
     margin-top: 0;
   }
+}
 
+// to override packages/lazarus-shared/scss/components/_node.scss setting
+// not sure what else it would affect, so scoping the override to this block
+// to match current setting from /@base-cms/marko-web/scss/node.scss
+.magazine-publication-card-block {
+  .node {
+    &--image-top {
+      .node {
+        &__body {
+          margin-top: .75rem;
+        }
+      }
+    }
+  }
 }
