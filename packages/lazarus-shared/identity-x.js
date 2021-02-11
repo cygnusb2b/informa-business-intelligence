@@ -15,6 +15,7 @@ module.exports = (app, startOptions) => {
     const config = new IdentityXConfig({
       requiredServerFields: ['givenName', 'familyName', 'countryCode'],
       requiredClientFields: ['regionCode', 'countryCode'],
+      requiredLoginFields: ['regionCode', 'countryCode'],
       ...options,
       appId,
     });
