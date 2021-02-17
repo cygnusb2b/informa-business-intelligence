@@ -53,6 +53,7 @@ module.exports = {
         { href: '/resources/webinars', label: 'Webinars' },
         { href: '/resources/white-papers', label: 'White Papers' },
         { href: '/magazine/5e6bac2ea1b8b3c9814ddb5d', label: 'Magazine Archive' },
+        { href: 'https://events.tdworld.com/', label: 'Events', target: '_blank' },
         // { href: '/directory', label: 'Online Buyers\' Guide' },
         { href: '/page/about-us', label: 'About Us' },
         { href: 'https://energy.endeavorb2b.com/tdworld', label: 'Advertise', target: '_blank' },
