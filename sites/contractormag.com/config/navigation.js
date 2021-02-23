@@ -32,7 +32,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/radiant', label: 'Radiant' },
-        { href: '/nate-digital-editions', label: 'NATE Magazine' },
+        { href: '/magazine/5ff4acc62621c8641f8b4706', label: 'NATE Magazine' },
         { href: '/magazine/5e6ba1e4a1b8b3c9811e2928', label: 'Digital Back Issues' },
         { href: '/learning-resources/whitepapers', label: 'White Papers' },
         { href: '/learning-resources/webinar', label: 'Webinars' },
