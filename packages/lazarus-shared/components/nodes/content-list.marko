@@ -17,7 +17,7 @@ $ const withSection = defaultValue(input.withSection, true);
 $ const withDates = defaultValue(input.withDates, true);
 $ const withSponsored = defaultValue(input.withSponsored, true);
 $ const withMembersOnly = defaultValue(input.withMembersOnly, true);
-$ const withLeaderss = defaultValue(input.withLeaderss, true);
+$ const withLeaders = defaultValue(input.withLeaders, true);
 
 $ const useStickyPromotions = content.type === "promotion" ? blueconic.useStickyPromotions({ site, promotion: content }) : false;
 $ const href = useStickyPromotions ? get(content, "promotionContext.path") : get(content, "siteContext.path");
