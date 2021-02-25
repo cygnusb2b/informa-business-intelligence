@@ -5,7 +5,7 @@ import blueconic from "../../blueconic";
 $ const { site } = out.global;
 
 $ const content = getAsObject(input, "node");
-$ const labels = getAsArraay(content, "lables");
+$ const labels = getAsArray(content, "labels");
 $ const primaryImage = getAsObject(content, "primaryImage");
 $ const primarySection = getAsObject(content, "primarySection");
 $ const isSponsored = labels.includes("Sponsored");
