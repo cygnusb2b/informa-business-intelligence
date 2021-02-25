@@ -58,13 +58,14 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
         $ const labels = getAsArray(content, "labels");
         $ const isSponsored = labels.includes("Sponsored");
         $ const isMembersOnly = labels.includes("Members Only");
+        $ const isLeaders = labels.includes("Leaders");
 
-        $ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
+        $ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored" || label === "Leaders");
 
         <default-theme-page-contents|{ blockName: contentsBlock }|>
           <marko-web-identity-x-access|context| enabled=true>
             <if(!context.canAccess || context.requiresUserInput)>
-              <if( isSponsored || isMembersOnly)>
+              <if( isSponsored || isMembersOnly || isLeaders)>
                 <div class=`${blockName}__sponsored-content`>
                     ${contentLabels} Content
                 </div>
@@ -119,7 +120,7 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
                 </div>
               </if>
 
-              <if( isSponsored || isMembersOnly)>
+              <if( isSponsored || isMembersOnly || isLeaders)>
                 <div class=`${blockName}__sponsored-content`>
                     ${contentLabels} Content
                 </div>

@@ -12,6 +12,7 @@
     "@with-dates": "boolean",
     "@with-sponsored": "boolean",
     "@with-members-only": "boolean",
+    "@with-leaders": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",
@@ -30,6 +31,7 @@
     "@with-dates": "boolean",
     "@with-sponsored": "boolean",
     "@with-members-only": "boolean",
+    "@with-leaders": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",
