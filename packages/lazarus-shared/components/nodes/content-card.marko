@@ -21,6 +21,7 @@ $ const useStickyPromotions = content.type === "promotion" ? blueconic.useSticky
 $ const href = useStickyPromotions ? get(content, "promotionContext.path") : get(content, "siteContext.path");
 
 $ const { linkAttrs } = input;
+$ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
 
 <marko-web-node
   type=`${content.type}-content`
@@ -48,7 +49,9 @@ $ const { linkAttrs } = input;
     <if((withSponsored && isSponsored) || (withMembersOnly && isMembersOnly))>
       <@header>
         <@left|{ blockName }|>
-          <div class=`${blockName}__sponsored-content`>{{labels}}</div>
+          <div class=`${blockName}__sponsored-content`>
+              {{contentLabels}} Content
+          </div>
         </@left>
       </@header>
     </if>

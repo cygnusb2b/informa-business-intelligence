@@ -4,20 +4,24 @@ import blueconic from "../../blueconic";
 
 $ const { site } = out.global;
 
+$ const labels = getAsArray(content, "labels");
 $ const content = getAsObject(input, "node");
 $ const primaryImage = getAsObject(content, "primaryImage");
 $ const primarySection = getAsObject(content, "primarySection");
 $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
+$ const isMembersOnly = labels.includes("Members Only");
 
 $ const withTeaser = defaultValue(input.withTeaser, true);
 $ const withSection = defaultValue(input.withSection, true);
 $ const withDates = defaultValue(input.withDates, true);
 $ const withSponsored = defaultValue(input.withSponsored, true);
+$ const withMembersOnly = defaultValue(input.withMembersOnly, true);
 
 $ const useStickyPromotions = content.type === "promotion" ? blueconic.useStickyPromotions({ site, promotion: content }) : false;
 $ const href = useStickyPromotions ? get(content, "promotionContext.path") : get(content, "siteContext.path");
 
 $ const { linkAttrs } = input;
+$ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
 
 <marko-web-node
   type=`${content.type}-content`
@@ -41,10 +45,12 @@ $ const { linkAttrs } = input;
     />
   </if>
   <@body>
-    <if(withSponsored && isSponsored)>
+    <if((withSponsored && isSponsored) || (withMembersOnly && isMembersOnly))>
       <@header>
         <@left|{ blockName }|>
-          <div class=`${blockName}__sponsored-content`>Sponsored Content</div>
+          <div class=`${blockName}__sponsored-content`>
+              {{contentLabels}} Content
+          </div>
         </@left>
       </@header>
     </if>

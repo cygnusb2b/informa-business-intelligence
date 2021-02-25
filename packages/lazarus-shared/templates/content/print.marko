@@ -7,6 +7,7 @@ $ const { site, config, req } = out.global;
 
 $ const cardBlock = "content-page-card";
 $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includes(type) ? false : true;
+$ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
 
 <marko-web-document>
   <@head>
@@ -54,14 +55,17 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
 
         $ const src = buildImgixUrl(primaryImage.src, { w: imgWidth, h: imgHeight, fit: "crop" });
         $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
-
-        $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
+        $ const labels = getAsArray(content, "labels");
+        $ const isSponsored = labels.includes("Sponsored");
+        $ const isMembersOnly = labels.includes("Members Only");
 
         <default-theme-page-contents|{ blockName: contentsBlock }|>
           <marko-web-identity-x-access|context| enabled=true>
             <if(!context.canAccess || context.requiresUserInput)>
-              <if(isSponsored)>
-                <div class=`${cardBlock}__sponsored-content`>Sponsored Content</div>
+              <if( isSponsored || isMembersOnly)>
+                <div class=`${blockName}__sponsored-content`>
+                    {{contentLabels}} Content
+                </div>
               </if>
               <default-theme-website-section-breadcrumbs
                 section=primarySection
@@ -113,8 +117,10 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
                 </div>
               </if>
 
-              <if(isSponsored)>
-                <div class=`${cardBlock}__sponsored-content`>Sponsored Content</div>
+              <if( isSponsored || isMembersOnly)>
+                <div class=`${blockName}__sponsored-content`>
+                    {{contentLabels}} Content
+                </div>
               </if>
               <default-theme-website-section-breadcrumbs
                 section=primarySection
