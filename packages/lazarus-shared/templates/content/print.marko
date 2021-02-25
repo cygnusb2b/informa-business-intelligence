@@ -7,7 +7,6 @@ $ const { site, config, req } = out.global;
 
 $ const cardBlock = "content-page-card";
 $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includes(type) ? false : true;
-$ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
 
 <marko-web-document>
   <@head>
@@ -55,16 +54,19 @@ $ const contentLabels = labels.filter(label => label === "Members Only" || label
 
         $ const src = buildImgixUrl(primaryImage.src, { w: imgWidth, h: imgHeight, fit: "crop" });
         $ const srcset = [`${buildImgixUrl(src, { dpr: 2 })} 2x`];
+        $ const content = getAsObject(input, "node");
         $ const labels = getAsArray(content, "labels");
         $ const isSponsored = labels.includes("Sponsored");
         $ const isMembersOnly = labels.includes("Members Only");
+
+        $ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored");
 
         <default-theme-page-contents|{ blockName: contentsBlock }|>
           <marko-web-identity-x-access|context| enabled=true>
             <if(!context.canAccess || context.requiresUserInput)>
               <if( isSponsored || isMembersOnly)>
                 <div class=`${blockName}__sponsored-content`>
-                    {{contentLabels}} Content
+                    ${contentLabels} Content
                 </div>
               </if>
               <default-theme-website-section-breadcrumbs
@@ -119,7 +121,7 @@ $ const contentLabels = labels.filter(label => label === "Members Only" || label
 
               <if( isSponsored || isMembersOnly)>
                 <div class=`${blockName}__sponsored-content`>
-                    {{contentLabels}} Content
+                    ${contentLabels} Content
                 </div>
               </if>
               <default-theme-website-section-breadcrumbs

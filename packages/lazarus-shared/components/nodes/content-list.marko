@@ -4,8 +4,8 @@ import blueconic from "../../blueconic";
 
 $ const { site } = out.global;
 
-$ const labels = getAsArray(content, "labels");
 $ const content = getAsObject(input, "node");
+$ const labels = getAsArray(content, "labels");
 $ const primaryImage = getAsObject(content, "primaryImage");
 $ const primarySection = getAsObject(content, "primarySection");
 $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
@@ -46,10 +46,11 @@ $ const contentLabels = labels.filter(label => label === "Members Only" || label
   </if>
   <@body>
     <if((withSponsored && isSponsored) || (withMembersOnly && isMembersOnly))>
+      console.log(contentLabels);
       <@header>
         <@left|{ blockName }|>
           <div class=`${blockName}__sponsored-content`>
-              {{contentLabels}} Content
+              ${contentLabels} Content
           </div>
         </@left>
       </@header>
