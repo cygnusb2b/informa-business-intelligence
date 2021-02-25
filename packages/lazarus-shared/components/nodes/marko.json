@@ -11,6 +11,7 @@
     "@with-section": "boolean",
     "@with-dates": "boolean",
     "@with-sponsored": "boolean",
+    "@with-members-only": "boolean",
 
     "@modifiers": "array",
     "@attrs": "object",
