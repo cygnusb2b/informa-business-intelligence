@@ -6,9 +6,12 @@ import imageHeight from "@base-cms/marko-web/components/node/utils/image-height"
 $ const blockName = "content-page-card";
 
 $ const content = getAsObject(input, "content");
+$ const labels = getAsArray(content, "labels");
 $ const primaryImage = getAsObject(content, "primaryImage");
 $ const primarySection = getAsObject(content, "primarySection");
 $ const isSponsored = getAsArray(content, "labels").includes("Sponsored");
+$ const isMembersOnly = labels.includes("Members Only");
+$ const isLeaders = labels.includes("Leaders");
 
 $ const { type } = content;
 
@@ -26,6 +29,8 @@ $ const hasEmbedCode = Boolean(content.embedCode);
 
 $ const displayPrimaryImage = !hasEmbedCode && hasImage && type !== "media-gallery" && !isLogo;
 $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includes(type) ? false : true;
+
+$ const contentLabels = labels.filter(label => label === "Members Only" || label === "Sponsored" || label === "Leaders");
 
 <!-- @todo add lower-right image caption -->
 <marko-web-block
@@ -55,9 +60,12 @@ $ const displayPublishedDate = ["event", "webinar", "contact", "company"].includ
       </marko-web-node-element>
     </if>
     <marko-web-node-element name="header-body" modifiers=[type] block-name=blockName>
-      <if(isSponsored)>
-        <div class=`${blockName}__sponsored-content`>Sponsored Content</div>
+      <if( isSponsored || isMembersOnly || isLeaders)>
+        <div class=`${blockName}__sponsored-content`>
+            ${contentLabels} Content
+        </div>
       </if>
+
       <default-theme-website-section-breadcrumbs
         section=primarySection
         display-home=false
