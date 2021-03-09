@@ -40,6 +40,7 @@ module.exports = {
         { href: 'https://www.sourcetoday.com/', label: 'Procurement' },
         { href: '/magazine', label: 'Digital Editions' },
         { href: '/magazine/600a38f1b98b456a318b46b1', label: 'TechXchange' },
+        { href: '/magazine/5f4d1d164649416c358b456d', label: 'Top Stories' },
         { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
         { href: '/learning-resources/webcasts', label: 'Webcasts' },
