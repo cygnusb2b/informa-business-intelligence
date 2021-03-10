@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Connect with Leaders in Machine Design',
-  description: 'Finding the right parts and suppliers has never been easier.',
+  title: 'Meet Machine Design Leaders',
+  description: 'A directory of the design industries top suppliers and manufacturers.',
   alias: 'leaders',
   calloutValue: 'Welcome to Leaders in Machine Design',
   header: {
