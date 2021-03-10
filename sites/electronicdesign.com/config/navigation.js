@@ -38,6 +38,7 @@ module.exports = {
         { href: 'https://sourceesb.com/', label: 'Find Parts', target: '_blank' },
         { href: '/magazine', label: 'Digital Editions' },
         { href: '/magazine/6008d29a2105c72c308b463d', label: 'TechXchange' },
+        { href: '/magazine/5f3d4e3e1100d64a078b45ad', label: 'Top Stories' },
         { href: '/learning-resources/webcasts', label: 'Webinars' },
         { href: '/learning-resources/white-paper', label: 'White Papers' },
         { href: '/learning-resources/design-faqs', label: 'Design FAQs' },
