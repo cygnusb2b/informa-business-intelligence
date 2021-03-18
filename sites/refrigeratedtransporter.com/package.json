@@ -1,6 +1,6 @@
 {
   "name": "@endeavor-business-media/refrigeratedtransporter.com",
-  "version": "1.22.13",
+  "version": "1.22.15",
   "author": "Jacob Bare <jacob@limit0.io>",
   "repository": "https://github.com/base-cms-websites/informa-business-intelligence/tree/master/sites/refrigeratedtransporter.com",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "@base-cms/utils": "^1.37.0",
     "@base-cms/web-cli": "^1.51.1",
     "@endeavor-business-media/informa-gam": "^1.22.6",
-    "@endeavor-business-media/lazarus-shared": "^1.22.13",
+    "@endeavor-business-media/lazarus-shared": "^1.22.15",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }
