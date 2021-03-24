@@ -33,7 +33,7 @@ module.exports = {
     {
       modifiers: ['secondary'],
       items: [
-        { href: 'https://sourceesb.com/', label: 'Find Parts' },
+        { href: '/leaders', label: 'Company Directory' },
         { href: 'https://www.electronicdesign.com/', label: 'Electronic Design' },
         { href: 'https://www.powerelectronics.com/', label: 'Power Design' },
         { href: 'https://www.machinedesign.com/', label: 'Machine Design' },
