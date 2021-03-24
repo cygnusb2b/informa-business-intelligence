@@ -35,6 +35,7 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/page/join', label: 'Member Benefits' },
+        { href: '/leaders', label: 'Company Directory' },
         { href: '/magazine/5e6babaaa1b8b3c9814b80f2', label: 'Digital Edition Archives' },
         { href: 'https://www.csiaexchange.com/', label: 'CSIA Exchange', target: '_blank' },
         { href: '/markets', label: 'Markets' },
