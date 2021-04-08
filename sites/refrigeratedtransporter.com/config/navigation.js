@@ -37,8 +37,6 @@ module.exports = {
         { href: '/gross-revenue-reports/annual-gross-revenue-reports', label: 'Annual Gross Revenue Reports' },
         { href: '/event-calendar', label: 'Related Industry Events' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
-        { href: '/learning-resources/webinars', label: 'Webinars' },
-        { href: '/learning-resources/white-papers', label: 'Whitepapers' },
         { href: '/magazine/5f7771f43677d4be378b45d7', label: 'What\'s in Print' },
         { href: '/page/subscribe', label: 'Subscribe' },
         { href: 'https://cv.endeavorb2b.com/refrigerated-transporter-2', label: 'Advertise', target: '_blank' },
