@@ -1,5 +1,3 @@
-const dragonForms = require('./dragon-forms');
-
 module.exports = {
   tertiary: {
     items: [
@@ -26,15 +24,14 @@ module.exports = {
         { href: '/safety', label: 'Safety' },
         { href: '/galleries', label: 'Galleries' },
         { href: '/american-trucker-magazine', label: 'American Trucker Magazine' },
-        { href: '/inquire', label: 'Advertiser Info' },
       ],
     },
     {
       modifiers: ['secondary'],
       items: [
-        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
-        { href: '/page/about-us', label: 'About Us / Contact Us' },
+        { href: '/page/subscribe', label: 'Subscribe' },
         { href: 'https://cv.endeavorb2b.com/american-trucker', label: 'Advertise', target: '_blank' },
+        { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],

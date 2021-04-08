@@ -33,7 +33,7 @@ module.exports = {
         { href: '/training', label: 'Training' },
         { href: '/renewables', label: 'Renewables' },
         { href: '/product-sourcing-supply', label: 'Product Sourcing & Supply' },
-        { href: '/electrical-testing', label: 'Electrical Testing' },
+        { href: '/test-measurement', label: 'Test & Measurement' },
         { href: '/safety/accidents-investigations', label: 'Accidents & Investigations' },
         { href: '/top-40-electrical-design-firms-landing-page', label: 'Top 40 Electrical Design Firms' },
         { href: '/top-50-electrical-contractors', label: 'Top 50 Electrical Contractors' },

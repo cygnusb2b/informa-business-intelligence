@@ -52,6 +52,7 @@ module.exports = {
   wufoo: {
     userName: 'cygnuscorporate',
   },
+  removeSubscribeRoute: true,
   newsletterSubscribeLink: dragonForms.getFormUrl('newsletterSubscribe'),
   inquiry: {
     // the subject line of the email sent to the brand and/or the company/advertiser
