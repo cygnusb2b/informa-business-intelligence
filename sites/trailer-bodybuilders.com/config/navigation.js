@@ -1,5 +1,3 @@
-const dragonForms = require('./dragon-forms');
-
 module.exports = {
   tertiary: {
     items: [
@@ -35,14 +33,13 @@ module.exports = {
       items: [
         { href: '/equipment-parts/snow-ice', label: 'Snow & Ice Directory' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
-        { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: '/learning-resources/webinars', label: 'Webinars' },
         { href: '/magazine/5f070d62ee30bd2a008b45cc', label: 'What\'s In Print' },
         { href: '/trailers/article/21743431/trailerbody-builders-magazineissue-archives', label: 'Magazine Archives' },
-        { href: dragonForms.getFormUrl('magazineSignup'), label: 'Magazine Subscription', target: '_blank' },
-        { href: '/__rss/all-published-content.xml', label: 'RSS' },
-        { href: '/page/about-us', label: 'About Us' },
-        { href: '/page/contact-us', label: 'Contact Us' },
+        { href: '/page/subscribe', label: 'Subscribe' },
         { href: 'https://cv.endeavorb2b.com/trailer-body-builders', label: 'Advertise', target: '_blank' },
+        { href: '/__rss/all-published-content.xml', label: 'RSS' },
+        { href: '/page/about-us', label: 'About Us / Contact Us' },
         { href: 'https://www.endeavorbusinessmedia.com/privacy-policy', label: 'Privacy & Cookie Policy', target: '_blank' },
         { href: 'https://www.endeavorbusinessmedia.com/endeavor-terms', label: 'Terms of Service', target: '_blank' },
       ],

@@ -62,7 +62,7 @@ module.exports = {
     notificationSubject: 'Fleet Maintenance has sent you a new sales inquiry.',
     // the subject line of the email sent to the user who submitted the form
     confirmationSubject: 'Your inquiry was received.',
-    enabled: false,
+    enabled: true,
     directSend: true, // enable this to directly send to the company
     sendTo: 'notifications@fleetmaintenance.com',
     sendFrom: 'FleetMaintenance.com <noreply@baseplatform.io>',
