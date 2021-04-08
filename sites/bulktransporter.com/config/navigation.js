@@ -36,6 +36,8 @@ module.exports = {
         { href: '/page/grossrevenue', label: 'Gross Revenue Reports' },
         { href: '/resources/events-calendar/article/21656378/convention-calendar', label: 'Convention Calendar' },
         { href: '/classifieds', label: 'Jobs/Classifieds' },
+        { href: '/learning-resources/webinars', label: 'Webinars' },
+        { href: '/learning-resources/white-papers', label: 'White Papers' },
         { href: '/__rss/all-published-content.xml', label: 'RSS' },
         { href: '/magazine/5f0632640c700e2c028b4584', label: 'What\'s In Print' },
         { href: '/fleet-management/article/21657602/bulk-transporter-magazineissue-archives', label: 'Magazine Archives' },
