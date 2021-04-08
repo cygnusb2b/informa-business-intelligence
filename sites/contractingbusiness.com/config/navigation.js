@@ -39,7 +39,7 @@ module.exports = {
         { href: '/learning-resources/webinars', label: 'Webinars' },
         { href: '/learning-resources/faqs', label: 'FAQs' },
         { href: '/awards', label: 'Awards' },
-        { href: 'https://contractingbusiness.hotims.com/r5/search.asp?action=search&return_by_category=y', label: 'Free Advertiser Info', target: '_blank' },
+        { href: 'http://contractingbusiness.hotims.com/r5/search.asp?action=search&return_by_category=y', label: 'Free Advertiser Info', target: '_blank' },
         { href: '/downloads', label: 'Monthly Downloads' },
         { href: '/page/contracting-business-industry-experts-and-advisors', label: 'Industry Experts and Advisors' },
         { href: '/page/about-us', label: 'About Us' },
