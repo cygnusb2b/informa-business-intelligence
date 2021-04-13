@@ -3,8 +3,4 @@
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
 User-agent: *
-Disallow: /__load-more
-Disallow: /print
-
-Sitemap: https://www.electronicdesign.com/sitemap.xml
-Sitemap: https://www.electronicdesign.com/sitemap-google-news.xml
+Disallow: *
