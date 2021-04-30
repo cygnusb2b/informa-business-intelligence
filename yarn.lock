@@ -948,10 +948,10 @@
   resolved "https://registry.yarnpkg.com/@base-cms/marko-web-icons/-/marko-web-icons-1.37.0.tgz#eda757d610836a7e8dc4219b5398488b19982146"
   integrity sha512-4MuM4LZo0hlxOJcyu4xTEGqgdz2xbnIcvyc+O79BM8qeb+23GgtqWVfs15TsQSNT4w6YoJCBCJjb77+EkLi1xg==
 
-"@base-cms/marko-web-identity-x@^1.54.0":
-  version "1.54.0"
-  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.54.0.tgz#2e86a9bf6f32523ab33fc9be3ee3320c4c94c9ba"
-  integrity sha512-pF/Cn73u1QboBwM9lwA2dR5IjP0dVhu9sVAceeWyr1r0HhXHdt86OWbCT77JMsLEvAbB/bzmERDVgv8XDb0IKQ==
+"@base-cms/marko-web-identity-x@^1.54.1":
+  version "1.54.1"
+  resolved "https://registry.yarnpkg.com/@base-cms/marko-web-identity-x/-/marko-web-identity-x-1.54.1.tgz#5b5d5704b9b19efe312a5381e5e847f8b90c3ed0"
+  integrity sha512-JwSRSY8dLobN8Pxv14LKjFJ93E9iLJCIBzv4IE1oKlIfF4GuFqPfX6kuZn+QmVsf3MSpEvPdO45/TICFyn5SZA==
   dependencies:
     "@base-cms/object-path" "^1.37.0"
     "@base-cms/utils" "^1.37.0"
