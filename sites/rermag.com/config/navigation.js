@@ -35,6 +35,7 @@ module.exports = {
         { href: '/webinar', label: 'Webinars' },
         { href: '/leaders', label: 'RER Leaders' },
         { href: dragonForms.getFormUrl('newsletterSubscribe'), label: 'eNewsletter Subscription', target: '_blank' },
+        { href: '/magazine/5ed54885a38cdf29288b4624', label: 'Digital Back Issues' },
         { href: '/page/contact-us', label: 'Contact Us' },
         { href: 'https://buildings.endeavorb2b.com/rental-equipment-register', label: 'Advertise', target: '_blank' },
         { href: '/classifieds', label: 'Jobs Listings' },
