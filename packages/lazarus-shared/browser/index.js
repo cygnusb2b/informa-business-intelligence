@@ -10,6 +10,7 @@ import Inquiry from '@base-cms/marko-web-inquiry/browser';
 import IncrementAdPos from './increment-ad-pos.vue';
 import AutoScroll from './auto-scroll.vue';
 import LoadEloquaIframes from './load-eloqua-iframes.vue';
+import LoadOmedaIframes from './load-omeda-iframes.vue';
 import AlgoliaSiteSearch from './algolia/site-search.vue';
 
 const GallerySlideshow = () => import(/* webpackChunkName: "lazarus-shared-gallery-slideshow" */ './gallery-slideshow/index.vue');
@@ -33,6 +34,7 @@ export default (Browser) => {
     provide: { EventBus },
   });
   Browser.register('LazarusSharedLoadEloquaIframes', LoadEloquaIframes);
+  Browser.register('LazarusSharedLoadOmedaIframes', LoadOmedaIframes);
   Browser.register('LazarusSharedGallerySlideshow', GallerySlideshow, {
     provide: { EventBus },
   });

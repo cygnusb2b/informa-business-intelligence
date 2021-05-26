@@ -721,6 +721,34 @@ body {
   }
 }
 
+// Informa/Penton Omedia Forms
+.omeda-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-container-omeda {
+  padding-bottom: $theme-content-paragraph-margin-bottom;
+  clear: both;
+}
+
+.page-contents {
+  &__content-body {
+    p + .embed-container-omeda {
+      margin-top: -$theme-content-paragraph-margin-bottom;
+    }
+
+    [data-embed-type="image"] {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__button {
+    margin-top: map-get($spacers, block);
+  }
+}
+
 // Informa/Penton Eloqua Forms
 .eloqua-iframe {
   width: 100%;

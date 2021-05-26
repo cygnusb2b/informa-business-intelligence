@@ -29,6 +29,9 @@ $ const { id, alias, pageNode } = data;
               <marko-web-content-body block-name=blockName obj=page attrs={ id: bodyId } />
               <!-- Load "embedded" Eloqua iframes -->
               <lazarus-load-eloqua-iframes body-id=bodyId />
+
+              <!-- Load "embedded" Omeda iframes -->
+              <lazarus-load-omeda-iframes body-id=bodyId />
             </default-theme-page-contents>
           </div>
         </@section>
