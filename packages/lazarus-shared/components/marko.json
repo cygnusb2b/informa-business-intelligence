@@ -20,6 +20,10 @@
     "template": "./load-eloqua-iframes",
     "@body-id": "string"
   },
+  "<lazarus-load-omeda-iframes>": {
+    "template": "./load-omeda-iframes",
+    "@body-id": "string"
+  },
   "<lazarus-shared-document>": {
     "template": "./document.marko",
     "<head>": {},
