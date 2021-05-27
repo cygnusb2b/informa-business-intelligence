@@ -7,7 +7,7 @@ export default {
   props: {
     selector: {
       type: String,
-      default: '.penton-omeda-form',
+      default: '.omeda-form',
     },
   },
 
@@ -28,3 +28,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.omeda-form {
+  width: 100%;
+  height: 900px;
+}
+</style>
