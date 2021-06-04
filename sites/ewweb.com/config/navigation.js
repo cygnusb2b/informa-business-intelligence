@@ -24,7 +24,7 @@ module.exports = {
         { href: '/business-management', label: 'Business Management' },
         { href: '/electrical-economy', label: 'Electrical Economy' },
         { href: '/data-training', label: 'Training' },
-        { href: '/data-training/top-200', label: 'Top 200' },
+        { href: '/data-training/top-150', label: 'Top 150' },
         { href: '/data-training/market-planning-guide', label: 'Market Planning Guide' },
         { href: '/green-market/lighting', label: 'Lighting & Controls' },
       ],
