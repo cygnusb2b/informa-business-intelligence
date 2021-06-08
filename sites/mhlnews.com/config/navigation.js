@@ -33,10 +33,9 @@ module.exports = {
       modifiers: ['secondary'],
       items: [
         { href: '/drones-and-autonomous-vehicles', label: 'Drones & Autonomous Vehicles' },
-        { href: '/trump-supply-chain', label: 'Trump & the Supply Chain' },
-        { href: '/new-products', label: 'Latest Product & Services' },
-        { href: '/directory', label: 'Buyers Guide' },
+        { href: '/new-products', label: 'Latest Products & Services' },
         { href: '/webinars', label: 'Webinars' },
+        { href: '/white-papers', label: 'White Papers & Podcasts' },
         { href: '/podcasts', label: 'Podcasts' },
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
