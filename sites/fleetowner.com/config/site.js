@@ -13,7 +13,7 @@ module.exports = {
   homePageSections: [
     { alias: 'safety', name: 'Safety' },
     { alias: 'equipment', name: 'Equipment' },
-    { alias: 'fleet-management', name: 'Fleet Management' },
+    { alias: 'operations', name: 'Operations' },
   ],
   logos: {
     navbar: {
