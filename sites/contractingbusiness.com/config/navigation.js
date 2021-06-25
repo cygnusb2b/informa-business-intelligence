@@ -26,7 +26,8 @@ module.exports = {
         { href: '/iaq-ventilation', label: 'IAQ & Ventilation' },
         { href: '/refrigeration', label: 'Refrigeration' },
         { href: '/service', label: 'Service' },
-        { href: 'https://www.contractingbusiness.com/technology', label: 'Technology' },
+        { href: '/technology', label: 'Technology' },
+        { href: '/product-news', label: 'Product News' },
       ],
     },
     {
