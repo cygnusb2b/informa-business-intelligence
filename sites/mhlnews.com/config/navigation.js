@@ -35,7 +35,7 @@ module.exports = {
         { href: '/drones-and-autonomous-vehicles', label: 'Drones & Autonomous Vehicles' },
         { href: '/new-products', label: 'Latest Products & Services' },
         { href: '/webinars', label: 'Webinars' },
-        { href: '/white-papers', label: 'White Papers & Podcasts' },
+        { href: '/white-papers', label: 'White Papers & eBooks' },
         { href: '/podcasts', label: 'Podcasts' },
         { href: 'https://www.mfgtechshow.com/', label: 'Manufacturing & Technology Event', target: '_blank' },
         { href: 'https://www.safetyleadershipconference.com/', label: 'Safety Leadership Conference', target: '_blank' },
